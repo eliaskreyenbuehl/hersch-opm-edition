@@ -8,7 +8,7 @@ So setzt du die Edition Phase für Phase mit Claude Code um. Du brauchst nur die
 2. Den Satz aus der Tabelle unten einfügen und abschicken.
 3. Claude arbeitet. Wenn es um Erlaubnis fragt, lies kurz, was es tun will, und gib frei.
 4. Am Ende bekommst du eine Liste **«Bitte prüfen»**. Arbeite sie im Browser ab.
-5. Passt etwas nicht, schreibst du es in derselben Sitzung, zum Beispiel: «Die Seitenzahlen fehlen bei 60.xml.»
+5. Passt etwas nicht, schreibst du es in derselben Sitzung, zum Beispiel: «Die Seitenzahlen fehlen bei 1540.xml.»
 6. Wenn alles passt: Startzeit, Endzeit und Notizen in `docs/beweisprotokoll.md` eintragen bzw. prüfen. Das ist der Beweis.
 
 Eine neue Sitzung pro Phase hält den Kontext klein und spart Tokens. Alles Wichtige steht in `CLAUDE.md` und in den Briefings.
@@ -20,7 +20,7 @@ Eine neue Sitzung pro Phase hält den Kontext klein und spart Tokens. Alles Wich
 | 0 Setup | «Lies docs/phase-0-setup.md und setze die Phase um.» | 30 Min. | Claude meldet: opm läuft, GitHub-Konto verbunden |
 | 1 Daten & Design | «Lies docs/phase-1-daten-design.md und setze die Phase um.» | 1 Std. | `docs/datenbericht.md`: Stimmen die Lücken? |
 | 2 ODD | «Lies docs/phase-2-odd.md und setze die Phase um.» | 2–3 Std. | 5 Texte inhaltlich gleich wie auf der Live-Edition |
-| 3 Leseansicht | «Lies docs/phase-3-leseansicht.md und setze die Phase um.» | 2–3 Std. | 60.xml sieht aus wie die Hersch-Edition (auch auf dem Handy) |
+| 3 Leseansicht | «Lies docs/phase-3-leseansicht.md und setze die Phase um.» | 2–3 Std. | 1540.xml sieht aus wie die Hersch-Edition (auch auf dem Handy) |
 | 4 Werkliste | «Lies docs/phase-4-werkliste.md und setze die Phase um.» | 2 Std. | Filter, Startseite, Kategorie-Namen |
 | 5 Register | «Lies docs/phase-5-register.md und setze die Phase um.» | 2–3 Std. | 20 Personen gegen die GND prüfen |
 | 6 Suche & Sprachen | «Lies docs/phase-6-suche-sprachen.md und setze die Phase um.» | 1–2 Std. | Suche «Jaspers», Sprachwechsel FR/EN |

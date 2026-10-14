@@ -21,7 +21,7 @@ Volltextsuche über alle Texte ohne Server (Pagefind) und eine Oberfläche in De
 - Französische und englische Neuübersetzungen als Entwurf markieren. Elias lässt sie prüfen.
 
 ## Abnahme
-- [ ] Die Suche nach «Jaspers» findet 60.xml und springt zur Stelle.
+- [ ] Die Suche nach «Jaspers» findet 1540.xml (und 900.xml) und springt zur Stelle.
 - [ ] Die Suche nach einem deutschen und einem französischen Wort mit Flexion (z. B. «Freiheiten», «libertés») liefert Treffer.
 - [ ] Die Filter Gattung und Sprache wirken in der Suche.
 - [ ] Ein Sprachwechsel übersetzt Menü, Filter, Seitenleiste und Fuss. Die Wahl bleibt beim Neuladen erhalten.

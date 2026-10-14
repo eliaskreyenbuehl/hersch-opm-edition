@@ -6,7 +6,7 @@ Die 12 TEI-Dateien und alle wiederverwendbaren Teile der Hersch-App liegen im Pr
 ## Aufgaben
 
 ### 1. TEI-Daten
-- Elias nach dem Quellordner der 12 TEI-Dateien fragen und sie nach `data/` kopieren. Dateinamen bleiben gleich, z. B. `60.xml`.
+- Elias nach dem Quellordner der 12 TEI-Dateien fragen und sie nach `data/` kopieren. Dateinamen bleiben gleich, z. B. `1540.xml`.
 - Falls Elias das Schema `zbz_hersch.rng` hat, nach `schema/` kopieren.
 
 ### 2. Aus der Hersch-App kopieren

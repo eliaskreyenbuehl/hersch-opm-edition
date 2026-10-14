@@ -42,7 +42,7 @@ Ruft `validate.py` auf, dann `opm chunk data -o _site/edition --force` und kopie
 
 ## Abnahme
 - [ ] `uv run python scripts/build.py` erzeugt 12 Leseseiten.
-- [ ] 60.xml lokal und Live-Seite nebeneinander: Schrift, Farben, Abstände, Seitenzahlen und Korrekturen stimmen weitgehend überein. Screenshots Desktop (1280 px) und Handy (375 px) in `docs/screenshots/` ablegen.
+- [ ] 1540.xml lokal und Live-Seite nebeneinander: Schrift, Farben, Abstände, Seitenzahlen und Korrekturen stimmen weitgehend überein. Screenshots Desktop (1280 px) und Handy (375 px) in `docs/screenshots/` ablegen.
 - [ ] Keine Datei lädt etwas von externen Servern (in der Netzwerkansicht prüfen).
 - [ ] Alle Links relativ.
 - [ ] Commit.

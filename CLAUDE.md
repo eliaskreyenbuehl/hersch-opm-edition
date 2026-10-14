@@ -35,7 +35,7 @@ Elias (ZB Zürich, Projektleitung Hersch-Edition) ist **kein Programmierer**. Er
   - Schriften: `resources/fonts/`
   - UI-Texte: `resources/i18n/app/{de,fr,en}.json`
   - Seitenaufbau: `templates/layouts/hersch-*.html`, `templates/home.html`, `about-hersch.html`, `project.html`, `imprint.html`, `people.html`, `person.html`. Übernommen werden Struktur und Texte, nicht die TEI-Publisher-Templating-Syntax.
-- **Referenz für das Aussehen:** https://edition-jeanne-hersch.org/edition/60.xml. Nur ansehen und vergleichen, nichts herunterladen oder scrapen.
+- **Referenz für das Aussehen:** https://edition-jeanne-hersch.org/edition/1540.xml. Nur ansehen und vergleichen, nichts herunterladen oder scrapen.
 
 ## Architektur
 
@@ -89,6 +89,6 @@ hersch-opm-edition/
 ```bash
 uv run python scripts/build.py          # alles bauen
 uv run opm serve -d _site               # lokal ansehen (http://127.0.0.1:8000)
-uv run opm transform data/60.xml --preview   # einzelnen Text testen
+uv run opm transform data/1540.xml --preview   # einzelnen Text testen
 uv run python scripts/check_links.py    # tote Links finden
 ```
