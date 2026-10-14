@@ -37,9 +37,9 @@ Hinweise: `landing-page.css` verweist auf `../images/typewriter1.jpg` und `typew
 | `assets/fonts/eb-garamond-*.woff2` (4) | `APP/resources/fonts/` | SIL OFL 1.1, `LICENSE-garamond` liegt bei |
 | `assets/fonts/inter-v19-*.woff2` (6) | `APP/resources/fonts/` | SIL OFL 1.1, `LICENSE-inter` (aus https://github.com/rsms/inter, `LICENSE.txt`, geholt am 2026-10-14) |
 | `assets/fonts/JunicodeVF-*.woff2` (2) | `APP/resources/fonts/` | SIL OFL 1.1, `LICENSE-junicode` (aus https://github.com/psb1558/Junicode-font, `OFL.txt`, geholt am 2026-10-14) |
-| `assets/fonts/font.css` | `APP/resources/fonts/font.css` | enthält noch `@font-face` für ES Rebond Grotesque (Dateien fehlen absichtlich), wird in Phase 3 bereinigt |
+| `assets/fonts/font.css` | `APP/resources/fonts/font.css` | `@font-face` für alle Schriften inkl. ES Rebond Grotesque, wird in Phase 3 übernommen |
 
-**Nicht kopiert:** `ESRebondGrotesque-*.woff2` (kommerzielle Lizenz, Freigabe für github.io durch Elias ausstehend).
+| `assets/fonts/ESRebondGrotesque-*.woff2` (4) | `APP/resources/fonts/` | kommerzielle Lizenz der ZB; Elias hat am 2026-10-14 bestätigt, dass sie für github.io gilt. Keine Lizenzdatei in der App. |
 
 ## UI-Texte und Taxonomie
 

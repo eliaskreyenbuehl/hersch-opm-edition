@@ -74,7 +74,7 @@ hersch-opm-edition/
 - Keine externen CDNs (Schriften, JS, CSS). Alles liegt lokal, aus Datenschutzgründen.
 - Kein Node.js, kein Frontend-Framework. Reines HTML/CSS und kleines Vanilla-JS.
 - Keine neue Abhängigkeit ohne Eintrag in `pyproject.toml` (`uv add …`).
-- **Schrift ES Rebond Grotesque** ist kommerziell lizenziert. Sie wird nicht eingebunden, solange Elias die Webfont-Lizenz für github.io nicht bestätigt hat. Ersatz: Inter.
+- **Schrift ES Rebond Grotesque** ist kommerziell lizenziert. Elias hat am 2026-10-14 bestätigt, dass die Webfont-Lizenz für github.io gilt; sie darf eingebunden werden. Die Dateien nicht an andere Orte weitergeben.
 - Nichts veröffentlichen (`git push`, `gh repo create`, Pages aktivieren) ohne ausdrückliches OK von Elias im Chat.
 
 ## Technische Leitplanken
