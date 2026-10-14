@@ -1,0 +1,14 @@
+# OPM-Konfiguration der Hersch-Edition (Phase 2: nur Transformation)
+
+[project]
+pythonpath = ["."]
+
+[transform]
+odd = "odd/hersch-opm.odd"
+xpath_extensions = [
+    "opm.runtime.common_xpath_functions"
+]
+
+# Präfix, das teipublisher.odd für seine eXist-Einstellungen verwendet
+[transform.namespaces]
+global = "http://teipublisher.com/global"

@@ -1,0 +1,100 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:pb="http://teipublisher.com/1.0" xml:lang="de">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>hersch-opm</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Zentralbibliothek Zürich</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Anpassungen von hersch.odd für Open Processing Model (OPM). Jede Abweichung ist in
+                    docs/odd-anpassungen.md begründet. Achtung: elementSpec mode="change" ersetzt
+                    alle Modelle des Elements, deshalb wird das ganze Element neu deklariert.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <schemaSpec start="TEI teiCorpus" ident="hersch-opm" source="hersch.odd">
+
+                <!-- (1) Hauptdivision: ohne XQuery-Elementkonstruktor und ohne ext:create-icon-year -->
+                <elementSpec ident="div" mode="change">
+                    <model predicate="@type eq 'front' and node()" behaviour="block" cssClass="front"/>
+                    <model output="web" predicate="@n eq '1'" behaviour="pass-through">
+                        <param name="title" value="head/title[@type eq 'main']"/>
+                        <param name="subtitle" value="head/title[not(@type eq 'main')]"/>
+                        <param name="front" value="ancestor::text/front/node()"/>
+                        <param name="content" value="head/following-sibling::node()"/>
+                        <param name="genre" value="substring-after(head(tokenize(ancestor::TEI/teiHeader//catRef[@scheme eq 'hersch_genre']/@target, '\s+')), '#')"/>
+                        <param name="year" value="head(ancestor::TEI/teiHeader//sourceDesc//date/string())"/>
+                        <pb:template xml:space="preserve"><div xmlns="" class="fixed">[[title]]<div class="icon-year" data-genre="[[genre]]"><span>[[year]]</span></div></div><div xmlns="" class="scrollable">[[subtitle]]<div class="front">[[front]]</div>[[content]]</div></pb:template>
+                    </model>
+                    <model predicate="parent::body or parent::front or parent::back" behaviour="section"/>
+                    <model behaviour="block"/>
+                </elementSpec>
+
+                <!-- (2) Personen: vorerst Span mit normalisierter GND-Nummer, Link folgt in Phase 5 -->
+                <elementSpec ident="persName" mode="change">
+                    <model output="print" predicate="matches(@ref, '^(GND-)?[0-9]')" behaviour="link" cssClass="entity">
+                        <param name="uri" value="'https://d-nb.info/gnd/' || replace(@ref, '^GND-', '')"/>
+                        <param name="target" value="'_blank'"/>
+                        <param name="content" value="."/>
+                    </model>
+                    <model output="print" behaviour="inline"/>
+                    <model predicate="$parameters?mode=('breadcrumb', 'toc')" behaviour="inline"/>
+                    <model predicate="@type='variant'" behaviour="inline" cssClass="name variant"/>
+                    <model predicate="matches(@ref, '^(GND-)?[0-9]')" behaviour="inline">
+                        <param name="gnd" value="replace(@ref, '^GND-', '')"/>
+                        <pb:template xml:space="preserve"><span xmlns="" class="person" data-gnd="[[gnd]]">[[content]]</span></pb:template>
+                    </model>
+                    <model behaviour="inline" cssClass="person"/>
+                </elementSpec>
+
+                <!-- (3) Organisationen: wie Personen -->
+                <elementSpec ident="orgName" mode="change">
+                    <model output="print" predicate="matches(@ref, '^(GND-)?[0-9]')" behaviour="link" cssClass="entity">
+                        <param name="uri" value="'https://d-nb.info/gnd/' || replace(@ref, '^GND-', '')"/>
+                        <param name="target" value="'_blank'"/>
+                        <param name="content" value="."/>
+                    </model>
+                    <model output="print" behaviour="inline"/>
+                    <model predicate="$parameters?mode=('breadcrumb', 'toc')" behaviour="inline"/>
+                    <model predicate="@type='variant'" behaviour="inline" cssClass="name variant"/>
+                    <model predicate="matches(@ref, '^(GND-)?[0-9]')" behaviour="inline">
+                        <param name="gnd" value="replace(@ref, '^GND-', '')"/>
+                        <pb:template xml:space="preserve"><span xmlns="" class="org" data-gnd="[[gnd]]">[[content]]</span></pb:template>
+                    </model>
+                    <model behaviour="inline" cssClass="org"/>
+                </elementSpec>
+
+                <!-- (4) Werke (bibl im Text): wie Personen; bibl im teiHeader unverändert -->
+                <elementSpec ident="bibl" mode="change">
+                    <model output="print" predicate="matches(@ref, '^(GND-)?[0-9]')" behaviour="link" cssClass="entity">
+                        <param name="uri" value="'https://d-nb.info/gnd/' || replace(@ref, '^GND-', '')"/>
+                        <param name="target" value="'_blank'"/>
+                        <param name="content" value="."/>
+                    </model>
+                    <model output="print" behaviour="inline"/>
+                    <model predicate="ancestor::sourceDesc and $parameters?mode='metadata-panel'" behaviour="listItem"/>
+                    <model predicate="matches(@ref, '^(GND-)?[0-9]')" behaviour="inline">
+                        <param name="gnd" value="replace(@ref, '^GND-', '')"/>
+                        <pb:template xml:space="preserve"><span xmlns="" class="work" data-gnd="[[gnd]]">[[content]]</span></pb:template>
+                    </model>
+                    <model behaviour="inline" cssClass="work"/>
+                </elementSpec>
+
+                <!-- (5) Vertikaler Leerraum: in hersch.odd und teipublisher.odd ohne Regel -->
+                <elementSpec ident="space" mode="add">
+                    <model predicate="@dim eq 'vertical'" behaviour="block" cssClass="space-vertical">
+                        <param name="content" value="()"/>
+                    </model>
+                    <model behaviour="inline" cssClass="space">
+                        <param name="content" value="' '"/>
+                    </model>
+                </elementSpec>
+
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>
