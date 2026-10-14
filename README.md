@@ -13,7 +13,7 @@ Das Projekt soll zeigen, dass sich eine TEI-Edition ohne Datenbank und Server in
 
 ## Status
 
-Phase 0 (Setup) steht noch aus.
+Phase 0 (Setup) abgeschlossen. Als Nächstes: Phase 1 (Daten & Design).
 
 ## Technik
 
