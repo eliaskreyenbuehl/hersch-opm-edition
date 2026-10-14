@@ -1,0 +1,36 @@
+<template>
+    ---json
+    {
+        "templating": {
+            "extends": "templates/layouts/hersch-home-base.html"
+        },
+        "features": {
+            "toolbar": {
+            "enabled": false
+        }
+        },
+        "styles": [
+            "resources/css/landing-page.css", "transform/teipublisher.css","hersch.css"
+        ],
+        "script": {
+            "custom": [
+                "resources/scripts/language.js"
+            ]
+        },
+        "theme": {
+            "layout": {
+                "class": "landing-layout"
+            }
+        }
+    }
+    ---
+    [% template styles %]
+    [% endtemplate %]
+
+<!-- look for layouts/hersch-home-base.html -->
+
+
+    [% include "templates/bottom.html" %]
+
+    [% include "templates/footer.html" %]
+</template>

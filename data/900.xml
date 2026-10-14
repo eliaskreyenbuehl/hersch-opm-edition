@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">Jaspers (Karl) 1883-1969</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">900</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “Jaspers (Karl) 1883-1969”. Encyclopedia
+                    Universalis, vol. 9, 1971, pp. 402–404.</idno>
+                <idno type="ALMA-MMSID">99117937786805508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117937786805508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_journal" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">Jaspers (Karl)
+                                1883-1969</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Encyclopaedia Universalis</editor>
+                            <title level="j">Encyclopaedia universalis</title>
+                            <textLang mainLang="fra">Französisch</textLang>
+                            <imprint>
+                                <date when="1971">1971</date>
+                                <biblScope unit="vol">9</biblScope>
+                                <biblScope unit="pp">402-404</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#entry"/>
+                <catRef scheme="hersch_keywords" target="#karl-jaspers"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <div type="entry" n="1" xml:id="d900-1">
+                <pb facs="#facs_1" n="402"/>
+
+                <head type="lemma">
+                    <persName ref="GND-118557106"><hi rendition="#k">JASPERS</hi> (Karl)</persName>,
+                    1883-1969 </head>
+                <p>
+                    <lb/><persName ref="GND-118557106">Karl Jaspers</persName> caractérise lui-même
+                    <lb/>en quelques phrases clefs de son <hi rendition="#i">Auto<lb break="no"
+                        />biographie philosophique</hi> les thèmes es<lb break="no"/>sentiels de sa
+                    pensée et de sa vie, et d’a<lb break="no"/>bord l’expérience des situations
+                    limites: <lb/>"L’homme ne prend conscience de <lb/>son être que dans les
+                    situations limites. <lb/>C’est pourquoi, dès ma jeunesse, j’ai <lb/>cherché à ne
+                    pas me dissimuler le pire. <lb/>Ce fut l’une des raisons qui me firent
+                    <lb/>choisir la médecine et la psychiatrie: <lb/>la volonté de connaître la
+                    limite des <lb/>possibilités humaines, de saisir la signifi<lb break="no"
+                    />cation de ce que d’ordinaire on s’efforce <lb/>de voiler ou d’ignorer."
+                        <persName ref="GND-118557106">Jaspers</persName> définit <lb/>ainsi une
+                    autre orientation de sa pensée, <lb/>l’éclairement de la communication:
+                    <lb/>"L’être humain ne se trouve lui-même <lb/>qu’avec l’autre être humain, et
+                    jamais <lb/>par le seul savoir. Nous ne devenons <lb/>nous-mêmes que dans la
+                    mesure où <lb/>l’autre devient lui-même, nous ne deve<lb break="no"/>nons libres
+                    que dans la mesure où <lb/>l’autre le devient aussi." Mais, "dans <lb/>ces deux
+                    directions, ajoute-t-il, je ne <lb/>suis jamais arrivé à un terme". Enfin,
+                    <lb/>sa philosophie s’éclaire et se déploie <lb/>en fonction d’une double
+                    référence: <lb/>"C’est à <persName ref="GND-118562002">Kierkegaard</persName>
+                    que je dois le <lb/>concept d’"existence", dont je me suis <lb/>servi depuis
+                    1916 pour désigner ce que <lb/>j’avais jusqu’alors cherché dans la peine <lb/>et
+                    l’inquiétude. Mais tout aussi chargé <lb/>d’énergie et d’exigence était pour moi
+                    <lb/>le concept de "raison", tel que <persName ref="GND-118559796">
+                        Kant</persName>
+                    <lb/>n’a cessé de l’éclairer." </p>
+
+                <div n="2" xml:id="d900-2">
+                    <head>
+                        <title type="main" xml:id="t900-1">Les événements décisifs</title>
+                    </head>
+                    <p>
+                        <lb/><persName ref="GND-118557106">Karl Jaspers</persName> naquit à
+                        Oldenbourg, non <lb/>loin des côtes de la mer du Nord. Après <lb/>quelques
+                        semestres de droit, il fit ses <lb/>études de médecine, travailla pendant
+                        <lb/>plusieurs années comme assistant à la <lb/><orgName
+                            ref="GND-10030440-0">clinique psychiatrique de Heidelberg</orgName> et
+                        <lb/>obtint son doctorat en médecine. Dès <lb/>1913, il enseigna la
+                        psychologie à la <orgName ref="GND-117346-7">Faculté <lb/>des lettres de
+                            Heidelberg</orgName>, avant de devenir <lb/>dans cette même faculté
+                        professeur de <lb/>philosophie en 1921. </p>
+                    <p>
+                        <lb/>Privé de sa chaire par le gouvernement <lb/>national-socialiste en
+                        1937, il reprit ses <pb facs="#facs_1_r_13" n="403"/>
+                        <lb/>cours en 1945. En 1948, il quitta Heidelberg <lb/>pour <orgName
+                            ref="GND-36146-X">l’Université de Bâle</orgName> où il enseigna
+                        <lb/>bien au-delà de l’âge de la retraite. Il <lb/>mourut à Bâle à l’âge de
+                        quatre-vingt-six <lb/>ans. </p>
+                    <p>
+                        <lb/>Trois faits ont marqué de façon décisive <lb/>sa pensée et sa vie.
+                        D’abord la maladie, <lb/>dont il souffrit dès l’enfance, et qui, selon
+                        <lb/>un diagnostic établi lors de sa dix-huitième <lb/>année, devait
+                        entraîner la mort avant la <lb/>trentaine. <persName ref="GND-118557106"
+                            >Jaspers</persName> apprit à vivre avec sa <lb/>maladie, à la combattre
+                        jour après jour <lb/>par une thérapeutique appliquée avec <lb/>une
+                        discipline rigoureuse, et il sut mettre <lb/>au service de son travail de
+                        renoncements <lb/>mêmes qu’elle lui imposait. Ensuite, son <lb/>mariage. Il
+                        avait vingt-quatre ans lorsqu’il <lb/>rencontra <persName
+                            ref="GND-117085391">Gertrud Mayer</persName> qui allait devenir <lb/>la
+                        compagne de chaque pensée, "la pré<lb break="no"/>sence d’une âme qui ne
+                        dissimulait rien", <lb/>d’un "sérieux inexorable", capable de <lb/>"le
+                        garder de tout confort moral". Enfin, <lb/>l’expérience déchirante de la
+                        patrie alle<lb break="no"/>mande devenue national-socialiste. Marié <lb/>à
+                        une juive, <persName ref="GND-118557106">Jaspers</persName> vécut ces années
+                        dans <lb/>l’horreur et sous la menace de la déporta<lb break="no"/>tion et
+                        de la mort. Dès 1933, il espérait <lb/>la défaite du Reich, en même temps
+                        que <lb/>s’approfondissait son sentiment d’appar<lb break="no"/>tenir, ainsi
+                        que sa femme, irrévocablement, <lb/>à l’Allemagne de sa naissance et de sa
+                            cul<lb break="no"/>ture. L’impossibilité même d’agir lui fit
+                        <lb/>approfondir sa réflexion sur les pro<lb break="no"/>blèmes fondamentaux
+                        de l’histoire et de <lb/>son sens. La pensée politique devint à <lb/>ses
+                        yeux l’épreuve cruciale de toute philo<lb break="no"/>sophie. </p>
+                </div>
+                <div n="2" xml:id="d900-3">
+                    <head>
+                        <title type="main" xml:id="t900-2">Les étapes de l’œuvre</title>
+                    </head>
+                    <p>
+                        <lb/>Le premier grand ouvrage de <persName ref="GND-118557106"
+                            >Jaspers</persName>
+                        <lb/>est un<bibl ref="GND-4558181-2"><hi rendition="#i"> Manuel de
+                                psychopathologie générale</hi>
+                            <lb/>(<hi rendition="#i">Allgemeine Psychopathologie</hi>)</bibl> publié
+                        en <lb/>1913 et constamment réédité depuis. <lb/><bibl ref="GND-4264289-9"
+                            >La <hi rendition="#i">Psychologie des conceptions du monde</hi>
+                            <lb/>(<hi rendition="#i">Psychologie der Weltanschauungen</hi>,
+                            1919)</bibl>
+                        <lb/>marque la transition entre la phase psy<lb break="no"/>chologique de
+                        l’auteur et la création de <lb/>sa philosophie propre. En 1931, un tout
+                        <lb/>petit livre, <bibl ref="GND-4569257-9"><hi rendition="#i">La Situation
+                                spirituelle de notre</hi>
+                            <lb/><hi rendition="#i">temps</hi> (<hi rendition="#i">Die geistige
+                                Situation der Zeit</hi>)</bibl>
+                        <lb/>lançait le cri d’alarme du philosophe, à <lb/>la veille de l’ère nazie,
+                        au spectacle d’un <lb/>monde qu’aucune substance spirituelle <lb/>ne
+                        défendait plus contre le pire. </p>
+                    <p>
+                        <lb/>En 1932, l’ouvrage monumental qui <lb/>est au cœur de toute l’œuvre
+                        paraît, <lb/>simplement intitulé <bibl ref="GND-4343581-6"><hi
+                                rendition="#i">Philosophie</hi></bibl>, et compo<lb break="no"/>sé
+                        de trois volumes: <hi rendition="#i">L’Orientation phi</hi><lb break="no"/><hi rendition="#i">losophique dans le monde</hi> conduit aux
+                            li<lb break="no"/>mites de la connaissance objective et se <lb/>sert de
+                        ces limites mêmes pour susciter <lb/>l’acte qui la transcende; <hi
+                            rendition="#i">L’Eclairement</hi>
+                        <lb/><hi rendition="#i">de l’existence</hi> décrit les voies permettant
+                        <lb/>au sujet d’actualiser sa liberté par les <lb/>actes qui le rendent
+                        présent au monde, <lb/>par sa communication authentique avec <lb/>autrui,
+                        par son rapport à la transcendance; <lb/>la <hi rendition="#i"
+                            >Métaphysique</hi> montre comment l’exis<lb break="no"/>tence en quête
+                        de l’être s’achemine vers <lb/>la transcendance dont elle apprend à lire
+                        <lb/>"l’écriture chiffrée". </p>
+                    <p>
+                        <lb/>Le premier cours donné par <persName ref="GND-118557106"
+                            >Jaspers</persName>
+                        <lb/>en 1945, au milieu des ruines du régime <lb/>et de la guerre, traita du
+                            <bibl ref="GND-4498918-0"><hi rendition="#i">Problème de</hi>
+                            <lb/><hi rendition="#i">la culpabilité</hi> (<hi rendition="#i">Die
+                                Schuldfrage</hi>)</bibl>. Publié <lb/>en 1946, il offre un modèle
+                        d’examen <lb/>de conscience collectif étroitement lié à <lb/>l’événement,
+                        mais d’une validité perma<lb break="no"/>nente. </p>
+                    <p>
+                        <lb/>Pendant les sombres années de sa retraite, <lb/><persName
+                            ref="GND-118557106">Jaspers</persName> avait préparé un second ouvrage
+                        <lb/>monumental intitulé <bibl ref="GND-139403475X"><hi rendition="#i">De la
+                                vérité</hi> (<hi rendition="#i">Von</hi>
+                            <lb/><hi rendition="#i">der Wahrheit</hi>)</bibl> et sous-titré <hi
+                            rendition="#i">Logique philo</hi><lb break="no"/><hi rendition="#i"
+                            >sophique</hi> (1947). Il y approfondit le pro<lb break="no"/>blème des
+                        "méthodes" de pensée en <lb/>général, s’efforçant d’élucider la rationalité
+                        <lb/>scientifique et de saisir le paradoxe propre <lb/>à la pensée
+                        philosophique: la quête de <lb/>ce qui n’est pas objet ne peut se faire qu’à
+                        <lb/>travers des termes objectifs. Mais si la <lb/>rationalité philosophique
+                        cherche à se <lb/>définir par rapport à la rationalité scien<lb break="no"
+                        />tifique, la foi propre à la philosophie ne <lb/>cesse d’être confrontée
+                        avec la foi reli<lb break="no"/>gieuse en une Révélation. En 1948 paraît
+                        <lb/>un petit livre intitulé <hi rendition="#i"><bibl ref="GND-1088013937"
+                                >La Foi philosophique</bibl></hi>
+                        <lb/>(<hi rendition="#i">Der philosophische Glaube</hi>) et, en 1962,
+                        <lb/>un gros volume sous le titre <bibl ref="GND-1088013457"><hi
+                                rendition="#i">La Foi philo</hi><lb break="no"/><hi rendition="#i"
+                                >sophique face à la Révélation</hi> (<hi rendition="#i">Der
+                                philo</hi><lb break="no"/><hi rendition="#i">sophische Glaube angesichts der
+                                Offen</hi><lb break="no"/><hi rendition="#i">barung</hi>)</bibl>. </p>
+                    <p>
+                        <lb/>La conception que <persName ref="GND-118557106">Jaspers</persName>
+                        s’est faite <lb/>de l’histoire, et selon laquelle celle-ci <lb/>se développe
+                        à partir d’une "période <lb/>axiale", commune à toute l’humanité, <lb/>est
+                        exposée dans un ouvrage paru en 1949, <lb/><bibl ref="GND-1092385584"><hi
+                                rendition="#i">Origine et sens de l’histoire</hi> (<hi
+                                rendition="#i">Vom Ursprung</hi>
+                            <lb/><hi rendition="#i">und Ziel der Geschichte</hi>)</bibl>. </p>
+                    <p>
+                        <lb/><bibl ref="GND-1088013961">Enfin dans <hi rendition="#i">Les Grands
+                                Philosophes</hi> (<hi rendition="#i">Die</hi>
+                            <lb/><hi rendition="#i">grossen Philosophen</hi>)</bibl>, paru en 1957,
+                        comme <lb/>aussi dans des ouvrages publiés séparé<lb break="no"/>ment,
+                            <persName ref="GND-118557106">Jaspers</persName> poursuit, avec les
+                        "Grands" <lb/>du passé, un dialogue philosophique <lb/>conduisant, à travers
+                        les divergences, <lb/>jusqu’au seuil de la verité qui les transcende.
+                        <lb/>Mentionnons encore deux petits ouvrages <lb/>faciles pouvant servir
+                        d’initiation: <bibl ref="GND-108801397X"><hi rendition="#i">l’Intro</hi><lb
+                                break="no"/><hi rendition="#i">duction à la philosophie</hi> (<hi
+                                rendition="#i">Einführung in</hi>
+                            <lb/><hi rendition="#i">die Philosophe</hi>, 1950)</bibl> et la <bibl
+                            ref="GND-1088014011"><hi rendition="#i">Petite Ecole</hi>
+                            <lb/><hi rendition="#i">de la pensée philosophique</hi> (<hi
+                                rendition="#i">Kleine Schule</hi>
+                            <lb/><hi rendition="#i">des philosophschen Denkens</hi>, 1965)</bibl>.
+                    </p>
+                </div>
+                <div n="2" xml:id="d900-4">
+                    <head>
+                        <title type="main" xml:id="t900-3">Existence et transcendance</title>
+                    </head>
+
+                    <div n="3" xml:id="d900-5">
+                        <head>
+                            <title type="main" xml:id="t900-4">Savoir et limites</title>
+                        </head>
+                        <p>
+                            <lb/>La philosophie est pour <persName ref="GND-118557106"
+                                >Jaspers</persName> suprê<lb break="no"/>mement sérieuse. Elle
+                            engage l’être entier, <lb/>elle est cet engagement même, avec la
+                            <lb/>conscience de plus en plus claire que nous <lb/>prenons de son
+                            caractère absolu. Mais <lb/>c’est un engagement sans credo, puisque
+                            <lb/>l’une des démarches décisives de la quête <lb/>philosophique
+                            consiste à en démontrer <lb/>l’impossibilité. Et c’est un engagement
+                            <lb/>sans subordination à aucune autorité <lb/>incarnée,
+                            institutionnalisée ou consacrée, <lb/>fût-ce celle d’un livre ou d’un
+                            texte. <lb/>C’est un engagement sans objet parce <lb/>qu’il engage
+                            envers la vérité, et que la <lb/>vérité ne saurait se réduire à un
+                            objet. La <lb/>vérité, quand c’est bien elle que l’on veut, <lb/>et non
+                            l’un de ses succédanés, échappe <lb/>à toute possession: ni objet, ni
+                            sujet, elle <lb/>est l’horizon d’être que vise toute connais<lb
+                                break="no"/>sance déterminée, saisie à l’intérieur des
+                            <lb/>conditions engendrées par la scission sujet-<lb break="no"/>objet.
+                            Les connaissances particulières sont <lb/>certes valables, relativement
+                            à un certain <lb/>point de vue et à certaines methodes, et, <lb/>dans
+                            ces limites relatives, elles sont contrai<lb break="no"/>gnantes pour
+                            tout esprit humain. Mais <lb/>elles ne sont pas, elles ne peuvent pas
+                            être <lb/><hi rendition="#i">la</hi> vérité. L’amour même des sciences
+                            <lb/>suscite l’examen critique des conditions <lb/>et des limites de
+                            leur validité, qui leur donne <lb/>la transparence permettant, au-delà
+                            d’elles, <lb/>l’interrogation philosophique. </p>
+                        <p>
+                            <lb/>On pourrait dire que la philosophie <lb/>de <persName
+                                ref="GND-118557106">Jaspers</persName> tend à expliciter ce que nous
+                            <lb/>apprend sur l’être, et sur notre rapport à <lb/>l’être, l’échec
+                            d’une ontologie. Mais, <lb/>de même, toute science de l’homme,
+                            <lb/>toute anthropologie est impuissante à <lb/>saisir réellement son
+                            objet: l’homme est <lb/>toujours autre chose que l’objet d’un
+                            <lb/>certain savoir. Lui aussi existe en tant <lb/>qu’homme au-delà de
+                            la scission sujet-<lb break="no"/>objet, et donc des conditions de la
+                            connais<lb break="no"/>sance scientifique. </p>
+                        <p>
+                            <lb/>La science n’en est pas moins non seu<lb break="no"/>lement une
+                            activité nécessaire, mais <lb/>aussi une des conditions indispensables
+                            <lb/>de toute quête philosophique authentique. <lb/>Explorant
+                            l’ordonnance d’un univers dont <lb/>la totalité lui échappe mais
+                            l’inspire et <lb/>la guide, elle fournit à la conscience philo<lb
+                                break="no"/>sophique des "chiffres", à chaque époque
+                            <lb/>renouvelés, que celle-ci apprend à lire <lb/>comme autant de signes
+                            de l’être transcen<lb break="no"/>dant, et auxquels elle recourt pour le
+                            faire <lb/>pressentir. Mais, surtout, en exigeant <lb/>l’évidence
+                            rationnelle et la vérification <lb/>expérimentale contraignante, la
+                            science <lb/>maintient une norme d’évidence univer<lb break="no"/>selle
+                            qui ne cesse d’agir sur l’engagement <lb/>philosophique – pourtant
+                            irréductible <lb/>à la clarté rationnelle – comme un idéal
+                            <lb/>inaccessible, mais indispensable, et donc <lb/>comme un aiguillon
+                            que rien ne saurait <lb/>émousser. </p>
+                        <p>
+                            <lb/>Aucune pensée moins que celle de <persName ref="GND-118557106"
+                                    >Jas<lb break="no"/>pers</persName>, cependant, ne tend à une
+                            synthèse <lb/>scientifique universelle ou à une eschato<lb break="no"
+                            />logie totalisatrice de l’univers ou de <lb/>l’histoire. Au contraire,
+                            le progrès des <lb/>sciences ne peut, selon lui, que faire appa<lb
+                                break="no"/>raître de plus en plus l’hétérogénéité <lb/>de leurs
+                            méthodes et de leurs points de <lb/>vue, et par conséquent leur
+                            discontinuité <lb/>et leur pluralité essentielles. Ce sont
+                            <lb/>d’ailleurs ces limites irréductibles qui <lb/>sauvegardent les <hi
+                                rendition="#i">possibles</hi> de l’existence, <lb/>dont la
+                            transcendance est à la fois l’origine, <lb/>le sens et la fin, mais non
+                            l’objet, qui serait <lb/>une totalité imaginaire. </p>
+                    </div>
+                    <div n="3" xml:id="d900-6">
+                        <head>
+                            <title type="main" xml:id="t900-5">Décision, communication,
+                                transcendance</title>
+                        </head>
+                        <p>
+                            <lb/>Les décisions humaines ne s’imposent <lb/>pas en vertu d’une
+                            nécessité impersonnelle, <lb/>déductive ou technique, mais elles
+                            engagent <lb/>absolument, <hi rendition="#i">hic et nunc</hi>, celui
+                            qui, en les <lb/>prenant, actualise dans sa situation con<lb break="no"
+                            />crète, par son libre choix, sa possible exis<lb break="no"/>tence.
+                            L’existence veut, opte, croit. Volonté, <lb/>option, foi, autant de
+                            serments prêtés <lb/>par l’existence à la transcendance, et qui
+                            <lb/>sont comme les signes métaphysiques de <lb/>l’être qui les a rendus
+                            possibles, en tant <lb/>qu’il est la racine de n’importe quel absolu. </p>
+                        <p>
+                            <lb/>Les actes libres sont, chez <persName ref="GND-118557106"
+                                >Jaspers</persName>, <lb/>comme tendus à l’extrême entre la trans<lb
+                                break="no"/>cendance, à laquelle ils doivent ce qu’ils <lb/>ont
+                            d’absolu, et le contexte des circons<lb break="no"/>tances concrètes
+                            parmi lesquelles va s’ins<lb break="no"/>crire leur historicité. Ce
+                            contexte doit <lb/>être exploré et connu à l’aide de toutes les
+                            <lb/>méthodes disponibles, afin qu’apparaissent <lb/>au regard le plus
+                            sobre et le plus impi<lb break="no"/>toyable les antécédents, les
+                            causes, les <lb/>effets possibles ou probables de l’action. <lb/>Mais
+                            jamais l’option ne découlera de ce <lb/>savoir. Bien plus, c’est ce par
+                            quoi elle <lb/>échappe à ce savoir qui la rattache à la
+                            <lb/>transcendance et qui lui donne son poids <lb/>absolu de
+                            responsabilité existentielle. </p>
+                        <p>
+                            <lb/>Sans recours ultime à l’objectivité, la <lb/>tentative de
+                            confrontation qui s’engage <lb/>d’existence à existence diffère de celle
+                            où <lb/>s’opposent parfois les hypothèses des <lb/>savants. Certes,
+                            l’existence parle à l’exis<lb break="no"/>tence le langage de la raison,
+                            car c’est le <lb/>seul langage commun mis à la disposition <lb/>des
+                            hommes. Mais il ne s’agit pas ici <lb/>d’imposer par des arguments une
+                            vérité <lb/>impersonnelle et univoque, puisque la <lb/>vérité en cause
+                            n’est pas objective, mais <lb/>existentielle. Elle n’est donc
+                            indépendante <lb/>ni du langage qui l’exprime, ni de la bouche <lb/>qui
+                            la profère, ni même de ce qui se passe <lb/>entre les interlocuteurs et
+                            en chacun d’eux. <lb/>Si bien que la confrontation, loin de faire
+                            <lb/>apparaître un vrai constant devant lequel <lb/>il ne lui reste qu’à
+                            s’effacer, devient un <lb/>exercice spirituel par lequel l’existence
+                            <lb/>s’assure d’elle-même en prenant conscience <lb/>de l’ordre de
+                            vérité qui peut être le sien. <lb/>Là, toute victoire qui bloquerait la
+                            quête <lb/>existentielle de l’autre ruinerait les condi<lb break="no"
+                            />tions de la vérité pour tous. La lutte <lb/>existentielle qui lie les
+                            adversaires soli<lb break="no"/>daires n’admet pas les atténuations cour<lb break="no"/>toises d’un entretien mondain, elle est
+                            <lb/>radicale et sans égards. Mais elle est <hi rendition="#i"
+                                >aimante</hi>, <lb/>car il s’agit par elle d’actualiser, aussi
+                            <lb/>bien pour l’autre que pour soi, par la <lb/>lutte même, cette
+                            vérité transcendante <lb/>que nul ne saurait capturer dans l’apodic<lb
+                                break="no"/>ticité d’un langage rationnel. Cette "lutte
+                            <lb/>aimante" est pour <persName ref="GND-118557106">Jaspers</persName>
+                            la condition <lb/>d’une véritable "communication" avec <lb/>autrui. </p>
+                        <p>
+                            <lb/>C’est qu’il ne s’agit pas d’"avoir raison", <lb/>mais de ne jamais
+                            renoncer à se servir <lb/>de la raison en vue de ce qui dépasse toute
+                            <lb/>raison. La transcendance échappe à la <lb/>pensée rationnelle en
+                            vouant celle-ci aux <lb/>cercles, aux tautologies, aux contradictions,
+                            <lb/>mais cet échec rationnel lui-même devient <lb/>un "chiffre" de la
+                            transcendance, un de <lb/>ces signes qui, sans nous livrer aucun
+                            <lb/>savoir dogmatique, nous rappellent qu’elle <pb facs="#facs_2"
+                                n="404"/>
+                            <lb/><hi rendition="#i">est</hi>, nous rassurent, nous aiguillonnent et
+                            <lb/>nous menacent tout à la fois. Non comme <lb/>des voix surnaturelles
+                            qui feraient violence <lb/>à notre liberté: c’est l’appel même de
+                            <lb/>notre liberté qui leur confère vertu de <lb/>langage. </p>
+                    </div>
+                </div>
+                <div n="2" xml:id="d900-7">
+                    <head>
+                        <title type="main" xml:id="t900-6">Interventions politiques</title>
+                    </head>
+                    <p>
+                        <lb/>Chaque fois que <persName ref="GND-118557106">Jaspers</persName> a
+                        élevé la voix <lb/>dans l’actualité politique, ce fut par souci <lb/>de la
+                        liberté et de ses conditions essentielles. <lb/>On a déjà mentionné
+                        ci-dessus l’avertisse<lb break="no"/>ment qu’il lança avant la prise du
+                        pouvoir <lb/>par le nazisme, et l’examen de conscience <lb/>auquel il
+                        procéda immédiatement après <lb/>sa chute. C’est encore par souci pour la
+                        <lb/>liberté qu’il écrivit <bibl ref="GND-1088013910"><hi rendition="#i">La
+                                Bombe atomique</hi>
+                            <lb/><hi rendition="#i">et l’avenir de l’homme</hi> (<hi rendition="#i"
+                                >Die Atombombe</hi>
+                            <lb/><hi rendition="#i">und die Zukunft der Menschheit</hi>,
+                            1958),</bibl>
+                        <lb/>montrant la nécessité d’une véritable <lb/>conversion face à
+                        l’alternative désormais <lb/>radicale d’un règne international du droit
+                        <lb/>ou de la destruction totale. C’est encore <lb/>par souci de la liberté
+                        qu’il publia en <lb/>1960 <bibl ref="GND-1088059414"><hi rendition="#i"
+                                >Liberté et Réunification</hi> (<hi rendition="#i">Freiheit</hi>
+                            <lb/><hi rendition="#i">und Wiedervereinigung</hi>),</bibl> réexaminant
+                        la <lb/>situation de l’Allemagne divisée entre <lb/>l’Est et l’Ouest, et les
+                        devoirs politiques <lb/>qui en découlent, rappelant la vraie hiérar<lb
+                            break="no"/>chie des valeurs, et donc des problèmes: <lb/>ce qui compte
+                        en dernier ressort, ce n’est <lb/>pas l’unité de l’Etat national comme tel,
+                        <lb/>mais les chances de liberté sauvegardées <lb/>pour les êtres humains
+                        qui y vivent. Les <lb/>chances de la liberté ayant une valeur
+                        <lb/>absolument prépondérante, la réunifi<lb break="no"/>cation se trouve
+                        subordonnée à la libéra<lb break="no"/>tion. </p>
+                </div>
+                <div type="bibliography" xml:id="d900-8">
+                    <head>
+                        <title type="main" xml:id="t900-7">Bibliographie</title>
+                    </head>
+                    <listBibl>
+                        <lb/>
+                        <bibl><hi rendition="#k">K. Jaspers</hi>, notamment, <hi rendition="#i"
+                                >Allgemeine Psy</hi><lb break="no"/><hi rendition="#i"
+                                >chopathologie</hi>, Berlin, 1913; </bibl>
+                        <bibl><hi rendition="#i">Psychologie</hi>
+                            <lb/><hi rendition="#i">der Weltanschauungen</hi>, Berlin, 1919;</bibl>
+                        <bibl><hi rendition="#i"> La</hi>
+                            <lb/><hi rendition="#i">Situation spirituelle de notre époque</hi> (<hi
+                                rendition="#i">Die</hi>
+                            <lb/><hi rendition="#i">geistige Situation der Zeit</hi>, 1931),
+                            Louvain, <lb/>1951;</bibl>
+                        <bibl><hi rendition="#i"> Philosophie</hi>, Berlin, 1932;</bibl>
+                        <bibl><hi rendition="#i"> Vernunft</hi>
+                            <lb/><hi rendition="#i">und Existenz</hi>, Groningen, 1935;</bibl>
+                        <bibl><hi rendition="#i"> Nietzsche</hi>
+                            <lb/>(<hi rendition="#i">Nietzsche</hi>, 1936), trad. J. Wahl, Paris,
+                            <lb/>1950;</bibl>
+                        <bibl><hi rendition="#i"> La Culpabilité allemande</hi> (<hi rendition="#i"
+                                >Die</hi>
+                            <lb/><hi rendition="#i">Schuldfrage</hi>, 1946), trad. J. Hersch, Paris,
+                            <lb/>1948;</bibl>
+                        <bibl><hi rendition="#i"> Nietzsche et le christianisme</hi> (<hi
+                                rendition="#i">Nietz</hi><lb break="no"/><hi rendition="#i">sche und
+                                das Christentum</hi>, 1938), trad. <lb/>J. Hersch, Paris,
+                            1949;</bibl>
+                        <bibl><hi rendition="#i"> Von der Wahrheit,</hi>
+                            <lb/><hi rendition="#i">philosophische Logik</hi>, Munich, 1947;</bibl>
+                        <bibl><hi rendition="#i"> La Foi</hi>
+                            <lb/><hi rendition="#i">philosophique</hi> (<hi rendition="#i">Der
+                                philosophische Glaube</hi>, <lb/>1948), trad. J. Hersch et H. Naef,
+                            Paris, <lb/>1953;</bibl>
+                        <bibl><hi rendition="#i"> Origine et sens de l’histoire</hi> (<hi
+                                rendition="#i">Vom</hi>
+                            <lb/><hi rendition="#i">Ursprung und Ziel der Geschichte</hi>, 1949),
+                            <lb/>trad. H. Naef et W. Achterberg, Paris, <lb/>1954;</bibl>
+                        <bibl><hi rendition="#i"> Introduction à la philosophie</hi> (<hi
+                                rendition="#i">Ein</hi><lb break="no"/><hi rendition="#i">führung in
+                                die Philosophie</hi>, 1950), trad. <lb/>J. Hersch, Paris,
+                            1951;</bibl>
+                        <bibl><hi rendition="#i"> Bilan et perspectives</hi>
+                            <lb/>(<hi rendition="#i">Rechenschaft und Ausblick</hi>, 1951), trad.
+                            <lb/>H. Naef et J. Hersch, Paris, 1957;</bibl>
+                        <bibl><hi rendition="#i"> Schelling,</hi>
+                            <lb/><hi rendition="#i">Grösse und Verhängnis</hi>, Munich, 1955;</bibl>
+                        <lb/>
+                        <bibl><hi rendition="#i">Les Grands Philosophes</hi> (<hi rendition="#i">Die
+                                grossen</hi>
+                            <lb/><hi rendition="#i">Philosophen</hi>, 1957), trad. J. Hersch, Paris,
+                            <lb/>1962;</bibl>
+                        <bibl><hi rendition="#i"> Autobiographie philosophique</hi> (<hi
+                                rendition="#i">Philo</hi><lb break="no"/><hi rendition="#i"
+                                >sophische Autobiographie</hi>, 1957), trad. <lb/>P. Boudot, Paris,
+                            1963; </bibl>
+                        <bibl><hi rendition="#i">La Bombe atomique</hi>
+                            <lb/><hi rendition="#i">et l’avenir de l’humanité</hi> (<hi
+                                rendition="#i">Die Atombombe</hi>
+                            <lb/><hi rendition="#i">und die Zukunft der Menschheit</hi>, 1958),
+                            <lb/>trad. E. Saget, Paris, 1962;</bibl>
+                        <bibl><hi rendition="#i"> Freiheit und</hi>
+                            <lb/><hi rendition="#i">Wiedervereinigung</hi>, Munich, 1960; </bibl>
+                        <bibl><hi rendition="#i">Der</hi>
+                            <lb/><hi rendition="#i">philosophische Glaube angesichts der
+                                Offen</hi><lb break="no"/><hi rendition="#i">barung</hi>, Munich,
+                            1962. </bibl>
+                    </listBibl>
+                    <listBibl>
+                        <bibl><hi rendition="#k">M. Dufrenne</hi> &amp; <hi rendition="#k">P.
+                                Ricœur</hi>, <hi rendition="#i">Karl</hi>
+                            <lb/><hi rendition="#i">Jaspers et la philosophie de l’existence</hi>,
+                            <lb/>Paris, 1947 / <hi rendition="#k">P. A. Schlipp</hi>, <hi
+                                rendition="#i">The Philosophy</hi>
+                            <lb/><hi rendition="#i">of Karl Jaspers</hi>, New York, 1957.</bibl>
+                    </listBibl>
+                </div>
+
+                <div xml:id="d900-9" n="2">
+                    <head>
+                        <title type="main" xml:id="t900-8">Corrélats</title>
+                    </head>
+
+                    <p>
+                        <lb/><hi rendition="#k">anthropologie</hi>, <hi rendition="#k"
+                        >croyance</hi>, <hi rendition="#k">dialogue</hi>
+                        <lb/>(<hi rendition="#k">philosophies du</hi>), <hi rendition="#k"
+                            >engagement</hi>, <hi rendition="#k">exis</hi><lb break="no"/><hi
+                            rendition="#k">tence</hi> (<hi rendition="#k">philosophies de l’</hi>),
+                            <hi rendition="#k">foi</hi>, <hi rendition="#k">histoire</hi>, <lb/><hi
+                            rendition="#k">homme</hi> (la réalité humaine), <hi rendition="#k"
+                            >immanence</hi>
+                        <lb/><hi rendition="#k">et transcendance</hi>, <hi rendition="#k"
+                            >infini</hi>, <hi rendition="#k">Kant</hi> (E.) <lb/><hi rendition="#k"
+                            >Kierkegaard</hi> (S.), <hi rendition="#k">liberté</hi>, <hi
+                            rendition="#k">national</hi><lb break="no"/><hi rendition="#k"
+                            >socialisme</hi>, <hi rendition="#k">ontologie</hi>, <hi rendition="#k"
+                            >philosophie</hi>, <hi rendition="#k">vé</hi><lb break="no"/><hi rendition="#k">rité</hi>. </p>
+                </div>
+            </div>
+
+        </body>
+    </text>
+</TEI>

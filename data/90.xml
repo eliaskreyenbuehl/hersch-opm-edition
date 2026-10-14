@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title type="item" subtype="main">Monique Saint-Hélier</title>
+            <title type="series" subtype="main">Edition Jeanne Hersch</title>
+            <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek Zürich, Laufzeit 2025–2026</title>
+            <author ref="118815679">Hersch, Jeanne</author>
+            <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+            <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+            <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+            <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+            <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+            <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+        </titleStmt>
+        <editionStmt>
+            <edition>Edition Jeanne Hersch</edition>
+            <respStmt>
+                <resp>Projektleitung</resp>
+                <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+            </respStmt>
+            <respStmt>
+                <resp>Technische Verantwortung</resp>
+                <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+            </respStmt>
+            <respStmt>
+                <resp>Rohtextkorrektur</resp>
+                <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+            </respStmt>
+        </editionStmt>
+        <publicationStmt>
+            <publisher xml:id="DTACorpusPublisher">
+                <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek Zürich</orgName>
+                <orgName role="project">Edition Jeanne Hersch</orgName>
+                <email>zb@zb.uzh.ch</email>
+                <address>
+                    <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                    <country>Schweiz</country>
+                </address>
+            </publisher>
+            <pubPlace>Zürich</pubPlace>
+            <date type="publication">2026-09-24</date>
+            <availability xml:id="avail_main">
+                <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                    <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                </licence>
+            </availability>
+            <idno type="hersc:projectID">90</idno>
+            <idno type="DOI">DOI_COMING</idno>
+            <idno type="MLA-9">Hersch, Jeanne. « Monique Saint-Hélier ». Schweizer Annalen. Sonderheft Literatur der Gegenwart, 1. Jg., Heft 9/10 (1944), Seiten 657-660 yr:1944 no:1, 1944.</idno>
+            <idno type="ALMA-MMSID">99117875727305508</idno>
+            <idno type="URI" subtype="swisscovery">https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117875727305508</idno>
+        </publicationStmt>
+        <sourceDesc>
+            <listBibl>
+                <biblStruct xml:id="bibl_analytic_journal" type="analytic">
+                    <analytic>
+                        <author>Hersch, Jeanne</author>
+                        <title level="a" type="item" subtype="main">Monique Saint-Hélier</title>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Schweizer Annalen</title>
+                        <textLang mainLang="fra">Französisch</textLang>
+                        <imprint>
+                            <date when="1944">1944</date>
+                            <biblScope unit="issue">1</biblScope>
+                            <biblScope unit="pp">657-660</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </listBibl>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <projectDesc>
+            <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+            <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten werden in ALMA (MARC21) katalogisiert.</p>
+        </projectDesc>
+        <appInfo>
+            <application ident="Transkribus" version="1.0">
+                <label>Transkribus</label>
+                <p>OCR-Modell: OCR Print M1.</p>
+            </application>
+        </appInfo>
+    </encodingDesc>
+    <profileDesc>
+        <textClass>
+            <catRef scheme="hersch_worktype" target="#text" />
+            <catRef scheme="hersch_genre" target="#article" />
+            <catRef scheme="hersch_keywords" target="#literatur" />
+        </textClass>
+    </profileDesc>
+</teiHeader>
+
+
+
+<text>
+    <body>
+        
+        <div type="article" n="1" xml:id="d90-1">    
+            
+            <pb facs="#facs_3" n="[657]"/>
+            
+            <head>    
+                <title type="main" xml:id="t90-1">Monique Saint-Hélier</title>
+                
+            </head>
+            
+            
+            <p>    
+                <lb/> Persönliches über <persName ref="GND-118794132">Monique Saint-Hélier</persName> weiß ich wenig. Sie ist in
+                <lb/> der Gegend des Neuenburger Sees aufgewachsen. Jetzt lebt sie bei Paris;
+                <lb/>ihr Mann ist Maler. Ein Bild von ihr habe ich gesehen: sie saß im Bett, ihr
+                <lb/>langes weißes Gesicht war eng und glatt von dunklem Haar umschlos
+                <lb/>sen. Denn sie ist krank, schon jahrelang, mit anhaltendem starkem Fieber.
+                <lb/>– <persName ref="GND-118794132">Monique Saint-Hélier</persName> ist <persName ref="GND-118601024">Rilkes</persName> Freundin gewesen, und noch ist man<lb break="no"/>cher Widerhall von <persName ref="GND-118601024">Rilke</persName> in ihrem Werk spürbar, vor allem in dem ihm
+                <lb/>gewidmeten Buch <bibl ref="GND-1205417575">"La cage aux rêves"</bibl>. Doch ihre eigenste Kunst offen<lb break="no"/>bart sich in ihren beiden, eine Folge bildenden Romanen: <bibl ref="GND-1143991397">"Bois-Mort"</bibl>
+                <lb/>und <bibl ref="GND-1143991621">"Le Cavalier de Paille"</bibl>.
+                
+            </p>
+            
+            <p>    
+                <lb/>Das auffälligste Merkmal dieser Bücher ist die Intensität der inneren
+                <lb/>Spannung. Man kann aufs Geratewohl aus irgendeiner Seite einen Satz
+                <lb/>herauslesen – schon ist man gefesselt. Diese Spannung entsteht aus keiner
+                <lb/>neugierigen Erwartung; sie ist ganz da, ganz in der Gegenwart, in diesem
+                <lb/>gesprochenen Satz, in dieser Geste, sogar in diesem Gegenstand und in
+                <lb/>diesem Licht. Stellen, die bloß Auskunft geben, gibt es da keine. Schon mit
+                <lb/>der ersten Zeile ist man in einer Wirklichkeit gefangen, die nur dadurch
+                <lb/>phantastisch wirkt, daß sie wirklicher ist als unsere faktische Wirklichkeit.
+                <lb/>Konkrete Einzelheiten, die die verschiedensten – auch namenlosen –
+                <lb/>Sinnorgane des Lesers überstürmen, verflechten sich zu einem dichten
+                <lb/>Gewebe des wahren Lebens. Nichts Träumerisches wirkt in dieser ununter<lb break="no"/>brochen schöpfenden Einbildungskraft: keine Schicht des Wirklichen ver<lb break="no"/>liert je die ihr eigene Notwendigkeit, – sei sie die innerste seelische, oder
+                <lb/>die der Gesellschaft, oder die der äußeren Natur; auch die Notwendigkeit
+                <lb/>der Ausnahme, des Zufalls, der Tücke steht in ihrem richtigen Raum.
+                <lb/>In der tiefsten seelischen Erregung lebt der Körper das ihm eigene Leben
+                <lb/>weiter; das Geländer der Treppe vergißt nicht zu knirschen im Rücken
+                <lb/>des betrunkenen, verzweifelten Mannes. Alles geschieht in Szenen und
+                <lb/>Bildern: einen Augenblick sieht man alles durch die Augen eines Men<lb break="no"/>schen, – und im nächsten wird er schon selbst von außen, wie in einer
+                <lb/>schicksalhaften Luft badend, gesehen. Der große einsame Landbesitzer
+                <lb/>steht auf der Treppe neben seiner alten Dienerin – <foreign xml:lang="fra">Ainsi éclairés par
+                <lb/>cette lumière qui venait des poutres, ils ressemblaient à deux cadavres.</foreign>
+                <lb/>Und seltsam gebrochen erscheint der den Menschen gemeinsame Raum; 
+                
+                <pb facs="#facs_4" n="658"/>
+                
+                				
+                <lb/>denn wirklich ist eigentlich nur der einsame Umkreis, den jeder je durch
+                <lb/>eigenes Sehnen zusammenhält –.
+                
+            </p>
+            <p>    
+                <lb/>Der Stil der <persName ref="GND-118794132">Monique Saint-Hélier </persName>ist nicht gerade einfach; – bis<lb break="no"/>weilen ist er sogar ziemlich beladen, und dann werden zu viele, zu ge<lb break="no"/>suchte Bilder beschworen. Und doch macht das Ganze den Eindruck einer
+                <lb/>erschütternden Nacktheit: alle Ausdrucksmittel werden von einem inne<lb break="no"/>ren Fieber verbrannt. Es werden nie vollständige Bilder gemalt: die
+                <lb/>Schriftstellerin erwähnt präzise Einzelheiten, die nicht zusammenhalten;
+                <lb/>und doch entsteht daraus der Eindruck eines Ganzen mit seiner dunklen
+                <lb/>undurchsichtigen Dichtheit. <foreign xml:lang="fra">Elle prit la boîte de café sur la planche, au
+                <lb/>dessus de la cheminée, et, le moulin dans ses jupes, se mit à moudre – le
+                <lb/>bruit râclait la nuit, l’odeur tournait, tournait, et la main de Madame Vau<lb break="no"/>thier dans les bouilloires et les louches, es son coude noir et rapide dans le
+                <lb/>reflet des vitres.</foreign> So wird jeder Mensch von der ganzen undeutlichen
+                <lb/>Menge konturierter, beweglicher Einzelheiten seiner Gegenwart begleitet.
+                <lb/>Und nicht nur seiner Gegenwart: auch seine Vergangenheit rauscht überall
+                <lb/>mit, schenkt ihm eine ihm eigene Perspektive, und schließt ihn in eine Art
+                <lb/>monadischer Einsamkeit ein. Gleich nach der zitierten Stelle geht es so
+                <lb/>weiter: <foreign xml:lang="fra">"Et puis, elle versa l’eau – il lui semblait qu’elle redevenait jeune,
+                <lb/>qu’elle était au début de son mariage, quand Louis Vauthier rentrait ivre
+                <lb/>et qu’elle préparait la cuvette, l’ammoniaque et le café."</foreign>
+                
+            </p>
+            <p>    
+                <lb/>Im Gegensatz zu so vielen Schriftstellern, die sich offensichtlich quä<lb break="no"/>len, um aus ihrer Einbildungskraft künstlich etwas abzugewinnen, und
+                <lb/>die womöglich mittels einer Steigerung ins Phantastische den Schein
+                <lb/>echter Phantasie zu erwecken versuchen, kämpft offensichtlich <persName ref="GND-118794132"> Monique Saint-Hélier </persName> um Ordnung, Maß und Zusammenhang im Strom einer alles
+                <lb/>überwuchern wollenden Imagination. Alle ihre Geschöpfe, seien es die
+                <lb/>unvergeßlichen Hauptfiguren, seien es sogar Tiere, Blumen oder Möbel<lb break="no"/>stücke, besitzen einen unerhörten Drang zu sein, sich zu behaupten, zu
+                <lb/>entfalten, ein Schicksal zu gewinnen. Jedes verlangt gleich Raum, Ver<lb break="no"/>gangenheit, Wirkung. Ein paar Zeilen genügen: sie haben ein Gesicht und
+                <lb/>eine Leidenschaft. Keines verschwindet endgültig: sie kommen wieder,
+                <lb/>sie wirken und leiden weiter, in dieser allzu dichten, scheinbar chaoti<lb break="no"/>schen, und doch tief folgerichtigen Welt. Im <bibl ref="GND-1143991621">"Cavalier de Paille"</bibl>, einem
+                <lb/>Roman von etwa 430 Seiten, wird vom Geschehen einer einzigen Nacht
+                <lb/>erzählt, ohne daß irgendeine Lücke in der Spannung entstehen kann. Eine
+                <lb/>Nacht freilich, die wie der Baum eines vielfach verzweigten Schicksals 
+                					
+                <pb facs="#facs_5" n="659"/>
+                					
+                <lb/>erscheint. Fieberhaft entfaltet sich in der Zeit – ist sie kurz? ist sie lang?
+                <lb/>– ein außerzeitliches Fatum.
+                
+            </p>
+            <p>    
+                <lb/>Das wichtigste, und beinahe einzige Werkzeug dieses Fatums ist die
+                <lb/>Liebe. (Siehe die Überschrift von <persName ref="GND-118615688">Sophokles</persName>: "Amour, invincible amour".)
+                <lb/>Diese Liebe stammt aus derselben Quelle wie die, von der <bibl ref="GND-4099328-0">"Phèdre"</bibl> bei
+                <lb/>
+                <persName ref="GND-118597523">Racine</persName> besessen wird. Mit Verdiensten des oder der Geliebten (selbst mit
+                <lb/>solchen, die ihnen vom Liebenden zugedacht wären) hat sie nichts zu tun.
+                <lb/>Sie versucht nirgends, auch nicht im subjektivsten Träumen, sich zu recht<lb break="no"/>fertigen. Sie ist nur da – und ist zeitlos. Sie wird im Augenblick entdeckt,
+                <lb/>nie aber fängt sie an, nie hört sie auf. Beim Sterben wird die Seele von
+                <lb/>ihr bis zu allerletzt besessen, bis in den Tod hinein. Und diese mensch<lb break="no"/>liche Liebe ist immer stärker, dringender als die Liebe zu Gott: sie ist wie
+                <lb/>eine lastende, endgültige Verurteilung zum konkreten, unmittelbar und
+                <lb/>doch irgendwie fern, in einer fremden Wunderwelt erscheinenden Men<lb break="no"/>schen. Als der ältere Pfarrer, der gerade von einer erbarmungslosen Liebe
+                <lb/>besessen ist, sich am Sterbebett eines frommen, ganz jungen Mädchens
+                <lb/>festhält, und unter der verzweifelten Verurteilung des eigenen Herzens
+                <lb/>sie plötzlich fragt: – "Du hast nie jemanden mehr geliebt als Gott, du, 
+                <lb/>nicht wahr, kleine Alice?" – kommt die Antwort, – des Mädchens letzte
+                <lb/>Worte: – "Ich habe Sie mehr geliebt als Ihn."
+                
+            </p>
+            
+            <p>    
+                <lb/>Liebe ist hier nicht gegenseitig. Sie hat mit Glück überhaupt nichts
+                <lb/>zu tun. – <foreign xml:lang="fra">"Heureuse? – Il prononca le mot d’une façon si étrange qu’il lui
+                <lb/>donnait une irréalité complète, comme s’il avait articulé un mot en mal<lb break="no"/>gache, quelque chose dont personne ne connaissait le sens."</foreign> Liebe berechnet nichts, bereitet nichts für die Zukunft. Sie ist in der menschlichen Seele,
+                <lb/>unter den Geldsorgen, Schulden, Habsucht- und Neidgefühlen, wie die
+                <lb/>letzte, allmächtige, herrliche, reinigende, sündhafte, erschreckende Zu<lb break="no"/>flucht der inbrünstigen Unentgeltlichkeit. Und wenn auch ihre Unbe<lb break="no"/>dingtheit Gott so schrecklich verblassen läßt, so ist Gott doch nur durch
+                <lb/>ihre Macht so dringend ruhig da. – Einmal scheint eine gegenseitige
+                <lb/>Liebe Geschehnis zu werden, einige dunkle, wortlose, regungslose Minuten
+                <lb/>lang, – aber es sind ein Mädchen und ein verheirateter Mann, denen dies
+                <lb/>geschieht. Alles ist immer unmöglich. Die ersten (und im veröffentlichten
+                <lb/>Werk einzigen) Worte der Liebe sind: "Ich soll Sie nie wiedersehen. Nie."
+            </p>
+            
+            <p>    
+                <lb/>Was die Einbildungskraft schafft, ist wirklich. Die jahrelang gehegte
+                <lb/>Liebe zu einem ganz unbekannten Menschen ist wahre, wirkliche Liebe,
+                <lb/>die bis zum Letzten des Schicksals wird führen müssen. Dadurch kommt 
+                
+                <pb facs="#facs_6" n="660"/>
+                
+                			
+                <lb/>das Ethische in ein ganz anderes Licht. Denn Freiheit gibt es in dieser
+                <lb/>Welt eigentlich nicht, oder nur das wenige, das zu Gewissensbissen, zum
+                <lb/>Erschrecken vor sich selbst, nötig ist. <foreign xml:lang="fra">On ne choisit pas</foreign>, oder besser:
+                <lb/>man wählt notwendig. Unsere tiefste Wahl ist unveränderliches Schick<lb break="no"/>sal. – Es gibt immer nur einen Weg. – Und dann, manchmal, keinen
+                <lb/>mehr: <foreign xml:lang="fra">"Toutes les clefs sont perdues pour nous."</foreign>
+                
+            </p>
+            <p>    
+                <lb/>Merkwürdig, und typisch für welsche Gesinnung, bleibt, selbst in
+                <lb/>einer solchen entmoralisierten Welt, die Trennung zwischen gut und
+                <lb/>schlecht, zwischen Erlaubtem und Unerlaubtem, deutlich und streng. Ein
+                <lb/>Kuß ist immer ein schwerwiegendes Ereignis. Überhaupt bleibt die Ge<lb break="no"/>sellschaft in fester Struktur, sehr fest gegen den chaotisierenden Zwang
+                <lb/>der Leidenschaften, sehr fest im Tatsächlichen, – und in der Wirklichkeit
+                <lb/>der Seelen doch vollkommen machtlos gegen die Teufel. Handlungen und
+                <lb/>Worte folgen aufeinander in der normalen, erwarteten Art und Weise, –
+                <lb/>nur in der Einsamkeit nicht mehr, oder wenn die Personen wie Nacht<lb break="no"/>wandler mit erschreckender Sicherheit und Blindheit sich in einer Wirk<lb break="no"/>lichkeit bewegen, die den engen wahllosen Gängen der Träume ähnlich
+                <lb/>ist. Und je stärker der soziale, nicht in Frage gestellte Zwang, der so<lb break="no"/>ziale Rahmen ist, desto unberührter und wilder ist das verborgene Wesen.
+                
+            </p>
+            <p>    
+                <lb/>Eigentlich gibt es in diesem Werk nur ein einziges, echtes ethisches
+                <lb/>Problem: Lüge und Wahrheit. Lüge erscheint als die gefährlichste,
+                <lb/>schwerste Sünde. Sie beschwört das Nichts herauf. Sie erweckt Grauen.
+                
+            </p>
+            <p>    
+                <lb/>In dem was wirklich ist, existiert unter dem hiesigen Licht die Spitze
+                <lb/>des Wesentlichen. Das Konkrete ist durchsichtig, und dessen sachliche
+                <lb/>Genauigkeit selbst enthält sozusagen die lebendige Gegenwart einer
+                <lb/>Transzendenz. Sie ist da in dem, was sie verbirgt. Sie wird sich gleich sel<lb break="no"/>ber nennen, – man spitzt die Ohren, – aber sie nennt sich nicht. <foreign xml:lang="fra">Il leur
+                <lb/>restait si peu de minutes à être ensemble – Elle cherchait le mot, le mot
+                <lb/>essentiel, – il doit exister des mots sources, des mots lumière qui illumi<lb break="no"/>neraient tout, ce n’est pas possible que nous soyons toujours dans la nuit.
+                <lb/><hi rendition="#g">Mais elle ne le trouva pas.</hi></foreign>
+                
+            </p>
+            <p>    
+                <lb/>
+                <bibl ref="GND-1143991397">"Bois-Mort"</bibl>, <bibl ref="GND-1143991621"> "Le Cavalier de Paille"</bibl>, – der Roman ist nicht fertig
+                <lb/>es fehlt noch ein Band. Wir warten darauf.
+                
+            </p>
+        </div>
+    </body>
+</text>
+</TEI>

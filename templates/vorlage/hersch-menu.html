@@ -1,0 +1,126 @@
+<nav class="header-nav" aria-label="Hauptnavigation">
+    <details>
+        <summary>
+            <span class="languages">
+                <span>
+                    <a href="?lang=de" aria-current="![[page:resolve-language($context)='de']]">de</a>
+                </span>
+                <span>
+                    <a href="?lang=en" aria-current="![[page:resolve-language($context)='en']]">en</a>
+                </span>
+                <span>
+                    <a href="?lang=fr" aria-current="![[page:resolve-language($context)='fr']]">fr</a>
+                </span>
+            </span>
+            <button class="header-nav__btn" aria-label="Menü öffnen">
+                <span class="header-nav__label">Menu</span>
+                <img class="menu-icon" src="[[ $context-path ]]/resources/images/but-menu-home.svg" alt="menu" aria-hidden="true"/>
+                <img class="close-icon" src="[[ $context-path ]]/resources/images/but-menu-close.svg" alt="close menu"/>
+            </button>
+        </summary>
+
+
+        <ul>
+            <li class="search-item">
+                <form action="[[ $context-path ]]/search.html">
+                    <input type="search" value="" name="query" placeholder="Website durchsuchen"/>
+                    <img class="search-glass" src="[[ $context-path ]]/resources/images/ico-glass.svg"/>
+                </form>
+            </li>
+            <li>
+                <a href="[[ $context-path ]]/home.html">
+                    <pb-i18n key="menu.home">Home</pb-i18n>
+                </a>
+            </li>
+            <li>
+                <a href="[[ $context-path ]]/browse">
+                    <pb-i18n key="menu.works">Werk</pb-i18n>
+                </a>
+            </li>
+            <li>
+                <details>
+                    <summary>Jeanne Hersch <span class="indicator">›</span>
+                    </summary>
+                   <ul>
+                        <li>
+                            <a href="[[ $context-path ]]/about-hersch.html">
+                                <pb-i18n key="about.biography"/>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="[[ $context-path ]]/about-bibliography.html">
+                                <pb-i18n key="about.forschungsliteratur"/>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="[[ $context-path ]]/about-audiovisual.html">
+                                <pb-i18n key="about.audiovisuellebeiträge"/>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="[[ $context-path ]]/about-society.html">
+                                <pb-i18n key="about.jeanneherschgesellschaft"/>
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>
+                        <pb-i18n key="menu.register"/> <span class="indicator">›</span>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="[[ $context-path ]]/topics.html">
+                                <pb-i18n key="menu.topics"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="[[ $context-path ]]/people">
+                                <pb-i18n key="menu.people"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="[[ $context-path ]]/organizations">
+                                <pb-i18n key="menu.organisations"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="[[ $context-path ]]/bibliography">
+                                <pb-i18n key="menu.works"/>
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>
+                        <pb-i18n key="menu.project"/> <span class="indicator">›</span>
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="[[ $context-path ]]/project.html">
+                                <pb-i18n key="menu.projectdescription"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="[[ $context-path ]]/registers.html">
+                                <pb-i18n key="menu.listsandregister"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="[[ $context-path ]]/documentation.html">
+                                <pb-i18n key="menu.documentation"/>
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <pb-i18n key="menu.contact"/>
+            </li>
+        </ul>
+    </details>
+</nav>

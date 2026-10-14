@@ -1,0 +1,301 @@
+<html lang="[[page:resolve-language($context)]]">
+<head>
+    [% if $context?defaults?base %]
+    <base href="[[ $context-path ]]/[[ $context?defaults?base ]]"/>
+    [% endif %]
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+    [% if $context?description %]
+    <meta name="description" content="[[ $context?description ]]"/>
+    [% endif %]
+    <link rel="shortcut icon" type="image/x-icon" href="[[ $context-path ]]/resources/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-24.png" sizes="24x24"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-32.png" sizes="32x32"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-64.png" sizes="64x64"/>
+    <title>[[ $label ]]</title>
+
+
+    [% if $script?webcomponents = 'dev' %]
+    <script type="module" src="[[$script?cdn]]/src/pb-components-bundle.js"/>
+    [% for $component in $script?extra-components?* %]
+    <script type="module" src="[[$script?cdn]]/src/[[ $component ]].js"/>
+    [% endfor %]
+    [% elif $script?webcomponents = 'local' %]
+    <script type="module" src="[[ $context-path ]]/resources/lib/pb-components-bundle.js"/>
+    [% for $component in $script?extra-components?* %]
+    <script type="module" src="[[ $context-path ]]/resources/lib/[[ $component ]].js"/>
+    [% endfor %]
+    [% elif $script?webcomponents = '' %]
+    [% else %]
+    <script type="module" src="[[$script?cdn]]@[[$script?webcomponents]]/dist/pb-components-bundle.js"/>
+    [% for $component in $script?extra-components?* %]
+    <script type="module" src="[[$script?cdn]]@[[$script?webcomponents]]/dist/[[ $component ]].js"/>
+    [% endfor %]
+    [% endif %]
+
+    [% block scripts %][% endblock %]
+    <link rel="stylesheet" href="resources/css/hersch.css" media="screen"/>
+    <link rel="preload" href="resources/images/portrait.jpg" as="image"/>
+    <link rel="preload" href="resources/fonts/eb-garamond-400.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+    <link rel="preload" href="resources/fonts/ESRebondGrotesque-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+</head>
+<body id="home">
+<div id="home-pos"/>
+<noscript>
+            <div class="noscript">JavaScript is required to use this website.</div>
+        </noscript>
+<pb-page endpoint="[[ $context-path ]]" app-root="[[ $context-path ]]" api-version="1.0.0" supported-languages="[[ string-join($context?defaults?languages?*, ', ') ]]" locales="resources/i18n/{{ns}}/{{lng}}.json" locale-fallback-ns="app [[ if (map:contains($context, 'i18n')) then string-join($context?i18n?*, ' ') else () ]]" unresolved="unresolved" url-template="[[ $context?urls?template ]]" url-ignore="[[ $context?urls?ignore ]]" class="[[ string-join((tokenize($context?theme?layout?class, '\s+'), if (not($context?theme?layout?before?collapsible)) then 'before-fixed' else (), if (not($context?theme?layout?after?collapsible)) then 'after-fixed' else ()), ' ') ]] page-wrap" require-language="require-language" theme="resources/css/components.css">
+
+<!--<div class="page-wrap">-->
+
+  <!-- ═══════════════════════════════ HEADER ═════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <a href="#" class="logo" aria-label="Edition Jeanne Hersch – Startseite">
+      <img src="resources/images/logo-square-transparent.svg" alt="Edition Jeanne Hersch" class="logo-square"/>
+      <img src="resources/images/logo-wide-home.svg" alt="" class="logo-wide" aria-hidden="true"/>
+    </a>
+
+      [% include "templates/hersch-home-menu.html" %]
+
+<!--
+    <nav class="header-nav" aria-label="Hauptnavigation">
+      <button class="header-nav__btn" aria-label="Menü öffnen">
+        <span class="header-nav__label">Menu</span>
+        <img src="resources/images/but-menu-home.svg" width="36" height="36" alt="" aria-hidden="true" />
+      </button>
+    </nav>
+-->
+  </header>
+
+
+  <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
+  <main>
+  <section class="section-intro" aria-label="Einführung">
+    <div class="intro__image">
+      <img src="resources/images/portrait.jpg" alt="Jeanne Hersch, Schweizer Philosophin" loading="eager"/>
+    </div>
+
+    <div class="intro__content">
+      <div class="intro__content-inner">
+         [[ landing:section($context, 'intro', $landing?content, 'landing.odd') ]]
+
+        <nav class="intro__nav" aria-label="Themennavigation">
+          <a href="[[ $context-path ]]/browse" class="nav-btn">
+            <span class="nav-btn__circle" aria-hidden="true">
+                <img src="resources/images/arrow-right.svg" alt=""/>
+            </span>
+            <pb-i18n key="landing.werk">Werk</pb-i18n>
+          </a>
+          <a href="[[ $context-path ]]/about-hersch.html" class="nav-btn">
+            <span class="nav-btn__circle" aria-hidden="true">
+                <img src="resources/images/arrow-right.svg" alt=""/>
+            </span>
+            Jeanne Hersch
+          </a>
+          <a href="[[ $context-path ]]/project.html" class="nav-btn">
+            <span class="nav-btn__circle" aria-hidden="true">
+                <img src="resources/images/arrow-right.svg" alt=""/>
+            </span>
+            <pb-i18n key="menu.project">Projekt</pb-i18n>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ APHORISM ══════════════════════════ -->
+  <section class="section-aphorism" aria-label="Aphorismus">
+    <div class="section-header">
+        <h2 class="section-header__label">
+            <pb-i18n key="landing.aphorisms"/>
+        </h2>
+<!--
+        <a href="#" class="section-header__link" aria-label="Zum Werk">
+          <pb-i18n key="landing.link-work">zum Werk</pb-i18n> <img src="resources/images/arrow-right.svg" alt="" style="width:2.1875rem;height:1.5625rem;vertical-align:middle;"/>
+        </a>
+-->
+    </div>
+
+
+    <div class="section-inner">
+     [[ landing:section($context, 'aphorism-list', $landing?content, 'landing.odd') ]]
+  <!--  <blockquote>
+      <p class="aphorism__quote">
+        «Ich erzähle Ihnen das, um zu sagen, dass natürlich alles, was ich jetzt
+        sagen werde, richtig oder falsch sein kann. Das müssen Sie selbst entscheiden.»
+      </p>
+      <footer class="aphorism__source">
+        Rauschgift als Verneinung des eigenen Menschseins, in: Von der Aufgabe,
+        auf der Seite des Lebens zu stehen. Beiträge zur Lösung des Drogenproblems.
+        Teil I: Jeanne Hersch, Moritz Nestor, Martin Schmidt. Hrsg. vom
+        Studentenforum an der Universität Zürich. Zürich, S. 7–16; hier S. 8.
+      </footer>
+    </blockquote> -->
+    </div><!-- /.section-inner -->
+  </section>
+
+  <!-- ═══════════════════════════════ TOPICS ════════════════════════════ -->
+  <section class="section-topics" aria-label="Themen">
+    <div class="section-header">
+        <h2 class="section-header__label">
+          <pb-i18n key="landing.topics"/>
+        </h2>
+        <a href="[[$context-path ]]/topics.html" class="section-header__link" aria-label="Alle Themen ansehen">
+            <pb-i18n key="landing.all-topics">Alle Themen</pb-i18n>
+            <img src="resources/images/arrow-right.svg" alt="" style="width:2.1875rem;height:1.5625rem;vertical-align:middle;"/>
+          </a>
+    </div>
+
+    <ul class="topic-tags" role="list">
+      <li>
+        <a href="[[$context-path ]]/browse?facet-philosophie=philosophie" class="topic-tag">
+          <pb-i18n key="hersch_keywords.philosophie">Philosophie</pb-i18n>
+            <span class="topic-tag__arrow" aria-hidden="true">
+                <img src="resources/images/eye-closed.svg" alt="" class="icon-default"/>
+                <img src="resources/images/eye-open.svg" alt="" class="icon-hover"/>
+            </span>
+        </a>
+      </li>
+      <li>
+        <a href="[[$context-path ]]/browse?facet-kuenste=kuenste" class="topic-tag">
+          <pb-i18n key="hersch_keywords.kuenste">Künste</pb-i18n>
+          <span class="topic-tag__arrow" aria-hidden="true">
+                                    <img src="resources/images/eye-closed.svg" alt="" class="icon-default"/>
+                                    <img src="resources/images/eye-open.svg" alt="" class="icon-hover"/>
+                                </span>
+        </a>
+      </li>
+      <li>
+        <a href="[[$context-path ]]/browse?facet-erziehung=erziehung" class="topic-tag">
+          <pb-i18n key="hersch_keywords.erziehung">Erziehung</pb-i18n>
+          <span class="topic-tag__arrow" aria-hidden="true">
+                                    <img src="resources/images/eye-closed.svg" alt="" class="icon-default"/>
+                                    <img src="resources/images/eye-open.svg" alt="" class="icon-hover"/>
+                                </span>
+        </a>
+      </li>
+      <li>
+        <a href="[[$context-path ]]/browse?facet-politik=politik" class="topic-tag">
+            <pb-i18n key="hersch_keywords.politik">Politik</pb-i18n>
+            <span class="topic-tag__arrow" aria-hidden="true">
+                <img src="resources/images/eye-closed.svg" alt="" class="icon-default"/>
+                <img src="resources/images/eye-open.svg" alt="" class="icon-hover"/>
+            </span>
+        </a>
+      </li>
+      <li>
+        <a href="[[$context-path ]]/browse?facet-verteidigung-des-menschen=verteidigung-des-menschen" class="topic-tag">
+            <pb-i18n key="hersch_keywords.verteidigung-des-menschen">Verteidigung des Mensch</pb-i18n>
+            <span class="topic-tag__arrow" aria-hidden="true">
+                <img src="resources/images/eye-closed.svg" alt="" class="icon-default"/>
+                <img src="resources/images/eye-open.svg" alt="" class="icon-hover"/>
+            </span>
+        </a>
+      </li>
+      <li>
+        <a href="[[$context-path ]]/browse?facet-gespraeche-ueber-leben-und-werk=gespraeche-ueber-leben-und-werk" class="topic-tag">
+            <pb-i18n key="hersch_keywords.gespraeche-ueber-leben-und-werk">Gespräche über Leben und Werk</pb-i18n>
+            <span class="topic-tag__arrow" aria-hidden="true">
+                <img src="resources/images/eye-closed.svg" alt="" class="icon-default"/>
+                <img src="resources/images/eye-open.svg" alt="" class="icon-hover"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+    <a href="#home-pos">
+        <img class="arrow-up" src="resources/images/arrow-up.svg" alt="up" style="width:2.1875rem;height:1.5625rem;vertical-align:middle;"/>
+    </a>
+
+  </section>
+  </main>
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <nav class="footer__nav" aria-label="Footer-Navigation">
+          <a href="#">
+                            <pb-i18n key="menu.home">Home</pb-i18n>
+                        </a>
+          <a href="#">
+                            <pb-i18n key="menu.contact">Kontakt</pb-i18n>
+                        </a>
+          <a href="#">
+                            <pb-i18n key="menu.project">Projekt</pb-i18n>
+                        </a>
+      </nav>
+
+      <div class="footer__logo" aria-label="Zentralbibliothek Zürich">
+        <img src="resources/images/logo-zb-bw.svg" alt="Zentralbibliothek Zürich"/>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <span>© 2026  Zentralbibliothek Zürich</span>
+      <a href="[[$context-path ]]/imprint.html">
+                        <pb-i18n key="landing.imprint">Impressum</pb-i18n>
+                    </a>
+        <a href="[[$context-path ]]/privacy.html">
+                        <pb-i18n key="landing.privacy">Datenschutzerklärung</pb-i18n>
+                    </a>
+    </div>
+  </footer>
+</pb-page>
+
+<!--</div>-->
+<!-- /.page-wrap -->
+
+<script>
+  (function () {
+    var header    = document.querySelector('.site-header');
+    var THRESHOLD = 300;
+    var ticking   = false;
+
+    function updateLogo() {
+      if (window.scrollY &gt;= THRESHOLD) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(updateLogo);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    document.querySelectorAll('a[href="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+      });
+    });
+
+    document.querySelectorAll('.section-aphorism a.prev, .section-aphorism a.next').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.getElementById(a.getAttribute('href').slice(1));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        }
+      });
+    });
+
+    var aphBlockquotes = document.querySelectorAll('.section-aphorism blockquote');
+    var aphScroller = document.querySelector('.section-aphorism .section-inner &gt; *');
+    if (aphScroller &amp;&amp; aphBlockquotes.length) {
+      var aphObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            aphBlockquotes.forEach(function (bq) { bq.classList.remove('active'); });
+            entry.target.classList.add('active');
+          }
+        });
+      }, { root: aphScroller, threshold: 0.6 });
+      aphBlockquotes.forEach(function (bq) { aphObserver.observe(bq); });
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+{
+  "landing": {
+    "aphorisms": "Aphorismes",
+    "topics": "Thèmes",
+    "link-work": "Vers l’œuvre",
+    "werk": "Œuvre",
+    "all-topics": "Tous les thèmes",
+    "imprint":"Mentions légales",
+    "privacy":"Politique de confidentialité"
+  },
+
+  "about": {
+    "biography": "Biographie",
+    "forschungsliteratur": "Bibliographie scientifique",
+    "audiovisuellebeiträge": "Contributions audiovisuelles",
+    "jeanneherschgesellschaft": "Société Jeanne Hersch" 
+  },
+  
+  "breadcrumb": {
+    "collection-root": "Collections",
+    "document-root": "Documents",
+    "demo": "Démo",
+    "jats": "JATS",
+    "docx": "DOCX",
+    "letters": "Lettres",
+    "doc": "Documentation"
+  },
+
+  "menu": {
+    "explore": "Explorer",
+    "collections": "Collections",
+    "quickstart": "Démarrage rapide",
+    "about": "À propos de l’édition",
+    "team": "Équipe",
+    "contact": "Contact",
+    "project": "Projet",
+    "cite": "Citation",
+    "cookies": "Cookies",
+    "credits": "Crédits",
+    "partners": "Partenaires",
+    "home": "Accueil",
+    "work": "Œuvre",
+    "register": "Registre",
+    "topics": "Thèmes",
+    "organisations": "Organisations",
+    "works": "Œuvres",
+    "people": "Personnes",
+    "projectdescription": "Description du projet",
+    "listsandregister": "À propos des répertoires et registres",
+    "documentation": "Documentation",
+    "search": "Résultat de recherche"
+  },
+
+  "timeline": {
+    "range": "Période: "
+  },
+  "browse": {
+    "category": "Catégorie",
+    "author": "Auteur",
+    "title": "Titre",
+    "work": "Œuvre",
+    "works": "Œuvres",
+    "date": "Date",
+    "filter": "Filtre + recherche",
+    "reset-all": "Tout réinitialiser",
+    "load-more": "Charger plus",
+    "type": "Type",
+    "sort-group": "Trier/Grouper par"
+  },
+
+   "document": {
+    "contents": "Index",
+    "download": "Exportation / téléchargement",
+    "swisscovery": "Lien Swisscovery",
+    "citation": "Citation recommandé",
+    "orig_pub": "Publication originale",
+    "doi": "DOI",
+    "register": "Registre",
+    "page": "p."
+  },
+
+   "download": {
+    "label": "Télécharger", 
+    "title": "Télécharger"
+  },
+
+  "search": {
+    "title": "Titre", 
+    "content": "Contenu", 
+    "results": "Résultats de recherche", 
+    "placeholder": "Saisir un terme recherché",
+    "scope": "Recherche dans",
+    "no-results": "Pas de résultats"
+  },
+
+  "register-details": {
+    "document-list": "Documents", 
+    "people": "Personnes", 
+    "places": "Lieux", 
+    "no-people": "Aucune personne mentionnée", 
+    "no-works": "Aucune œuvre mentionnée",
+    "no-orgs": "Aucune organisation mentionnée"
+  },
+
+  "odd": {
+    "licence": "Licence", 
+    "sources": "Sources", 
+    "metadata": "Métadonnées", 
+    "previous": "Précédent", 
+    "next": "Suivant", 
+    "birth": "né/-e : ", 
+    "death": "Décédé/-e : ",
+    "nav-previous": {
+      "before": "",
+      "after": ""
+    },
+    "nav-next": {
+      "before": "",
+      "after": ""
+    }
+  },
+
+  "facets": {
+    "category": "Type d’œuvre", 
+    "genre": "Forme de publication", 
+    "keyword": "Thèmes",
+    "place": "Endroit",
+    "date": "Période"
+  },
+
+  "hersch_worktype": {
+    "text": "Texte",
+    "auftritt": "Représentation"
+  },
+
+  "hersch_genre": {
+    "book": "Livre",
+    "speech": "Conférence",
+    "article": "Article",
+    "entry": "Entrée de dictionnaire",
+    "review": "Recension",
+    "conversation": "Table ronde",
+    "interview": "Interview",
+    "tv": "TV",
+    "radio": "Radio"
+  },
+  
+  "hersch_keywords": {
+    "philosophie": "Philosophie",
+    "metaphilosophie": "Métaphilosophie",
+    "existenzphilosophie": "Philosophie de l’existence",
+    "karl-jaspers": "Karl Jaspers",
+    "philosophie-der-freiheit": "Philosophie de la liberté",
+    "philosophie-der-zeit": "Philosophie du temps",
+    "religionsphilosophie": "Philosophie de la religion",
+    "politische-und-sozialphilosophie": "Philosophie politique et sociale",
+    "geschichtsphilosophie": "Philosophie de l’histoire",
+    "geschichte-der-philosophie": "Histoire de la philosophie",
+    "philosophie-der-wissenschaften-und-der-technik": "Philosophie des sciences et de la technologie",
+    "kuenste": "Arts",
+    "literatur": "Littérature",
+    "musik": "Musique",
+    "malerei": "Peinture",
+    "erziehung": "Éducation",
+    "bildung": "Formation",
+    "schule": "École",
+    "unterricht": "Enseignement",
+    "politik": "Politique",
+    "politik-und-sozialwissenschaftliches": "Politique et sciences sociales",
+    "sozialismus-und-kommunismus": "Socialisme et communisme",
+    "europa-und-die-schweiz": "Europe et la Suisse",
+    "verteidigung-des-menschen": "Défense de l’être humain",
+    "menschenrechte": "Droits de l’homme",
+    "mensch-und-freiheit": "L’humanité et la liberté",
+    "frau-und-frauenrechte": "Femmes et droits des femmes",
+    "mensch-und-sicherheit-armee-und-frieden": "Humanité et sécurité, armée et paix",
+    "mensch-wissenschaft-und-technik": "Humanité, science et technologie",
+    "mensch-und-medizin": "Humanité et médecine",
+    "mensch-in-arbeitswelt-und-wirtschaft": "Humanité dans le monde du travail et l’économie",
+    "judentum-und-religion": "Judaïsme et religion",
+    "gespraeche-ueber-leben-und-werk": "Entretiens sur la vie et l’œuvre"
+  },
+
+  "toolbar": {
+    "next": "Suivant",
+    "previous": "Précédent"
+  },
+
+  "audiovisuellebeiträge": {
+    "date": "Date",
+    "medium": "Type de média",
+    "broadcaster": "Diffuseur",
+    "programmeTitle": "Titre",
+    "archiveUrl": "Référence et accès",
+    "link_to_archive": "Lien vers la ressource"
+  },
+
+  "register": {
+    "persons": {
+      "category": "Personnes",
+      "lifespan": "Données biographiques",
+      "description": "Description",
+      "gndid": "ID GND",
+      "dnblink": "Lien vers la DNB"
+    },
+    "organizations": {
+      "category": "Organisations",
+      "gndid": "ID GND",
+      "dnblink": "Lien vers la DNB"
+    },
+    "works": {
+      "category": "Œuvres",
+      "author": "Auteur/-e",
+      "gndid": "ID GND",
+      "dnblink": "Lien vers la DNB"
+    }
+  },
+
+  "appearances": {
+    "broadcaster": "Diffuseur",
+    "archivenote": "Source"
+  },
+
+  "topics": {
+    "info_1": "Vous trouverez ",
+    "info_2": "ici",
+    "info_3": " de plus amples informations sur la catégorisation thématique des écrits de Jeanne Hersch."
+  },
+
+  "languages": {
+    "de": "Allemand",
+    "deu": "Allemand",
+    "fr": "Français",
+    "fra": "Français",
+    "en": "Anglais",
+    "eng": "Anglais",
+    "it": "Italien",
+    "ita": "Italien"
+  },
+
+  "edition": {
+    "part02": ". «",
+    "part04": "». ",
+    "part06": ".  Edition Jeanne Hersch, édité par la Zentralbibliothek Zürich, 2026, ",
+    "part08": ", consulté le ",
+    "part10": ""
+  }
+
+  
+}

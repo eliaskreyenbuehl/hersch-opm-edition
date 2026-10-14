@@ -1,0 +1,62 @@
+<template>
+    ---json
+    {
+        "templating": {
+            "extends": "templates/layouts/hersch-content.html"
+        },
+        "features": {
+            "toolbar": {
+                "enabled": false
+            },
+            "timeline": {
+                "enabled": false
+            },
+            "upload": {
+                "enabled": false
+            }
+        },
+        "styles": [
+            "resources/css/registers-theme.css"
+        ],
+        "theme": {
+            "layout": {
+                "footer": {
+                    "mobile": {
+                        "enabled": false
+                    }
+                }
+            }
+        }
+    }
+    ---
+    [% template breadcrumbs %]
+        <li>
+            <a href="[[$context-path]]/home.html">Home</a>
+        </li>
+        <li>
+        <pb-i18n key="menu.register">Register</pb-i18n>
+    </li>
+        <li>
+        <pb-i18n key="menu.people">People</pb-i18n>
+    </li>
+    [% endtemplate %]
+    <aside>
+        <pb-search subscribe="search" value="[[ $request?parameters?query ]]" submit-on-load="submit-on-load">
+            <button slot="searchButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="10" cy="10" r="9" stroke="black" stroke-width="2"/>
+                    <path d="M16.207 17.2071L22.5112 22.9606" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        <!--    <button slot="resetButton" part="searchButton">Reset</button> -->
+        </pb-search>
+        <pb-load class="register__bubbles" url="api/bubbles/person" auto="">
+            <pb-i18n key="dialogs.loading">Loading</pb-i18n>
+        </pb-load>
+    </aside>
+    <div class="center register person">
+        <pb-load url="api/list/person" auto="">
+            <pb-i18n key="dialogs.loading">Loading</pb-i18n>
+        </pb-load>
+    </div>
+</template>

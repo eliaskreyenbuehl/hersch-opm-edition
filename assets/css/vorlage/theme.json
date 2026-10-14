@@ -1,0 +1,33 @@
+{
+  "fonts": {
+    "toc": {
+      "size": "1.125rem"
+    },
+    "menubar": {
+      "size": "14px"
+    },
+    "footnote": {
+      "size": "0.9em"
+    },
+    "base": {
+      "family": "'EB Garamond'",
+      "line-height": "1.4",
+      "size": "16px",
+      "weight": "400"
+    },
+    "heading": {
+      "family": "'ES Rebond Grotesque'",
+      "size": "1.2rem",
+      "weight": "600"
+    },
+    "breadcrumbs": {
+      "size": "0.9rem"
+    },
+    "content": {
+      "family": "'EB-Garamond'",
+      "line-height": "150%",
+      "size": "1.25rem",
+      "weight": "400"
+    }
+  }
+}

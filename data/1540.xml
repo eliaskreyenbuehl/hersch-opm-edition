@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../oxygen_framework/schema/zbz_hersch.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">Mein Judentum</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">1540</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “[Mein Judentum]”. Mein Judentum, Berlin : Kreuz
+                    Verlag, 1978, pp. 36–46.</idno>
+                <idno type="ALMA-MMSID">99118052729205508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99118052729205508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_book" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">Mein Judentum</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Schultz, Hans Jürgen</editor>
+                            <editor>Süddeutscher Rundfunk</editor>
+                            <title level="m">Mein Judentum</title>
+                            <textLang mainLang="deu">Deutsch</textLang>
+                            <imprint>
+                                <pubPlace>Stuttgart ; Berlin</pubPlace>
+                                <publisher>Kreuz Verlag</publisher>
+                                <date when="1978">1978</date>
+                                <biblScope unit="page">36-46</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#article"/>
+                <catRef scheme="hersch_keywords"
+                    target="#judentum-und-religion #gespraeche-ueber-leben-und-werk"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+
+            <pb facs="0003_1540_00004-20250805_102255.jpg" n="38"/>
+            <div type="article" n="1" xml:id="d1540-1">
+                <head>
+                    <title type="main">[Mein Judentum]</title>
+                </head>
+                <p>
+                    <lb/>Als meine junge Großmutter väterlicherseits (sie war <lb/>dreißig Jahre
+                    alt) in Litau nahe am Sterben war, nach<lb break="no"/>dem sie sechs Söhne
+                    geboren hatte, ließ sie ihren älte<lb break="no"/>sten (meinen <persName
+                        ref="GND-172155800">Vater</persName>) zu sich kommen und sagte dem
+                    <lb/>Elfjährigen: "Sei ein ehrlicher Mann und ein treuer Jude." <lb/>Mein
+                        <persName ref="GND-172155800">Vater</persName> gehorchte – wenn auch nicht
+                    auf die Art, die sie sich <lb/>vorgestellt hatte. </p>
+                <p>
+                    <lb/>Meine Eltern waren "Bundisten". Der "<orgName ref="GND-5005966-X"
+                        >Bund</orgName>" war damals <lb/>die Arbeiterpartei der Juden in Osteuropa.
+                    Das bedeutete fol<lb break="no"/>gendes: Sie waren Juden – Sozialisten –
+                    Demokraten – Laien – <lb/>Internationalisten – und Anhänger der jiddischen
+                    Sprache (ob<lb break="no"/>gleich sie miteinander polnisch sprachen). Weil sie
+                    Demokra<lb break="no"/>ten waren, bekämpften sie den Kommunismus
+                    leidenschaftlich. <lb/>Weil sie Internationalisten waren, lehnten sie den
+                    Zionismus <lb/>ab. Weil sie die jiddische Muttersprache der armen jüdischen
+                    <lb/>Bevölkerung unter schweren Bedingungen verteidigen wollten, <lb/>waren sie
+                    gegen die Anstrengungen, die hebräische wieder zu <lb/>beleben (obgleich mein
+                        <persName ref="GND-172155800">Vater</persName> dieses letztere besonders gut
+                    und <lb/>genau beherrschte). </p>
+                <p>
+                    <lb/>Viel später, aber vor dem Zweiten Weltkrieg, machte ich als <lb/>junges
+                    Mädchen eine Reise nach Polen und konnte mir ein Bild <lb/>von der Tätigkeit des
+                        <orgName ref="GND-5005966-X">Bundes</orgName> machen. Ich empfand für seine
+                    <lb/>Anhänger eine grenzenlose Bewunderung. Sie haben Wunder <lb/>gewirkt. Unter
+                    den elendesten Verhältnissen, in der größten <lb/>Armut, haben sie es
+                    fertiggebracht, unzählige kulturelle Mög<lb break="no"/>lichkeiten zu schaffen.
+                    Sie haben ein ganzes Netz von Muster<lb break="no"/>schulen entwickelt, die von
+                    berühmten nicht jüdischen Pädago<lb break="no"/>gen der Schweiz besichtigt und
+                    mit Begeisterung beschrieben <lb/>worden sind. Sie haben mehrere Tages‐, Wochen‐
+                    und Mo<lb break="no"/>nats‐Zeitungen durch Jahre hindurch veröffentlicht (ich
+                    höre <lb/>noch, wie mein <persName ref="GND-172155800">Vater</persName> seinem
+                    Staunen Ausdruck gab, daß die <lb/>französische sozialistische Partei, die eine
+                    Anzahl Abgeordne<lb break="no"/>ter und Minister zählte, unfähig war, finanziell
+                    den dünnen <lb/>"Populaire" in Paris zu halten, während dort, in Polen ...). Sie
+                    <lb/>haben Erwachsenenbildung betrieben, Theater und Schau<lb break="no"
+                    />spieltruppen geschaffen, die berühmt wurden, und noch vieles <lb/>andere. Das
+                    alles gelang, weil diese Menschen, von denen viele <lb/>herrliche Begabungen und
+                    Bildung besaßen, von einer unwahr<lb break="no"/>scheinlichen Selbstlosigkeit
+                    waren: Die Lehrer erhielten nicht <lb/>mehr, als was zum Leben unentbehrlich
+                    war; die Autoren, wel<lb break="no"/>che für die Zeitungen schrieben, waren
+                    meistens gar nicht be <pb facs="0003_1540_00004-20250805_102255.jpg" n="39"
+                        break="no"/><lb break="no"/> zahlt; die Schauspieler schienen von der Begeisterung zu leben.
+                    <lb/>Unter den wenigen, die den Nazismus und den Krieg überleb<lb break="no"
+                    />ten, hätten einige, später, in den Vereinigten Staaten, irgend<lb break="no"
+                    />eine Karriere machen können. Sie blieben aber, nun die Sache <lb/>des <orgName
+                        ref="GND-5005966-X">Bundes</orgName> verloren war, mitten in New York ihren
+                    Toten treu. </p>
+                <p>
+                    <lb/>Manche sind noch da, in New York, in Paris, vielleicht <lb/>sonstwo. Aber
+                    der <orgName ref="GND-5005966-X">Bund</orgName> Osteuropas ist wie ein
+                    Ameisenhaufen <lb/>auf einmal zerstört worden. Und ein zweites Mal ist er durch
+                    die <lb/>Geschichte aus der Erinnerung vertrieben worden. Die Er<lb break="no"
+                    />schaffung des Staates Israel hat ihn ins Vergessen gestoßen. <lb/>Kaum jemand
+                    weiß noch von seiner armen und heroischen <lb/>Vergangenheit, von seiner
+                    unermüdlichen, tätigen, geduldigen, <lb/>leidenschaftlichen Treue. Und auch von
+                    seinen Opfern, die <lb/>entweder von den Nazis oder von den Bolschewisten
+                        erschla<lb break="no"/>gen worden sind. – Deswegen schreibe ich diese
+                    Zeilen. </p>
+                <p>
+                    <lb/>Viel später, nach dem Krieg, besuchte mich in Genf eine <lb/>Bundistin aus
+                    New York. Sie sammelte Geld, um den unzähli<lb break="no"/>gen Toten der
+                    bundistischen Massen ein Denkmal zu errichten. <lb/>Es ging aber nicht um ein
+                    Denkmal aus Stein oder Bronze, son<lb break="no"/>dern um die Herausgabe einer
+                    großen jiddischen Enzyklopä<lb break="no"/>die, die den Wortschatz und die
+                    Ausdrücke der (wie sie sagte) <lb/>so lebendig gewesenen und doch zum schnellen
+                    oder langsamen <lb/>Tode verurteilten Sprache für die Nachwelt erhalten sollte.
+                    Die <lb/>Sache sei eilig, fügte sie hinzu, denn die wahren Kenner der jid<lb
+                        break="no"/>dischen Sprache seien schon sehr alt, und einem nach dem an <lb
+                        break="no"/>deren falle die Feder aus der Hand. ‐ Ich bekam später einen
+                    <lb/>Band, dann einen zweiten, dann nichts mehr. Es ist bei dem <lb/>Buchstaben
+                    "A" geblieben. </p>
+                <p>
+                    <lb/>Meine Eltern waren Studenten an der <orgName ref="GND-1010450-1">Genfer
+                        Universität</orgName>, <lb/>als der Erste Weltkrieg ausbrach. Sie blieben
+                    da. Ich verbrachte <lb/>also eine geschützte Kindheit und Jugend in der Schweiz,
+                    und <lb/>mit zwanzig Jahren wurde ich Schweizerin. Ich liebe die <lb/>Schweiz
+                    als ein Land der Freiheit und der Zuflucht und ganz be<lb break="no"/>sonders
+                    wegen einer bestimmten nüchternen Einfachheit, die <lb/>hier üblich ist. Als ich
+                    gebeten wurde, eine der Reden zur Hun<lb break="no"/>dertjahrfeier der
+                    eidgenössischen Verfassung zu halten, gab ich <lb/>meiner Dankbarkeit Ausdruck
+                    für diejenigen, welche dieses <lb/>Land über Jahrhunderte hindurch so geschaffen
+                    haben, wie es <lb/>ist. Meine Ahnen waren nicht mit dabei. </p>
+                <p>
+                    <lb/>Daß ich Jüdin bin, war für mich von jeher eine selbstver<lb break="no"
+                    />ständliche Gegebenheit, die doch zugleich eine ziemlich unbe<lb break="no"
+                    />stimmte Pflicht der Treue mit sich brachte. Hätte man mich ge <pb
+                        facs="0004_1540_00005-20250805_102255.jpg" n="40"/><lb break="no"/>fragt,
+                    woher ich das wußte, hätte ich wohl wie <persName ref="GND-118562002"
+                        >Kierkegaard</persName> ge<lb break="no"/>antwortet: "Mein Vater hat es mir
+                    gesagt." Ich bin ohne Reli<lb break="no"/>gion erzogen worden, mitten in den
+                    aufgeregtesten Auseinan<lb break="no"/>dersetzungen über alle Schattierungen
+                    politisch‐ökonomischer <lb/>Stellungnahmen und Auffassungen. Doch zogen mich
+                    schon als <lb/>Kind philosophische und religiöse Probleme und Schriften an.
+                    <lb/>Ziemlich früh las ich christliche Denker, <persName ref="GND-118562002"
+                        >Kierkegaard</persName>, <persName ref="GND-118506803">Karl
+                        <lb/>Barth</persName>, <persName ref="GND-118528823">Meister
+                        Eckhart</persName>, die Exerzitien von <persName ref="GND-118555359">Ignaz
+                        von Loyola</persName>, <lb/>später <persName ref="GND-118622110">Thomas von
+                        Aquin</persName> und <persName ref="GND-118630148">Simone Weil</persName>.
+                    Das Denken <persName ref="GND-118616242">Spi<lb break="no"/>nozas</persName> war
+                    mir nah, hauptsächlich wegen der Übereinstimmung <lb/>von Freiheit und
+                    Notwendigkeit und wegen der unendlich vie<lb break="no"/>len Attribute Gottes,
+                    von denen wir nichts wissen. Fremd emp<lb break="no"/>fand ich die wenigen
+                    jüdischen Theologen der Gegenwart, de<lb break="no"/>nen ich begegnete; mich
+                    ärgerten ihre – oft gerechtfertigten, <lb/>aber in meinen Augen gleichgültigen –
+                    Ansprüche auf zeitliche <lb/>Priorität den christlichen Geboten gegenüber, ihre
+                        Selbstbe<lb break="no"/>hauptung als auserwähltes Volk, die sie, wie mir
+                    schien, hinder<lb break="no"/>te, sich einer echten, fruchtbaren
+                    Auseinandersetzung mit den <lb/>anderen zu öffnen. Nach meinem Gefühl konnte man
+                    auf ein<lb break="no"/>fachere Weise Jude sein. </p>
+                <p>
+                    <lb/><persName ref="GND-118557106">Jaspers</persName>' Denken – mit seinem
+                    "philosophischen Glauben", <lb/>den er der "biblischen Tradition" zuschreibt,
+                    ohne jedoch den <lb/>biblischen Anspruch auf Ausschließlichkeit zu erheben –
+                        ent<lb break="no"/>sprach mir sofort, als ich ihm begegnete, als wäre ich
+                    von selbst <lb/>und schon im voraus darin zu Hause. </p>
+                <p>
+                    <lb/>Seitdem war ich selbst zweimal in Israel. Ich bewundere <lb/>grenzenlos,
+                    was dort in allen Gebieten zugleich und trotz stän<lb break="no"/>diger
+                    Kriegsdrohung, dank unwahrscheinlicher Anstrengun <pb
+                        facs="0004_1540_00005-20250805_102255.jpg" n="41"/><lb break="no"/>gen, verwirklicht wurde. Ich habe auch gehört, wie die arabi<lb
+                        break="no"/>schen Nachbarn Israels am Tage vor dem Sechstagekrieg Dro <lb
+                        break="no"/>hungen ausgestoßen haben. Und ich war Mitglied des Exeku<lb
+                        break="no"/>tivrates der <orgName ref="GND-2023755-8">UNESCO</orgName> in
+                    den Jahren, in denen Israel wegen sei<lb break="no"/>ner Schulbücher, seiner
+                    Ausgrabungen und seiner besetzten <lb/>Gebiete verurteilt wurde, ohne daß manche
+                    Berichte und fakti<lb break="no"/>schen Auskünfte überhaupt in Betracht gezogen
+                    wurden. (Da, <lb/>und nur da, hätte ich gewünscht, als Nicht‐Jüdin gegen die
+                        all<lb break="no"/>gemeine Ungerechtigkeit eingreifen zu können.) Sicher emp<lb break="no"/>finde ich ‐ wie wohl jeder Jude ‐ eine besondere Solidarität
+                    mit <lb/>Israel. Das bedeutet, daß, wenn in diesem Staat Schlechtes ge<lb
+                        break="no"/>tan wird, wir uns mitschuldig fühlen, und wenn ihm eine Gefahr
+                    <lb/>droht, dann droht sie auch uns. Aber Israel ist keineswegs mein
+                    <lb/>Vaterland. </p>
+                <p>
+                    <lb/>Dann kamen die Nazi‐Zeit und der Krieg. Aus der großen, <lb/>zahlreichen
+                    Familie meiner <persName ref="GND-1414667280">Mutter</persName> in Warschau
+                    verschwanden <lb/>fast alle. Ich verstehe heute eigentlich kaum, wie ich diese
+                    Jahre <lb/>erlebt habe, geschützt in meinem neutralen Land. Ich leistete
+                    <lb/>Hilfe bei der Aufnahme und Verpflegung von Flüchtlingen, ich <lb/>habe
+                    beruflich weiter gearbeitet ‐ sonst nichts. Diese Verabre<lb break="no"/>dung
+                    mit dem faktischen Geschehen habe ich als Jüdin, aber <lb/>auch als Mensch,
+                    vollkommen verpaßt. </p>
+                <p>
+                    <lb/>Nach dem Krieg empfand mein <persName ref="GND-172155800">Vater
+                    </persName>sozusagen physisch <lb/>den Substanzverlust des jüdischen Volkes.
+                    Israel wurde für ihn <lb/>kostbar, einfach schon, weil es dort lebendige Juden
+                    gab. Er <lb/>wurde dorthin eingeladen, fuhr hin, unterschrieb das Goldene
+                    <lb/>Buch. Als er zurückkam, sagte er: "Ein Wunder auf einem <lb/>Vulkan." </p>
+                <p>
+                    <lb/>Sicher spricht mich in <persName ref="GND-115750231">Fackenheims</persName>
+                    Büchlein "<bibl ref="GND-GND_id"><bibl ref="GND-1414684126">Gottes Ge<lb
+                                break="no"/>genwart in der Geschichte</bibl></bibl>" das erste
+                    Kapitel über "Die Struk<lb break="no"/>tur der jüdischen Erfahrung" direkt und
+                    heftig an. Ich erkenne <lb/>vieles wieder in diesem Kommentar der Midrash. Um so
+                        ent<lb break="no"/>schiedener aber lehne ich gleichzeitig dieses
+                    privilegierte und <lb/>einzigartige Verhältnis des jüdischen Volkes mit Gott ab.
+                    Das <lb/>ist nicht mein Glaube. Es ist nicht mein Glaube, und zwar nicht,
+                        <lb/><hi rendition="#i">obgleich</hi> ich Jüdin bin, sondern <hi
+                        rendition="#i">weil</hi> ich Jüdin bin. Christen dür<lb break="no"/>fen von
+                    Juden sprechen als von einem auserwählten Volk. Ich <lb/>nicht. (Jedenfalls
+                    nicht in diesem Sinne. Vielleicht nur im Sinne <lb/>meines <persName
+                        ref="GND-172155800">Vaters</persName>, nach dem dieses Auserwähltsein nur
+                    eine be<lb break="no"/>sondere Pflicht dieses Volkes bezeichnet, sich um mehr
+                    Freiheit <lb/>und Gerechtigkeit zu bemühen.) </p>
+                <p>
+                    <lb/>Es ist nicht mein <hi rendition="#i">Land</hi>. Es ist nicht mein <hi
+                        rendition="#i">Glaube</hi>. Und was <lb/>ich bin, gehört keiner <hi
+                        rendition="#i">Rasse</hi> an. Nun stelle ich die Frage: <hi rendition="#i"
+                        >Wer ist</hi>
+                    <lb/><hi rendition="#i">Jude? Wer weiß es? Und was nun?</hi>
+                </p>
+                <p>
+                    <lb/>Diese Frage ist unendlich schwierig. Kein Wissen, wie mir <lb/>scheint,
+                    keine besonderen Kompetenzen helfen sie beantwor<lb break="no"/>ten. Man muß
+                    sich anstrengen, um zu klären, was man über das <lb/>Judesein denkt – ob man
+                    wirklich darüber das denkt, was man <lb/>zu denken glaubt; ob man wirklich
+                    glaubt, was man zu glauben <lb/>glaubt oder zu glauben vorgibt; und ob man
+                    bereit ist, die Im<lb break="no"/>plikationen und Folgen dessen zu tragen, was
+                    man zu glauben <lb/>glaubt. Man muß versuchen, klar zu Ende zu denken, was nicht
+                    <lb/>bedeutet, daß man zu einer Antwort kommt. </p>
+                <p>
+                    <lb/>Was diese Frage noch schwieriger macht, sind die verschie<lb break="no"
+                    />denen Arten von Treue, die im Spiele sind und die oft eine un <pb
+                        facs="0005_1540_00006-20250805_102255.jpg" n="42"/><lb break="no"
+                    />erbittliche Prüfung verhindern möchten. Gleichzeitig dürfen <lb/>aber diese
+                    Arten der Treue nicht abgeschafft oder geleugnet <lb/>werden; denn dadurch wäre
+                    die Frage nach dem Sinn des Ju<lb break="no"/>deseins selbst grundsätzlich
+                    entstellt. Wenn eine solche Frage <lb/>im Ernst behandelt wird, dann geschieht
+                    es immer in der Ge<lb break="no"/>genwart von Verstorbenen. </p>
+                <p>
+                    <lb/>Dazu kommt noch die Scheu, über etwas lange zu sprechen, <lb/>das
+                    eigentlich einfach und auch ganz selbstverständlich sein <lb/>sollte. </p>
+                <p>
+                    <lb/>Die verschiedenen Antworten, die auf unsere Frage gege<lb break="no"/>ben
+                    werden können, werden, wie mir scheint, auf folgende <lb/>Elemente bezogen: <hi
+                        rendition="#i">Religion – Staat – Rasse – Kulturgeschichte</hi>
+                    <lb/><hi rendition="#i">– "die Anderen"</hi>. Das heißt: Man ist Jude, wenn man
+                    eine be<lb break="no"/>stimmte Religion hat – oder: wenn man Bürger eines
+                    bestimm<lb break="no"/>ten Staates ist – oder: wenn man einer bestimmten Rasse
+                        ange<lb break="no"/>hört – oder: wenn man in einer bestimmten
+                    kulturgeschichtli<lb break="no"/>chen Tradition lebt – oder: wenn "die Anderen"
+                    von einem sa<lb break="no"/>gen, er sei Jude, und ihn als solchen auf eine
+                    besondere Weise <lb/>behandeln. (Diese letzte Antwort ist die, welche <persName
+                        ref="GND-11860564X">Sartre</persName> gege<lb break="no"/>ben hat.)
+                    Natürlich können mehrere dieser Elemente gleichzei<lb break="no"/>tig
+                    zutreffen. Anstatt "oder" kann man dann "und" sagen, und <lb/>die Antwort ist
+                    dann weniger einfach – sie wird massiver und <lb/>komplizierter. </p>
+                <p>
+                    <lb/>Im letzteren Falle muß man aber die Verbindung zwischen <lb/>den Elementen
+                    sorgfältig klären. Sonst läuft man Gefahr, ein<lb break="no"/>fach von einem
+                    Element zum anderen überzuspringen, sobald <lb/>die Implikationen oder Folgen
+                    des ersten irgendwie unbequem <lb/>werden. </p>
+                <p>
+                    <lb/><hi rendition="#i">Religion</hi>. Man wird als Jude von einer großartigen
+                    Tradition <lb/>angezogen, die des einen, transzendenten Gottes, dessen Na<lb
+                        break="no"/>men nicht umsonst ausgesprochen werden darf. Man gehorcht
+                    <lb/>der strengen, leidenschaftlichen Forderung, jeden Anthropo<lb break="no"
+                    />morphismus zu vermeiden. Eine solche Zugehörigkeit scheint <lb/>klare
+                    Kriterien zu liefern: Genaue Vorschriften werden von <lb/>"frommen Juden"
+                    sorgfältig beachtet. Sogleich aber entstehen <lb/><hi rendition="#i"
+                        >Vieldeutigkeiten</hi>. </p>
+                <p>
+                    <lb/>Die Religion ist in sich widerspruchsvoll, wenn die objekti<lb break="no"
+                    />ven, sachlichen Vorschriften so eindeutig werden, daß sie durch <lb/>die
+                    Eindeutigkeit allein schon die Transzendenz leugnen. <lb/>"Fromme Juden" können
+                    in den Augen anderer Juden als <pb facs="0005_1540_00006-20250805_102255.jpg"
+                        n="43"/> Anti‐Juden erscheinen, nicht nur in den Augen nichtreligiöser,
+                    <lb/>etwa sozialistischer oder positivistischer Juden, sondern in den <lb/>Augen
+                    gläubiger Juden, im Namen der jüdischen Religion <lb/>selbst. Es ist tatsächlich
+                    ein Zug des jüdischen Glaubens, daß <lb/>des Religiöse trotz biblischer
+                    Genauigkeit "in der Schwebe" <lb/>(nach <persName ref="GND-GND_id"
+                        >Jaspers</persName>' Worten) ist und bleibt. Dieses "Schwebende", <lb/>das
+                    jeden Besitz, jedes Festnageln des Transzendenten verwei<lb break="no"/>gert.
+                    findet man zum Beispiel im Roman von <persName ref="GND-119498014"
+                        >Schwarz‐Bart</persName>
+                    <lb/>wieder (<bibl ref="GND-GND_id">"<bibl ref="GND-454611536">Der letzte der
+                            Gerechten</bibl></bibl>"), in dem man zuletzt nicht <lb/>mehr weiß, <hi
+                        rendition="#i">wer</hi> der Gerechte ist, so daß die transzendente Ei<lb
+                        break="no"/>genschaft wie ein leuchtendes Fragezeichen "in der Schwebe"
+                    <lb/>bleibt. Die <hi rendition="#i">jüdische Religion verliert ihre
+                        Einmaligkeit, wenn</hi>
+                    <lb/><hi rendition="#i">ihre Kriterien objektiv eindeutig werden</hi>. </p>
+                <p>
+                    <lb/>Wird ein zur jüdischen Religion Konvertierter dadurch ein <lb/>Jude? Und
+                    umgekehrt: Wenn ein Jude zu einer anderen Reli<lb break="no"/>gion übertritt,
+                    hört er dadurch auf, Jude zu <hi rendition="#i">sein</hi>? Die Empö <lb
+                        break="no"/>rung, die Vorwürfe, die ihn meistens seitens der jüdischen Ge<lb
+                        break="no"/>meinde treffen, wenden sich ganz offensichtlich an ihn <hi
+                        rendition="#i">als Ju</hi><lb break="no"/><hi rendition="#i">den</hi>, sie wenden sich an den in ihm
+                    unwiderruflich gegenwärti<lb break="no"/>gen jüdischen Menschen. So wie ein
+                    katholischer Priester, was <lb/>er auch tut oder wünscht, wie er sich auch
+                    benimmt, nicht auf<lb break="no"/>hören kann, Priester zu sein, so ein Jude, ob
+                    konvertiert oder <lb/>nicht. Kann das als religiöse Zugehörigkeit verstanden
+                    werden? </p>
+                <p>
+                    <lb/>Diejenigen Juden, für die die jüdische Religion das Ent<lb break="no"
+                    />scheidende ist, behaupten trotzdem ohne den leisesten Zweifel, <lb/>daß die
+                    Millionen Opfer der Nazis in Polen Juden waren und <lb/>dem jüdischen Volk
+                    angehörten. Sehr viele jedoch unter diesen <lb/>Ermordeten gehörten zu jenem
+                        "<orgName ref="GND-5005966-X">Bund</orgName>", von dem ich eben er<lb
+                        break="no"/>zählte. Sie waren also entschieden gegen alle religiösen Vor <lb
+                        break="no"/>schriften, oft glaubten sie nicht einmal an Gott. Niemand be<lb
+                        break="no"/>zweifelt jedoch, daß sie Juden waren. </p>
+                <p>
+                    <lb/>Wenn die Religion das Entscheidende sein soll, um ein Jude <lb/>zu sein,
+                    soll man sie für eine Erbeigenschaft halten? Gehört sie <lb/>also zur Biologie,
+                    statt eine freie Zusage der Seele zu sein? </p>
+                <p>
+                    <lb/><hi rendition="#i">Der Staat Israel</hi>. Wenn der Staat Israel für das
+                    Judesein ent<lb break="no"/>scheidend wird, bekommt das Wort Jude die objektive
+                    Bedeu<lb break="no"/>tung einer Staatszugehörigkeit. Aber: Es ist unmöglich,
+                    alle Ju<lb break="no"/>den an Israel zu binden. Man kann sich sogar – und das
+                    ist mein <lb/>Gefühl – fragen, ob das Leben in der Diaspora nicht <hi
+                        rendition="#i">wesentli</hi><lb break="no"/><hi rendition="#i">cher</hi> mit
+                    dem Judesein verbunden ist als die Zugehörigkeit zu <lb/>einem besonderen Staat. </p>
+                <pb facs="0006_1540_00007-20250805_102255.jpg" n="44"/>
+                <p>
+                    <lb/>Weiter muß man fragen: Wenn man erst dadurch Jude wird, <lb/>daß man diesem
+                    Staat angehört, wer war denn Jude, als es die<lb break="no"/>sen Staat nicht
+                    gab? Es scheint hier ein seltsamer, unbegreifli<lb break="no"/>cher
+                    geschichtlicher Bruch zu entstehen zwischen dem Judesein <lb/><hi rendition="#i"
+                        >vor</hi> und <hi rendition="#i">nach</hi> der Entstehung des Staates
+                    Israel. Auch seitdem <lb/>es diesen Staat gibt, kann man sich fragen, ob es
+                    nicht entschei<lb break="no"/>dend zum Judesein gehört, gerade nie <hi
+                        rendition="#i">wesentlich</hi> einem Staat <lb/>anzugehören. <hi
+                        rendition="#i">"My country, right or wrong"</hi> ist sicher nicht ein
+                    <lb/>Ausdruck vom Judesein. </p>
+                <p>
+                    <lb/>Es stellt sich eine seltsame Frage: Besteht nicht eine be<lb break="no"
+                    />stimmte Gefahr, daß, unter der wohl von fast allen Juden er<lb break="no"
+                    />sehnten Voraussetzung eines gesicherten Friedens und Fortbe<lb break="no"
+                    />standes ihres Staates, die Israelis in einem noch unbestimmten <lb/>Sinn
+                    gerade aufhören würden, Juden zu sein? </p>
+                <p>
+                    <lb/><hi rendition="#i">Rasse</hi>. Man müßte sich zunächst fragen, was das Wort
+                    wohl <lb/>bedeutet, welche Kriterien dazu gehören. Wie dem auch sei: <lb/>Man
+                    gehört einer Rasse an durch die Geburt selbst. Diese Zu<lb break="no"
+                    />gehörigkeit ist eine Tatsache, ein Zwang ohne Wahl. Wenn <lb/>man also die
+                    Rasse als entscheidend für das Judesein betrach<lb break="no"/>tet, kann man
+                    wohl die Frage nicht vermeiden: Sind wir Juden <lb/>Rassisten? Denn zum
+                    Rassismus gehört nicht in erster Linie die <lb/>Feindschaft und Verachtung den
+                    anderen Rassen gegenüber, <lb/>sondern ganz grundsätzlich <hi rendition="#i">die
+                        Auffassung, daß die Seele durch</hi>
+                    <lb/><hi rendition="#i">die Rasse – also biologisch – bestimmt ist.</hi>
+                    Rassismus setzt vor<lb break="no"/>aus, daß man sich dem Biologischen
+                    unterwirft, daß man vor <lb/>ihm abdankt. Eine solche Haltung ist bestimmt
+                    anti‐jüdisch, sie <lb/>ist auch ganz einfach anti‐menschlich. Will man die
+                    Auffassung <lb/>des auserwählten Volkes unbedingt beibehalten, so doch nicht
+                    <lb/>in einer biologischen Fassung, sondern mit einer theologischen <lb/>und
+                    ethischen Tragweite: Auserwählt wäre das jüdische Volk, <lb/>um näher bei Gott
+                    sein Leid zu erleiden. </p>
+                <p>
+                    <lb/><hi rendition="#i">Kulturgeschichte.</hi> Für den "<orgName
+                        ref="GND-5005966-X">Bund</orgName>" war dies die entschei<lb break="no"
+                    />dende Zugehörigkeit. Es gab die jiddische Sprache als Mutter<pb
+                        facs="0006_1540_00007-20250805_102255.jpg" n="45"/><lb break="no"/>sprache
+                    der Diaspora, das große Erbe der vielen Verfolgungen, <lb/>die jüdischen Werke:
+                    Literatur, Philosophie, Ethik, Politik <lb/>usw. Die Juden Osteuropas lebten in
+                    ihrer überwältigenden <lb/>Mehrheit in großer Armut und unter Bedrohung; sie
+                    waren <lb/>durch das eigene Schicksal zum Denken und zum Kampf für die
+                    <lb/>Demokratie und die soziale Gerechtigkeit sozusagen verurteilt, <lb/>denn
+                    jede Gewalt, jede Ungerechtigkeit traf potentiell zu<lb break="no"/>nächst immer
+                    sie. </p>
+                <p>
+                    <lb/>Diejenigen, die die Auffassung hegen, Judesein bedeute, <lb/>biologisch
+                    einer Rasse zuzugehören, denken nicht wirklich <lb/>oder überhaupt nicht. Denn
+                    die Folgen einer solchen rassisti<lb break="no"/>schen Auffassung wären, daß ein
+                    Jude nie aufhören kann, Jude <lb/>zu sein. Judesein ist bloß ein Faktum; da ist
+                    keine Zustimmung, <lb/>keine Wahl, keine Entscheidung, keine Treue und kein
+                    Verrat <lb/>möglich. Es handelt sich um eine bedeutungslose Gegebenheit. </p>
+                <p>
+                    <lb/>Hier ist die kulturgebundene Entscheidung das konstitutive <lb/>Element des
+                    Jude‐Seins. Es ist das Gegenteil von der massiv <lb/>deterministischen
+                    Auffassung der Zugehörigkeit zur Rasse. <lb/>Judesein bedeutet auf dieser Ebene:
+                    durch die heroische An<lb break="no"/>strengung für Freiheit und Gerechtigkeit
+                    dazu beitragen, daß <lb/>"das jüdische Volk" sich verwirkliche. </p>
+                <p>
+                    <lb/>Diese Auffassung ist aber hier auch nicht ohne Wider<lb break="no"
+                    />spruch. Trotz allem bezieht man sich weiter auf eine faktische
+                    <lb/>Gegebenheit: Man <hi rendition="#i">ist</hi> Jude. </p>
+                <p>
+                    <lb/><hi rendition="#i">"Die Anderen"</hi>. <persName ref="GND-11860564X"
+                        >Sartre</persName> hat die Theorie entwickelt, daß die <lb/>Juden erst von
+                    den Nicht‐Juden zu Juden "gemacht" werden. <lb/>Es gibt eigentlich Juden nur,
+                    weil die Anderen antisemitische <lb/>Diskriminierung gegen sie ausüben. Dieser
+                    Widersinn hat <lb/>durch einen Anschein soziologischer Wahrheit manche Men<lb
+                        break="no"/>schen überzeugt. Tiefer geprüft erweist sich die Theorie als
+                    <lb/>falsch. Wenn ich sage: "Ich bin Jüdin", erhebe ich meinen eige<lb
+                        break="no"/>nen Anspruch darauf, Jüdin zu sein. Ich stelle keineswegs das
+                    <lb/>faktische Ergebnis einer äußeren Wirkung fest. </p>
+                <p>
+                    <lb/>Nun, zu welchem Ergebnis sind wir gelangt? Es besteht et<lb break="no"
+                    />was Wahres, etwas, was das Judesein trifft, in jeder Antwort – <lb/>unter der
+                    Bedingung aber, daß dieses "etwas Wahre" in der <lb/>Schwebe bleibt, daß man es
+                    nicht festnagelt als objektive Ge<lb break="no"/>gebenheit. Es gibt kein
+                    eindeutiges Kriterium für das Judesein, <lb/>und vielleicht ist gerade diese
+                    Unmöglichkeit die Quelle eines <lb/>Sinnes. Wahrscheinlich ist es immer ein
+                    unzutreffender Aus<lb break="no"/>druck, wenn man einem Anderen sagt: "<hi
+                        rendition="#i">Du</hi> bist Jude" (außer <lb/>wenn man auf diese Weise eine
+                    Brüderlichkeit bestätigen will). <lb/>Die Aussage aber "<hi rendition="#i"
+                        >Ich</hi> bin Jude" ist kräftig, einfach ‐ und nicht <lb/>ganz eindeutig. </p>
+                <p>
+                    <lb/>Seltsam. Es fällt mir etwas Unklares ein, etwas Geheimnis<lb break="no"
+                    />volles: als gäbe es da, abgesehen von der Besonderheit "Jude", <lb/>so etwas
+                    wie eine Potenzierung und Konkretisierung des <pb
+                        facs="0007_1540_00008-20250805_102255.jpg" n="46"/>
+                    <lb/>Menschseins überhaupt. Die "Religion" als solche ist ihrer Na<lb break="no"
+                    />tur nach in der Schwebe zwischen Transzendenz und den fakti<lb break="no"
+                    />schen Riten und Autoritäten. Der Mensch als solcher hat eine <lb/>ihm eigene
+                    Art, einem Staat zu gehören und ihm nicht zu gehö<lb break="no"/>ren, als wäre
+                    er gleichzeitig ein Bürger hier und ein Verbannter <lb/>von anderswoher. Der
+                    Mensch als solcher ist eng in den Kau<lb break="no"/>salketten der Biologie und
+                    der Vererbung gebunden, und <lb/>gleichzeitig dienen diese Ketten der
+                    Verwirklichung seiner <lb/>Freiheit. Ohne Nahrung der vorhandenen Kultur bleibt
+                    er leer, <lb/>und doch ist das Wesentliche für ihn eine Möglichkeit jenseits
+                    <lb/>dieser Kultur. Der Jude sagt: "Ich bin Jude", und es ist nicht
+                    <lb/>eindeutig. Aber auch wenn der Mensch als solcher sagt: "Ich <lb/>bin ein
+                    Mensch", ist dieser Ausdruck nicht eindeutig und ent<lb break="no"/>hält eine
+                    nicht zu überwindende Zerbrechlichkeit. Heute, wo <lb/>die festen, objektiven
+                    Modelle zerbrechen, ist es, als wäre der <lb/>Mensch als solcher mehr und mehr,
+                    wie der arme verfolgte <lb/>Jude, zur Suche nach dem Denken und nach
+                    Gerechtigkeit ge<lb break="no"/>zwungen. Als würde jetzt mehr und mehr das
+                    jüdische Schick<lb break="no"/>sal zum menschlichen Schicksal überhaupt. </p>
+
+                <p>
+                    <lb/><persName ref="GND-118826875">Alexander Zinoviev</persName> schreibt aus
+                    der UdSSR: "Der Mensch <lb/>ist verschwunden." Viele im Westen sind es müde,
+                    Menschen <lb/>zu sein. Manche Juden sagen auch: Die Juden sind verschwun‐
+                    <lb/>den; in Israel gibt es nur noch Staatsbürger und sonst nur Welt<lb
+                        break="no"/>bürger in den vielen Staaten. Viele wollen gar nicht mehr Juden
+                    <lb/>sein. </p>
+                <p>
+                    <lb/>Und trotzdem gibt es jene zerbrechliche und vielleicht doch
+                    <lb/>unzerstörbare Kette derer, die nicht feststellen, sondern bestä<lb
+                        break="no"/>tigen und entscheiden, aus einer eigentümlich unbestimmten,
+                    <lb/>entschlossenen Treue heraus: "Ich bin ein Mensch. Mein Vater <lb/>hat es
+                    mir gesagt." – "Mein Vater hat es mir gesagt: Ich bin ein <lb/>Jude." </p>
+                <p>
+                    <lb/>Was heißt das? Der Mensch ist hier nicht einfach eine Tier<lb break="no"
+                    />gattung, der Jude auch keine Rasse, kein kulturelles Faktum, <lb/>"Mein Vater,
+                    meine Mutter haben es mir gesagt." Ein Befehl <lb/>aus der Vergangenheit, zu
+                    einer Zukunft hin, die in der Zeit <lb/>nicht erreicht wird, und der die
+                    Freiheit wach hält. Eine Art und <lb/>Weise, dem Irdischen leidenschaftlich zu
+                    gehören, und doch nie <lb/>ganz. Ein "Auf‐der‐Schwelle‐Leben". </p>
+            </div>
+        </body>
+    </text>
+</TEI>

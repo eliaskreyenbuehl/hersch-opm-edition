@@ -7,7 +7,7 @@ Pro Phase ausfüllen (Claude trägt am Ende der Sitzung einen Entwurf ein, Elias
 | Phase | Datum | Dauer (Std.) | Sitzungen / Prompts | Was Claude allein schaffte | Wo es hakte | Wo menschliches Urteil nötig war |
 |---|---|---|---|---|---|---|
 | 0 Setup | 2026-10-14 | ca. 0,5 (22:03–22:35) | 1 Sitzung, ca. 10 Prompts | uv-Projekt, Abhängigkeiten, Git-Repo, Test-Transformation von 60.xml mit Standard-ODD, Browserprüfung | `winget install` scheiterte an fehlenden Admin-Rechten → `gh` und `uv` als portable ZIPs nach `%USERPROFILE%\.local\bin`; `opm transform -o` legt Zielordner nicht selbst an | GitHub-Anmeldung (Elias); Fundort der TEI-Dateien |
-| 1 Daten & Design | | | | | | |
+| 1 Daten & Design | 2026-10-14 | ca. 0,75 | 1 Sitzung, ca. 5 Prompts | validate.py mit Datenbericht (Pflichtfelder, GND-Format, Taxonomie-Abgleich, Element-/Attributstatistik); ODD inkl. referenzierter tp.css, CSS, Schriften, i18n, Bilder, Templates kopiert; taxonomy.json aus i18n abgeleitet; herkunft.md | Lesezugriff auf die Hersch-App musste erst mit `/add-dir` freigegeben werden (erster Versuch mit falschem Pfad); `zbz_hersch.rng` und `hersch_taxonomy.xml` nicht im App-Paket; Lizenzdateien für Inter/Junicode fehlen | Platzhalter `GND-GND_id`, Schlagwort `bildende-kuenste` ohne Label, Lizenz ES Rebond Grotesque, Bildrechte portrait.jpg |
 | 2 ODD | | | | | | |
 | 3 Leseansicht | | | | | | |
 | 4 Werkliste | | | | | | |

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../oxygen_framework/schema/zbz_hersch.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">Is the Declaration of Human Rights a Western
+                    Concept?</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">870</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “Is the Declaration of Human Rights a Western
+                    Concept?”. Ethics and Social Justice, State University of New York Press, 1970,
+                    pp. 323–332.</idno>
+                <idno type="ALMA-MMSID">99117856447405508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117856447405508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_book" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">Is the Declaration of Human
+                                Rights a Western Concept?</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Munitz, Milton Karl</editor>
+                            <editor>Kiefer, Howard Evans</editor>
+                            <title level="m">Ethics and social justice</title>
+                            <textLang mainLang="eng">Englisch</textLang>
+                            <imprint>
+                                <pubPlace>Albany</pubPlace>
+                                <publisher>State University of New York Press</publisher>
+                                <date when="1970">1970</date>
+                                <biblScope unit="page">323-332</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#article"/>
+                <catRef scheme="hersch_keywords" target="#menschenrechte"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <p>
+                <lb/>1. Birthright of Man (New York, UNESCO Publications Center) </p><!-- Fussnote am Schluss vom Text, ohne Verankerung im Text -->
+
+        </front>
+        <body>
+            <pb facs="0001_870_00001-20250320_163628.jpg" n="323"/>
+            <div type="article" n="1" xml:id="d870-1">
+                <head>
+                    <title type="main">Is the Declaration of Human Rights a Western Concept?</title>
+                </head>
+                <p>
+                    <lb/>If I were to consider this task in my personal capacity as a philosopher,
+                    <lb/>I would conceive of it in a completely different manner. I would try to
+                    <lb/>ask philosophical questions about the Universal Declaration of Human
+                    <lb/>Rights, including the compatibility or incompatibility which might exist
+                    <lb/>between different aspects of the Declaration. But I address myself to
+                    <lb/>the topic under consideration, not primarily as a philosopher, but rather
+                    <lb/>as the representative of an organization which has attempted to deal
+                    <lb/>with human rights as a world problem. </p>
+                <p>
+                    <lb/><orgName ref="GND-2023755-8">UNESCO</orgName>, as an organization,
+                    officially has two chief aims. These <lb/>aims, <hi rendition="#i">raisons
+                        d'être</hi> of the organization, are first, the construction and
+                    <lb/>safeguarding of peace, and second, the development and implementa<lb
+                        break="no"/>tion of human rights. Some might not consider it to be evident
+                    that <lb/>the defense of peace and the development and implementation of hu<lb
+                        break="no"/>man rights always go hand in hand. But because <orgName
+                        ref="GND-2023755-8">UNESCO</orgName> has been <lb/>conceived in this way, it
+                    should be made clear that the peace which <lb/><orgName ref="GND-2023755-8"
+                        >UNESCO</orgName> is to defend may not be defined simply as the absence of
+                    <lb/>armed conflict. Instead, it is a peace in which human rights must be, at
+                    <lb/>least to a degree, respected. Such a concept of peace – a peace designed
+                    <lb/>for the ultimate service of man – requires that peace and human rights
+                    <lb/>be considered reciprocally necessary. One cannot implement and estab<lb
+                        break="no"/>lish human rights if there is no peace, and there is not a true
+                    peace if it <lb/>is not one in which human rights are implemented and
+                    established. </p>
+                <p>
+                    <lb/>We are, this year, celebrating the twentieth anniversary of the Uni<lb
+                        break="no"/>versal Declaration of Human Rights. I should like to stress some
+                    of the <lb/>important differences which emerge when we compare the world
+                        situa<lb break="no"/>tion of 1948 and the world situation of 1968. The
+                    Universal Declaration <lb/>was adopted by the <orgName ref="GND-2005003-3"
+                        >United Nations General Assembly</orgName> in 1948, two <lb/>years after the
+                    creation of <orgName ref="GND-2023755-8">UNESCO</orgName>, and shortly after the
+                    end of the <pb facs="0002_870_00002-20250320_163628.jpg" n="324"/>
+                    <lb/>Second World War and the defeat of Nazism. The Declaration was
+                    <lb/>conceived in an atmosphere which encouraged the consideration that
+                    <lb/>human rights and peace should be seen as interdependent, because the
+                    <lb/>Second World War was born out of the violation of these rights. </p>
+                <p>
+                    <lb/>The people who created <orgName ref="GND-2023755-8">UNESCO</orgName> as
+                    well as the Declaration of <lb/>Human Rights clearly were predominantly Western.
+                    Nontheless, it was <lb/>intended that the Declaration should be taken as
+                    universal in applica<lb break="no"/>tion. The word "universal” was made a part
+                    of the title of the Declara<lb break="no"/>tion, and it is important to note
+                    that this was done deliberately. It was <lb/>intended that the Declaration be
+                    both more <hi rendition="#i">universal</hi> and more <hi rendition="#i"
+                        >con</hi><lb break="no"/><hi rendition="#i">crete</hi> than such former
+                    declarations as the French and American ones <lb/>which were written by
+                    particular groups of national citizens. It was con<lb break="no"/>ceived as
+                    applying to all nations, and it attempted to take into ac<lb break="no"/>count
+                    those material and economic conditions under which human <lb/>rights take on
+                    meaning, and without which they cannot exist. But in <lb/>spite of all this, it
+                    still remains that those who created the Universal <lb/>Declaration of Human
+                    Rights were predominantly citizens of the West<lb break="no"/>ern states. </p>
+                <p>
+                    <lb/>The differences between 1948 and 1968 are huge. There are more <lb/>than
+                    twice as many member states in <orgName ref="GND-2023755-8">UNESCO</orgName> now
+                    than there were in <lb/>1948. We now have one hundred and twenty‐two member
+                    states. New <lb/>countries from the developing world, including former colonies,
+                    have <lb/>gained their independence and become member states. In considering
+                    <lb/>the total world situation, it is vital that one take into account the
+                    <lb/>concrete presence of these new nations. The chief features which char<lb
+                        break="no"/>acterize the current situation, include the following. First,
+                    there is an <lb/>obvious inequality between rich countries and poor countries,
+                    and de<lb break="no"/>spite all efforts, this inequality is growing every day.
+                    Second, huge, end<lb break="no"/>less appetites and desires arose. In poor
+                    countries which are reached by <lb/>mass media it now is possible for all people
+                    to know how well human <lb/>beings can live in the twentieth century if they
+                    possess the economic <lb/>and material means of technological development.
+                    Third, not only are <lb/>the inequalities between rich and poor countries
+                    growing, but the <lb/>awareness of these changes is growing as well. All three
+                    factors serve <lb/>to test the principles of the Universal Declaration of Human
+                    Rights <lb/>and raise the basic question: Can it stand? It is, in a way, as
+                    though <lb/>the world finally has reached a point in which the question of human
+                    <lb/>rights has been put to an ultimate test. Is the concept of human
+                    <lb/>rights something to be realized in this world, or is it simply a dream?
+                    <lb/>This is a most essential question. Because of the current situation, new
+                    <lb/>poor countries tend to believe that such Universal Declarations of
+                    <lb/>Human Rights are the invention of people who are well fed, and have <pb
+                        facs="0003_870_00003-20250320_163628.jpg" n="325"/>
+                    <lb/>no meaning for those who are not. As <persName ref="GND-118639145"
+                        >Gandhi</persName> once put it, "Freedom of <lb/>spirit begins with butter
+                    at breakfast." It is appropriate, I think, that a <lb/>man like <persName
+                        ref="GND-118639145">Gandhi</persName> should express himself in this way.
+                    Ideas are matters <lb/>of the spirit, but they take on reality by forming and
+                    shaping the mate<lb break="no"/>rial reality. That is why the literal, concrete
+                    situation becomes the test<lb break="no"/>ing ground for the best dreams of
+                    humanity. </p>
+                <p>
+                    <lb/>This is the situation we now have. The people from the developing
+                    <lb/>countries must see declarations of human rights as changing reality
+                    <lb/>wherever it needs changing, and not simply as applying to the economi<lb
+                        break="no"/>cally mature Western world. Many in the Western world used to ac<lb break="no"/>cept the view that the concept of human rights is a Western
+                    invention; <lb/>indeed, not simply Western but only Christian. It is something,
+                    they <lb/>say, which only the Christian Western era has created. Others,
+                    however, <lb/>would claim that there is another interpretation, i.e., that human
+                    rights <lb/>are the creation of an anti‐Christian tradition. For instance, the
+                        con<lb break="no"/>cept of human rights has served as the flag of the French
+                    Revolution, <lb/>and one cannot say that the French Revolution is to be taken as
+                    a <lb/>typically Christian event, in spite of the fact that you can find the
+                        in<lb break="no"/>tellectual roots of the French Revolution in Christianity.
+                    All this is <lb/>extremely ambiguous, for there has been a fight between the
+                    Christians <lb/>and Church tradition on the one hand, and the liberal human
+                    rights <lb/>tradition on the other. I want to tell you something about an
+                        experi<lb break="no"/>ment which we in the Division of Philosophy of
+                        <orgName ref="GND-2023755-8">UNESCO</orgName> have con<lb break="no"
+                    />ducted to try to answer the question which is the title of this paper, "Is
+                    <lb/>the Declaration of Human Rights a Western Concept?” It was thought
+                    <lb/>that the Division of Philosophy should prepare a book for the twentieth
+                    <lb/>anniversary of the Universal Declaration of Human Rights, which <lb/>would
+                    be a collection of texts dealing with different aspects of these <lb/>rights and
+                    proving that they belong to all mankind. </p>
+                <p>
+                    <lb/>We thought we would do something which only <orgName ref="GND-2023755-8"
+                        >UNESCO</orgName>
+                    <hi rendition="#i">could</hi>
+                    <lb/>do, something which other people somewhere else could not. Since
+                        <lb/><orgName ref="GND-2023755-8">UNESCO</orgName> was represented in one
+                    hundred and twenty‐two member <lb/>states, we thought we would ask the national
+                    commissions for <orgName ref="GND-2023755-8">UNESCO</orgName>
+                    <lb/>in all one hundred and twenty‐two member states to send us texts from
+                    <lb/>their traditions which they considered had something to do with <lb/>human
+                    rights – human rights in a very broad sense, and not necessarily
+                    <lb/>declarations or codifications; any kind of text, from any epoch in
+                    <lb/>their history in which could be found a sense for the dignity of the
+                    <lb/>human being, which is the central point of the Universal Declaration
+                    <lb/>of Human Rights. Thus we asked the one hundred and twenty‐two <lb/>national
+                    commissions, as well as some thirty cultural experts and a <lb/>number of
+                    nongovernmental organizations (in fact, we asked all the <pb
+                        facs="0003_870_00003-20250320_163628.jpg" n="326"/>
+                    <lb/>sources we could get in touch with) to send us texts. We asked <lb/>them to
+                    send us anything – a piece of an epic, proverbs, a fragment <lb/>of a play, a
+                    tale, an inscription on a rock or stone, a song or some <lb/>piece of old
+                    legislation which reflects a sense for human rights. In fact, <lb/>we said, send
+                    us any kind of literature you want; we are curious about <lb/>anything <hi
+                        rendition="#i">you</hi> consider to have a relationship with or a sense of
+                    human <lb/>rights. </p>
+                <p>
+                    <lb/>This was our starting point, and we waited. We had set up a huge <lb/>net.
+                    It was our way of fishing all around the world and we didn't have <lb/>the
+                    slightest idea what we would come up with, or even if we would <lb/>come up with
+                    anything at all. </p>
+                <p>
+                    <lb/>The first thing which came, came from Burundi. Burundi sent us <lb/>some
+                    proverbs and two tales. This seemed to be a very good beginning. <lb/>In the
+                    end, we were confronted with a mountain of texts from all time <lb/>and all
+                    parts of the world. </p>
+                <p>
+                    <lb/>When these texts arrived, I noted the themes that were touched on <lb/>in
+                    them. Without any preconceived schema of evaluation, I noted what <lb/>they were
+                    talking about. By this completely empirical method we dis<lb break="no"
+                    />covered an unbelievable richness of many themes implied in these <lb/>texts.
+                    We then composed the book, not by countries or culture – these <lb/>are
+                    intermingled. Rather, the book is organized around different themes. <lb/>We
+                    came to see that for most people, human rights are not primarily a
+                    <lb/>juridical matter, but rather something which is alive at all levels of
+                    <lb/>human existence. Without any comment, simply by putting one text <lb/>after
+                    another, all the issues can be seen. </p>
+                <p>
+                    <lb/>Let me tell you something about the various themes we found. <lb/>There are
+                    a great many texts which deal with relationships between <lb/>human beings;
+                    texts which deal with the solidarity between others and <lb/>myself; texts which
+                    deal with the value of every life and those which <lb/>deal with the respect and
+                    protection necessary to a weak human being. <lb/>This last is a feature which,
+                    to my astonishment, one finds nearly every<lb break="no"/>where. The idea that
+                    the human being needs and deserves protection, <lb/>especially when for some
+                    reason he is weak, a child, or a very old per<lb break="no"/>son, or a sick one,
+                    or a woman with a child, or a foreigner without a <lb/>family, or an exile, or a
+                    defeated warrior. Some sort of protection is <lb/>needed in all these cases. </p>
+                <p>
+                    <lb/>Yet another theme found in many different regions is the responsi<lb
+                        break="no"/>bility an individual bears. Still another is the right of a
+                    human being to <lb/>choose death rather than being forced to do something he
+                    does not <lb/>want to do. Here then, is a basis of human rights which I believe
+                    is at <lb/>least as important as those social or economic bases of human rights
+                    <lb/>that are so often cited. There is here a feeling of what is irreducible in
+                        <pb facs="0004_870_00004-20250320_163628.jpg" n="327"/>
+                    <lb/>man – when you cannot force somebody to speak, when you cannot <lb/>force
+                    somebody to submit. You might kill him but you cannot force <lb/>him. </p>
+                <p>
+                    <lb/>Another group of themes was concerned with power. From many <lb/>different
+                    areas there are texts which are concerned with the problem of <lb/>the sources
+                    of power – chiefly coercion or the delegation of power to <lb/>somebody. The
+                    difference between these two types of power is not at all <lb/>only Western. The
+                    texts are concerned with the idea of the legitimacy <lb/>of power, i.e., under
+                    what conditions is power accepted as legitimate? <lb/>For instance, power goes
+                    with protection. When power no longer pro<lb break="no"/>tects, it becomes
+                    illegitimate. It is not usually said in these abstract <lb/>words which I now am
+                    using in order to summarize. Rather, it is said by <lb/>concrete example, for
+                    instance in the ritual words which an African king <lb/>must pronounce when he
+                    is taking power, words which show that the <lb/>power is of a conditional rather
+                    than an unconditional sort. The sover<lb break="no"/>eign has duties which, if
+                    not fulfilled, will cause him to lose his sover<lb break="no"/>eignty. </p>
+                <p>
+                    <lb/>The notion of justice as the expression of human rights is found ev<lb
+                        break="no"/>erywhere. It is found in the right for any subject to take the
+                    king by the <lb/>sleeve and to say, "Now you are going to say what is just – you
+                    must <lb/>judge, and you must judge in an impartial way.” We find this expressed
+                    <lb/>in the rule that you cannot give presents to judges. The idea of the im<lb
+                        break="no"/>partial judge is very general and quite fundamental. </p>
+                <p>
+                    <lb/>We then find a whole group of themes about the limitations of <lb/>power.
+                    It is not true that a large part of the world has admitted that <lb/>power is
+                    boundless, limitless, and that only the West has invented con<lb break="no"
+                    />stitutional limitations on power. Everywhere we find texts that are
+                    <lb/>against the arbitrariness of princes or the arbitrariness of states. Nearly
+                    <lb/>everywhere there are texts which state that a rule or a law is above per<lb
+                        break="no"/>sonal power. (There are, though, other texts which say the
+                    contrary, texts <lb/>which state that a law which is not served by a moral power
+                    cannot be <lb/>morally applied. But though relations are conceived both ways,
+                    there is <lb/>at the heart of each a fight against arbitrariness and a sense of
+                    human <lb/>rights.) </p>
+                <p>
+                    <lb/>Not only is the law taken as superior to power, but so is the con<lb
+                        break="no"/>science of the individual. There are limits to obedience and
+                    people have <lb/>a duty to disobey if someone else demands what is wrong,
+                    arbitrary, or <lb/>false. Then there is not only a right to revolt or to rebel,
+                    but there is a <lb/>duty. It seems to me that the <hi rendition="#i">duty</hi>
+                    to rebel is much more understanda<lb break="no"/>ble than the <hi rendition="#i"
+                        >right</hi> to rebel, because the right to rebellion ruins the order <lb/>of
+                    power, whereas the duty to rebel goes beyond and breaks it. </p>
+                <p>
+                    <lb/>Next, we found a group of themes which are about civil freedoms, <pb
+                        facs="0004_870_00004-20250320_163628.jpg" n="328"/>
+                    <lb/>individual freedoms in very different forms. Freedom to move, freedom
+                    <lb/>to go to another place, freedom to change work, etc., are found in many
+                    <lb/>places. </p>
+                <p>
+                    <lb/>Now I come to a part which is more Western in orientation: the
+                    <lb/>reflection about the constitutional organization of power, about democ<lb
+                        break="no"/>racy and republic, about forms of government and formally
+                    guaranteed <lb/>fundamental rights. </p>
+                <p>
+                    <lb/>The problems one encounters when freedom is linked with truth, <lb/>are
+                    many. There is no freedom when you cannot speak what you con<lb break="no"
+                    />sider the truth to be. The importance of the right to think, of the right
+                    <lb/>to free expression and criticism might be thought of as a modern inven<lb
+                        break="no"/>tion, but this is not quite so. There is a story from Old Egypt
+                    that takes <lb/>place about two thousand years before Christ, of a very poor man
+                    who is <lb/>treated unjustly by a vassal of the king, and who complains about
+                    his <lb/>treatment. Because of his complaints he is threatened, yet he goes on
+                    <lb/>complaining and complaining. Still the threats continue, but still he
+                    <lb/>continues to complain about abuses which he finds in the kingdom. For
+                    <lb/>many pages of the story he denounces all kinds of powerful people in
+                    <lb/>the most violent terms. In the end, this man is rescued and all the
+                        injus<lb break="no"/>tices to him are corrected, because he has had the
+                    courage to complain <lb/>until something was done. I am not saying that this is
+                    typical of be<lb break="no"/>havior in ancient Egypt; rather, what the story
+                    shows is that as far back <lb/>in time as two thousand B.C., people thought they
+                    had a duty to <lb/>denounce abuses and summoned the courage to do so. The right
+                    to ob<lb break="no"/>ject, the right to doubt, the right to speak out, the right
+                    to write, and <lb/>so on, are stated in civilizations which are very old, or
+                    very far away <lb/>from the West. </p>
+                <p>
+                    <lb/>Themes of tolerance or dialogue between particular absolute beliefs
+                    <lb/>are found in texts of very different religious origins. </p>
+                <p>
+                    <lb/>Next, there is a rich group of social rights – statements about social
+                    <lb/>equality or inequality, about property and limits of property, about the
+                    <lb/>right to work. Ancient Egypt is well know for the slaves who con<lb
+                        break="no"/>structed the pyramids. But in spite of this you find
+                    inscriptions on the <lb/>pyramids where the pharoahs said that the people who
+                    worked for them <lb/>had been well paid, and had been satisfied by the salary
+                    given to them. <lb/>So even as far back as ancient Egypt, the necessity of an
+                    agreement, of <lb/>consent between employer and employee, was already
+                    recognized, even <lb/>if it was not always respected. Even at that time, it was
+                    conceived as <lb/>being necessary and just. The right to strike and other social
+                    laws, ex<lb break="no"/>pressed in juridical terms in the West, are found in
+                    different forms in <lb/>older traditions. </p>
+                <p>
+                    <lb/>Now we come to the concept of concrete liberty, the conjunction <pb
+                        facs="0004_870_00004-20250320_163628.jpg" n="329"/>
+                    <lb/>of political rights with social rights. Because this is a theoretical
+                    concept, <lb/>it is found chiefly in the recent West. Yet, in spite of that, in
+                    ancient <lb/>Rome we find statements saying that, if more power is given to the
+                    <lb/>plebes without at the same time freeing them from their debts, nothing
+                    <lb/>has really been given to them. As far back as ancient Rome, then, the
+                    <lb/>connection between minimal economic conditions and freedom were al<lb
+                        break="no"/>ready conceived. </p>
+                <p>
+                    <lb/>Continuing our examination of the various themes from around the
+                    <lb/>world, we next tum to those dealing with education, science and cul<lb
+                        break="no"/>ture. The right to know, the right to read, the right to write,
+                    instruction <lb/>for all, the essential function of the teacher, teacher‐pupil
+                    relationships, <lb/>all are found in very different traditions. The relationship
+                    between ac<lb break="no"/>quiring knowledge and using that knowledge to feed
+                    hungry people, be<lb break="no"/>tween acquiring knowledge and curing the sick,
+                    between knowledge of <lb/>poetry and knowledge of freedom, are found in all
+                    parts of the world. </p>
+                <p>
+                    <lb/>Next we found old texts about slavery and violence, which state that
+                    <lb/>the only way to correct unbearable conditions in which slaves may find
+                    <lb/>themselves is to employ violence, and that under the conditions where
+                    <lb/>violence is found to be the only way out, it then becomes legitimate.
+                    <lb/>The idea of slavery being contrary to human nature is present in many
+                    <lb/>parts of the world. Another group of themes maintain that the only
+                    <lb/>weapon against force is the concept of human rights: one does not give
+                    <lb/>up or give way, but constructs laws and guarantees. We find again and
+                    <lb/>again the right of any man to be respected, even in war, by the en<lb
+                        break="no"/>emy. </p>
+                <p>
+                    <lb/>Many texts state that every group of people has a right to its own
+                    <lb/>identity, to its own existence. They claim there is equality between dif<lb
+                        break="no"/>ferent nations and between different groups, and the rights to
+                    their own <lb/>traditions and language should not be threatened or destroyed.
+                    Defeat <lb/>should not go hand in hand with slavery; defeat of a group should
+                    not <lb/>mean that that group is to be enslaved. In very different traditions,
+                    too, <lb/>men have thought that a judge or arbiter is necessary in international
+                    <lb/>conflicts, as well as some concrete form of international law, that there
+                    <lb/>is a universality of being a human being, that there is the same birth
+                    <lb/>for all people, the same death, the same needs, and that fraternity is
+                    <lb/>implied in all this. </p>
+                <p>
+                    <lb/>We found in some texts no talk of social justice <hi rendition="#i">per
+                        se</hi>, but rather a <lb/>simple saying which comes to the same thing,
+                    i.e., if somebody is eating <lb/>alone when another one does not eat, it makes
+                    for a stomach ache. </p>
+                <p>
+                    <lb/>In the end, texts from the most varied traditions refer to the <lb/>sources
+                    and ends of the rights and the dignity of man. Some refer to a <lb/>moral
+                    absolute, others to natural rights. Some refer to God as being the <pb
+                        facs="0005_870_00005-20250320_163628.jpg" n="330"/>
+                    <lb/>common Father or the common Creator, others refer to nature as com<lb
+                        break="no"/>mon to all people. Thus, though the justifications may be very
+                    different, <lb/>in all cases the human being as such, conceived in a fraternal
+                    way, is <lb/>the source from which all justifications of rights spring. </p>
+                <p>
+                    <lb/>From this mountain of texts we received, a book of more than five
+                    <lb/>hundred pages has been printed, with more than a thousand fragments
+                    <lb/>from all sorts of sources, times, and places. The current that runs
+                    <lb/>through these texts is a very deep sense of brotherhood, a sense of what
+                    <lb/>a man is <hi rendition="#i">qua</hi> man, not only as a biological being.
+                    There is always in a <lb/>man a mysterious possibility which remains open, so
+                    that one can never <lb/>reduce a human being to a fact. Every human being, as
+                    long as he is <lb/>breathing, has a possibility to create himself in another
+                    way. Thus there <lb/>are legends and stories in which somebody who may always
+                    have been <lb/>despised grows in a certain way, or does something which is
+                    absolutely <lb/>unexpected, so that one wonders at the development of man
+                    through <lb/>himself. So it is that human rights are grounded not on facts, but
+                    on the <lb/>possibility of man's freedom. </p>
+                <p>
+                    <lb/>What strikes one when reading these texts is seeing that most <lb/>human
+                    beings and most cultures contain something of the Kantian idea, <lb/>that the
+                    human being should never be used only as a means, but always <lb/>taken also as
+                    an end. And this is proposed not because he is such a per<lb break="no"/>fect
+                    being, but because he can change, he has the ability of becoming. <lb/>That is
+                    why he deserves and he requires respect, why he has rights. In <lb/>very
+                    different ways, the necessity for this respect is recognized every<lb break="no"
+                    />where, even when it is violated, and even if its only expression is a cry of
+                    <lb/>despair. The sense for this respect, in one way or another, is both more
+                    <lb/>common and more different than one would think before looking into <lb/>the
+                    texts. It seems to me, then, that in order to understand this, we <lb/>must make
+                    use of a faculty other than reason. We need imagination, <lb/>the kind of
+                    sympathetic imagination which enables us to understand dif<lb break="no"/>ferent
+                    cultures and what it means to be respected and treated like a <lb/>human being
+                    in all of them. </p>
+                <p>
+                    <lb/>We turn now to the use of such a book. I would like to say very
+                    <lb/>quickly what it is not. It is not a reflection of the factual, literal
+                    history <lb/>of humanity, which is full of crimes and contempt and offense. It
+                    is, of <lb/>course, not an idealization of human history. Rather, it contains
+                    what <lb/>men from everywhere have conceived as being right, and how they have
+                    <lb/>reacted against what they have believed was wrong. </p>
+                <p>
+                    <lb/>There is a very important fact we must take into account, i.e., <lb/>when
+                    people complain about offenses to human rights, that is proof <lb/>that they are
+                    not the worst victims, for the worst victims are silent. <lb/>Those people who
+                    have been most severely smashed historically have <lb/>[331]been silent. They
+                    have no place in history and no voice in such a book. </p>
+                <p>
+                    <lb/>What can be found in this book are the contradictory aspects of <lb/>human
+                    nature. For instance, there are texts which demand unwritten <lb/>laws, while
+                    others state that those people who speak of demands for <lb/>unwritten laws are
+                    mad: they are burying laws, burying rights and re<lb break="no"/>creating a
+                    situation of force. And neither view is wholely wrong. </p>
+                <p>
+                    <lb/>What is the function of the Universal Declaration today? First of <lb/>all,
+                    it is a kind of moral charter which is common, at least theoretically, <lb/>to
+                    all nations. It is not univocal, but it at least gives to people a mini<lb
+                        break="no"/>mum common reference so they may talk together and prepare for
+                    the <lb/>future. It also is an instrument for victims everywhere, whose rights
+                    <lb/>have been offended. The victims can use, at least to a degree, the Uni<lb
+                        break="no"/>versal Declaration to defend themselves. Another function which
+                    is <lb/>most important is the following: there must be a minimum of common
+                    <lb/>air which intemational civil servants and international organizations can
+                    <lb/>breathe in order to be able to think. No one has the right to make use
+                    <lb/>of his personal ideas when he is working on the level of an interna<lb
+                        break="no"/>tional organization. But the Universal Declaration of Human
+                    Rights <lb/>provides the base upon which international organizations may
+                    flourish <lb/>and develop. It is also the point of departure for more precise
+                    juridical <lb/>conventions, i.e., it provides the clear possibility of applying
+                    the pres<lb break="no"/>sure of intemnational opinion upon absolute sovereign
+                    states. When <lb/>states have signed and ratified a convention, for example the
+                    convention <lb/>against discrimination in education, the intemational
+                    organization asks <lb/>the member states to give a report every second year
+                    saying what is <lb/>done in their country towards the implementation of the
+                    conventions <lb/>they have ratified. They are required to report and the report
+                    is read <lb/>and discussed in public, on the international scene. Here we have
+                    the <lb/>pressure of international opinion, which, though not juridical, is
+                    still <lb/>somehow above national absolute sovereignty. </p>
+                <p>
+                    <lb/>I think also that the Universal Declaration may play a very impor<lb
+                        break="no"/>tant role in cach nation's self‐examination, in helping each
+                    country to <lb/>control itself and to ask itself what it is doing towards the
+                        implementa<lb break="no"/>tion of human rights, This is really an exercise
+                    which I think should be <lb/>widespread in international life. Usually people
+                    believe, especially if they <lb/>are citizens of old democracies, that they have
+                    an innate respect for <lb/>human rights – that at worst there are only details
+                    which are not in <lb/>proper order, at least in their own soul, if not in their
+                    own country. <lb/>Now that is not true at all. As soon as there is a lack of
+                    apartments, or a <lb/>lack of work, or a lack of anything essential to your own
+                    life, your fam<lb break="no"/>ily, or the people you love, you at once find a
+                    good reason for exercising <lb/>your rights against those who are living next
+                    door, especially if the per <pb facs="0006_870_00006-20250320_163628.jpg"
+                        n="332"/>
+                    <lb/>son next door is not a citizen of the country, or is not of the same race. </p>
+                <p>
+                    <lb/>So human rights seem to be a very fragile thing to maintain, and it
+                    <lb/>seems to me that human rights are not, in this sense, natural. I think
+                    <lb/>they are very much against nature. It is natural to use all means, when
+                    <lb/>essential things are at stake, to save oneself, or if not oneself, the
+                    people <lb/>one loves or the ideas one cares for, or the beliefs one lives for,
+                    or the <lb/>country one loves. There always seem to be very good reasons to
+                    violate <lb/>human rights. That is why I think that <hi rendition="#i">if human
+                        rights are to stand,</hi>
+                    <lb/><hi rendition="#i">they have to be conceived in an absolute way</hi>. No
+                    good reason then <lb/>could justify their violation. </p>
+                <p>
+                    <lb/>There must be no excuse for any violation. Otherwise, from com<lb
+                        break="no"/>promise to compromise, from one excuse to another, human rights
+                    will <lb/>never persevere. They are too much against nature, though they are in
+                    <lb/>human nature. But human nature itself is not nature, and there is
+                    <lb/>something in it which is against nature. The implementation of human
+                    <lb/>rights is a task of human nature against nature. </p>
+            </div>
+        </body>
+    </text>
+</TEI>

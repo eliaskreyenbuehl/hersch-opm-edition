@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../oxygen_framework/schema/zbz_hersch.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">La Suisse et l’Europe</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">770</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “La Suisse et l’Europe”. Max Weber. Im Kampf um
+                    soziale Gerechtigkeit, Bern: Herbert Lang, 1967, pp. 34–38.</idno>
+                <idno type="ALMA-MMSID">99117983617305508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117983617305508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_book" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">La Suisse et
+                                l’Europe</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Gruner, Erich</editor>
+                            <editor>Schweizerischer Gewerkschaftsbund</editor>
+                            <title level="m">Max Weber : Im Kampf um soziale Gerechtigkeit. Beiträge
+                                von Freunden und Auswahl aus seinem Werk = Max Weber : Combat pour
+                                la justice sociale. Contributions de ses amis et choix de ses
+                                oeuvres</title>
+                            <textLang mainLang="fra">Französisch</textLang>
+                            <imprint>
+                                <pubPlace>Bern</pubPlace>
+                                <publisher>Herbert Lang</publisher>
+                                <date when="1967">1967</date>
+                                <biblScope unit="page">34-38</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#article"/>
+                <catRef scheme="hersch_keywords" target="#europa-und-die-schweiz"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb facs="0001_770_00001-20250522_100616.jpg" n="34"/>
+            <div type="article" n="1" xml:id="d770-1">
+                <head>
+                    <title type="main">La Suisse et l'Europe</title>
+                </head>
+                <p>
+                    <lb/>La Suisse n'est en aucune façon un produit naturel. Qu'elle se situe à la
+                    source des <lb/>grands fleuves dont les cours divergents arrosent l'Europe ne la
+                    prédestinait nullement <lb/>à se constituer en Etat. Pas, ou très peu, de
+                    données communes dans les réalités géo<lb break="no"/>politiques de ses cantons.
+                    Et même, semble‐t‐il, peu de données complémentaires. </p>
+                <p>
+                    <lb/>L'amour engendre ses raisons. Belle, l'aimée l'est parce qu'elle est maigre
+                    ou plantu<lb break="no"/>reuse, sévère ou souriante, blonde ou brune, puissante
+                    ou fragile. La patrie aimée se <lb/>pare des frontières naturelles, mers ou
+                    montagnes, qui la délimitent, l'isolent et la pro<lb break="no"/>tègent, ou de
+                    la vulnérabilité de ses plaines ouvertes à l'infini. Comme tout objet aimé,
+                    <lb/>la patrie est ressentie comme <hi rendition="#i">nécessaire</hi>,
+                    c'est‐à‐dire, contre toute raison, comme condi<lb break="no"/>tion de l'ordre et
+                    du sens dans le monde. Bien avant d'être – tel est le sentiment de ses <lb/>fils
+                    – elle ne pouvait pas ne pas être. Et elle ne pourrait pas, sans scandale,
+                    cesser d'être <lb/>un jour. </p>
+                <p>
+                    <lb/>La France est un hexagone, l'Italie une botte, l'Angleterre une ile. On
+                    éprouve ici, <lb/>fortement, combien de telles déterminations, bien que
+                    limitatives, donnent de densité <lb/>à un être. L'Allemagne n'est jamais sortie
+                    de l'angoisse que lui donnent ses frontières <lb/>indécises. La Suisse? Qui
+                    donc, en dehors des états‐majors, a jamais pensé à ses fron<lb break="no"
+                    />tières? </p>
+                <p>
+                    <lb/>Parfaitement à l'aise à l'intérieur de ce pourtour compliqué et informe,
+                    arbitraire et <lb/>conventionnel, la Suisse l'ignore. La conception du "réduit
+                    national", qui commanda <lb/>la défense du pays pendant la dernière guerre, est
+                    caractéristique. La Suisse n'est pas <lb/>essentiellement un territoire. Il faut
+                    dire, certes, que tous les autres pays, dans notre <lb/>monde scientifique et
+                    industriel, sont de moins en moins des territoires. Mais sur ce <lb/>point la
+                    Suisse les a précédés: elle ne l'a jamais été. Un territoire, c'est une donnée,
+                    un <lb/>donné, un cadeau, une réalité de nature, de destin ou de Dieu. </p>
+                <p>
+                    <lb/>La Suisse n'a pas été donnée. </p>
+                <p>
+                    <lb/>Elle a été voulue. Elle est une réalité politique. Elle n'est rien d'autre
+                    que son histoire. <lb/>Elle se mesure non en surface, mais en durée. Son être,
+                    elle le cherche et le trouve dans <lb/>le récit des problèmes, des efforts, des
+                    exploits qui l'ont faite. Ses traditions, c'est un <lb/>tissu de solutions <hi
+                        rendition="#i">inventées</hi>. </p>
+                <p>
+                    <lb/>Mais alors les montagnes, les vallées, les glaciers sublimes, tout ce décor
+                    incomparable? <lb/>Certes, si la Suisse n'a pas été voulue, elle ne s'est pas
+                    faite hors de toutes données géo<lb break="no"/>graphiques. </p>
+                <p>
+                    <pb facs="0001_770_00001-20250522_100616.jpg" n="35"/>
+                    <lb/>Il y avait cette situation, ces distances de la mer, ces terres étroites
+                    encombrées de roche <lb/>et de glace, ces champs difficiles sur des pentes
+                    raides, ces fleuves divergents, ces lacs. <lb/>Il y avait le tohu‐bohu des
+                    Alpes, où les troupeaux s'accrochaient aux pâturages, les <lb/>longs plis du
+                    Jura, propices aux travaux de patience, et entre les deux, le Plateau, ouvert,
+                    <lb/>vulnérable, perméable aux armées, mais aussi aux coutumes et aux
+                    changements du <lb/>dehors. </p>
+                <p>
+                    <lb/>Il y avait aussi, tout autour, ces nations périodiquement ennemies,
+                    rassurées dans <lb/>l'immédiat par un peuple dont elles n'avaient rien à
+                    craindre et qui gardait les cols <lb/>contre toutes, donnant à chacune le temps,
+                    en cas de danger, de se lever et de saisir <lb/>ses armes. </p>
+                <p>
+                    <lb/>Il y avait encore bien d'autres "données de fait", comme par exemple, à
+                    l'intérieur, ces <lb/>peuples divers au creux de vallées longtemps isolées du
+                    reste du monde et même entre <lb/>elles, divers par les dialectes et même par
+                    les langues, par les coutumes, les croyances, <lb/>les goûts. </p>
+                <p>
+                    <lb/>Il est de tradition, en Suisse, d'"expliquer" le pays par ces données,
+                    comme si elles <lb/>l'avaient fait ce qu'il est. Certes, eussent‐elles été
+                    différentes, le pays eût été autre, ou <lb/>n'eût pas été du tout. Mais rien,
+                    dans ces données, n'était capable d'engendrer un Etat <lb/>fédéral durable. La
+                    Suisse n'a été "un produit" ni de la configuration naturelle, ni de <lb/>la
+                    diversité de ses petits peuples, ni des rivalités de ses voisins. Il a fallu la
+                    vouloir. Au <lb/>contraire, elle proclame sous le ciel que la volonté politique
+                    est possible, qu'elle peut <lb/>créer un organisme viable et le faire vivre à
+                    travers les siècles, faisant de petitesse et de <lb/>faiblesse vertu, de
+                    diversité ciment, de fragilité durée. </p>
+                <p>
+                    <lb/>Fruit d'un vouloir délibéré <hi rendition="#i">contre</hi> des données de
+                    fait dont aucune n'imposait son exis<lb break="no"/>tence, elle a dû être pour
+                    elle‐même l'objet d'une vigilance et de soins incessants. Et <lb/>son paradoxe
+                    essentiel, c'est qu'elle s'est ainsi trouvée asservie, plus peut‐être que
+                    <lb/>d'autres pays, à un souci primordial de <hi rendition="#i"
+                        >conservation</hi>, rétablissant le règne de ces mêmes <lb/>données de fait
+                    que bravaient sa création et sa durée. N'étant pas un produit naturel, <lb/>elle
+                    gardait la précarité et le prix de toute œuvre volontaire. Fragile et
+                    contestable, il <lb/>lui fallait sans cesse se maintenir et se justifier. Elle
+                    s'identifiait dans ses chants patrio<lb break="no"/>tiques aux rochers de ses
+                    montagnes, mais rien ne lui faisait plus défaut que leur péren<lb break="no"
+                    />nité et leur évidence. </p>
+                <p>
+                    <lb/>Se maintenir en se justifiant, se justifier en se maintenant. Se justifier,
+                    pour un être <lb/>créé volontairement, c'est d'une part se réclamer de principes
+                    et de valeurs permanents, <lb/>d'autre part s'affirmer indispensable aux autres.
+                    C'est aussi, à force de durer, conquérir <lb/>un peu de cette légitimité que les
+                    autres ont trouvée toute offerte dans leur homogénéité <lb/>relative à
+                    l'intérieur d'un territoire bien net, délimité par des frontières naturelles.
+                    C'est, <lb/>au nom de son être, revendiquer le droit de persévérer dans l'être. </p>
+                <p>
+                    <lb/>Il est difficile, avec de telles prémisses, d'être souple au fil du temps
+                    et ouvert aux sug<lb break="no"/>gestions de l'histoire. Ce qui accapare
+                    l'attention, c'est la nécessité où l'on est de se <lb/>réadapter sans cesse aux
+                    changements qui surviennent, sans perdre en route, cependant, <lb/>les éléments
+                    de justification permanents. C'est difficile, en particulier, lorsque les chan
+                        <pb facs="0002_770_00002-20250522_100616.jpg" n="36" break="no"/><lb
+                        break="no"/>gements survenus alentour altèrent les termes de la
+                    justification permanente. Par <lb/>exemple, si les nations voisines cessent
+                    d'être des adversaires virtuels dans un conflit <lb/>futur, si le front des
+                    conflits possibles se déplace, si la Suisse, même en restant utile, n'a
+                    <lb/>plus de raison pour se proclamer indispensable. </p>
+                <p>
+                    <lb/>Mais c'est surtout difficile s'il ne suffit plus de durer et de s'adapter à
+                    des données chan<lb break="no"/>geantes, s'il devient nécessaire d'inventer et
+                    de créer volontairement du nouveau, à <lb/>travers des données et en partie
+                    contre elles – s'il faut donc refaire un acte politique libre <lb/>et
+                    volontaire, analogue à celui qui a donné son existence au pays. </p>
+                <p>
+                    <lb/>Le terme de "politique" n'a pas bonne presse en Suisse. Avec des variations
+                    de degré <lb/>selon les régions linguistiques et selon qu'il s'agit de
+                    populations rurales ou urbainer, <lb/>il a néanmoins partout un relent
+                    d'intrigue, de paroles creuses, d'agitation vaine, de <lb/>dépenses stériles. La
+                    politique est chose encore plus mal vue que la philosophie, ce qui <lb/>n'est
+                    pas peu dire. Les gens sérieux s'occupent d'économie, d'aménagements locaux,
+                    <lb/>et, comme ils ne sont pas matérialistes et qu'ils ont des besoins
+                    spirituels, ils s'occupent <lb/>aussi de religion. Mais pas de politique.
+                    L'idéal serait que les sept conseillers fédéraux <lb/>fussent des économistes et
+                    des pasteurs, à la rigueur des pédagogues, mais des hommes <lb/>politiques
+                    jamais. </p>
+                <p>
+                    <lb/>Et pourtant, comme je l'ai dit, la nature profonde du pays est politique.
+                    Il s'agit d'une <lb/>création volontaire, réalisée délibérément sur la base d'un
+                    contrat choisi. Le niveau <lb/>politique, c'est celui où les options ultimes
+                    s'incarnent dans la réalité sociale, celui où <lb/>l'esprit intervient dans le
+                    donné économique. C'est peut‐être le plus difficile, celui où <lb/>les
+                    responsabilités sont les plus lourdes, car les pensées y ont leurs conséquences
+                        con<lb break="no"/>crètes. </p>
+                <p>
+                    <lb/>On a dit souvent – et en partie abusivement – qu'une Europe unie serait
+                    fédérée sur le <lb/>modèle de la Suisse, que la Suisse avait plus de raisons que
+                    tout autre pays d'adhérer <lb/>sans réserve à l'entreprise d'unification
+                    européenne puisqu'elle se reconnaîtrait sans <lb/>peine, simplement agrandie,
+                    dans les structures du nouvel Etat continental. Il y a sans <lb/>doute là‐dedans
+                    du vrai et du faux. Mais il y aurait nécessairement, me semble‐t‐il, <lb/>entre
+                    la Suisse et une Europe unie, une parenté beaucoup plus profonde encore que
+                    <lb/>celle d'une structure fédérale: l'Europe, comme la Suisse, si elle se fait
+                    un jour, sera <lb/>une œuvre politique, humaine, le fruit d'un effort délibéré,
+                    d'une option consciente, et <lb/>non une donnée allant de soi, imposée par
+                    l'histoire ou la géographie. Petit cap de <lb/>l'Asie, a‐t‐on dit. Petit cap
+                    informe, aux frontières indécises, et il faudra bien aussi y <lb/>fonder l'unité
+                    sur la diversité et la fierté sur la petitesse. </p>
+                <p>
+                    <lb/>On a essayé, pour l'Europe comme pour la Suisse, de montrer qu'"elles
+                    s'imposaient" <lb/>à tout regard lucide posé sur une carte ou sur une
+                    perspective historique. Je crois <lb/>qu'elles ne "s'imposent" ni l'une ni
+                    l'autre. Mais pourquoi préférer ce qui s'impose à <lb/>ce qui, pour être, doit
+                    avoir été librement voulu? </p>
+                <p>
+                    <lb/>Je me demande d'où vient aujourd'hui le discrédit général des créations
+                    volontaires <lb/>Qu'il s'agisse d'un plan de recherche scientifique, d'un
+                    système d'approvisionnement, <lb/>d'un programme d'aide à un pays en
+                    développement, d'une méthode pédagogique, de <pb
+                        facs="0001_770_00001-20250522_100616.jpg" n="37"/>
+                    <lb/>la conception d'un immeuble, l'idéal semble être d'en <hi rendition="#i"
+                        >constater</hi> la structure pré‐écrite <lb/>dans les faits eux‐mêmes,
+                    prescrite par eux, ou, selon les cas, par des machines où les <lb/>faits
+                    auraient été préalablement enregistrés, classés, évalués, comparés. Il n'est pa
+                    <lb/>jusqu'à l'œuvre d'art qui ne se trouve discréditée par n'importe quelle <hi
+                        rendition="#i">intention</hi> de son <lb/>créateur: il faut qu'elle soit née
+                    par le seul jaillissement de la couleur hors des tubes, ou <lb/>par la seule
+                    explosion de l'inconscient, ou encore par de savantes, mais aveugles
+                    <lb/>recherches commandées par les rapports mêmes des séries et des nombres.
+                    D'où vient, <lb/>en ce siècle où l'homme fait rendre l'âme à son profit à la
+                    nature entière, ce besoin en <lb/>lui de se nier, de s'effacer, de se démettre,
+                    face à cette nature soumise et dénaturée, au <lb/>point d'avoir en tout horreur
+                    de dire: "Je l'ai fait exprès"? </p>
+                <p>
+                    <lb/>La Suisse a été faite exprès. L'Europe, si elle se fait, aura été faite
+                    exprès. Ne mérite, à <lb/>proprement parler, d'être dite "politique" qu'une
+                    réalité "faite exprès". Et même, à <lb/>proprement parler, cela seul mérite
+                    d'être dit "historique ". Car ce qui se constate dans <lb/>les faits, ou même ce
+                    que les faits à eux seuls annoncent, et que certaines machines per<lb break="no"
+                    />mettent de prédire, ce n'est encore et toujours que la nature et sa nécessité. </p>
+                <p>
+                    <lb/>Ce qui est fait "exprès" garde toujours en soi une précarité spécifique.
+                    Ayant été faite <lb/>exprès, la Suisse a, plus qu'un autre pays, besoin de
+                    sollicitude et de vigilance. C'est <lb/>en bonne partie sa précarité qui
+                    explique et justifie sa neutralité, la neutralité étant par <lb/>excellence un
+                    statut politique, et non naturel. </p>
+                <p>
+                    <lb/>Seulement la neutralité, comme bien d'autres particularités écrites ou non
+                    écrites de <lb/>la Suisse, était encore naguère une mesure de sauvegarde
+                    statique. Elle date d'un temps <lb/>où les réalités politiques, pour durer, pour
+                    "persister dans l'être", devaient avant tout <lb/>écarter ou prévenir les
+                    menaces d'anéantissement ou de désagrégation pouvant surgir <lb/>de l'extérieur
+                    ou de l'intérieur. Essentiellement politique, mesurant son être non en
+                    <lb/>espace, mais en durée, le pays s'installa au sein des siècles, cherchant à
+                    rester identique <lb/>à lui‐même et ne subissant que malgré lui les
+                    transformations de l'histoire. </p>
+                <p>
+                    <lb/>Or les temps ont changé. Ce qui veut survivre doit désormais trouver en soi
+                    la source <lb/>d'une re‐création de soi. Rien de narcissiste là‐dedans, au
+                    contraire: c'est le devenir du <lb/>monde qui exige partout une nouvelle
+                    réponse, une nouvelle présence. La Suisse s'en <lb/>est bien aperçue: attachée
+                    quasi religieusement à sa neutralité, elle a entrepris de la <lb/>sauver en la
+                    réinventant, sous la forme d'une collaboration multipliée partout où "la
+                    <lb/>politique", à la fois dangereuse et méprisée, ne s'en mêle pas trop
+                    manifestement. </p>
+                <p>
+                    <lb/>Mais l'Europe, je l'ai dit, est elle aussi une réalité politique, et celle
+                    qui essaye aujour<lb break="no"/>d'hui de se constituer l'est doublement. Elle
+                    se fait "exprès", et chacune des étapes de <lb/>sa création porte la marque
+                    pathétique des efforts volontaires, tenaces, sans cesse mena<lb break="no"/>cés
+                    d'échec, sans lesquels il n'y aurait pas d'histoire humaine, mais seulement une
+                    <lb/>histoire naturelle. Elle est donc précaire et les faits ne l'imposent pas.
+                    Seules l'imposent <lb/>des fins, à la manière dont des fins s'imposent,
+                    c'est‐à‐dire en entraînant l'adhésion de <lb/>notre liberté. </p>
+                <p>
+                    <lb/>Ces fins, il est difficile de les rappeler, tant certaines d'entre elles
+                    sont banales – du moins <lb/>au niveau des mots et de la propagande: création
+                    d'un sujet politique proportionné aux <pb
+                        facs="0003_770_00003-20250522_100616.jpg" n="38"/>
+                    <lb/>grandes puissances continentales d'aujourd'hui, à travers lequel les
+                    peuples d'Europe <lb/>pourraient contribuer à construire l'ordre universel de
+                    demain; création d'un ensemble <lb/>économique proportionné aux investissements
+                    industriels, d'installations pour la <lb/>recherche, de budgets pour les
+                    savants, de formation des cadres, d'apprentissage pour <lb/>tous; création d'un
+                    climat éthique où serait refusée l'uniformisation aussi bien par <lb/>la
+                    publicité des affaires géantes que par le despotisme du parti unique et de la
+                    dictature, <lb/>fût‐elle collégiale, et où s'épanouirait le multiple trésor de
+                    la diversité et des divergences <lb/>humaines; création d'une prospérité mise au
+                    service du développement de chacun et <lb/>de tous, par la diffusion simultanée
+                    de la culture et des responsabilités. </p>
+                <p>
+                    <lb/>Propagande? Non, car ce ne sont pas des promesses. Il n'est pas sûr que
+                    l'Europe se <lb/>fera. Si elle se fait, il n'est pas sûr qu'elle sera fidèle à
+                    ces fins. Si elle l'est, il n'est pas sûr <lb/>qu'elle survivra. Et si elle
+                    survit, il n'est pas sûr que l'homme, que les hommes concrets <lb/>de demain
+                    sauront servir ces mêmes fins et les nourrir de leur substance, de leur temps
+                    <lb/>et de leur peine. </p>
+                <p>
+                    <lb/>Mais ce sont des fins qu'on peut vouloir servir, et dont on peut penser que
+                    la Suisse, <lb/>cet être politique, les servirait historiquement en contribuant
+                    à créer cet autre être poli<lb break="no"/>tique, aussi précaire qu'elle, aussi
+                    dépendant du vouloir des hommes, que serait une <lb/>véritable Europe unie. </p>
+            </div>
+        </body>
+    </text>
+</TEI>

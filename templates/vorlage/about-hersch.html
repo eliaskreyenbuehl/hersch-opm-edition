@@ -1,0 +1,64 @@
+<template>
+    ---json
+    {
+        "templating": {
+            "extends": "templates/layouts/hersch-base.html"
+        },
+        "features": {
+            "toolbar": {
+            "enabled": false
+        }
+        },
+        "styles": [
+            "transform/teipublisher.css","transform/landing.css"
+        ],
+        "script": {
+            "custom": [
+                "resources/scripts/language.js"
+            ]
+        }
+    }
+    ---
+    [% template styles %]
+    [% endtemplate %]
+    [% template breadcrumbs %]
+        <li>
+            <a href="[[ $context-path ]]/home.html">Home</a>
+        </li>
+        <li>Jeanne Hersch</li>
+        <li class="variable-length">
+        <pb-i18n key="about.biography">Biography</pb-i18n>
+    </li>
+    [% endtemplate %]
+    <main class="about">
+        <aside>
+            <ul>
+                <li>
+                    <a class="active" href="[[ $context-path ]]/about-hersch.html">
+                        <pb-i18n key="about.biography">Biography</pb-i18n>
+                    </a>
+                </li>
+                <li>
+                    <a href="[[ $context-path ]]/about-bibliography.html">
+                        <pb-i18n key="about.forschungsliteratur">Research Literature</pb-i18n>
+                    </a>
+                </li>
+                <li>
+                    <a href="[[ $context-path ]]/about-audiovisual.html">
+                        <pb-i18n key="about.audiovisuellebeiträge">Audiovisual Contributions</pb-i18n>
+                    </a>
+                </li>
+                <li>
+                    <a href="[[ $context-path ]]/about-society.html">
+                        <pb-i18n key="about.jeanneherschgesellschaft">Jeanne Hersch Society</pb-i18n>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="center">
+            [[ landing:section($context, 'biography', $hersch?content, 'landing.odd') ]]
+        </div>
+    </main>
+
+
+</template>

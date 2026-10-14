@@ -1,0 +1,1883 @@
+a
+/* To take out the search icon from the left-side of the search box */
+:root{
+    --jinks-form-border-radius: 0;
+    --jinks-search-input-icon: none;
+}
+:host(pb-search) .input-wrapper {
+    border-radius:0;
+    border:none;
+}
+
+/* ─── Font Faces ───────────────────────────────────────────── */
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('../fonts/ESRebondGrotesque-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('../fonts/ESRebondGrotesque-Medium-Italic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('../fonts/ESRebondGrotesque-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('../fonts/ESRebondGrotesque-Bold-Italic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../fonts/eb-garamond-400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../fonts/eb-garamond-400italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../fonts/eb-garamond-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../fonts/eb-garamond-700italic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+ /* ─── Design Tokens ────────────────────────────────────────── */
+ :root {
+     --bg-page:       #EEEAE8; /* warm beige – page background    */
+     --bg-aphorism:   #E6E8EF; /* light lavender-grey             */
+     --bg-topics:     #D9DCE4; /* slightly darker lavender-grey   */
+     --bg-footer:     #F1DF96; /* golden yellow                   */
+     --bg-logo:       #F4EAE0; /* soft cream – logo circle        */
+     --bg-lightnude:  #FFF4EA; /* hersch biographie */
+     --bg-green : #E1E5DA; /*project page*/
+     --light-blue:    #E6E9F0;
+     --medium-blue:   #D9DCE5;
+     --breadcrumb-color: rgba(0, 0, 0, 0.50);
+     --light-grey:      rgba(0, 0, 0, 0.15);
+     --border-color:  black;
+     --text-primary:  #000000;
+     --font-sans:     'ES Rebond Grotesque', system-ui, sans-serif;
+     --font-serif:    'EB Garamond', Georgia, serif;
+     --max-w:         1920px;
+     --section-px:    clamp(16px, 3vw, 40px);
+     --section-py:    clamp(16px, 2vw, 24px);
+     --menu-bg:      #F2E096;
+     --jinks-base-font-family: var(--font-serif);
+ }
+
+
+body{
+    font-family: var(--font-serif);
+}
+.logo {
+    background-image: none;
+}
+a.logo {
+    width: fit-content;
+}
+/* ─── Reset + Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+    /* pico-components.css paints an opaque white background on the root
+       element, which blocks the browser's canvas-background propagation
+       from body. Keeping it transparent lets body's background (which
+       varies per page/section) fill the whole viewport/canvas instead of
+       leaving a white gap wherever content is shorter than the page. */
+    background-color: transparent;
+}
+body {
+    font-family: var(--font-sans);
+    font-size: clamp(18px, 1.9vw, 27px);
+    font-feature-settings: 'ss04' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--light-blue);
+    color: var(--text-primary);
+    overscroll-behavior: none;
+}
+main{
+    min-height:35rem;
+    height:auto;
+    max-width:var(--max-w);
+    /*width:calc(100% - 2rem);*/
+    max-width: var(--max-w);
+    margin:0 auto;
+}
+p { font-size: clamp(18px, 1.9vw, 27px); }
+
+/* --- page coloring --- */
+#works{
+    background-color: var(--bg-topics);
+}
+/* ─── Page max-width wrapper ───────────────────────────────── */
+.page-wrap {
+    max-width: 2560px;
+    margin: 0 auto;
+}
+a {
+    color: inherit;
+    text-decoration: underline dotted;
+}
+a:hover {
+    text-decoration: underline solid;
+}
+ul { list-style: none; }
+h3 { font-size: clamp(17px, 1.8vw, 26px); font-weight: 500; }
+
+.section-aphorism,
+.section-topics,
+.site-footer {
+    border-top: 2px solid black;
+}
+
+.section-aphorism{
+    min-height:37.5rem;
+}
+/* ─── overwrite documents.css ───────────────────────────────────────────────── */
+#document-list pb-load {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+div#document-list {
+    padding:1rem 2.5rem 0 0;
+    position: relative;
+}
+#document-list #load-more{
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: black;
+        cursor: pointer;
+        text-transform:none;
+        margin:0;
+}
+/* ─── Header ───────────────────────────────────────────────── */
+.site-header {
+    /*
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    */
+    width: 100%;
+    max-width: var(--max-w);
+    margin:0 auto;
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 1rem var(--section-px);
+}
+
+header.content-top{
+    max-width: var(--max-w);
+    margin:0 auto;
+}
+
+.fixed-layout{
+    display: block;
+
+    > main{
+        overflow:hidden;
+        padding:0 var(--section-px);
+
+    }
+}
+
+/* ─── Document reading page: 3-column main ─────────────────────
+   aside (1/4) | document (2/4) | spare/unused (1/4) */
+main:has(> .center) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 2rem;
+}
+
+/* overflow:hidden on .fixed-layout > main would make main itself the
+   scrollport reference for position:sticky, breaking the sticky aside
+   and title bar below since main never scrolls independently. */
+.fixed-layout main:has(> .center) {
+    overflow: visible;
+}
+
+.fixed-layout main:has(> .center) > aside {
+    grid-column: 1;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    align-items: stretch;
+    align-self: start;
+    position: sticky;
+    /* Sticks with a 1rem gap from the viewport top instead of flush - simpler
+       and jump-free compared to sticking at top:0 and adding padding via a
+       JS-detected .stuck class once it's already pinned. */
+    top: 1rem;
+    overflow-anchor: none;
+}
+
+
+main:has(> .center) > .center {
+    grid-column: 2;
+    max-width: none;
+    min-width: 0;
+    border-left:rgba(0,0,0,0.15) solid 2px;
+}
+
+/* layouts.css makes .center a flex container (.fixed-layout > main > .center
+   { display:flex }) to center its content column. Flex items default to
+   min-width:auto, so its child (the rendered section wrapping the page
+   content) won't shrink below its own intrinsic content width - if that
+   content contains something wide like a table, the flex item, .center,
+   and the grid column above it all get pushed wider than the viewport.
+   min-width:0 lets it shrink and defer overflow handling to the table's
+   own wrapper (see .tei-div:has(> table) below). */
+.fixed-layout > main > .center > * {
+    min-width: 0;
+}
+
+/* base.css sets pb-view::part(content){padding-top:1rem} globally for every
+   pb-view in the app. On this document page that stacks on top of .fixed's
+   own padding-top, making the gap above the title look too big. Overriding
+   it via the page-specific .document-view class (added only in
+   templates/pages/hersch.html) keeps every other page using pb-view at the
+   default 1rem. */
+pb-view.document-view::part(content) {
+    padding-top: 0;
+}
+
+@media (max-width: 768px) {
+    main:has(> .center) {
+        display: block;
+    }
+
+    .fixed-layout main:has(> .center) > aside {
+        position: static;
+    }
+
+
+}
+
+/* Sidebar (aside) content on the document reading page */
+main:has(> .center) > aside > div {
+    width: 100%;
+}
+
+main:has(> .center) > aside > div > details > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    border-top:2px solid black;
+}
+
+aside.edition ul {
+    font-size: 14pt;
+}
+
+aside.edition details {
+    padding-bottom: 1rem;
+}
+
+aside.edition pb-view::part(content) {
+    font-size: 14pt;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.register{
+    background-color: var(--light-blue);
+    border-left:2px solid var(--light-grey);
+    padding:3rem;
+
+    /* shouldn't be here but configured in components */
+    h1{
+        font-size: 2.25rem;
+    }
+    pb-load > div > div:not(:first-child) {
+        margin-top: 4rem;
+    }
+
+    span.tei-persName {
+        font-size: 1.625rem;
+    }
+}
+pb-load.register__bubbles{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:1rem;
+
+    > div{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    a{
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.50);
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size:1.125rem;
+        margin:0.5rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-decoration: none;
+    }
+}
+
+
+main:has(> .center) > aside > div > details > summary::-webkit-details-marker {
+    display: none;
+}
+
+main:has(> .center) > aside > div > details > summary::after {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: var(--jinks-dropdown-button-chevron-size);
+    height: var(--jinks-dropdown-button-chevron-size);
+    background-image: var(--jinks-dropdown-button-chevron-image);
+    background-size: var(--jinks-dropdown-button-chevron-size) auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease;
+}
+
+main:has(> .center) > aside > div > details[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+/* Index / table of contents */
+main:has(> .center) > aside pb-load.toc {
+    display: block;
+    width: 100%;
+}
+
+main:has(> .center) > aside .toc {
+    --jinks-toc-indent: 0px;
+    display: block;
+    width: 100%;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    padding-bottom: 1rem;
+}
+
+main:has(> .center) > aside .toc ul > li:not(:has(details)) {
+    padding: 0.3rem 0 0.3rem 0;
+    border: none;
+    border-radius: 0;
+}
+
+main:has(> .center) > aside .toc details > summary {
+    padding: 0.5rem 0;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 0;
+}
+
+main:has(> .center) > aside .toc details > summary::after {
+    display: none;
+}
+
+main:has(> .center) > aside .toc details summary:hover,
+main:has(> .center) > aside .toc ul > li:not(:has(details)):hover {
+    border: none;
+    background-color: transparent;
+}
+
+main:has(> .center) > aside .toc details > summary:has(> .active),
+main:has(> .center) > aside .toc details:not(:has(summary > .active)) ul > li:has(> .active) {
+    background-color: transparent;
+}
+
+main:has(> .center) > aside .toc pb-link a {
+    text-decoration: none;
+}
+
+main:has(> .center) > aside .toc .active,
+main:has(> .center) > aside .toc .active a {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.logo-square,
+.logo-wide {
+    display: block;
+    transition: opacity 0.35s ease;
+}
+.logo-square {
+    height: clamp(90px, 10vw, 145px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.logo-wide {
+    width: 15rem;
+    pointer-events: none;
+    margin-left:-1px; /* hack */
+    max-width:unset;
+}
+#home .logo-wide{
+    opacity: 0;
+}
+#home .site-header.is-scrolled .logo-square {
+    opacity: 0;
+    pointer-events: none;
+}
+#home .site-header.is-scrolled .logo-wide {
+    opacity: 1;
+    pointer-events: auto;
+}
+#home .arrow-up{
+    position:absolute;
+    bottom:1rem;
+    right:var(--section-px);
+}
+
+/*
+.header-nav {
+    background-color: var(--menu-bg);
+}
+*/
+.header-nav__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+}
+
+/* ─── Hero Section ─────────────────────────────────────────── */
+.section-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 37.5rem;
+    max-height: 60.5rem;
+}
+
+.intro__image {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    max-height: 100vh;
+}
+.intro__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(100%);
+    display: block;
+}
+
+.intro__content {
+    display: flex;
+    align-items: center;
+    padding: var(--section-py) clamp(40px, 5vw, 80px);
+}
+.intro__content-inner {
+    max-width: 700px;
+}
+
+.intro__description, .intro__content .tei-p, .document-title {
+    font-family: var(--font-serif);
+    font-size: clamp(16px, 1.4vw, 22px);
+    line-height: 1.65;
+    color: var(--text-primary);
+    margin-bottom: 28px;
+}
+
+.intro__title, .tei-head {
+    font-family: var(--font-sans);
+    font-size: clamp(26px, 2.5vw, 36px);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 40px;
+    letter-spacing: 0.01em;
+}
+
+.intro__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top:2rem;
+
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-sans);
+    font-size: clamp(17px, 1.8vw, 26px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width: fit-content;
+}
+.nav-btn:hover { opacity: 0.6; }
+.nav-btn__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.nav-btn__circle img {
+    width: auto;
+    height: 1rem;
+}
+
+#home .intro__content{
+    background-color: var(--bg-page);
+}
+
+/* ─── Aphorism Section ─────────────────────────────────────── */
+.section-aphorism {
+    background-color: var(--bg-aphorism);
+    padding: var(--section-py) var(--section-px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.section-aphorism .section-inner > * {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+}
+.section-aphorism .section-inner > *::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+.section-aphorism blockquote {
+    flex: 0 0 100%;
+    min-width: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.section-aphorism blockquote > a.section-header__link {
+    display: none;
+    position: absolute;
+    top: 1.25rem;
+    right: var(--section-px);
+}
+.section-aphorism blockquote.active > a.section-header__link,
+.section-aphorism:not(:has(blockquote.active)) blockquote:first-of-type > a.section-header__link {
+    display: flex;
+}
+.section-aphorism blockquote a.prev,
+.section-aphorism blockquote a.next {
+    display: none;
+    position: absolute;
+    bottom: 1rem;
+    cursor: pointer;
+}
+.section-aphorism blockquote a.prev { right: calc(var(--section-px) + 3rem); }
+.section-aphorism blockquote a.next { right: var(--section-px); }
+.section-aphorism blockquote a.prev svg,
+.section-aphorism blockquote a.next svg,
+.section-aphorism blockquote a.section-header__link svg {
+    width: 2.1875rem;
+    height: 1.5625rem;
+}
+.section-aphorism blockquote.active a.prev,
+.section-aphorism blockquote.active a.next,
+.section-aphorism:not(:has(blockquote.active)) blockquote:first-of-type a.prev,
+.section-aphorism:not(:has(blockquote.active)) blockquote:first-of-type a.next {
+    display: block;
+}
+.section-aphorism .section-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 9%;
+}
+p.tei-quote.tei-quote2.aphorism__quote{
+    width:calc(100% - 2rem);
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: clamp(32px, 4vw, 56px);
+}
+.section-header__label {
+    font-family: var(--font-sans);
+    font-size: clamp(16px, 1.05vw, 20px);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+.section-header__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-sans);
+    font-size: clamp(16px, 1.05vw, 20px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.section-header__link:hover { opacity: 0.6; }
+
+.aphorism__quote {
+    font-family: var(--font-sans);
+    font-size: clamp(26px, 2.5vw, 36px);
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 900px;
+    margin-bottom: 24px;
+    letter-spacing: 0.01em;
+}
+.aphorism__source {
+    font-family: var(--font-serif);
+    font-size: clamp(16px, 1.2vw, 18px);
+    line-height: 1.6;
+    opacity: 0.75;
+    max-width: 820px;
+}
+
+/* ─── Topics Section ───────────────────────────────────────── */
+.section-topics {
+    background-color: var(--bg-topics);
+    padding: var(--section-py) var(--section-px);
+    display: flex;
+    flex-direction: column;
+    height:33.75rem;
+    position: relative;
+}
+.section-topics .section-header__link {
+    position: absolute;
+    top: 1rem;
+    right: var(--section-px);
+}
+.section-topics .topic-tags {
+    flex: 1;
+    align-content: center;
+    padding-bottom: 9%;
+}
+.section-aphorism .section-inner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.topic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 0;
+    justify-content: center;
+}
+.topic-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-family: var(--font-sans);
+    font-size: clamp(17px, 1.8vw, 26px);
+    font-weight: 500;
+    padding: 14px 20px;
+    border: 2px solid black;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: transparent;
+    text-decoration: none;
+}
+.topic-tag:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+.topic-tag__arrow {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+.topic-tag__arrow img {
+    width: auto;
+    height: 1.5rem;
+}
+.topic-tag__arrow .icon-hover { display: none; }
+.topic-tag:hover .icon-default { display: none; }
+.topic-tag:hover .icon-hover  { display: block; }
+
+@media (max-width: 900px) {
+    .topic-tag__arrow .icon-default { display: none; }
+    .topic-tag__arrow .icon-hover   { display: block; }
+}
+
+/* ─── Footer ───────────────────────────────────────────────── */
+.site-footer {
+    background-color: var(--bg-footer);
+    padding: var(--section-py) var(--section-px);
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-w);
+    margin:0 auto;
+
+}
+.footer__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer__nav a {
+    font-family: var(--font-sans);
+    font-size: clamp(16px, 1.35vw, 22px);
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+.footer__nav a:hover { opacity: 0.6; }
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+.footer__logo img {
+    height: clamp(66px, 7.6vw, 110px);
+    width: auto;
+    display: block;
+    margin-right: 15.625rem;
+}
+
+.footer__legal {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 0;
+    margin-top: auto;
+    padding-top: 24px;
+
+    > * {
+        white-space: nowrap;
+    }
+}
+.footer__legal a,
+.footer__legal span {
+    font-family: var(--font-serif);
+    font-size: clamp(16px, 1.2vw, 18px);
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+.footer__legal a:hover { opacity: 1; }
+
+/* ─── Arrow SVG helper ─────────────────────────────────────── */
+.arrow-right {
+    display: inline-block;
+}
+
+/* ─── Desktop section heights ─────────────────────────────── */
+@media (min-width: 900px) {
+    .section-aphorism,
+    .section-topics,
+    .site-footer {
+        height:33.75rem;
+    }
+}
+
+/* ─── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .logo-square { display: none; }
+    .logo-wide   { opacity: 1; pointer-events: auto; }
+    .section-intro {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: unset;
+        max-height: unset;
+    }
+    .intro__image {
+        height: 100%;
+        min-height: unset;
+        max-height: unset;
+    }
+    .intro__content {
+        padding: 40px 24px;
+    }
+    .intro__nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .site-header nav.header-nav > details{
+        &[open]{
+            width:25rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .logo__text { font-size: 16px; }
+    .header-nav__label { display: none; }
+    .intro__image { height: 100%; }
+    .topic-tags { gap: 10px; }
+    .topic-tag { padding: 10px 14px; }
+    .footer__inner { flex-direction: column; }
+    .site-header nav.header-nav > details{
+        &[open]{
+            width:20rem;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .topic-tags li { flex: 1 1 100%; }
+    .topic-tag { width: 100%; }
+}
+/* ############### */
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* home page nav */
+/* pico-components.css sets `nav, nav ul { display: flex }` and
+   `nav li { display: inline-block }` globally, which flattens this menu's
+   lists into a single row on pages that load it (e.g. document pages) but
+   not on the landing page. Reassert block. */
+nav.header-nav ul {
+    display: block;
+    margin: 0;
+}
+nav.header-nav li {
+    display: block;
+}
+
+nav.header-nav > details{
+    padding:1rem var(--section-px) 1rem 1rem;
+    background-color: transparent;
+
+    > summary{
+       padding:0;
+        cursor:pointer;
+        list-style: none;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        height:3rem;
+        box-sizing:border-box;
+
+        a:link,a:visited{
+            font-size:0.875rem;
+            text-transform:uppercase;
+        }
+        a[aria-current="true"] {
+            text-decoration: underline;
+            text-decoration-thickness: 0.12em;
+            text-underline-offset: 0.2em;
+        }
+
+        .languages{
+            display:none;
+
+            span{
+                padding-right:1rem;
+            }
+        }
+        .header-nav__btn{
+            pointer-events:none;
+            position:relative;
+            font-size: clamp(16px, 1.05vw, 20px);
+
+            img{
+                width:2rem;
+                height:2rem;
+            }
+
+            .close-icon{
+                display:none;
+            }
+        }
+    }
+
+    ul {
+        padding-top:1rem;
+    }
+    > ul > li{
+        position:relative;
+        border-bottom:2px solid black;
+        padding:1.12rem 0;
+        cursor:pointer;
+    }
+    .search-glass{
+        position:absolute;
+        right:1rem;
+        top:0.6rem;
+    }
+    input[type=search]{
+        display:block;
+        width:100%;
+        height:auto;
+        line-height:normal;
+        border:none;
+        border-radius:0;
+        background: rgba(255, 255, 255, 0.50);
+        padding:0.75rem 0.5rem;
+        padding-right:2.5rem;
+        margin-top:3rem;
+        font-size:1rem;
+    }
+
+
+
+    &[open]{
+        position:fixed;
+        top:0;
+        /* position:fixed is relative to the nearest ancestor with a
+           containing block (see body:not(#home) .site-header / #home
+           .site-header below) - `right:0` docks to that container's own
+           right edge, not the true viewport edge. */
+        right:0;
+        z-index:100;
+        display:block;
+        height:100vh;
+        width: 33.75rem;
+        background-color:var(--menu-bg);
+        padding-top:4rem;
+
+        .languages{
+            display:block;
+        }
+        > summary{
+            position:absolute;
+            top:0.5rem;
+            right:2rem;
+            z-index:120;
+            width:calc(100% - 3rem);
+
+            .close-icon{
+                display:block;
+            }
+            .menu-icon{
+                display:none;
+            }
+        }
+
+        li > details > summary{
+            width:100%;
+        }
+        li.search-item{
+            padding:0;
+        }
+        li > details > ul > li{
+            font-size:1.125rem;
+            padding:0.5rem;
+
+        }
+
+    }
+
+
+    li > details > summary{
+        width:100%;
+    }
+    li details[open] .indicator{
+        transform:rotate(90deg);
+    }
+}
+
+/* nested menu items */
+nav.header-nav ul summary{
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+/* #home pins the header to the viewport while the page scrolls beneath it -
+   position:fixed + transform here doubles as the containing block for the
+   fixed-position nav.header-nav details[open] menu, so its `right:0` docks
+   to this max-width header's own right edge rather than the true viewport
+   edge. */
+#home .site-header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+/* Every other page keeps the header in normal flow (it scrolls away), so it
+   needs its own containing block set up separately for the same open-menu
+   docking to work - transform is a no-op here purely to create that
+   containing block. z-index is required alongside it: without one this new
+   stacking context sits at the default layer, and later siblings with their
+   own z-index (e.g. the mobile facets aside, z-index:1) would stack above
+   the header and hide the open menu behind them. */
+body:not(#home) .site-header{
+    position: relative;
+    z-index: 20;
+    transform: translate(0);
+}
+
+/* ─── Search page  ─────────────────────────────────────── */
+
+body:has(div.search-page) {
+    background-color: var(--bg-page);
+}
+
+.search-page .collection {
+    width: 100%;
+    background-color: #F5F3F1;
+    border-left:rgba(0,0,0,0.15) solid 2px;
+}
+
+.document.card {
+    list-style: none;
+    border-bottom:1px dotted var(--border-color);
+    padding-bottom:1.25rem;
+}
+
+/* Wide TEI tables (e.g. about-audiovisual's contributions listing) must
+   scroll within their own box on narrow viewports - otherwise their
+   intrinsic content width pushes out .center's grid column (see
+   min-width:0 above) and breaks the whole page layout. Scrolling the
+   wrapping div (rather than the table itself via display:block) keeps
+   the table's own layout intact - a blockified table's inner row/cell
+   boxes ignore the outer box's width, so it stops respecting a
+   max-width placed directly on it. */
+.tei-div:has(> table) {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table, .tei-list, .matches p, .tei-div p {
+    font-family: var(--jinks-content-font-family);
+    font-size: 1.5rem;
+}
+
+.matches .count {
+    margin-bottom: 1em;
+}
+
+.document-item-search{
+    display: grid;
+    grid-template-columns: 1fr auto 4rem;
+    width: 100%;
+    gap:1rem;
+}
+
+.matches a.hi {
+    color: inherit;
+    background-color: yellow;
+}
+
+
+/* ─── Browse page and Search page ─────────────────────────────────────── */
+body:has(.document-list){
+    background-color: var(--bg-topics);
+    padding:0;
+
+    .toolbar{
+        background-color: var(--bg-topics);
+        padding-right:1rem;
+    }
+
+    .fixed-layout aside {
+        display: flex;
+        width: 25rem;
+        min-width: 18rem;
+        max-width: 25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        padding: 0 1rem 2rem 0;
+
+    }
+
+    pb-custom-form{
+        width: 100%;
+    }
+
+    .search-options{
+        width: 100%;
+    }
+
+    .facets-toggle{
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0.75rem;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: var(--font-sans);
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: var(--text-primary);
+
+        .facets-toggle__label{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .results-count{
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        img{
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+    }
+
+    .facet-heading{
+        border-top: 2px solid var(--border-color);
+        font-size:1rem;
+        text-transform: uppercase;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        cursor:pointer;
+        list-style:none;
+        padding-bottom:0.25rem;
+
+        .facet-control{
+            display:flex;
+            align-items:center;
+            gap:0.5rem;
+        }
+
+        pb-i18n{
+            padding-top:0;
+            padding-bottom:0;
+            display:inline-block;
+        }
+
+        &::-webkit-details-marker{
+            display:none;
+        }
+
+        &::after{
+            content:"";
+            display:block;
+            flex-shrink:0;
+            width: var(--jinks-dropdown-button-chevron-size);
+            height: var(--jinks-dropdown-button-chevron-size);
+            background-image: var(--jinks-dropdown-button-chevron-image);
+            background-size: var(--jinks-dropdown-button-chevron-size) auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.2s ease;
+        }
+    }
+
+    .facet-dimension .facet-list:not(:first-child){
+        padding-top:1rem;
+    }
+    details[open] > .facet-heading::after{
+        transform: rotate(180deg);
+    }
+
+    .date-range{
+        details{
+            padding:0 0.5rem;
+        }
+        .facet-heading{
+            width:100%;
+            display:flex;
+        }
+    }
+
+    .facet-badges{
+        display:flex;
+        flex-wrap:wrap;
+        gap:0.5rem;
+        width:100%;
+        padding: 1rem 0;
+
+        &:empty{
+            display:none;
+        }
+    }
+
+    .facet-badge{
+        display:inline-flex;
+        align-items:center;
+        gap:0.375rem;
+        padding:0.25rem 0.5rem;
+        border:1px solid var(--border-color);
+        border-radius:1rem;
+        font-size:0.875rem;
+        background-color:var(--light-blue);
+        color:var(--text-primary);
+    }
+
+    .facet-badge-reset{
+        appearance:none;
+        background-color:#fff;
+        cursor:pointer;
+        font-family:inherit;
+        font-size:0.875rem;
+    }
+
+    .facet-badge-remove{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:1rem;
+        height:1rem;
+        padding:0;
+        border:none;
+        background:none;
+        color:inherit;
+        font-size:1rem;
+        line-height:1;
+        cursor:pointer;
+    }
+
+    .facet-dimension {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .facet-list{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0;
+        margin: 0;
+
+        ul{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pico's generic `aside li { padding: ... }` rule adds a left/right
+           inset to every <li> inside an <aside> - override it here so the
+           facet rows stay flush with the edge of the list. The gap below
+           (not padding) is what spaces the checkbox from its label. */
+        li{
+            padding: 0;
+            margin: 0;
+        }
+
+        img{
+            width: 1.25rem;
+            height: 1.25rem;
+            flex-shrink: 0;
+            opacity: 0.35;
+        }
+
+        label{
+            flex: 1;
+            color: rgba(0, 0, 0, 0.45);
+            cursor: pointer;
+        }
+
+        .freq{
+            font-size: 0.6875rem;
+            vertical-align: super;
+            color: rgba(0, 0, 0, 0.45);
+        }
+
+        .facet{
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            flex-shrink: 0;
+            margin: 0;
+            border: 1px solid rgba(0, 0, 0, 0.35);
+            background-color: transparent;
+            cursor: pointer;
+
+            &:checked{
+                background-color: var(--text-primary);
+                border-color: var(--text-primary);
+            }
+
+            &:checked ~ label{
+                color: var(--text-primary);
+                font-weight: 700;
+            }
+
+            &:checked ~ img{
+                opacity: 1;
+            }
+        }
+    }
+
+    .facet-list.sub{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+
+        /* indent only the children (the nested <ul>), not the summary itself -
+           padding on the whole <details> would push its own heading row in
+           lock-step with its children instead of just the children. */
+        > ul{
+            padding-left: 1.5rem;
+        }
+
+        label{
+            padding-left: 1rem;
+        }
+    }
+
+    /* facets:display-keywords renders one top-level <details class="facet-list">
+       per keyword category, all as siblings under the same .facet-dimension.
+       The generic .facet-list padding (0.75rem top+bottom) was stacking between
+       adjacent siblings into a much larger visual gap - tighten it here so
+       consecutive categories end up 0.5rem apart instead. */
+    details.facet-list{
+        padding: 0;
+    }
+
+    /* .facet-list li { display: flex } above is an author rule, which always
+       wins over the UA stylesheet's details:not([open]) > *:not(summary)
+       { display: none } regardless of specificity - so it was forcing nested
+       sub-facet <li> children to stay visible even while their <details.sub>
+       is collapsed. Restore the native collapse explicitly. The li's live
+       inside a <ul>, so hide that instead of targeting li directly. */
+    details.facet-list.sub:not([open]) > ul{
+        display: none;
+    }
+
+
+
+
+    #document-list {
+        display: flex;
+        padding: 0 0 2.5rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        flex: 1;
+        min-width: 0;
+
+        .document-list__header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding: 0.5rem 1.75rem;
+
+            pb-custom-form{
+                width:18rem;
+            }
+        }
+
+        .card{
+            padding-left:2rem;
+
+        }
+        pb-load:not(.results,.hit-counter){
+            background-color:var(--bg-aphorism);
+            border-left:rgba(0,0,0,0.15) solid 2px;
+        }
+        li{
+            background-color:transparent;
+            border-radius:0;
+            box-shadow:none;
+        }
+
+        .tei-teiHeader.tei-teiHeader5.document-item {
+            display: grid;
+            grid-template-columns: auto 2rem 2rem 2rem;
+            gap: 1.5rem;
+            align-items:center;
+
+            svg{
+                width:2rem;
+                height:2rem;
+            }
+            .tei-titleStmt6{
+                align-self:start;
+            }
+        }
+        .tei-date{
+            white-space: nowrap;
+        }
+        .sorting{
+            background-color:rgba(0, 0, 0, 0.05);
+
+            fieldset{
+                margin:0;
+                padding:0 0.5rem;
+            }
+        }
+        select{
+            background-color:transparent;
+            border:none;
+            margin:0;
+            width:100%;
+        }
+
+    }
+
+    .document-item {
+        display: grid;
+        grid-template-columns: 1fr 4rem 4rem 4rem;
+    }
+}
+
+/* ─── About page and project page ─────────────────────────────────────────── */
+body:has(main.about) {
+    background-color: var(--bg-lightnude);
+}
+
+main.about, main.project {
+    h2{
+        font-size:1.625rem;
+    }
+    
+    h3, h4 {
+        font-size:1.5rem;
+        font-weight: 500;
+    }
+    
+    li{
+        margin:0;
+    }
+    aside{
+        border-top:2px solid;
+
+        a{
+            font-size:1.125rem;
+        }
+    }
+
+}
+
+body:has(main.project) {
+    background-color: var(--bg-green);
+}
+
+aside a.active{
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+.tei-div td {
+    background-color: inherit;
+}
+
+.tei-gi {
+    font-family: monospace;
+}
+
+.tei-gi:after {
+    content: '>';
+}
+.tei-gi:before {
+    content: '<';
+}
+
+.tei-att {
+    font-size: monospace;
+}
+
+.tei-att:before {
+    content: '@';
+}
+
+.supporter-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 4rem;
+}
+
+.supporter-item {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+/* ─── Browse page: narrow viewports ───────────────────────────
+   Below this width the facets sidebar collapses into a toggle
+   panel opened via the dedicated .facets-toggle button; search
+   bar and facet panel both go edge-to-edge, and the document
+   rows drop to two lines (title, then the three action columns
+   spread out). ─── */
+@media (max-width: 776px) {
+    .search-options {
+        padding: 0 1rem;
+    }
+
+    body:has(.document-list) .fixed-layout aside {
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        padding: 1rem 0;
+    }
+
+    body:has(.document-list) .facets-toggle{
+        display: flex;
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding:1rem 0;
+        font-size:1rem;
+    }
+
+    body:has(.document-list) .facet-badges {
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    body:has(.document-list) .search-options {
+        display: none;
+        width: 100%;
+    }
+
+    body:has(.document-list) .facets {
+        display: none;
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    aside.facets-open .search-options {
+        display: block;
+    }
+
+    aside.facets-open .facets {
+        display: block;
+    }
+
+    aside.facets-open .facets-toggle img {
+        transform: rotate(180deg);
+    }
+
+    body:has(.document-list) #document-list,
+    div#document-list {
+        padding: 0 0.5rem;
+    }
+
+    body:has(.document-list) #document-list .document-list__header {
+        display: block;
+        padding: 0;
+    }
+
+    body:has(.document-list) #document-list .document-list__header .counter {
+        display: none;
+    }
+
+    body:has(.document-list) #document-list .document-list__header pb-custom-form.options {
+        width: 100%;
+        padding-top:1rem;
+    }
+
+    body:has(.document-list) #document-list .document-list__header select {
+        text-align: right;
+    }
+
+    body:has(.document-list) #document-list .tei-teiHeader.tei-teiHeader5.document-item {
+        grid-template-columns: repeat(3, 1fr);
+
+        > :first-child {
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+/* ─── Browse page: below 764px the document list has dropped
+   below the aside; the breadcrumb is dropped and main goes
+   edge-to-edge. ─── */
+@media (max-width: 764px) {
+    body:has(.document-list) nav.breadcrumb {
+        display: none;
+    }
+
+    body:has(.document-list) .fixed-layout > main {
+        padding: 0;
+    }
+
+    body:has(.document-list) {
+        background-color: var(--medium-blue);
+    }
+
+    body:has(.document-list) .site-header {
+        background-color: var(--medium-blue);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    body:has(.document-list) .fixed-layout aside {
+        background-color: var(--medium-blue);
+        padding-top:0;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    body:has(.document-list) #document-list {
+        background-color: var(--light-blue);
+    }
+
+    body:has(.document-list) #document-list .card {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    body:has(.document-list) pb-search {
+        border-top: none;
+    }
+
+    #document-list #load-more {
+        bottom: 2rem;
+    }
+
+    body:has(.document-list) #document-list pb-load:not(.results) {
+        background-color: var(--light-blue);
+        border-left: none;
+    }
+    .tei-titleStmt8{
+        justify-self:center;
+    }
+    .tei-titleStmt9{
+        justify-self:end;
+    }
+}
+
+
+/* overwrites that probably need to move */
+pb-search{
+    border-radius:0;
+    border:none;
+    width:100%;
+    border-top: 2px solid #000;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+pb-search:has([slot="searchButton"])::part(input){
+    --jinks-search-input-icon: none;
+    padding-left:0.5rem;
+
+}
+fieldset:has(#search\.field){
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    height: 3.1875rem;
+    padding: 1rem 0.75rem;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: stretch;
+
+    select{
+        flex:2;
+        background-color:transparent;
+        border:none;
+        margin:0;
+    }
+}
+
+range-slider {
+    --color-track: white;
+    --color-thumb: white;
+    --color-range: black;
+    --thumb-size: 0.5rem;
+    --track-h:2px;
+    width: calc(100% - 1rem);
+    margin: 0 auto;
+}
+.documents {
+    padding: 0.5rem 1.25rem 2.5rem 0;
+}
+.load-more {
+    align-self: flex-start;
+    margin: 0.5rem 0 2rem 1.25rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--text-primary);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+.load-more:hover:not(:disabled) {
+    opacity: 0.8;
+}
+.load-more:disabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+.load-more[hidden] {
+    display: none;
+}
+main > .center {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.50);
+    padding:1.5rem;
+    text-align:left;
+}
+
+nav.breadcrumb{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding:0 var(--section-px);
+
+
+
+    li{
+        color:var(--breadcrumb-color);
+    }
+    li::after{
+        --pico-nav-breadcrumb-divider:'/';
+    }
+
+    ul li:not(:first-child){
+        margin-left:0;
+    }
+
+    a{
+        padding-right:0;
+        color:var(--breadcrumb-color);
+    }
+}
+/* registers */
+.register-label {
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.intro-topics {
+    font-family:'EB Garamond'
+}
+
+.topics {
+    max-width:100%;
+    pb-load{
+        padding:2rem 0;
+    }
+
+    pb-load > div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        a{
+            white-space: nowrap;
+        }
+    }
+    .topic{
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 1 / 1;
+        padding: 2rem clamp(2rem,1vw,3.375rem);
+        background-color: rgba(255,255,255,0.50);
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        header{
+            font-size: clamp(1.5rem, 1.2vw + 1rem, 2.25rem);
+            margin-bottom: 0.5rem;
+        }
+        li{
+            list-style-type: none;
+        }
+
+        a{
+            display: block;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-decoration-color: var(--light-grey);
+            font-size: clamp(1rem, 1.2vw, 1.75rem);
+        }
+
+
+    }
+}
+@media (max-width: 900px) {
+    .topics pb-load > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+main:has(> .center) .register
+{
+    display: block;
+    pb-load{
+        background-color:transparent;
+        padding:2rem;
+    }
+
+}
+@media (max-width: 600px) {
+    .topics pb-load > div {
+        grid-template-columns: 1fr;
+    }
+}

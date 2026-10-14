@@ -1,0 +1,161 @@
+<html lang="[[page:resolve-language($context)]]">
+<head>
+    [% if $context?defaults?base %]
+    <base href="[[ $context-path ]]/[[ $context?defaults?base ]]"/>
+    [% endif %]
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+    [% if $context?description %]
+    <meta name="description" content="[[ $context?description ]]"/>
+    [% endif %]
+    [% if exists($context?doc) %]
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+    [[ page:transform($context?doc?content//*:publicationStmt, map { "mode": "dcmi" }, $context?doc?odd || ".odd") ]]
+    [% endif %]
+    <link rel="shortcut icon" type="image/x-icon" href="[[ $context-path ]]/resources/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-24.png" sizes="24x24"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-32.png" sizes="32x32"/>
+    <link rel="shortcut icon" type="image/png" href="[[ $context-path ]]/resources/images/favicon-64.png" sizes="64x64"/>
+
+        [% for $path in $styles?* %]
+            [% if matches($path, "(?:^https?://|^/).*$") %]
+            <link rel="stylesheet" href="[[ $path ]]"/>
+            [% else %]
+            <link rel="stylesheet" href="[[ $context-path ]]/[[ $path ]]"/>
+            [% endif %]
+        [% endfor %]
+
+        <style>
+            :root {
+                --jinks-layout-before-width: [[$context?theme?layout?before?width]];
+                --jinks-layout-after-width: [[$context?theme?layout?after?width]];
+            }
+        </style>
+        [% block styles %][% endblock %]
+
+    <title>[[ $label ]]</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+    [% if $script?webcomponents = 'dev' %]
+    <script type="module" src="[[$script?cdn]]/src/pb-components-bundle.js"/>
+    [% for $component in $script?extra-components?* %]
+    <script type="module" src="[[$script?cdn]]/src/[[ $component ]].js"/>
+    [% endfor %]
+    [% elif $script?webcomponents = 'local' %]
+    <script type="module" src="[[ $context-path ]]/resources/lib/pb-components-bundle.js"/>
+    [% for $component in $script?extra-components?* %]
+    <script type="module" src="[[ $context-path ]]/resources/lib/[[ $component ]].js"/>
+    [% endfor %]
+    [% elif $script?webcomponents = '' %]
+    [% else %]
+    <script type="module" src="[[$script?cdn]]@[[$script?webcomponents]]/dist/pb-components-bundle.js"/>
+    [% for $component in $script?extra-components?* %]
+    <script type="module" src="[[$script?cdn]]@[[$script?webcomponents]]/dist/[[ $component ]].js"/>
+    [% endfor %]
+    [% endif %]
+
+    [% block scripts %][% endblock %]
+    <link rel="stylesheet" href="resources/css/base.css" media="screen"/>
+    <link rel="stylesheet" href="resources/css/hersch.css" media="screen"/>
+    <link rel="preload" href="resources/fonts/eb-garamond-400.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+    <link rel="preload" href="resources/fonts/ESRebondGrotesque-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+</head>
+<body class="works">
+<pb-page endpoint="[[ $context-path ]]" app-root="[[ $context-path ]]" api-version="1.0.0" supported-languages="[[ string-join($context?defaults?languages?*, ', ') ]]" locales="resources/i18n/{{ns}}/{{lng}}.json" locale-fallback-ns="app [[ if (map:contains($context, 'i18n')) then string-join($context?i18n?*, ' ') else () ]]" unresolved="unresolved" url-template="[[ $context?urls?template ]]" url-ignore="[[ $context?urls?ignore ]]" class="[[ string-join((tokenize($context?theme?layout?class, '\s+'), if (not($context?theme?layout?before?collapsible)) then 'before-fixed' else (), if (not($context?theme?layout?after?collapsible)) then 'after-fixed' else ()), ' ') ]] page-wrap" require-language="require-language" theme="resources/css/components.css">
+
+
+  <!-- ═══════════════════════════════ HEADER ═════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <a href="[[ $context-path ]]/home.html" class="logo" aria-label="Edition Jeanne Hersch – Startseite">
+      <img src="resources/images/logo-wide-transparent.svg" alt="" class="logo-wide"/>
+    </a>
+
+      [% include "templates/hersch-menu.html" %]
+
+  </header>
+  <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
+  
+    <header class="content-top">
+                [% if $features?toolbar?enabled %]
+                [% include "templates/toolbar.html" %]
+                [% endif %]
+                [% block content-top %][% endblock %]
+                [% if $features?toolbar?progress?enabled %]
+                <pb-progress subscribe="[[ $features?toolbar?progress?subscribe ]]" indeterminate="indeterminate"/>
+                [% endif %]
+    </header>
+    
+   <nav aria-label="breadcrumb" class="breadcrumb">
+        <ul>
+            [% block breadcrumbs %][% endblock %]
+        </ul>
+    </nav>    
+  
+   [% block content %][% endblock %]
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <nav class="footer__nav" aria-label="Footer-Navigation">
+        <a href="#">Home</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Projekt</a>
+      </nav>
+
+      <div class="footer__logo" aria-label="Zentralbibliothek Zürich">
+        <img src="resources/images/logo-zb-bw.svg" alt="Zentralbibliothek Zürich"/>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <span>© 2026  Zentralbibliothek Zürich</span>
+      <a href="[[$context-path ]]/imprint.html">
+                        <pb-i18n key="landing.imprint">Impressum</pb-i18n>
+                    </a>
+        <a href="[[$context-path ]]/privacy.html">
+                        <pb-i18n key="landing.privacy">Datenschutzerklärung</pb-i18n>
+                    </a>
+    </div>
+  </footer>
+</pb-page>
+
+<!--</div>-->
+<!-- /.page-wrap -->
+
+<!--
+<script>
+  (function () {
+    var header    = document.querySelector('.site-header');
+    var THRESHOLD = 300;
+    var ticking   = false;
+
+    function updateLogo() {
+      if (window.scrollY >= THRESHOLD) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(updateLogo);
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+</script>
+-->
+        [% for $src in $context?script?custom?* %]
+        <script src="[[ if (matches($src, '^https?://')) then $src else $context-path || '/' || $src ]]"/>
+        [% endfor %]
+        <!-- Statically determine the language for the page, might be overridden once i18n is loaded -->
+        <script type="application/json" id="language-default">
+            {
+                "language": "[[ page:resolve-language($context) ]]"
+            }
+        </script>
+
+</body>
+</html>

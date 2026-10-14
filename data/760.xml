@@ -1,0 +1,1075 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">Chagall à travers quelques toiles</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">760</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “Chagall à travers quelques toiles”. Le temps
+                    dans l'Œuvre de Marc Chagall, 1967, pp. 15–51.</idno>
+                <idno type="ALMA-MMSID">99117856440805508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117856440805508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_book" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">Chagall à travers quelques
+                                toiles</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Reust, Fritz Gunnar</editor>
+                            <title level="m">Le temps dans l'Œuvre de Marc Chagall</title>
+                            <textLang mainLang="fra">Französisch</textLang>
+                            <imprint>
+                                <pubPlace>Le Locle</pubPlace>
+                                <publisher>Les Fabriques d’Assortiments réunies</publisher>
+                                <date when="1967">1967</date>
+                                <biblScope unit="page">15-51</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#article"/>
+                <catRef scheme="hersch_keywords" target="#bildende-kuenste"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+
+            <div type="article" n="1" xml:id="d760-1">
+
+                <pb facs="#facs_2" n="7.15"/>
+
+                <head>
+                    <title type="main" xml:id="t760-1"><persName ref="GND-118519980"
+                            >Chagall</persName> à travers quelques toiles</title>
+                </head>
+
+                <figure xml:id="fig3">
+                    <graphic url="resources/images/edition/fig3.jpg"/>
+                    <p>
+                        <lb/>"La cinquième bougie" dessin illustrant le livre <lb/><bibl
+                            ref="GND-1384587985">"Lumières allumées" de Bella Chagall</bibl>
+                    </p>
+                </figure>
+
+                <p>
+                    <lb/>"L’homme, dit <persName ref="GND-118519980">Chagall</persName>, c’est un
+                    détail." <lb/>Il le dit quand il parle, il le dit quand il <lb/>peint. En un
+                    temps comme le nôtre, où <lb/>il n’est question partout que de l’hom<lb
+                        break="no"/>me, où les humanismes divers ont si <lb/>bien surpeuplé la
+                    terre, asservi et dé<lb break="no"/>figuré la nature, que cela sent l’homme
+                    <lb/>partout et jusque dans les astres et les <lb/>cosmogonies, il est bon
+                    d’entendre dire: <lb/>"l’homme, c’est un détail". </p>
+
+                <p>
+                    <lb/>Et pourtant, que d’hommes épars dans <lb/>ces toiles, que de détails
+                    humains. <lb/>Visages, mains, rosaires, personnages à <lb/>l’envers, à
+                    l’endroit, dédoublés, habillés, <lb/>dénudés, visages‐museaux, hommes‐
+                    <lb/>nuages, hommes‐vertige, hommes souf<lb break="no"/>frants, hommes moqués –
+                    y a‐t‐il autre <lb/>chose dans ces toiles que de l’humain? </p>
+
+                <pb facs="#facs_3" n="7.16"/>
+
+                <!-- Bild geht über beide Seiten 7.16-7.17 -->
+
+                <anchor xml:id="fig4-start"/>
+                <figure xml:id="fig4">
+                    <graphic url="resources/images/edition/fig4.jpg"/>
+                    <p>
+                        <lb/>"La Vie" 1964, 296 x 406, <lb/><orgName ref="GND-1002027-5">Fondation
+                            Maeght</orgName>, St‐Paul‐de‐Vence </p>
+                </figure>
+
+                <pb facs="#facs_3" n="7.17"/>
+                <anchor xml:id="fig4-end"/>
+
+                <p>
+                    <lb/>Oui, une chose: un vent, une houle. <lb/>Cela tangue partout, ou bien cela
+                    tourne. <lb/>Seule ligne à peu près droite, à peine <lb/>indiquée: celle de deux
+                    regards croisés. <lb/>Nulle part une verticale. Choses et <lb/>êtres semblent
+                    avoir perdu leur seule <lb/>parenté rigoureuse: celle de la pesanteur. <lb/>Ils
+                    ne sont retenus dans leur espace que <lb/>grâce à des tensions instables, ou
+                    dont <lb/>la stabilité inquiète et angoisse. Des <lb/>décrets précaires
+                    s’entrecroisent en <lb/>l’absence de toute loi. Des décrets im<lb break="no"
+                    />périeux, mais qui n’ont ni la perma<lb break="no"/>nence de la nature, ni
+                    l’intention des <lb/>volontés humaines. </p>
+
+                <pb facs="#facs_4" n="7.18"/>
+
+                <figure xml:id="fig5">
+                    <graphic url="resources/images/edition/fig5.jpg"/>
+                    <p>
+                        <lb/>"Le troisième mur... (du magasin)" illustration du <lb/>livre <bibl
+                            ref="GND-1384587985">"Lumières allumées" de Bella Chagall</bibl>
+                    </p>
+                    <p>
+                        <lb/>"Lourdement elle frappe ses heures. Mon coeur bat <lb/>avec le sien."
+                            <bibl ref="GND-1384587985">Bella Chagall "Lumières allumées"</bibl>
+                    </p>
+                </figure>
+
+                <p>
+                    <lb/>La pendule, la fameuse pendule qui, de <lb/>la salle à manger paternelle
+                    s’est glissée <lb/>dans tant de ciels, de coupoles, de <lb/>corps, de recoins de
+                    toiles et de dessins, – <lb/>cette pendule est presque toujours de <lb/>travers.
+                    La boîte en est déformée et <lb/>oblique, le balancier presque partout <lb/>fixé
+                    au milieu de son oscillation sur la <lb/>gauche. Cet instrument sage, fait pour
+                    <lb/>asservir à la mesure commune de l’ordre <lb/>les heures et les minutes
+                    inégales de la <lb/>vie, semble suspendu au bord du nau<lb break="no"/>frage,
+                    dévié, près d’être englouti. </p>
+
+                <p>
+                    <lb/>Et pourtant, rien de plus durable. Il <lb/>ressurgit partout. Réduit
+                    presque au <lb/>seul pendule, à peine reconnaissable <lb/>dans son cadre
+                    barbouillé de noir, il <lb/>enregistre l’instant rituel où s’allument <lb/>les
+                    bougies (dessin des lumières allu<lb break="no"/>mées), au‐dessus de la tête du
+                    vieux juif <lb/>tenant le Livre, tandis que le visage de <lb/>la femme et la
+                    main, tout en bas, <lb/>adorent. Les bougies penchent dans un <lb/>sens, le
+                    pendule dans l’autre. Ailleurs la <lb/>pendule devient une profonde nacelle
+                    <lb/>verticale, étroit gouffre d’ombre où, à <lb/>côté du balancier, se blottit
+                    une fillette <lb/>lisant, tandis qu’une aile immense l’em<lb break="no"/>porte à
+                    travers l’espace, au‐dessus des <lb/>maisons, de la clôture, du char attelé,
+                    <lb/>juste esquissés, à peine réels, dans le <lb/>bas. Dans la toile intitulée
+                    "La Pendule" <lb/>elle emplit tout, – rejetant presque hors <lb/>du cadre la
+                    silhouette de femme assise <lb/>à la fenêtre, dans le petit coin gauche <lb/>de
+                    la toile, – déformant l’espace au <lb/>point de faire basculer la fenêtre vers
+                    <lb/>le vertigineux néant extérieur. Chose <lb/>étrange, ici la pendule est
+                    droite, ses <lb/>pieds aplatis écrasent un monde qui <lb/>vacille. </p>
+
+                <p>
+                    <lb/>Rapport ambigu de cette pendule au <lb/>monde et aux personnages. Quand le
+                    <lb/>monde s’organise en dehors d’elle, elle <lb/>flotte, oblique, sans
+                    s’abolir. Quand elle <lb/>règne, le monde chavire. Nul n’a jamais <lb/>le visage
+                    tourné vers elle: c’est elle qui <lb/>les possède tous, de biais, de dos. Il y a
+                    <lb/>un dessin où la femme, tout à l’heure <lb/>enclose avec le pendule dans la
+                    boîte et <lb/>lisant, émerge de la nacelle et tourne le <lb/>dos au cadran. On
+                    ne voit d’elle que la <lb/>main avec le livre, le profil, un œil de <lb/>face,
+                    et la longue ligne fuyante, marine, <lb/>de la chevelure qui descend sur le
+                    crâne <lb/>aplati et le dos, jusqu’à se perdre parmi <lb/>les traits où
+                    s’esquisse le balancier. </p>
+
+                <p>
+                    <lb/>Le lien entre la pendule et le livre est <lb/>trop fréquent pour être
+                    fortuit. La pré<lb break="no"/>sence de la pendule aussi est trop inso <lb
+                        break="no"/>lite, – fantastique, énorme, emportée à <lb/>travers l’espace,
+                    ou réduite à presque <lb/>rien, un signe abstrait, un balancier à <lb/>peine
+                    reconnaissable. Il faut parfois la <lb/>chercher longuement dans une grande
+                    <lb/>toile complexe pour la découvrir, en un <lb/>point inattendu, peinte
+                        méticuleuse<lb break="no"/>ment, avec un réalisme de miniaturiste,
+                    <lb/>minuscule. Ce qui est sûr, c’est qu’elle <lb/>est toujours peinte ou
+                    dessinée <hi rendition="#i">autre</hi>
+                    <lb/><hi rendition="#i">ment</hi> que son contexte et même en <lb/>contraste
+                    avec lui, en rupture avec tout <lb/>principe d’unité de style. </p>
+
+                <pb facs="#facs_4" n="7.19"/>
+
+                <figure xml:id="fig6">
+                    <graphic url="resources/images/edition/fig6.jpg"/>
+                    <p>
+                        <lb/>"La pendule" 1914, 48 x 36, <lb/><orgName ref="GND-16133764-8">Galerie
+                            d’Etat Tretiakov</orgName>, Moscou </p>
+                </figure>
+
+                <pb facs="#facs_5" n="7.20"/>
+
+                <figure xml:id="fig7">
+                    <graphic url="resources/images/edition/fig7.jpg"/>
+                    <p>
+                        <lb/>"Pendule et village" <lb/>Dessin tiré du livre <bibl
+                            ref="GND-1384587985">"Lumières allumées" de Bella <lb/>Chagall</bibl>
+                    </p>
+                </figure>
+
+                <pb facs="#facs_5" n="7.21"/>
+
+                <p>
+                    <lb/>Dans une toile aussi onirique et mythi<lb break="no"/>quement totalisante
+                    que "A ma femme" <lb/>– véritable bric‐à‐brac de l’arsenal cha<lb break="no"
+                    />gallien qu’il faudrait des pages pour <lb/>décrire, et dont l’unité picturale
+                    me <lb/>paraît parfaite – on retrouve au centre, <lb/>au premier plan, empiétant
+                    sur le long <lb/>fuseau du couple, sur le blanc magique <lb/>de la robe de
+                    mariée, sur la façade fan<lb break="no"/>tastique d’une tour – où un âne joue du
+                    <lb/>tambour et sur laquelle un violon des<lb break="no"/>cend d’un nuage, – la
+                    fameuse pendule <lb/>bourgeoise, posée sur le sol, peinte de <lb/>face, avec
+                    tous les détails de ses colon<lb break="no"/>nettes torses et de son chapiteau à
+                    <lb/>gables, son cadran, ses aiguilles et les <lb/>chiffres des heures, tandis
+                    qu’à droite, <lb/>au‐dessus de la couche rouge sur laquelle <lb/>s’allonge le
+                    nu, une énorme bulle de <lb/>savon bouscule les maisons du village <lb/>natal,
+                    au‐dessus duquel, juste sous le <lb/>bord supérieur de la toile, l’âne mi‐gris
+                    <lb/>mi‐turquoise apporte à travers les airs, <lb/>tout allumé, le chandelier
+                    nuptial. Mais <lb/>ici encore, et comme pour relier la <lb/>lourde petite
+                    pendule à la féerie am<lb break="no"/>biante, <persName ref="GND-118519980"
+                        >Chagall</persName> a accroché une aile à <lb/>son flanc. Ce n’est plus
+                    l’aile rigide du <lb/>dessin de tout à l’heure, pareille à une <lb/>énorme
+                    écaille, qui emportait la na<lb break="no"/>celle dans l’espace. C’est une aile
+                    d’ange, <lb/>moelleuse, délicate, gonflée de duvet et <lb/>de reflets d’argent,
+                    et suggérant, au lieu <lb/>de l’envol, la douceur et la fragilité du <lb/>nid.
+                    Aucune menace, dirait‐on, dans <lb/>cette toile faite de tendresse, hors cette
+                    <lb/>pendule centrale, trop bien apprivoisée. </p>
+
+                <!-- Bild geht über beide Seiten 7.22-7.23 -->
+
+                <pb facs="#facs_6" n="7.22"/>
+
+                <anchor xml:id="fig8-start"/>
+                <figure xml:id="fig8">
+                    <graphic url="resources/images/edition/fig8.jpg"/>
+                    <p>
+                        <lb/>"Dédié à ma femme" 1933/1944, <lb/>131 x 194, <orgName
+                            ref="GND-2019234-4">Musée National d’Art Moderne</orgName>, Paris </p>
+                </figure>
+
+                <pb facs="#facs_6" n="7.23"/>
+                <anchor xml:id="fig8-end"/>
+
+                <pb facs="#facs_7" n="7.24"/>
+
+                <figure xml:id="fig9">
+                    <graphic url="resources/images/edition/fig9.jpg"/>
+                    <p>
+                        <lb/>"Le Temps est un fleuve sans rive" 1930, 1er état, <lb/>Photo Jean
+                        Collas </p>
+                </figure>
+
+                <p>
+                    <lb/>En contraste radical, il faut regarder les <lb/>deux versions (1930 et
+                    1939) de "Le <lb/>temps est un fleuve sans rive". Ici le <lb/>mythe de la
+                    pendule – quoique tout aussi <lb/>compliquée, bourgeoise et démodée, ce
+                    <lb/>n’est plus tout à fait la même; ce n’est <lb/>plus une pendule à pieds,
+                    mais une <lb/>pendule murale – prend une ampleur et <lb/>même une violence à la
+                    fois mythique et <lb/>caricaturale. Un énorme poisson à ailes <lb/>d’aigle
+                    l’emporte (alors que le balancier <lb/>fonctionne toujours) au‐dessus d’un
+                    <lb/>fleuve dont on aperçoit les deux rives. <lb/>La pendule, en biais, au
+                    centre, est <lb/>immense, elle masque un bon tiers du <lb/>paysage. Dans la
+                    version remaniée, <lb/><persName ref="GND-118519980">Chagall</persName> a
+                    précisé et concrétisé les rives, <lb/>il a ajouté sur celle de droite, en
+                    retrait, <lb/>un petit couple enlacé, et de la tête du <lb/>poisson il a fait
+                    sortir une main qui joue <lb/>du violon. Le tableau établit sa cohé<lb
+                        break="no"/>rence sur l’incohérence radicale des <lb/>palettes; la pendule
+                    est peinte comme <lb/>un meuble, en brun massif, le paysage <lb/>crépusculaire
+                    comme un rêve, dans des <lb/>tons obscurs et transparents, le poisson <lb/>ailé
+                    comme un monstre mythique, avec <lb/>des lividités et des flammes. </p>
+
+                <space dim="vertical"/>
+
+                <p>
+                    <lb/>Il est facile de ramener tout cela à un <lb/>seul lieu commun, à propos
+                    duquel les <lb/>clichés abondent: le temps passe; rien <lb/>n’échappe à son
+                    règne; naissance, <lb/>amour, mariage, science, pensée, culte, <lb/>autant en
+                    emporte le vent; le temps règne <lb/>sur la nature et sur l’histoire des hom<lb
+                        break="no"/>mes. Et l’ombre dérisoire jetée par <lb/>cette évidence sur nos
+                    plus précieux <lb/>moments est suggérée par le caractère <lb/>insolite donné à
+                    l’objet le plus familier <lb/>et en apparence le plus inoffensif: une
+                    <lb/>pendule dont le balancier ne cesse de <lb/>marquer les secondes. </p>
+
+                <pb facs="#facs_7" n="7.25"/>
+
+                <figure xml:id="fig10">
+                    <graphic url="resources/images/edition/fig10.jpg"/>
+                    <p>
+                        <lb/>"Le Temps est un fleuve sans rive" 1939, 103 x 83, <lb/>dernier état.
+                            <lb/><orgName ref="GND-1007559-8">Musée d’Art Moderne</orgName>,
+                        New‐York </p>
+                </figure>
+
+                <pb facs="#facs_8" n="7.26"/>
+
+
+                <figure xml:id="fig11">
+                    <graphic url="resources/images/edition/fig11.jpg"/>
+                    <p>
+                        <lb/>"Le Jongleur" 1943, 110,5 x 78,7, <lb/>Mme C. Chapman‐Goodspead,
+                        New‐York </p>
+                    <p>
+                        <lb/> "Le triomphe du jongleur sur la pendule retournée..." </p>
+                </figure>
+
+                <pb facs="#facs_8" n="7.27"/>
+
+                <p>
+                    <lb/>Mais voici une toile qui semble renver<lb break="no"/>ser tout cela: "Le
+                    Jongleur" (1943). Au <lb/>bas du tableau, le gouffre grenat et <lb/>framboise
+                    d’un cirque. Le relief en est <lb/>incertain: c’est à la fois creux et gonflé,
+                    <lb/>on y distingue des maisons ou des tentes, <lb/>un arbre, une petite écuyère
+                    dansante <lb/>sur un cheval esquissé. Autour de cet <lb/>ovale, sur sa partie
+                    arrière, un demi‐ <lb/>cercle bleu, froid, de petits spectateurs <lb/>assis.
+                    Mais en avant, occupant tout le <lb/>centre et toute la hauteur de la toile, un
+                    <lb/>personnage fantastique, corps humain, <lb/>tête d’oiseau au très long bec,
+                    avec un <lb/>un grand œil ovale, et coiffé de vert; <lb/>deux ailes, larges,
+                    blanches, effilées du <lb/>bout, partent des épaules et de derrière <lb/>la
+                    tête. Le Jongleur est vêtu tout entier <lb/>de vert et de bleu, avec deux
+                    touches de <lb/>grenat rappelant le cirque, l’une au cou, <lb/>en forme de
+                    collerette, l’autre à sa main <lb/>droite. L’impression la plus forte, c’est
+                    <lb/>qu’il est désarticulé: son corps repose <lb/>sur la jambe droite, dont le
+                    pied pèse <lb/>tout à fait en avant, sur le sol même du <lb/>cirque, et dont les
+                    modèles, grossis <lb/>jusqu’à la caricature, rappellent une <lb/>colonne torse;
+                    la jambe gauche, tendue <lb/>raide, est repliée vers le haut et main<lb
+                        break="no"/>tenue par le bras tout contre son corps, <lb/>si bien que le
+                    pied rejoint l’épaule et le <lb/>cou; le bras droit est tendu horizontale<lb
+                        break="no"/>ment, avec sa main rouge aux doigts <lb/>écartés. Or ce bras
+                    porte quelque chose <lb/>qui ressemble d’abord à une écharpe <lb/>violette,
+                    galonnée d’or. En regardant <lb/>mieux, on y découvre un écran d’hor<lb
+                        break="no"/>loge, puis un pendule, mais tous deux <lb/>à l’envers. On voit
+                    alors qu’en retour<lb break="no"/>nant la toile, en la mettant la tête en
+                    <lb/>bas, on reconnaîtrait ici encore une <lb/>pendule du même genre que les
+                    autres, <lb/>insolite et ornée, et que le bras du <lb/>Jongleur passe à
+                    l’intérieur d’elle, entre <lb/>ses deux faces, découvrant certains <lb/>rouages. </p>
+
+                <p>
+                    <lb/>Tout près de cette horloge‐écharpe, sur <lb/>le buste vêtu de vert pâle du
+                    Jongleur, <lb/>un petit personnage joue du violon. En <lb/>haut, à droite de
+                    l’aile blanche, une <lb/>ballerine danse. Au‐dessous, contre <lb/>l’extrême bord
+                    droit de la toile, un <lb/>groupe indissociable se penche sur <lb/>l’ovale
+                    rougeoyant du cirque: un âne et <lb/>une femme, tête contre tête, drapés,
+                    <lb/>dirait‐on, dans le même deuil bleu <lb/>sombre où l’on distingue encore un
+                    bras <lb/>nu, un sein, une main verte dont les <lb/>doigts pressent quelques
+                    fleurs. </p>
+
+                <p>
+                    <lb/>Le triomphe du Jongleur sur la pendule <lb/>retournée, la force, la danse,
+                    la musique <lb/>qui remplissent la toile restent d’une <lb/>extrême ambiguïté.
+                    Le Jongleur est un <lb/>monstre. Le groupe de l’âne et de la <lb/>femme brûle
+                    d’angoisse, il est le lieu où <lb/>"cela va faire mal". On pressent quel<lb
+                        break="no"/>que chose de pire que la fuite du temps. </p>
+
+                <p>
+                    <lb/>Or voici une toile que <persName ref="GND-118519980">Chagall</persName> a
+                    reprise <lb/>maintes fois au cours d’un quart de <lb/>siècle (entre 1923 et
+                    1947): "La chute <lb/>de l’ange". Elle est, à bien des égards, <lb/>l’inverse de
+                    la toile précédente, de cette <lb/>image d’un monstrueux triomphe. Ce <lb/>qui
+                    la remplit de haut en bas, c’est un <lb/>effondrement. Un ange rouge aux im<lb
+                        break="no"/>menses ailes effilochées s’abat sur la <lb/>terre. Sur les bords
+                    de l’aile dont les <lb/>pointes déjà touchent le sol, rouge elle‐ <lb/>même et à
+                    demi enfouie dans son plu<lb break="no"/>mage, on distingue une femme portant
+                    <lb/>dans ses bras son petit au visage ver<lb break="no"/>dâtre. Sur le fond de
+                    l’autre aile, coupée <lb/>par le bord supérieur du tableau, notre <lb/>pendule
+                    la plus familière (et qui, Dieu <lb/>sait pourquoi, semble montrer toujours
+                    <lb/>la même heure: 10h12), tombant de biais <lb/>avec l’ange, plus insolite que
+                    jamais. </p>
+
+                <p>
+                    <lb/>En dehors du triangle flamboyant – ou <lb/>sanglant – de l’ange (les deux
+                    ailes avec <lb/>la tête renversée et le corps), c’est <lb/>l’ombre, avec des
+                    tons blêmes. A gauche, <lb/>en haut, un montagnard vêtu de bleu, <lb/>au visage
+                    verdâtre, sur une sorte de fond <lb/>glaciaire. Au‐dessous, un rabbin, au vi<lb
+                        break="no"/>sage bleu, déroulant les grands rouleaux <lb/>livides de la
+                    Thora. Entre le visage <lb/>bleu du rabbin et le visage rouge de <lb/>l’ange, un
+                    soleil jaune, avec une sorte <lb/>de halo, et au‐dessous, jaune également,
+                    <lb/>l’une de ces fameuses têtes d’âne sans <lb/>oreilles que <persName
+                        ref="GND-118519980">Chagall</persName> a peintes si souvent, <lb/>dans tous
+                    les tons, sur tous les fonds, <lb/>dans les cieux ou sur les eaux. Ici la
+                    <lb/>tête est dressée, avec son grand œil noir <lb/>allongé, douce, on voit ses
+                    dents, qui <lb/>dans la toile rejoignent presque le violon <lb/>bleu sur lequel
+                    l’archet semble jouer <lb/>tout seul, – tandis que l’autre extrémité <lb/>du
+                    violon s’enfonce dans les plumes <lb/>pourpres de l’aile déjà blessée, et tout
+                    <lb/>recommence: l’ange, avec la pendule, le <lb/>montagnard, le rabbin, la tête
+                    d’âne, <lb/>le violon, l’ange. Seulement, à droite, <lb/>hors de cet
+                    enchaînement, il reste un <lb/>coin isolé: un grand cierge, allumé dans <lb/>un
+                    paysage de neige, un village brun <lb/>aux maisons basses, et, en retrait et
+                    <lb/>dominant, quoique à peine plus grand <lb/>que la femme et l’enfant dans les
+                    plumes <lb/>de l’ange, les maisons et l’église, sous <lb/>une voûte sombre, le
+                    Christ en croix. </p>
+
+                <p>
+                    <lb/>Pas trace, ici, de quelque orgueilleux <lb/>triomphe sur la pendule. La
+                    toile est <lb/>toute souffrante et livrée à la souffrance. <lb/>Il n’y a que ce
+                    violon azuré et ce mu<lb break="no"/>seau jaune qui détonent, détonent
+                    <lb/>exprès, étonnent, et sont pourtant in<lb break="no"/>dispensables à tout le
+                    reste. </p>
+
+                <p>
+                    <lb/>Mais on le perçoit bien, il y a un rapport <lb/>entre la pendule apportée
+                    par l’aile de <lb/>l’ange déchu et le Christ en croix, isolé, <lb/>sous sa
+                    voûte, derrière son cierge. </p>
+
+                <pb facs="#facs_9" n="7.28"/>
+
+                <!-- Bild geht über beide Seiten 7.28-7.29 -->
+
+                <anchor xml:id="fig12-start"/>
+                <figure xml:id="fig12">
+                    <graphic url="resources/images/edition/fig12.jpg"/>
+                    <p>
+                        <lb/>"La chute de l’Ange" 1923/1933/ <lb/>1947, 147 x 189, <lb/>En prêt au
+                            <orgName ref="GND-2077960-4">Musée de Beaux‐Arts</orgName>, Bâle </p>
+                </figure>
+
+                <pb facs="#facs_9" n="7.29"/>
+                <anchor xml:id="fig12-end"/>
+
+                <pb facs="#facs_10" n="7.30"/>
+
+                <figure xml:id="fig13">
+                    <graphic url="resources/images/edition/fig13.jpg"/>
+                    <p>
+                        <lb/>"L’an nouveau" illustration du livre <bibl ref="GND-1384587985"
+                            >"Lumières <lb/>allumées" de Bella Chagall</bibl>
+                    </p>
+                    <p>
+                        <lb/>"...Tant de péchés se sont accumulés pendant <lb/>l’année." <bibl
+                            ref="GND-1384587985">Bella Chagall "Lumières allumées"</bibl>
+                    </p>
+                </figure>
+
+                <!-- Bild geht über beide Seiten 7.30-7.31 -->
+
+                <anchor xml:id="fig14-start"/>
+                <figure xml:id="fig14">
+                    <graphic url="resources/images/edition/fig14.jpg"/>
+                    <p>
+                        <lb/>"Nu et Christ" 1953, <lb/>Collection particulière </p>
+                    <p>
+                        <lb/>"Le cadran de l’horloge se cache, minuscule,..." </p>
+                </figure>
+
+                <pb facs="#facs_10" n="7.31"/>
+                <anchor xml:id="fig14-end"/>
+
+                <p>
+                    <lb/>D’autres œuvres le confirment. Ainsi <lb/>"Nu et Christ" (1953). Un paysage
+                    bleu <lb/>nuit emplit la toile. Une ville sans <lb/>lumières, vaguement étalée,
+                    des ponts <lb/>étagés, des coupoles, des clochers, les <lb/>tours de Notre‐Dame,
+                    tout cela du <lb/>même bleu nuit avec quelques nuances <lb/>plus claires,
+                    quelques reflets blancs, <lb/>peut‐être un clair de lune étouffé. Dans
+                    <lb/>l’angle gauche en haut, la nue s’éclaircit <lb/>selon une ligne oblique, et
+                    dans cette <lb/>partie moins sombre on voit un gros <lb/>astre noir dont le
+                    pourtour accroche <lb/>rugueusement la lumière, puis une <lb/>sorte de corne
+                    d’abondance transparente <lb/>se terminant du côté de son ouverture <lb/>par la
+                    tête et les bras d’un homme <lb/>serrant dans ses bras des enfants, peut‐
+                    <lb/>être une femme, peut‐être des âmes à <lb/>naître. A droite, un Christ, ou
+                    un autre <lb/>persécuté, a été cloué à plat sur un <lb/>rocher dont ses jambes
+                    et son dos <lb/>arqués épousent la rotondité. Au pre<lb break="no"/>mier plan,
+                    devant, une femme nue, <lb/>pourpre, est vue de profil, assise sur le <lb/>sol
+                    et courbée, de sorte que sa tête <lb/>touche presque ses genoux et que tout
+                    <lb/>son corps s’incurve dans un cercle <lb/>parfait. On voit que sa poitrine,
+                    ses <lb/>jambes se démultiplient un nombre <lb/>confus de fois. Mais non, elle
+                    n’est pas <lb/>assise "sur le sol". Elle est assise sur une <lb/>petite fille
+                    allongée sur le ventre, <lb/>fragile, d’un rouge un peu plus clair
+                    <lb/>qu’elle‐même. Le cadran de l’horloge se <lb/>cache, minuscule, mais en un
+                    point pri<lb break="no"/>vilégié: entre les tours de Notre‐Dame, <lb/>à
+                    l’endroit où devraient fleurir les vi<lb break="no"/>traux de la grande rose. </p>
+
+                <pb facs="#facs_11" n="7.32"/>
+
+                <figure xml:id="fig15">
+                    <graphic url="resources/images/edition/fig15.jpg"/>
+                    <p>
+                        <lb/>"L’arbre de Jessé" 1960, 150 x 120, <lb/>Collection particulière </p>
+                </figure>
+
+                <pb facs="#facs_11" n="7.33"/>
+
+                <p>
+                    <lb/>Le cadran, on le retrouve au centre de <lb/>la façade de Notre‐Dame, entre
+                    les <lb/>deux tours, dans "L’arbre de Jessé" <lb/>(1960). La cathédrale couleur
+                    de brique <lb/>chaude se dresse, entourée d’une fan<lb break="no"/>tasmagorie
+                    nocturne – ciel vert noir où <lb/>tourne un astre, quelques animaux
+                    <lb/>mythiques, perspective incertaine avec <lb/>un pont et une église,
+                    entrelacs incurvé <lb/>de générations humaines. Au‐dessus de <lb/>la cathédrale,
+                    jaillissant d’elle – et, à <lb/>bien regarder, de ce cadran qui rem<lb
+                        break="no"/>place sa rosace centrale –, s’épanouit <lb/>l’immense bouquet
+                    qui a donné son <lb/>nom à la toile. </p>
+
+                <p>
+                    <lb/>On voit bien que l’horloge, ou le temps <lb/>qu’elle rend présent, n’est
+                    pas la fin de <lb/>tout. Il est aussi bien le commencement. <lb/>Il est
+                    l’origine et l’aboutissement et le <lb/>vol de la vie et du monde entre l’un et
+                    <lb/>l’autre. Il est aussi bien l’aboutissement <lb/>et l’origine et le retour
+                    de la vie et du <lb/>monde de l’un à l’autre. Les lignes <lb/>courbes, les
+                    compositions circulaires ou <lb/>ovales emportent tout selon cette gra<lb
+                        break="no"/>vitation à jamais pré‐établie, selon ce <lb/>creux préalable et
+                    futur de l’être. Le <lb/>temps n’est pas perdu, puis retrouvé. <lb/>C’est le
+                    monde qui est perdu‐retrouvé‐ <lb/>perdu par le temps, et la fausseté du lan<lb
+                        break="no"/>gage, c’est qu’il faille commencer par <lb/>l’un ou par l’autre
+                    de ces mots: "perdu" <lb/>ou "retrouvé" et finir aussi par l’un ou <lb/>par
+                    l’autre, alors qu’il faudrait pouvoir <lb/>les dire ou les écrire en même temps,
+                    <lb/>afin qu’ils signifient "être" ou "vivre". <lb/>La peinture de <persName
+                        ref="GND-118519980">Chagall</persName>, circulaire, tour<lb break="no"
+                    />noyante, y parvient. </p>
+
+                <figure xml:id="fig16">
+                    <graphic url="resources/images/edition/fig16.jpg"/>
+                    <p>
+                        <lb/>"La tribu de Benjamin", étude pour un vitrail, <lb/>1961, 90 x 63,5
+                        <lb/>Collection particulière </p>
+                    <p>
+                        <lb/>"Benjamin engendra Béla, son premier‐né, Aschbel <lb/>le second,
+                        Achrach le troisième," <bibl ref="GND-4135630-5">Chroniques I, 8/1</bibl>
+                    </p>
+                </figure>
+
+                <pb facs="#facs_12" n="7.34"/>
+
+                <figure xml:id="fig17">
+                    <graphic url="resources/images/edition/fig17.jpg"/>
+                    <p>
+                        <lb/>"Christ à la pendule" 75,8 x 56,2 <lb/>Collection particulière </p>
+                </figure>
+
+                <p>
+                    <lb/>Dans ce creux cosmique, il n’y a ni <lb/>distance, ni succession. L’horloge
+                        ras<lb break="no"/>semble les ponts de Paris. Notre‐Dame, <lb/>et le village
+                    natal, ses maisons basses et <lb/>serrées, ses coupoles russes. La même
+                    <lb/>pendule qui accompagnait le rituel juif <lb/>voit s’incliner vers elle la
+                    croix du <lb/>Supplicié ("Christ à la pendule"). La <lb/>pendule ici est droite,
+                    énorme. Elle <lb/>remplit la toile de haut en bas, et elle en <lb/>occupe en
+                    largeur, à partir du bord droit, <lb/>plus du tiers. Elle est peinte de face,
+                    <lb/>massivement brune. Une main sort d’elle, <lb/>offrant un cierge. Le côté
+                    gauche est <lb/>occupé par la croix sombre, oblique. <lb/>très longue et
+                    étroite, sur laquelle <lb/>s’étire le corps du Christ. En bas, entre
+                    <lb/>l’horloge et la Croix, un personnage <lb/>adore – ou fuit. Derrière
+                    s’entassent <lb/>maisons et coupoles sous un vaste ciel. <lb/>Toute la toile est
+                    faite de tons bruns et <lb/>camaïeu, avec trois lueurs rapprochées <lb/>dans le
+                    ciel: un croissant jaunâtre avec <lb/>son halo, les reflets du cierge allumé, et
+                    <lb/>un gros soleil semblable à une tache de <lb/>sang. S’il n’y a plus ni
+                    distance, ni <lb/>succession, il n’y a plus non plus de <lb/>"dedans" et de
+                    "dehors", d’"extérieur" <lb/>et d’"intérieur". Le soleil n’est pas <lb/>derrière
+                    le Christ, il est aussi devant: <lb/>la tache sanglante recouvre son bras
+                    <lb/>gauche, son épaule, la moitié de son <lb/>visage, en même temps qu’une
+                    région <lb/>du ciel. Et ce qui est le plus étrange, <lb/>c’est que la partie du
+                    visage envahie par <lb/>le rouge de cet étrange soleil semble <lb/>être dans
+                    l’ombre, si bien que l’autre <lb/>côté devient par contraste le point le
+                    <lb/>plus éclairé du tableau. </p>
+
+                <p>
+                    <lb/>Enfin, dans la lithographie "Le Christ <lb/>à l’horloge", les deux thèmes
+                    se re<lb break="no"/>joignent. Dans la toile précédente l’hor<lb break="no"
+                    />loge avait quitté les tours de Notre‐ <lb/>Dame et se trouvait être le pendant
+                    du <lb/>Christ. Ici la boîte de l’horloge est <lb/>encore là, mais le cadran est
+                    devenu la <lb/>tête du Christ, dont le corps jaune a <lb/>remplacé le balancier
+                    et dont les bras <lb/>sont en croix. Un énorme poisson blanc <lb/>et bleu monte
+                    à droite, en diagonale, <lb/>vers le coin supérieur de la toile. Tout <lb/>en
+                    haut, l’âne, d’un gris violacé, semble <lb/>dormir, bien qu’il porte un
+                    chandelier. <lb/>Le long du bord, en bas, à gauche, un <lb/>personnage gît,
+                    couché sur le dos, sorte <lb/>de clochard tenant un livre ouvert. Et
+                    <lb/>partout, dans l’espace laissé disponible, <lb/>des têtes, des personnages à
+                    peine <lb/>esquissés, adorant, semble‐t‐il, ce cruci<lb break="no"/>fié dont la
+                    tête est un cadran d’horloge. </p>
+
+                <pb facs="#facs_12" n="7.35"/>
+
+                <figure xml:id="fig18">
+                    <graphic url="resources/images/edition/fig18.jpg"/>
+                    <p>
+                        <lb/>"Christ à l’horloge" 1956, 21 x 24 <lb/>lithographie, <orgName
+                            ref="GND-10185852-8">Maeght</orgName>, éditeur </p>
+                </figure>
+
+                <pb facs="#facs_13" n="7.36"/>
+
+                <figure xml:id="fig19">
+                    <graphic url="resources/images/edition/fig19.jpg"/>
+                    <p>
+                        <lb/>"Moi et le village" 1911, 191,2 x 150,5, <lb/><orgName
+                            ref="GND-1007559-8">Musée d’Art Moderne</orgName>, New‐York
+                            <lb/><orgName ref="GND-508840-9">Fonds Mme Simon Guggenheim</orgName>
+                    </p>
+                </figure>
+
+                <pb facs="#facs_13" n="7.37"/>
+
+                <p>
+                    <lb/>Tout cela, on pourrait l’interpréter à <lb/>l’infini. Les suggestions sont
+                        innom<lb break="no"/>brables, et suffisamment imprécises <lb/>pour qu’on
+                    puisse se permettre mille <lb/>rêves, plusieurs métaphysiques, des <lb/>ironies
+                    contradictoires, des échappées <lb/>mystiques. Peut‐être les suggestions
+                    <lb/>sont‐elles ce qu’il y a de moins pur chez <lb/><persName
+                        ref="GND-118519980">Chagall</persName> – j’entends: de picturalement
+                    <lb/>moins pur. Elles jouent en effet sur <lb/>trop de niveaux différents, dont
+                    elles <lb/>cumulent les facilités sans assumer les <lb/>exigences. Essayons
+                    plutôt de regarder, <lb/>de nous laisser imposer la sorte de regard <lb/>par
+                    lequel ces toiles veulent être vues. </p>
+
+                <figure xml:id="fig20">
+                    <graphic url="resources/images/edition/fig20.jpg"/>
+                    <p>
+                        <lb/>"Maternité" 1913, 29,8 x 17,8 <lb/>Collection particulière </p>
+                </figure>
+
+                <pb facs="#facs_14" n="7.38"/>
+
+                <p>
+                    <lb/>Le regard erre et erre encore. Docile, il <lb/>se laisse emporter par des
+                    mouvements. <lb/>Il s’envole avec l’horloge, plane avec <lb/>l’âne. tombe avec
+                    l’ange. Il tourne dans <lb/>le gouffre du cirque, bascule avec les <lb/>maisons.
+                    Il n’arrive pas à <hi rendition="#i">contempler</hi>. <lb/>Ces toiles ne sont
+                    pas faites pour être <lb/>contemplées. Elles sont faites pour être <lb/>faites.
+                    C’est que justement la pendule <lb/>est partout. Le temps est l’origine et la
+                    <lb/>fin, l’horloge est la rosace de la cathé<lb break="no"/>drale, elle est le
+                    Livre, elle est la tête du <lb/>Christ. A cause du temps, chez <persName
+                        ref="GND-118519980">Chagall</persName>
+                    <lb/>la toile, quand elle s’achève, ne s’achève <lb/>pas. Elle se poursuit
+                    ailleurs. </p>
+
+                <p>
+                    <lb/>Ainsi s’expliquent, sans doute, un cer<lb break="no"/>tain nombre de
+                    remarques que <persName ref="GND-118519980">Chagall</persName>
+                    <lb/>fait volontiers lui‐même sur son art. <lb/>D’abord, ce sentiment qu’il a –
+                        con<lb break="no"/>trairement à nombre d’artistes con<lb break="no"
+                    />temporains – d’être naturellement hon<lb break="no"/>nête, par tradition
+                    familiale, et au fond <lb/>par nature. C’est qu’en effet il ne met <lb/>pas plus
+                    dans ses toiles que ce dont il <lb/>dispose: un sens cosmique du temps,
+                    <lb/>mais aucune forme, aucun substitut <lb/>d’éternité. </p>
+
+                <p>
+                    <lb/>Ensuite son anti‐réalisme: il a sans <lb/>doute le sentiment que,
+                        paradoxale<lb break="no"/>ment, le réalisme est irréaliste. En effet,
+                    <lb/>le réalisme voulant retenir le réel "tel <lb/>qu’il est" le fixe en un de
+                    ses moments. <lb/>Or aucun moment n’est réel autrement <lb/>que comme "passage",
+                    si le temps est <lb/>partout, origine et fin. Un "moment" <lb/>déterminé, un
+                    "instant", c’est un point <lb/>d’éternité – ou rien, une abstraction. <lb/>Pour
+                        <persName ref="GND-118519980">Chagall</persName>, c’est une abstraction. Le
+                    <lb/>vrai réalisme, c’est rejoindre <hi rendition="#i">la suite</hi> des
+                    <lb/>moments, leur continuité, retrouver <lb/>l’insertion de chaque moment dans
+                    la <lb/>continuité cosmique. On voit ici l’ex<lb break="no"/>pression "l’homme
+                    est un détail" <lb/>prendre un nouveau sens. L’homme est <lb/>un détail parce
+                    qu’il n’est qu’un <lb/>moment de la continuité. </p>
+
+                <p>
+                    <lb/>Qu’un musicien, un poète, un philo<lb break="no"/>sophe s’installent dans
+                    le fil continu du <lb/>temps, cela se conçoit assez aisément, <lb/>peut‐être
+                    trop aisément. Mais un <lb/>peintre? N’importe quel trait de crayon,
+                    <lb/>n’importe quel assemblage de couleurs <lb/>n’isolent‐ils pas, bon gré mal
+                    gré, un <lb/>moment en une image? Comment <lb/><hi rendition="#i">regarder</hi>
+                    le temps dans une toile? </p>
+
+                <pb facs="#facs_14" n="7.39"/>
+
+                <figure xml:id="fig21">
+                    <graphic url="resources/images/edition/fig21.jpg"/>
+                    <p>
+                        <lb/>"Le Cirque – l’écuyère" 1957, 150,5 x 100 <lb/>Collection particulière
+                    </p>
+                </figure>
+
+                <pb facs="#facs_15" n="7.40"/>
+
+                <figure xml:id="fig22">
+                    <graphic url="resources/images/edition/fig22.jpg"/>
+                    <p>
+                        <lb/>"Le magasin" dessin illustrant le livre  <lb/><bibl
+                            ref="GND-1384587985">"Lumières allumées" de Bella Chagall</bibl>
+                    </p>
+                    <p>
+                        <lb/>"Les horloges marchent, soupirent, se balancent <lb/>des nuits, des
+                        jours entiers. Quand de reposent‐elle?" </p>
+                </figure>
+
+                <pb facs="#facs_15" n="7.41"/>
+
+                <p>
+                    <lb/>A vrai dire, il ne se laisse pas regarder. <lb/>Il se mime. Mettons‐nous
+                    encore une <lb/>fois en face de cet ange rouge qui tombe <lb/>sur la pointe
+                    fragile de son aile. Dans le <lb/>corps même du spectateur s’ébauche un
+                    <lb/>prodigieux effondrement, aussitôt con<lb break="no"/>tredit par le
+                    personnage déformé, en <lb/>haut à gauche, enfoncé dans les replis
+                    <lb/>glaciaires, qui devrait tomber et qui ne <lb/>tombe pas; – contredit aussi
+                    par la ver<lb break="no"/>ticalité immobile de la Thora à gauche, <lb/>du Christ
+                    à droite, et par le chant qui <lb/>monte du violon bleu. Les maisons
+                    <lb/>enneigées, tout en bas, dorment. Ce <lb/>monde du sommeil sans rêve, par
+                        rap<lb break="no"/>port au vertige de cette chute, c’est <lb/>proprement lui
+                    qui est "l’autre monde", <lb/>quotidienneté et absence. Et c’est à lui, <lb/>à
+                    cette opacité du sommeil, qu’appar<lb break="no"/>tient la pendule, envolée on
+                    ne sait <lb/>comment de sous l’un de ces toits <lb/>alourdis, envolée jusque
+                    tout là‐haut, <lb/>jusque dans cette aile pourpre, effilo<lb break="no"/>chée et
+                    gonflée. La pendule, on le voit, <lb/>n’est pas le temps, elle est même plutôt
+                    <lb/>l’anti‐temps, la répétition, la mesure, ce <lb/>qui exclut l’événement.
+                    Elle ne sait rien <lb/>du temps, de cet événement sans cesse <lb/>irréparable.
+                    Le spectateur subit les im<lb break="no"/>pulsions qui le disloquent, comme le
+                    <lb/>disloque aussi le Jongleur, pantin dés<lb break="no"/>articulé. En lui
+                    s’ébauchent des gestes <lb/>contradictoires. Et des jeux aussi, <lb/>mêlés
+                    d’angoisse. </p>
+
+                <space dim="vertical"/>
+
+                <p>
+                    <lb/>Il sent bien que ces toiles ne sont pas <lb/>faites pour être regardées,
+                    mais pour <lb/>être faites, ou refaites, ou continuées, on <lb/>ne sait où ni
+                    comment. C’est pourquoi <lb/>entre le peintre, dont le pinceau et la <lb/>main
+                    ont esquissé tous ces mouvements, <lb/>et le spectateur qui ne peut qu’en res<lb
+                        break="no"/>saisir des yeux la trace, un contact, une <lb/>rencontre n’est
+                    pas possible. La toile <lb/>cherche son spectateur pour lui dire <lb/>qu’elle
+                    lui échappe, qu’il n’y pénétrera <lb/>jamais. </p>
+
+                <figure xml:id="fig23">
+                    <graphic url="resources/images/edition/fig23.jpg"/>
+                    <p>
+                        <lb/>"La salle à manger" 1910, <lb/>Collection particulière </p>
+                </figure>
+
+                <pb facs="#facs_16" n="7.42"/>
+
+                <!-- Bild geht über beide Seiten 7.42-7.43 -->
+
+                <anchor xml:id="fig24-start"/>
+                <figure xml:id="fig24">
+                    <graphic url="resources/images/edition/fig24.jpg"/>
+                    <p>
+                        <lb/>"Le Sabbat" 1910, 90x95 <lb/><orgName ref="GND-2026220-6">Musée
+                            Wallraf‐Richartz</orgName>, Cologne </p>
+                </figure>
+
+                <pb facs="#facs_16" n="7.43"/>
+                <anchor xml:id="fig24-end"/>
+
+                <pb facs="#facs_17" n="7.44"/>
+
+                <p>
+                    <lb/>Mais il y a quelque chose de plus. Chez <lb/>la plupart des grands
+                    peintres, chacune <lb/>des œuvres se suffit à elle‐même. Elle se <lb/>referme
+                    sur soi et se veut nécessaire. <lb/>Chez <persName ref="GND-118519980"
+                        >Chagall</persName>, non. Le geste, avons‐ <lb/>nous dit, remplace la
+                    contemplation de <lb/>l’immobile et de l’achevé. Et ce geste se <lb/>poursuit et
+                    s’enchaîne, dirait‐on, de <lb/>toile en toile, créant une continuité plus
+                    <lb/>profonde. La continuité entre les toiles <lb/>tient à peine à une imagerie
+                    commune: <lb/>horloge, âne, violon, livre, etc. Elle est <lb/>essentielle, comme
+                    un rêve qui revien<lb break="no"/>drait nuit après nuit, se déployant entre
+                    <lb/>le Même et l’Autre. Les toiles, l’acte de <lb/>peindre, la vie. Succession?
+                    Tourbillon? <lb/>Ou s’agit‐il au contraire, à travers ces <lb/>chutes, ces
+                    fuites, ces glissades, ces <lb/>envols, de suggérer quelque inimagi<lb
+                        break="no"/>nable simultanéité? </p>
+
+                <p>
+                    <lb/>Revenons à ces toiles. Cette lourde <lb/>femme nue et rouge ne cessera
+                    jamais <lb/>de peser sur le petit corps couché à plat <lb/>ventre sous elle. Ce
+                    Christ bleu nuit <lb/>cloué en arrière sur la courbure du <lb/>rocher ne
+                    retombera jamais sur le sol. <lb/>La Passion est sans fin. L’envol du <lb/>temps
+                    est sans fin et il n’y a plus d’envol. <lb/>C’est un envol sur place. Comme le
+                    <lb/>mouvement du pendule. Mort, amour, <lb/>naissance, dislocation, adoration,
+                    tout <lb/>continue à la fois dans l’espace tour<lb break="no"/>noyant,
+                    surpeuplé, et nul. Durée du <lb/>poisson, répétition des rites, sommeil de
+                    <lb/>l’âne, permanence du Livre, et l’horloge <lb/>en croix, le Christ en
+                    horloge. "L’homme <lb/>n’est qu’un détail", répète <persName ref="GND-118519980"
+                        >Chagall</persName>. Les <lb/>toiles grouillent de détails et ce que j’ai
+                    <lb/>tenté d’en dire n’est rien. Pourquoi <lb/>n’ai‐je pas parlé, à propos de la
+                    toile <lb/>intitulée "A ma femme", de cet arbre <lb/>incurvé sur la gauche le
+                    long de la demi‐ <lb/>sphère de ciel nocturne, ni de ce poisson <lb/>qui monte
+                    du coin gauche et dont le <lb/>rôle est si essentiel dans la composition <lb/>de
+                    ce coin, avec le violon blanc qui en <lb/>prolonge la ligne jusqu’à la tête de
+                    <lb/>l’ange rouge agenouillé au creux du dos <lb/>d’une sorte de pintade jaune?
+                    Pourquoi <lb/>n’ai‐je rien dit du petit musicien cou<lb break="no"/>leur de
+                    terre, jouant du violon en haut, <lb/>au creux de la tente nuptiale rouge, ni
+                    <lb/>du bouquet tombé de la mariée, mettant <lb/>son jeu de couleurs fignolées
+                    au pied de <lb/>l’aile de la pendule? Et derrière la bulle <lb/>de savon géante,
+                    les maisons bascu<lb break="no"/>lantes du village natal, brunes, dont
+                    <lb/>l’une a un visage, avec, derrière, l’atte<lb break="no"/>lage du labour.
+                    L’important n’est pas <lb/>d’avoir tout vu. Ce n’est pas non plus
+                    <lb/>l’ensemble, qui permettrait de négliger <lb/>les détails. Il n’y a pas de
+                    détails, ou il <lb/>n’y a que des détails. Pas de hiérarchie, <lb/>entre tous
+                    ces thèmes. L’essentiel, c’est <lb/>de vivre par l’œil, par l’imagination, par
+                    <lb/>l’expérience mimée d’une prolifération <lb/>de l’étonnement, la réalité
+                    inépuisable. <lb/>Si la Tour Eiffel ou les tours de Notre‐ <lb/>Dame peuvent se
+                    dresser chez <persName ref="GND-118519980">Chagall</persName>
+                    <lb/>au‐dessus des chaumières et des cou<lb break="no"/>poles enneigées de son
+                    bourg natal (par <lb/>exemple dans "Le Nu rouge"), ce n’est <lb/>pas seulement
+                    parce que le rêve mêle les <lb/>étapes successives de la vie. C’est que <lb/><hi
+                        rendition="#i">d’une certaine manière</hi> tout coexiste et <lb/>tout est
+                    dans tout. "D’une certaine <lb/>manière". Il importe peut‐être de dire <lb/>ou
+                    d’essayer de dire de laquelle. Rien de <lb/>commun avec les peintures des âges
+                    de <lb/>foi où l’on voit dans le même espace d’un <lb/>paysage continu la
+                    Nativité, le Temple, <lb/>la Cène, la Croix et la Résurrection. Ces
+                    <lb/>peintures racontent une <hi rendition="#i">histoire éter</hi><lb break="no"
+                        /><hi rendition="#i">nelle</hi>. C’est l’inconcevable, l’inimaginable
+                    <lb/>éternité qui, par la foi, et même dans la <lb/>plus parfaite naïveté, rend
+                    compatibles <lb/>ces deux mots "histoire" et "éternité", <lb/>comme elle rend
+                    compatibles dans le <lb/>Christ l’homme et Dieu. </p>
+
+                <pb facs="#facs_17" n="7.45"/>
+
+                <figure xml:id="fig25">
+                    <graphic url="resources/images/edition/fig25.jpg"/>
+                    <p>
+                        <lb/>"Le Nu rouge" 1954/55, 100 x 73, <lb/><persName ref="GND-132037696"
+                            >Hadassah</persName> et Joseph Rosensaft, New‐York </p>
+                </figure>
+
+                <pb facs="#facs_18" n="7.46"/>
+
+                <figure xml:id="fig26">
+                    <graphic url="resources/images/edition/fig26.jpg/"/>
+                    <p>
+                        <lb/>"Adam et Eve", étude pour "Hommage à Apolli¬ <lb/>naire" 1911/12, 27,5
+                        x 24, <lb/>Collection particulière, Berne </p>
+                </figure>
+
+                <figure xml:id="fig29">
+                    <graphic url="resources/images/edition/fig29.jpg"/>
+                    <p>
+                        <lb/>"Adam et Eve", étude pour "Hommage à <lb/>Apollinaire" 16,5 x 19,7,
+                            <lb/><persName ref="GND-1051972493">Mme Donald Ogden Stewart</persName>,
+                        Londres </p>
+                </figure>
+
+                <figure xml:id="fig27">
+                    <graphic url="resources/images/edition/fig27.jpg"/>
+                    <p>
+                        <lb/>"Esquisse I" pour "Hommage à Apollinaire" <lb/>1911, 33 x 26
+                        <lb/>Propriété de l’artiste </p>
+                </figure>
+
+                <figure xml:id="fig28">
+                    <graphic url="resources/images/edition/fig28.jpg"/>
+                    <p>
+                        <lb/>"Esquisse II" pour "Hommage à Apollinaire" <lb/>1910, 13 x 12
+                        <lb/>Propriété de l’artiste </p>
+                </figure>
+
+                <pb facs="#facs_18" n="7.47"/>
+
+                <figure xml:id="fig30">
+                    <graphic url="resources/images/edition/fig30.jpg"/>
+                    <p>
+                        <lb/>"Hommage à Apollinaire" 1913, 109 x 198 <lb/><orgName
+                            ref="GND-2044461-8">Stedelijk Van Abbe‐Museum</orgName>, Eindhoven. </p>
+                    <p>
+                        <lb/>"Tout le cercle devient horloge: avec la Chute et <lb/>la séparation
+                        des sexes a commencé le Temps qui <lb/>s’écoule d’Éternité en Éternité;
+                        l’homme, à la fois <lb/>un et deux, est l’aiguille géante de cette horloge
+                        <lb/>universelle. L’association du cercle cosmique <lb/>avec la
+                        représentation du Temps, les zodiaques <lb/>antiques et médiévaux en
+                        témoignent, est extrême<lb break="no"/>ment ancienne." <bibl
+                            ref="GND-4510402-5">Marc Chagall "Commentary", <lb/>New‐York, 1, No 6,
+                            avril 1946, <lb/>Translation by John Mc Neil</bibl>
+                    </p>
+                </figure>
+
+                <pb facs="#facs_19" n="7.48"/>
+
+                <figure xml:id="fig31">
+                    <graphic url="resources/images/edition/fig31.jpg"/>
+                    <p>
+                        <lb/>"Autoportrait à la pendule" détail, 1946, 86 x 70,5, <lb/>Propriété de
+                        l’artiste </p>
+                </figure>
+
+                <figure xml:id="fig32">
+                    <graphic url="resources/images/edition/fig32.jpg"/>
+                    <p>
+                        <lb/>"La chute de l’ange", détail (voir page 28) </p>
+                </figure>
+
+                <pb facs="#facs_19" n="7.49"/>
+
+                <p>
+                    <lb/>La succession n’en est pas abolie, ni la <lb/>distinction nette des
+                    moments, – d’où <lb/>cette juxtaposition limpide, unifiée par <lb/>une cohérence
+                    plastique. Je ne vois pas <lb/>d’éternité chez <persName ref="GND-118519980"
+                        >Chagall</persName>. La simultanéité <lb/>qui nous assaille dans ses toiles
+                    n’est pas <lb/>un temps transcendé. C’est en quelque <lb/>sorte le temps
+                    lui‐même vécu jusqu’à <lb/>ses ultimes effets par une affectivité <lb/>livrée à
+                    lui tout entière, déchirée par lui <lb/>au point que la mort est déjà dans la
+                    <lb/>naissance et la naissance déjà dans la <lb/>mort, ouverte par lui à la
+                    symphonie <lb/>non successive où les chants et les cris <lb/>se fondent. Quand
+                    on regarde une toile, <lb/>on est surpris de voir que les pourtours <lb/>des
+                    choses et des corps sont en général <lb/>assez nets, souvent même dessinés d’un
+                    <lb/>trait foncé ou même noir. On est sur<lb break="no"/>pris, car dans le
+                    souvenir on garde une <lb/>image où les formes se fondent, passent
+                    <lb/>indistinctement les unes dans les autres. <lb/>La cause en est peut‐être la
+                    profusion, <lb/>ou le caractère souvent fragmentaire de <lb/>chacune, et l’art
+                    avec lequel ces frag<lb break="no"/>ments sont librement et aisément com <lb
+                        break="no"/>posés, comme par un jeu facile. Tou<lb break="no"/>jours est‐il
+                    que le monde de <persName ref="GND-118519980">Chagall</persName> est <lb/>en
+                    nous un monde où l’on se perd, où <lb/>rien ne commence ni ne s’achève, où
+                    <lb/>toute figure déterminée n’est que passa<lb break="no"/>gère, où le pôle, la
+                    boussole, la ligne <lb/>droite, la verticale ont perdu leurs in<lb break="no"
+                    />flexibles privilèges, un monde tellement <lb/>continu qu’on s’y raccroche à
+                    des points <lb/>de repère précaires, équivoques: l’hor<lb break="no"/>loge, cet
+                    appareil contradictoire qui <lb/>impose sa mesure fixe à la fuite du <lb/>temps,
+                    le violon, chant suprême et <lb/>dérisoire, ce museau d’âne doux‐cornu,
+                    <lb/>vulnérable‐menaçant, d’autres encore. </p>
+
+                <p>
+                    <lb/>Il faudrait ici absolument parler enfin <lb/>des couleurs, et non pas
+                    simplement les <lb/>nommer, comme je l’ai fait jusqu’ici. <lb/>Car ce sont les
+                    couleurs, bien plus que <lb/>les figures ou les lignes, qui avec la pré<lb
+                        break="no"/>cision de leurs rapports <hi rendition="#i">qualifient</hi> ici
+                    <lb/>l’étrangeté. Mais comment parler des <lb/>couleurs? Ainsi celle du museau
+                    cornu <lb/>de l’âne (ce n’est d’ailleurs pas vraiment <lb/>un âne) dans "la
+                    Chute de l’Ange", ce <lb/>jaune de bouton d’or rosissant autour <lb/>de
+                    l’immense œil noir liquide, vu de face <lb/>dans un museau de profil, ce jaune
+                    qui <lb/>se barbouille légèrement de vert sous <lb/>le cou. Pourquoi ce jaune
+                    semble‐t‐il si <lb/>nu, si charnel, tellement plus nu et <lb/>charnel que
+                    n’importe quel nu de femme <lb/>peint par <persName ref="GND-118519980"
+                        >Chagall</persName>? Ce museau jaune est <lb/>à la fois lisse et poreux –
+                    poreux au <lb/>chant du violon qui semble lui couler <lb/>entre les dents,
+                    poreux au temps, à la <lb/>mort, vulnérable, offert au désastre qui <lb/>flambe
+                    déjà dans le pourpre de l’auge. <lb/>Mais le jaune ici n’est que la pointe
+                    <lb/>extrême d’une vulnérabilité universelle <lb/>à la douleur. Non parce que le
+                    museau <lb/>est jaune, mais parce que le jaune ici <lb/>suscite une chair. Il
+                    s’agit du "grain" de <lb/>ce jaune. </p>
+
+
+                <p>
+                    <lb/>Je suis de plus en plus impressionnée par <lb/>ce "grain" variable de la
+                    couleur, chez <lb/>les divers peintres, qui est distinct du <lb/>"grain" des
+                    objets représentés. Une <lb/>peinture "laquée" peut suggérer le grain <lb/>d’une
+                    fourrure; une peinture "four<lb break="no"/>reuse", la surface laquée de l’eau.
+                    La <lb/>couleur de <persName ref="GND-118519980">Chagall</persName> est le
+                    contraire de la <lb/>laque. Elle n’est pas "fourreuse" non <lb/>plus. Elle est
+                    perméable. Elle s’allège, <lb/>laisse des blancs, parfois elle s’empoi<lb
+                        break="no"/>sonne. Elle subit violemment l’action <lb/>des tons voisins et
+                    elle les envahit, <lb/>malgré le tracé des pourtours. L’atmo<lb break="no"
+                    />sphère et le temps le traversent. C’est <lb/>par elle, dirait‐on, que les
+                    êtres et les <lb/>choses appartiennent au flux continu du <lb/>monde,
+                    naissance‐mort, plaisir‐souf<lb break="no"/>france, – surtout souffrance, comme
+                    si <lb/>la porosité à la souffrance représentait <lb/>pour <persName
+                        ref="GND-118519980">Chagall</persName>, mieux que la cohérence <lb/>des lois
+                    physiques ou l’adoration d’un <lb/>unique Créateur, l’unité cosmique. </p>
+
+                <figure xml:id="fig33">
+                    <graphic url="resources/images/edition/fig33.jpg"/>
+                    <p>
+                        <lb/>Une des quatorze eaux‐fortes et pointes sèches <lb/>reproduites en
+                        hors‐texte dans le livre <bibl ref="GND-4597459-7">"Ma vie" <lb/>de Marc
+                            Chagall. <lb/>, Berlin 1923</bibl>
+                    </p>
+                </figure>
+
+                <pb facs="#facs_20" n="7.50"/>
+
+                <figure xml:id="fig34">
+                    <graphic url="resources/images/edition/fig34.jpg"/>
+                    <p>
+                        <lb/>"A Charlot Chaplin" 1929, 43 x 28 <lb/>Collection particulière </p>
+                    <p>
+                        <lb/>"... c’est le petit homme toujours un peu perdu..." </p>
+                </figure>
+
+                <pb facs="#facs_20" n="7.51"/>
+
+                <p>
+                    <lb/>Cette vulnérabilité essentielle qui sourd <lb/>de la couleur, fût‐elle la
+                    plus violente, <lb/>c’est chez <persName ref="GND-118519980">Chagall</persName>
+                    la vie ou l’être même. <lb/>Rien de moins stoïcien que sa peinture, <lb/>aucune
+                    coquille, aucune cuirasse, au<lb break="no"/>cune raideur, aucune souveraineté.
+                    Rien <lb/>de moins révolté aussi. Nous sommes <lb/>emportés sur notre boule
+                    ronde parmi <lb/>les mouvements ronds des planètes, et <lb/>les aiguilles
+                    tournent en rond sur les <lb/>cadrans de nos horloges. Parmi ces <lb/>cercles,
+                    "l’homme n’est qu’un détail", <lb/>mais il participe de cette vie globale,
+                    <lb/>continue, sans commencement ni fin, à <lb/>laquelle il ne peut que
+                    consentir, – non <lb/>pour échapper à la souffrance mais pour <lb/>mieux y
+                    consentir et s’ouvrir à elle. A <lb/>travers des moyens d’expression aussi
+                    <lb/>différents que possible, c’est le petit <lb/>homme toujours un peu perdu de
+                        <lb/><persName ref="GND-118520113">Charlie Chaplin</persName> qui tourne,
+                    emporté par <lb/>les sphères, insolite, parmi mille gags <lb/>ambigus. </p>
+
+                <p>
+                    <lb/>Mais comme Charlot, à force de fragi<lb break="no"/>lité, a acquis la
+                    présence audacieuse <lb/>d’un mythe, de même les toiles de <lb/><persName
+                        ref="GND-118519980">Chagall</persName> imposent au regard le choc de
+                    <lb/>leur structure, de la répartition de leurs <lb/>taches, de leur fantastique
+                    concerté, avec <lb/>une vigueur qui les arrache au rêve et les <lb/>fait
+                    exister, en quelque sorte, <hi rendition="#i">en avant</hi>
+                    <lb/><hi rendition="#i">du réel</hi>, avec l’importance agressive d’un
+                    <lb/>avant‐premier plan. Dans le monde <lb/>d’apesanteur où elles flottent, ces
+                        créa<lb break="no"/>tures poreuses dans lesquelles s’infiltre <lb/>tout ce
+                    qui les nie prennent pourtant un <lb/>relief excessif, plus incontestable que le
+                    <lb/>réel. Il n’y a là que des détails, mais ces <lb/>détails sont tout l’être,
+                    et en dehors <lb/>d’eux il y en a d’autres, et en dehors <lb/>d’eux, rien. </p>
+
+                <space dim="vertical"/>
+
+                <p>
+                    <lb/>"L’homme n’est qu’un détail". Mais <lb/>tout, autour de lui, s’est
+                    humanisé. La <lb/>nue, ces soleils, ces lunes, ces oiseaux, <lb/>ces ânes, ces
+                    pendules, ces maisons, ces <lb/>violons, tout cela, en quelque sorte, <lb/>veut,
+                    désire, essaye de parler, grimace <lb/>une intention humaine, s’expose à
+                    <lb/>souffrir. </p>
+
+                <p>
+                    <lb/>L’existence de la toile n’est pas une <lb/>catharsis. L’impassibilité n’est
+                    nulle <lb/>part: ni dans la loi, ni dans les mains <lb/>d’un dieu, ni dans le
+                    rocher. L’univers <lb/>est une fête en larmes. </p>
+
+                <pb facs="#facs_21" n="[7.52]"/>
+
+                <figure xml:id="fig35">
+                    <graphic url="resources/images/edition/fig35.jpg"/>
+                    <p>
+                        <lb/>"Autour d’Elle" 1945, 130,9 x 109,7 <lb/><orgName ref="GND-2019234-4"
+                            >Musée National d’Art Moderne</orgName>, Paris </p>
+                    <p>
+                        <lb/>"...Il est très tard ferme les yeux demain rayonne <lb/>Demain mieux
+                        qu’aujourd’hui tu connaîtras le <lb/>monde..." <lb/><bibl
+                            ref="GND-1384590161">Paul Éluard (1895‐1952): Le dur désir de durer
+                            <lb/>"Belle"</bibl>
+                    </p>
+                </figure>
+
+            </div>
+        </body>
+    </text>
+</TEI>

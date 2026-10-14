@@ -1,0 +1,852 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">Die Demokratisierung der Schule</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">890</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “Die Demokratisierung der Schule”. Schweizerische
+                    Lehrerzeitung, vol. 115, no. 51–52, 1970, pp. 1788–1793.</idno>
+                <idno type="ALMA-MMSID">99117937786905508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117937786905508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_journal" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">Die Demokratisierung der
+                                Schule</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Pestalozzianum</editor>
+                            <editor>Dachverband Schweizer Lehrerinnen und Lehrer</editor>
+                            <editor>Schweizerischer Lehrerverein</editor>
+                            <title level="j">Schweizerische Lehrerzeitung : SLZ</title>
+                            <textLang mainLang="deu">Deutsch</textLang>
+                            <imprint>
+                                <date when="1970">1970</date>
+                                <biblScope unit="volume">115</biblScope>
+                                <biblScope unit="issue">51–52</biblScope>
+                                <biblScope unit="pp">1788-1793</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#speech"/>
+                <catRef scheme="hersch_keywords" target="#schule"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+
+
+    <text>
+        <front>
+            <p>
+                <lb/>Vortrag an der Pestalozzifeier 1970 der Sektion Bern<lb break="no"/>Stadt des
+                Bernischen Lehrervereins (14. März 1970). <lb/>Transkription nach Tonbandaufnahme
+                durch Dr. G. Ho<lb break="no"/>fer-Werner. Redaktionelle Ueberarbeitung von der Vor<lb break="no"/>tragenden genehmigt. </p>
+            <p>
+                <lb/>Vgl. auch den Vortrag "Der Lehrer in der heutigen <lb/>Krise", veröffentlicht
+                in SLZ 34. </p>
+        </front>
+
+        <body>
+            <div type="speech" n="1" xml:id="d890-1">
+                <pb facs="#facs_2" n="1788"/>
+                <head>
+                    <title type="main" xml:id="t890-1"> Die Demokratisierung der Schule </title>
+                </head>
+
+                <p>
+                    <lb/>Meine Damen und Herren, <lb/>Wir haben jetzt alle so dringende Probleme,
+                    dass <lb/>wir eigentlich sehr viel Zeit brauchen würden, um <lb/>über alle und
+                    über jedes ganz besonders gründlich <lb/>nachzudenken. Aber gerade diese Zeit
+                    haben wir <lb/>kaum, und das <hi rendition="#i">Dringende kommt immer vor
+                        dem</hi>
+                    <lb/><hi rendition="#i">Wesentlichen</hi>. Deswegen bitte ich Sie, mir zu ver<lb
+                        break="no"/>zeihen, wenn die Probleme, die ich in diesem Vor<lb break="no"
+                    />trag berühren werde, nicht genügend durchdacht <lb/>und geformt werden. Wir
+                    haben zurzeit an der <lb/><orgName ref="GND-1010450-1">Universität Genf
+                    </orgName>Sitzungen, die tagelang dauern. <lb/>Wir kommen kaum noch zu unserem
+                    Arbeitstisch, <lb/>und dennoch wäre diese Zeit am Arbeitstisch viel<lb
+                        break="no"/>leicht noch nie so nötig gewesen wie gerade jetzt. </p>
+                <div n="2" xml:id="d890-2">
+                    <head>
+                        <title type="main" xml:id="t890-2">Bildung ist Menschenrecht</title>
+                    </head>
+                    <p>
+                        <lb/>Meine Damen und Herren, als ich ein Kind war, <lb/>etwa sechs oder
+                        sieben Jahre alt, fragte ich einmal <lb/>meinen Vater, wann die Frau des
+                        Hauswartes in die <lb/>Universität gehe, denn ich traf sie immer wieder
+                        <lb/>auf der Treppe. Das kam daher, dass ich lauter Stu<lb break="no"
+                        />denten um mich herum hatte. Meine Eltern waren <lb/>Studenten, und ich
+                        glaubte, das Erwachsensein be<lb break="no"/>deute: auf der Universität
+                        studieren. </p>
+                    <p>
+                        <lb/>Diese Sorge, die ich damals hatte, habe ich weiter <lb/>behalten,
+                        eigentlich mein Leben lang, und als ich <lb/>Studentin wurde, begann ich
+                        gleich, an der Er<lb break="no"/>wachsenenbildung nach Möglichkeit mitzutun:
+                        ich <lb/>hatte kleine Gruppen von Lehrlingen, mit denen ich <lb/>Uebungen
+                        machte von mündlichem oder schrift<lb break="no"/>lichem Ausdruck, damit sie
+                        leichter zur Möglich<lb break="no"/>keit des Selbstausdrucks kämen. Einmal
+                        hatte ich <lb/>einen ganzen Winter solche Uebungen, und vor dem
+                        <lb/>Kursschluss fragte ich die Lehrlinge, was sie in der <lb/>letzten
+                        Sitzung gerne tun würden. Da sie keinen <lb/>bestimmten Wunsch hatten,
+                        schlug ich vor, einmal <lb/>ein Gedicht zu erklären. Sollte ich ein leichtes
+                            Ge<lb break="no"/>dicht oder ein schwieriges wählen? Wenn ich ein
+                        <lb/>leichtes Gedicht nehme, überlegte ich, dann verste<lb break="no"/>hen
+                        es alle, aber die Erklärung wird langweilig, <lb/>denn die Schüler glauben,
+                        es von vornherein ver<lb break="no"/>standen zu haben. Wenn ich ein
+                        schwieriges Ge<lb break="no"/>dicht nehme, werden sie vielleicht das Gefühl
+                        <lb/>haben, es sei zu künstlich, und sie werden gar nicht <lb/>daran
+                        glauben. Schliesslich habe ich <bibl ref="GND-4499648-2">Baudelaires
+                            <lb/>"Correspondances"</bibl> gewählt, mich also eher für das
+                        <lb/>Schwierige entschlossen. Die Uebung der Inter<lb break="no"/>pretation
+                        hat die Lehrlinge so begeistert, dass sie, <lb/>Jahre später, wenn ich sie
+                        irgendwo traf, von <lb/>nichts anderem erzählten als von dieser letzten
+                        <lb/>Stunde. Welches waren die Zwecke, die wir damals <lb/>hatten, als wir
+                        als junge Menschen solche Veran<lb break="no"/>staltungen organisierten? </p>
+                    <p>
+                        <lb/>Ich frage das, weil man jetzt von der Demokrati<lb break="no"/>sierung
+                        der Schule spricht. Sie geht tatsächlich vor <pb facs="#facs_3" n="1789"/>
+                        <lb/>sich. Wir haben mehr und mehr Schüler im Sekun<lb break="no"/>dar-(=
+                        Gymnasial-)unterricht, mehr und mehr Stu<lb break="no"/>denten auf den
+                        Universitäten. Warum das? Wenn <lb/>man die Frage so stellt, wird jedermann
+                        sagen: weil <lb/>man in der jetzigen industriellen Gesellschaft kom<lb
+                            break="no"/>petente Menschen braucht. </p>
+                </div>
+                <div n="2" xml:id="d890-3">
+                    <head>
+                        <title type="main" xml:id="t890-3">Was heisst Bildung?</title>
+                    </head>
+                    <p>
+                        <lb/>Ich glaube nicht, dass es einen Grundkonflikt gibt <lb/>zwischen der
+                        Herausbildung der nötigen Speziali<lb break="no"/>sierung und Fach-Kompetenz
+                        und den kulturellen <lb/>Zwecken, die ich mir damals setzte, <hi
+                            rendition="#i">und doch ge</hi><lb break="no"/><hi rendition="#i"
+                            >schieht heute nicht, was ich und viele andere uns</hi>
+                        <lb/><hi rendition="#i">damals so sehr wünschten</hi>. Welches waren denn
+                        die <lb/>Zwecke, dessen auch die Lektüre dienen sollte? </p>
+                    <p>
+                        <lb/>Das Wichtige war zunächst einmal, einen be<lb break="no"/>stimmten Sinn
+                        für Menschsein, für menschliches <lb/>Leben, menschliche Gegenwart,
+                        menschliche Ge<lb break="no"/>sellschaft, für <hi rendition="#i">menschliche
+                            Werte</hi> zu nähren; ich <lb/>sage: zu nähren, weil diese Werte damals
+                        noch <lb/>ziemlich klar waren. Man nannte sie, freilich ein <lb/>bisschen
+                        abstrakt, und wenn man etwa von der <lb/>Notwendigkeit sprach, die Freiheit
+                        zu verteidigen, <lb/>beispielsweise die Freiheit für einen Dichter, so zu
+                        <lb/>dichten, wie er es will, so dachte ich, dass der Sinn <lb/>für diese
+                        Freiheit nur dann lebendig sein könne, <lb/>wenn alle Bürger einen Sinn
+                        dafür hätten, was ein <lb/>Dichter und was Dichtung sei; denn wenn man
+                            kei<lb break="no"/>nen Sinn für das hat, was Dichtung ist, dann ist die
+                        <lb/>Freiheit des Dichters an sich sehr gleichgültig. </p>
+                    <p>
+                        <lb/>Also handelte es sich darum, eine bestimmte <lb/>Konkretheit, etwas
+                        Erlebtes, in diese Werte, die <lb/>noch stark in der Gesellschaft zu sein
+                        schienen, hin<lb break="no"/>einzubringen, um sie zu nähren. </p>
+                    <p>
+                        <lb/><hi rendition="#b">Es ging darum, den Leuten und sich selbst zu
+                            hel</hi><lb break="no"/><hi rendition="#b">fen, sich besser zu situieren
+                            im Raum und in der Zeit,</hi>
+                        <lb/><hi rendition="#b">besser zu wissen, wo man stand in der Zeit und
+                            im</hi>
+                        <lb/><hi rendition="#b">Raum, besser zu wissen, wie man auf diese Welt</hi>
+                        <lb/><hi rendition="#b">wirken konnte, in Treue zu dem, was einem
+                            wirklich</hi>
+                        <lb/><hi rendition="#b">wichtig war. Es ging darum, die Neugierde zu
+                            stär</hi><lb break="no"/><hi rendition="#b">ken für die Menschen, die
+                            anders waren als wir</hi>
+                        <lb/><hi rendition="#b">selbst.</hi>
+                    </p>
+                    <p>
+                        <lb/><hi rendition="#i">Es ging nicht in erster Linie um die Suche nach</hi>
+                        <lb/><hi rendition="#i">einer Bestätigung unserer selbst, sondern es
+                            ging</hi>
+                        <lb/><hi rendition="#i">um eine Suche nach dem Verständnis für das
+                            An</hi><lb break="no"/><hi rendition="#i">derssein der anderen. </hi>Wir
+                        wollten uns üben in dem <lb/>ernsten Spiel, ein Anderssein zu verstehen,
+                            inner<lb break="no"/>lich eine bestimmte Geschmeidigkeit zu entwickeln,
+                        <lb/>jene Einbildungskraft zu pflegen, durch die man <lb/>sich in die Haut
+                        des anderen für eine bestimmte <lb/>Zeit hineinschleichen kann, so dass man
+                        von innen <lb/>versteht, wie es bei ihm aussieht, auch wenn das <lb/>ganz
+                        anders ist, als man möchte. Wir wollten die <lb/>Probleme sehen, die die
+                        Zeit stellt, und wir wollten <lb/>lernen, sie zu verstehen, anstatt sie
+                        voreilig etwa so <lb/>zu reduzieren: die Leute, die uns regieren, oder die
+                        <lb/>irgendwo etwas Macht besitzen, sind dumm oder <lb/>böse; und wenn sie
+                        nicht dumm oder böse oder <lb/>beides wären, dann gäbe es überhaupt keine
+                            Pro<lb break="no"/>bleme: und wenn wir dort oben wären, mit unserer
+                        <lb/>Gescheitheit und unseren guten ehrlichen Absich<lb break="no"/>ten,
+                        dann gäbe es keine Probleme. Gegen solche <lb/>bequeme Vorurteile und
+                        Trugschlüsse wollten wir <lb/>kämpfen. Wir wollten den Sinn dafür erwecken,
+                        <lb/>dass es im menschlichen Leben, im menschlichen <lb/>Zusammensein und in
+                        der menschlichen Gesell<lb break="no"/>schaft Probleme gibt, die <hi
+                            rendition="#i">wirkliche Probleme</hi> sind: <lb/>wenn man versucht, sie
+                        zu lösen, ist man gezwun<lb break="no"/>gen, irgendwo doch Schaden
+                        anzurichten, zwischen <lb/>verschiedenen Uebeln zu wählen, zu entscheiden,
+                        <lb/>was wichtiger ist und was weniger wichtig, und <lb/>das weniger
+                        Wichtige dem Wichtigeren aufzuop<lb break="no"/>fern; das aber bedeutet,
+                        eine <hi rendition="#i">Wertskala</hi> zu haben. <lb/>Wir wollten den Sinn
+                        erwecken dafür, dass es im <lb/>menschlichen Leben unausweichlich eine be<lb
+                            break="no"/>stimmte Tragik gibt. Denn dies ist existentielle
+                        <lb/>Tragik, dass es <hi rendition="#i">wirkliche</hi> Probleme gibt, und
+                        dass <lb/>diese Probleme keine <hi rendition="#i">nur</hi> angenehme, nur
+                        gute, <lb/>nur gescheite Lösungen zulassen. Der Widerspruch <lb/>im
+                        Menschen, im menschlichen Leben und in der <lb/>menschlichen Gesellschaft
+                        ist da, und den Sinn für <lb/>diesen Widerspruch, und für seine Tiefe, und
+                        für <lb/>seinen Wert wollten wir erwecken. Sie sehen viel<lb break="no"
+                        />leicht nicht, wie das durch das <bibl ref="GND-4499648-2">Correspondances<lb break="no"/>Gedicht von Baudelaire</bibl> geschehen kann, aber
+                        es <lb/>kann dadurch geschehen. Es kann durch alle mögli<lb break="no"/>chen
+                        Mittel geschehen, selbst durch das Lesen eines <lb/>Zeitungsartikels,
+                        vorausgesetzt, dass man ihn nicht <lb/>mit der Absicht liest, Propaganda zu
+                        treiben, son<lb break="no"/>dern mit der Absicht, ein vielfältiges
+                        Verständnis <lb/>für vieles aufzubringen. </p>
+                    <p>
+                        <lb/>Wir wollten damals auch einen Sinn erwecken <lb/>für ein Wirken, das
+                        nicht unmittelbar dieses und <lb/>jenes äussere Ergebnis hat, sondern das
+                        Wagnis und <lb/>den Umweg auf sich nimmt durch das Innere der <lb/>Menschen.
+                            <hi rendition="#i">Man bildet die Menschen, damit sie</hi>
+                        <lb/><hi rendition="#i">selbst zu urteilen vermögen, ob sie wirklich
+                            das</hi><lb break="no"/><hi rendition="#i">selbe wollen, was wir wollen.
+                            Diese Art Bildung</hi>
+                        <lb/><hi rendition="#i">ist im Kern gerade das Entgegengesetzte von
+                            Pro</hi><lb break="no"/><hi rendition="#i">paganda.</hi>
+                    </p>
+                </div>
+                <div n="2" xml:id="d890-4">
+                    <head>
+                        <title type="main" xml:id="t890-4">Propaganda oder Bildung?</title>
+                    </head>
+                    <p>
+                        <lb/>Ich meine damit nicht, dass ich überhaupt Pro<lb break="no"/>paganda
+                        bekämpfen will. Ich bin selbst mein Le<lb break="no"/>ben lang politisch
+                        engagiert gewesen, und ich habe <lb/>auch Propaganda getrieben. Aber wenn
+                        ich Pro<lb break="no"/>paganda trieb, dann geschah es ganz klar als Pro <lb
+                            break="no"/>paganda, und in der Situation der Propaganda ver <lb/>suchte
+                        ich in den dringenden Fällen, jemanden da<lb break="no"/>von zu überzeugen,
+                        dass das, was ich meinte, wirk<lb break="no"/>lich richtig war. Und das
+                        machte ich mit dem Ein<lb break="no"/>setzen aller Mittel, die mir ehrlich
+                        zu sein schie<lb break="no"/>nen. </p>
+                    <p>
+                        <lb/><hi rendition="#b">Unterricht und Bildung hingegen ist das
+                            Entge</hi><lb break="no"/><hi rendition="#b">gengesetzte von Propaganda,
+                            denn da will man nicht</hi>
+                        <lb/><hi rendition="#b">zweckgerichtet von etwas überzeugen, man will
+                            viel</hi><lb break="no"/><hi rendition="#b">mehr in andern innerliche
+                            Erlebnisse verursachen,</hi>
+                        <lb/><hi rendition="#b">die zum Ergebnis führen, dass der andere mehr
+                            er</hi>
+                        <lb/><hi rendition="#b">selbst wird.</hi>
+                    </p>
+                    <p>
+                        <lb/>Man nimmt in Kauf, dass er vielleicht, wenn er <lb/>selbständig wird,
+                        sich umdreht und sagt: Ich nehme <lb/>Ihre Ideen gar nicht an! Diese
+                        Heranbildung zur <lb/>urteilsfähigen, frei entscheidenden Person ist,
+                        <lb/>glaube ich, die Mission eines Lehrers, und das ist <lb/>gerade das
+                        Gegenteil von Propaganda; einzig Pro<lb break="no"/>paganda für die
+                        persönliche Freiheit ist erlaubt; <lb/>denn so wird der Sinn für persönliche
+                        Freiheit ge<lb break="no"/>nährt. Aber was aus dieser persönlichen Freiheit
+                        <lb/>dann entsteht, soll vom Lehrer nicht festgelegt <lb/>werden. </p>
+                    <pb facs="#facs_4" n="1790"/>
+                </div>
+                <div n="2" xml:id="d890-5">
+                    <head>
+                        <title type="main" xml:id="t890-5">Einsatz für ein menschenwürdiges
+                            Leben</title>
+                    </head>
+                    <p>
+                        <lb/>Aber es gibt noch etwas Höheres: Es gilt in die<lb break="no"/>ser
+                        Ausbildung zwei anscheinend entgegengesetzte <lb/>Einstellungen zu stärken.
+                        Auf der einen Seite die <lb/><hi rendition="#i">Fähigkeit des ganzen,
+                            absoluten Einsatzes für</hi>
+                        <lb/><hi rendition="#i">etwas</hi>; wenn etwas, das einem entscheidend
+                            wich<lb break="no"/>tig ist, in Frage steht, dann muss man fähig sein
+                        <lb/>sich unbedingt einzusetzen, nicht so sehr aus Opfer<lb break="no"/>lust
+                        als aus der einfachen Einsicht: wenn das ver<lb break="no"/>schwindet, dann
+                        ist das Leben nicht mehr mensch<lb break="no"/>liches Leben. Und man opfert
+                        gar nicht eigentlich <lb/>sein Leben in solchen Fällen, man versucht es zu
+                        <lb/>retten; denn <hi rendition="#i">leben</hi> für Menschen bedeutet
+                            mensch<lb break="no"/>liches, menschenwürdiges Leben. Und wenn eine
+                        <lb/>Gesellschaft zum Beispiel für einen ein Leben be<lb break="no"/>reitet,
+                        das nicht mehr menschlich ist, dann muss <lb/>selbstverständlich unser
+                        Einsatz absolut sein; denn <lb/>es geht darum, das menschliche Leben zu
+                        retten, <lb/>und es wird belanglos, wenn dabei mein vegetati<lb break="no"
+                        />ves Dasein untergeht. </p>
+                </div>
+                <div n="2" xml:id="d890-6">
+                    <head>
+                        <title type="main" xml:id="t890-6">Die Würde des Mitmenschen</title>
+                    </head>
+
+                    <p>
+                        <lb/>Diesen Sinn für die absolute Forderung eines <lb/><hi rendition="#i"
+                            >menschlichen</hi> Lebens sollten wir stärken. Aber <lb/>gleichzeitig
+                        kommt das Entgegengesetzte. Das <lb/>heisst selbst im heissen Kampf für
+                        etwas, was <lb/>einem ganz wesentlich ist und ohne das das <lb/>menschliche
+                        Leben nicht mehr das menschliche <lb/>Leben ist, im Herzpunkt dieses Kampfes
+                        gibt es <lb/>trotzdem einen Sinn für eine bestimmte Befreiung <lb/>von
+                        diesem Kampf. Irgendwo ist der kämpfende <lb/>Mensch trotzdem jenseits des
+                        besonderen Kamp<lb break="no"/>fes, den er jetzt führt. Irgendwo gibt es ein
+                        Jen<lb break="no"/>seits dieses Kampfes, wo auch der Feind im Kampf
+                        <lb/>ein Jenseits hat und wo der kämpfende Mann oder <lb/>die kämpfende Frau
+                        auf der anderen Seite auch ein <lb/>Mensch ist. Ich meine, dass dieses
+                        "Jenseits des <lb/>Kampfes" im Gebiet des Religiösen ist. Und das ist
+                        <lb/>der Grund, weswegen das Religiöse für das Poli<lb break="no"/>tische
+                        nicht mobilisiert werden darf; deshalb nicht, <lb/>weil es sich auf <hi
+                            rendition="#i">diese</hi> Gegend bezieht. Jenseits der <lb/>absoluten
+                        Feindschaft gibt es eine Dimension, wo <lb/>wir zwar entgegengesetzte,
+                        feindliche Menschen <lb/>sind, aber doch Menschen. </p>
+                    <p>
+                        <lb/>Wie sieht es heute aus? Man könnte glauben, ich <lb/>müsste heute
+                        wirklich glücklich sein ob der De<lb break="no"/>mokratisierung der Schule,
+                        und ich bin es nicht. <lb/>Und ich möchte mich fragen, warum? </p>
+                </div>
+                <div n="2" xml:id="d890-7">
+                    <head>
+                        <title type="main" xml:id="t890-7">Demokratisierung um der Konjunktur
+                            willen?</title>
+                    </head>
+                    <p>
+                        <lb/>Ich glaube, <hi rendition="#i">wir sind zur Demokratisierung auf</hi>
+                        <lb/><hi rendition="#i">einem zu leichten Weg gekommen, obgleich die
+                            De</hi><lb break="no"/><hi rendition="#i">mokratisierung selbst noch bei
+                            weitem nicht er</hi><lb break="no"/><hi rendition="#i">reicht ist</hi>, denn heutzutage ist ja
+                        trotz allem auf <lb/>den Universitäten die Auswahl der Studenten noch
+                        <lb/>grösstenteils durch die gesellschaftliche Herkunft <lb/>bestimmt. Aber
+                        ich sage trotzdem; obgleich der Weg <lb/>schwierig gewesen ist und schwierig
+                        bleibt, sind <lb/>wir auf einem zu leichten Weg dazu gekommen. Ich
+                        <lb/>meine damit folgendes: Wir sind dabei, die Schulen <lb/>das Studium
+                        überhaupt zu demokratisieren, nicht <lb/>so sehr, weil wir es nicht ertragen
+                        können, dass <lb/>viele Menschen von dieser Ausbildung, die zum
+                        <lb/>Menschsein notwendig ist, ausgeschlossen sind, <lb/>sondern weil wir
+                        uns in der glücklichen Lage be<lb break="no"/>finden, dass die technische
+                        Entwicklung unserer <lb/>Welt gut ausgebildete Menschen braucht. Und weil
+                        <lb/>unsere hochindustrialisierte Gesellschaft diese <lb/>kompetenten
+                        Menschen braucht, ist die Demokra<lb break="no"/>tisierung ein allgemeiner
+                        universeller Slogan ge<lb break="no"/>worden. Aus wirtschaftlicher
+                        Notwendigkeit also, <lb/>und nicht so sehr aus der Sorge für das Mensch<lb
+                            break="no"/>liche. </p>
+                    <p>
+                        <lb/>Hierin ist eine Art des péché original, eine Art <lb/>Erbsünde,
+                        enthalten. <hi rendition="#i">Die Motivation der Demokra</hi><lb break="no"
+                            /><hi rendition="#i">tisierung ist doch für ihre Entwicklung
+                            entschei</hi><lb break="no"/><hi rendition="#i">dend</hi>. Jedermann spürt, dass es hier
+                        eine unklare <lb/>Mischung von Motivationen gibt, und dass diese
+                        <lb/>Motivationen nicht unbedingt zu den selben Ver<lb break="no"
+                        />wirklichungen in den Schulen und Universitäten <lb/>führen. Wenn die
+                        Studenten und sogar die Mittel<lb break="no"/>schüler sich jetzt beklagen,
+                        dass sie in diesen An<lb break="no"/>stalten manipuliert werden, dann sagen
+                        sie natür<lb break="no"/>lich meiner Ansicht nach einerseits eine grosse
+                        <lb/>Dummheit, denn manipuliert wird man immer. <lb/>Wenn man die
+                        Muttersprache lernt, wird man ma<lb break="no"/>nipuliert, denn die
+                        Muttersprache prägt unsern <lb/>Geist. </p>
+                    <p>
+                        <lb/><hi rendition="#b">Jedes Wissen, jede Kultur, jede Erziehung,
+                            jeder</hi>
+                        <lb/><hi rendition="#b">Austausch manipuliert, und wer nicht
+                            manipuliert</hi>
+                        <lb/><hi rendition="#b">werden will, muss sich zum bloss Tierischen
+                            beken</hi><lb break="no"/><hi rendition="#b">nen, endgültig, und er kann
+                            es nicht einmal sagen!</hi>
+                    </p>
+                    <p>
+                        <lb/>Also ist die Anklage der Manipulation eine grosse <lb/>Dummheit. Aber
+                        nicht nur eine Dummheit. Die Ge<lb break="no"/>fahr, in der geistigen Arbeit
+                        ausgenützt zu werden <lb/>für fremde Zwecke, das ist tatsächlich eine echte
+                        <lb/>Sorge, und dies ist es, was dem allgemeinen Pro<lb break="no"/>test
+                        auch Kraft gibt. Es ist meistens so in jedem <lb/>groben, allgemeinen
+                        Protest, dass man darin Wah<lb break="no"/>res und Falsches findet und dass
+                        das Wahre das <lb/>Falsche stärkt. Das Falsche erhält durch das <lb/>Wahre
+                        selbst einen Anschein von Recht, und dann <lb/>läuft man Gefahr, das Kind
+                        mit dem Bade aus<lb break="no"/>zuschütten. </p>
+                </div>
+                <div n="2" xml:id="d890-8">
+                    <head>
+                        <title type="main" xml:id="t890-8">Keine culture désintéressée</title>
+                    </head>
+                    <p>
+                        <lb/>Damit will ich nicht sagen, dass die Kultur, die <lb/>man in der Schule
+                        und in der Universität verteilt, <lb/>eine "culture désintéressée" sein
+                        soll. Diese "cul<lb break="no"/>ture désintéressée" haben die jungen Leute
+                        satt, <lb/>und ich muss sagen, ich halte es mit ihnen; sie <lb/>wenden sich
+                        gegen eine Kultur für den Sonntag, <lb/>für den Abend, wo man ins Konzert
+                        geht, zur Zer<lb break="no"/>streuung: man vergisst seine Probleme und
+                        Schwie<lb break="no"/>rigkeiten, hat ein bisschen Ruhe, und dann kommt
+                        <lb/>man zu seinen Geldsorgen zurück. Die Kultur darf <lb/>nicht Ferien von
+                        den Geldsorgen machen. Diese <lb/>Auffassung der "culture désintéressée" ist
+                        falsch, <lb/>denn sie ist langweilig. </p>
+                    <p>
+                        <lb/>Da komme ich zu einem Punkt, der für mich sehr <lb/>wichtig ist. Wenn
+                        unser Unterricht, unsere Leh<lb break="no"/>rer, unsere Professoren und
+                        unsere Eltern, alle, <lb/>von den Ereignissen seit dem Mai 1968 erschüttert
+                        <lb/>worden sind und ihre Sicherheit verloren haben, so <lb/>deshalb, weil
+                        sie ein schlechtes Gewissen hatten. <lb/>Sie hatten einen zu leichten Sinn,
+                        sie lebten in einer <lb/>geistigen Leere. Warum das? Unsere westliche
+                            Frei<lb break="no"/>heit – das habe ich jahrelang wiederholt – in der
+                        <lb/>Kultur, in den Künsten, im philosophischen Den‐ <pb facs="#facs_5"
+                            n="1791"/>
+                        <lb/>ken usw. – gründete hauptsächlich darauf, dass <lb/>wir alle fest davon
+                        überzeugt waren, dass die Kul<lb break="no"/>tur keine praktischen Folgen
+                        habe. Und deswegen <lb/>liessen wir die Leute tun und lassen, was sie
+                            woll<lb break="no"/>ten. Wir dachten: "Was kann das schaden, wenn
+                        <lb/>Dichter solche oder solche Gedichte, Philosophen <lb/>die oder die
+                        Philosophie, Künstler die oder die Ma<lb break="no"/>lerei pflegen, warum
+                        nicht Freiheit? Es wird so<lb break="no"/>wieso an der Gesellschaft oder am
+                        menschlichen <lb/>Leben nichts ändern." </p>
+                    <p>
+                        <lb/>Und es gab damals nur zwei Sorten von Leuten, <lb/>die diese
+                        Einstellung nicht teilten, das war die ka<lb break="no"/>tholische Kirche
+                        und die kommunistische Partei. <lb/>Die katholische Kirche und die
+                        kommunistische <lb/>Partei glaubten, wenn man ein Komma im Text
+                        <lb/>wegnehme oder anderswo hinsetze, habe das ge<lb break="no"
+                        />schichtliche Folgen. Und sie hatten recht. </p>
+                    <p>
+                        <lb/><hi rendition="#b">Wahre Kultur hat Konsequenzen, sie verändert
+                            das</hi>
+                        <lb/><hi rendition="#b">Leben der Menschen.</hi>
+                    </p>
+                    <p>
+                        <lb/>Kultur ist eine ernste Sache, und es ist sehr auf<lb break="no"
+                        />fallend, dass zum Beispiel Spanien, das in die <orgName ref="GND-333-5"
+                            >Ver<lb break="no"/>einigten Nationen</orgName> wegen des Francorégimes
+                        nicht <lb/>aufgenommen wurde, vorerst einmal in die <lb/><orgName
+                            ref="GND-2023755-8">UNESCO</orgName> zugelassen wurde. Warum? Weil die
+                            <lb/><orgName ref="GND-2023755-8">UNESCO</orgName> für Kultur da ist,
+                        und so galt die Zu<lb break="no"/>gehörigkeit als harmlos und nicht als
+                        wichtig. </p>
+                    <p>
+                        <lb/><hi rendition="#b">Man muss an die Konsequenzen der Kultur glau</hi><lb
+                            break="no"/><hi rendition="#b">ben, und wenn man in einer Schulklasse
+                            unterrich</hi><lb break="no"/><hi rendition="#b">tet, muss man wissen, dass das, was man
+                            den Schü</hi><lb break="no"/><hi rendition="#b">lern vermittelt und
+                            kulturell antut, Folgen haben wird,</hi>
+                        <lb/><hi rendition="#b">später, gegenüber den Kameraden, den Freunden,</hi>
+                        <lb/><hi rendition="#b">den Familienmitgliedern, gegenüber Leben und
+                            Tod,</hi>
+                        <lb/><hi rendition="#b">in der Trauer und in der Freude. Die
+                            mitgegebene</hi>
+                        <lb/><hi rendition="#b">Kultur wird menschliche und politische
+                            Konsequen</hi><lb break="no"/><hi rendition="#b">zen ganz konkreter Art
+                            haben. Wer für kulturelle Frei</hi><lb break="no"/><hi rendition="#b">heit ist, muss die Folgen dieser
+                            kulturellen Freiheit</hi>
+                        <lb/><hi rendition="#b">sehen, verstehen und in Kauf nehmen und dann
+                            diese</hi>
+                        <lb/><hi rendition="#b">Freiheit trotzdem wollen.</hi>
+                    </p>
+                </div>
+                <div n="2" xml:id="d890-9">
+                    <head>
+                        <title type="main" xml:id="t890-9">Der Sinn der Demokratisierung</title>
+                    </head>
+                    <p>
+                        <lb/>Das alles gilt nun auch für die Demokratisierung <lb/>der Schule. Diese
+                        Entwicklung wird Folgen haben, <lb/>und die Art der Kultur, die damit
+                        gegeben sein <lb/>wird, wird faktisch wiederum Konsequenzen ha<lb break="no"
+                        />ben. Die Frage ist: will man trotzdem Kultur im <lb/>Namen der Freiheit im
+                        oben erklärten Sinne, oder <lb/>will man das Wagnis der Heranbildung dieser
+                            per<lb break="no"/>sönlichen Freiheit nicht? Wenn man von Demokra <lb
+                            break="no"/>tisierung spricht: will man allen diese Freiheit <lb/>geben
+                        oder <hi rendition="#i">will man sie vielmehr jetzt allen weg </hi><lb
+                            break="no"/><hi rendition="#i">nehmen?</hi> Denn selbst, wenn alle in
+                        Schulen und <lb/>Universitäten gehen werden, können diese Schulen <lb/>und
+                        diese Universitäten so gestaltet werden, dass <lb/>sie keine Schulen und
+                        keine Universitäten im frü<lb break="no"/>heren Sinne mehr sind, sondern nur
+                        Orte, wo man <lb/>zwar fachliche Kompetenzen, aber durchaus nicht
+                        <lb/>Kultur zur Freiheit erwirbt. Wir müssen auch viel <lb/>Bedenkliches in
+                        Kauf nehmen, wenn der Demo<lb break="no"/>kratisierungsprozess erfolgen
+                        soll. Wenn man die <lb/>Demokratisierung trotzdem will, dann muss man
+                        <lb/>dafür auch bezahlen. So bin ich fest überzeugt, dass <lb/>während einer
+                        bestimmten Zeit das Niveau des <lb/>Studiums sinken wird. Die Lehrer, die
+                        ehrlich die <lb/>Demokratisierung des Studiums befürworten, müs- <pb
+                            facs="#facs_6" n="1792"/>
+                        <lb/>sen das wissen und annehmen. Das bedeutet nicht: <lb/>nichts tun. Wir
+                        müssen versuchen, diese Senkung <lb/>so kurzfristig und so klein wie nur
+                        möglich zu hal<lb break="no"/>ten. Aber ich glaube nicht, dass sie vermieden
+                        wer<lb break="no"/>den kann. Es kommen immer mehr Kinder, es gibt <lb/>eine
+                        Zeitspanne, wo man verhältnismässig wenig <lb/>Lehrer hat für diese Menge,
+                        die zum Studium <lb/>drängt; ausserdem stammen diese Kinder aus Fa<lb
+                            break="no"/>milien, wo sie als Kleinkinder weniger gefördert
+                        <lb/>wurden. Alles Versäumte werden sie nachholen <lb/>müssen. Ferner: wenn
+                        man sehr viele Lehrer <lb/>braucht, können nicht alle so gute Lehrer sein.
+                            Viel<lb break="no"/>leicht kann man später die alte Ebene wieder her <lb
+                            break="no"/>stellen, doch darf man hier nicht fälschlich glauben,
+                        <lb/>dass automatisch, wenn mehr Leute studieren, die<lb break="no"/>selbe
+                        Proportion von guten Lehrern herauskomme. </p>
+                </div>
+                <div n="2" xml:id="d890-10">
+                    <head>
+                        <title type="main" xml:id="t890-10">Demokratisierung erfordert
+                            Selektion</title>
+                    </head>
+                    <p>
+                        <lb/>Nun will ich einen Punkt berühren, wo ich ganz <lb/>gegen den Strom der
+                        Zeit sprechen werde. </p>
+                    <p>
+                        <lb/><hi rendition="#b">Demokratisierung der Schule bedeutet Selektion</hi>
+                        <lb/><hi rendition="#b">und nicht Preisgabe der Selektion. Es gibt keine
+                            De</hi><lb break="no"/><hi rendition="#b">mokratisierung der Schule ohne
+                            verschärfte Selek</hi><lb break="no"/><hi rendition="#b">tion; denn die Selektion, die früher auf
+                            ungerechte</hi>
+                        <lb/><hi rendition="#b">Weise durch das Geld, das Milieu und die Eltern
+                            ge</hi><lb break="no"/><hi rendition="#b">schah, wird jetzt durch das
+                            intellektuelle Vermögen</hi>
+                        <lb/><hi rendition="#b">und Arbeitsniveau ersetzt.</hi>
+                    </p>
+                    <p>
+                        <lb/>Das bedeutet, dass jetzt das Misslingen im Stu<lb break="no"/>dium
+                        grausamer wird. Eine gerechtere Gesellschaft <lb/>wird notwendigerweise
+                        grausamer, denn man kann <lb/>dann das Schicksal nicht mehr anklagen. Jetzt
+                        <lb/>kann man es noch. Es ist nicht leicht zu sagen: ich <lb/>war zum
+                        Studium nicht fähig, oder: mein Kind ist <lb/>zum Studium nicht fähig. Die
+                        Eltern kommen zum <lb/>Lehrer und sagen: mein Knabe ist sehr intelligent,
+                        <lb/>er ist nur faul, er ist nicht konzentrationsfähig, er <lb/>ist
+                        zerstreut. Aber diese Eltern verstehen nicht <lb/>dass die Arbeitslust und
+                        die Konzentrationsfähig<lb break="no"/>keit gerade Eigenschaften der
+                        Intelligenz sind. Ich <lb/>habe einen argen Verdacht: Wenn die vielen Stu<lb
+                            break="no"/>denten, in Paris, im Mai 1968 aus dem 16. Arron <lb
+                            break="no"/>dissement, dem quartier chic, mit solchem Enthu<lb
+                            break="no"/>siasmus zu jenen Barrikaden gekommen sind, ge <lb/>schah das
+                        nicht ganz dunkel aus einer Ahnung <lb/>heraus, dass sie sich irgendwie
+                        bedroht fühlten <lb/>durch die neue Selektion? Sie sind gegen die Selek<lb
+                            break="no"/>tion, sagen sie, aus Brüderlichkeit. Sie wollen, dass
+                        <lb/>alle in die Universitäten hineinkommen; <hi rendition="#i">aber
+                            alle</hi>
+                        <lb/><hi rendition="#i">können nicht hinein</hi>. Eine Selektion der
+                        Fähigkeiten <lb/>muss geschehen. <hi rendition="#i">Die Demokratisierung ist
+                            verbun</hi><lb break="no"/><hi rendition="#i">den mit einer stärkeren,
+                            unerbittlicheren</hi> Selek<lb break="no"/>tion. Ich kann nicht
+                        verstehen, wie verantwortliche <lb/>Lehrer und Pädagogen das Gegenteil
+                        behaupten. </p>
+                    <p>
+                        <lb/>Selektion bedeutet natürlich nicht, dass die Kin<lb break="no"/>der,
+                        die auf unseren Schulstufen zurückbleiben <lb/>müssen, einfach verworfen
+                        werden, irgendwo in <lb/>die Leere fallen, in die "Hölle". Man muss auch für
+                        <lb/>sie Wege bahnen, und unsere Gesellschaft ist reich <lb/>genug, um diese
+                        Wege menschlich zu gestalten, das <lb/>heisst im Dienste der Freiheit dieser
+                        Menschen <lb/>selbst, um sie so bewusst, so klarsehend zu machen <lb/>wie
+                        möglich, und ihnen an Kultur das zu geben <lb/>und anzubieten, was sie fähig
+                        sind zu empfangen. <lb/>Diese Wege sind erst noch im Keimen, die ganze
+                        <lb/>Bewegung zur <hi rendition="#i">"éducation permanente"</hi> ist im
+                        <lb/>Grunde da für die Menschen, welche die Möglich<lb break="no"/>keit
+                        eines jahrelangen Studiums nicht haben. Hier <lb/>liegt unsere Hauptaufgabe. </p>
+                    <p>
+                        <lb/>Aber warum verliert man so viel Zeit mit Illu<lb break="no"/>sionen und
+                        Lügen? Hier gilt es auch, so klar wie <lb/>möglich bestimmte Vorurteile zu
+                        bekämpfen, zum <lb/>Beispiel Vorurteile, die mit dem IQ (Intelligenz<lb
+                            break="no"/>quotient) verbunden sind, mit diesem scheusslichen
+                        <lb/>Begriff einer einheitlichen Schätzung der Intelli<lb break="no"/>genz,
+                        als gäbe es eine einheitliche Leiter von Be<lb break="no"/>gabungen! <hi
+                            rendition="#i">Die Begabungen sind verschieden; sie</hi>
+                        <lb/><hi rendition="#i">sind so verschieden, dass man sie überhaupt
+                            nicht</hi>
+                        <lb/><hi rendition="#i">quantitativ miteinander vergleichen kann.</hi>
+                        Lassen <lb/>Sie uns doch verschieden sein! Freuen wir uns dar<lb break="no"
+                        />über! Dazu kommt die zeitgenössische Anmassung, <lb/>dass jeder mindestens
+                        Universitätsprofessor wer<lb break="no"/>den soll. Diese Anmassung rührt
+                        daher, dass man <lb/><hi rendition="#i">mit dem Begriff der Gleichheit
+                            jahrzehntelang ge</hi><lb break="no"/><hi rendition="#i">logen hat. Es
+                            ist eben nicht wahr, dass die Men </hi><lb break="no"/><hi rendition="#i">schen in diesem Sinne gleich sind. Sie
+                            sind in allem</hi>
+                        <lb/><hi rendition="#i">ungleich</hi>: Sie sind stärker und schwächer, gross
+                        <lb/>und klein, schön und hässlich, gut und böse, ruhig <lb/>und aufgeregt,
+                        sie rechnen schnell und langsam <lb/>usw. Gleich sind sie nur in jener
+                        geheimnisvollen <lb/>Tiefe, der gegenüber niemand voraussehen kann, <lb/>was
+                        ein Mensch aus sich selbst heraus in jedem <lb/>Augenblick tun wird. </p>
+                </div>
+                <div n="2" xml:id="d890-11">
+                    <head>
+                        <title type="main" xml:id="t890-11">Was ist zu tun?</title>
+                    </head>
+
+                    <p>
+                        <lb/>Ich schliesse mit einigen konkreten Vorschlägen. <lb/>Wie kann man das,
+                        was wir als richtig einsehen, in <lb/>den Schulen verwirklichen? </p>
+                    <list>
+                        <item>
+                            <p>
+                                <lb/><hi rendition="#i">1. Denken – ein Genuss</hi>
+                            </p>
+                            <p>
+                                <lb/>Man muss den Schülern <hi rendition="#i">den lebendigen Sinn
+                                    für</hi>
+                                <lb/><hi rendition="#i">den Genuss am Denken entwickeln</hi>. Ich
+                                denke <lb/>zum Beispiel an die Droge. Mir fällt auf, dass <lb/>man
+                                in den Diskussionen über die Droge meistens <lb/>darüber diskutiert,
+                                welche medizinischen Folgen <lb/>die Einnahme hat, ob das schadet
+                                oder nicht, wel<lb break="no"/>che schadet, welche nicht, welche
+                                mehr schadet, <lb/>welche weniger, man spricht über die hygieni<lb
+                                    break="no"/>sche Gefahr. Das ist sehr wichtig, aber das ist
+                                <lb/>nicht das Entscheidende. Selbst wenn es eine <lb/>Droge gäbe,
+                                die ganz unschädlich wäre, bin ich <lb/>absolut dagegen. Warum? Weil
+                                jeder Mensch <lb/>einen Sinn gewinnen soll für die Wunder, die er
+                                <lb/>im Kopf hat. Man bedenke: irgendwo in der Welt <lb/>gibt es
+                                Lebewesen, die im Kopf drin etwas haben, <lb/>das ihnen erlaubt, zu
+                                denken und Sinn für Klar<lb break="no"/>heit zu entfalten. Man
+                                beweist mir ein Theorem <lb/>in der Geometrie, und ich sehe ein
+                                (ein-sehen: <lb/>dieses wunderbare Wort, das wir auf Französisch
+                                <lb/>nicht haben), ich sehe mit voller Klarheit ein, <lb/>warum und
+                                wie es notwendig so ist, wie es ist. <lb/>Ich <hi rendition="#i"
+                                    >verstehe</hi>, und ich verstehe in einem bestimm<lb break="no"
+                                />ten Sinn restlos. Der Genuss an dieser Klarheit <lb/>war im 17.
+                                Jahrhundert zum Beispiel bei <persName ref="GND-118524844">Descar<lb
+                                        break="no"/>tes</persName> und <persName ref="GND-118616242"
+                                    >Spinoza</persName> ein religiöser Genuss. <hi rendition="#i"
+                                    >Die Evi</hi><lb break="no"/><hi rendition="#i">denz hatte etwas Religiöses in
+                                    sich</hi>, weil die <lb/>Klarheit wirklich etwas ist, was
+                                einleuchtet, was <lb/>leuchtet; es ist Licht. Jetzt wollen viele mit
+                                einer <lb/>Droge verdunkeln, was sie im Kopf haben und <lb/>wofür
+                                sie verantwortlich sind. Diese unglaub<lb break="no"/>lich
+                                komplizierten Organe, die ihnen das klare <lb/>Denken ermöglichen,
+                                wollen sie chemisch ver- <pb facs="#facs_7" n="1793"/>
+                                <lb/>nebeln. Ist das nicht frevelhaft? Ich möchte, dass <lb/>man in
+                                den Schülern anhand der intellektuellen <lb/>Ausbildung, <hi
+                                    rendition="#i">dieses Bewusstsein und umfassende</hi>
+                                <lb/><hi rendition="#i">Gefühl für den Wert des Denkens und für
+                                    den</hi>
+                                <lb/><hi rendition="#i">Genuss am Denken</hi> erweckt und stärkt.
+                                Wenn ich <lb/>davon spreche, so ist noch nichts dafür getan. In
+                                <lb/>der Schule soll dieser Sinn erweckt und genährt <lb/>werden
+                                durch die Uebung. Diese Freude müssen <lb/>die Schüler <hi
+                                    rendition="#i">erleben</hi>. </p>
+                            <p>
+                                <lb/>Es geht nicht um das Verfügen über generelle <lb/>Begriffe,
+                                sondern um das seelisch-geistige Ereig<lb break="no"/>nis der
+                                Wahrheitsfindung, das von den Schülern <lb/>im Unterricht als
+                                wirklich einleuchtend erlebt <lb/>wird. </p></item>
+                        <item><p>
+                                <lb/>2. <hi rendition="#i">Ein bildendes Curriculum</hi>
+                            </p>
+                            <p>
+                                <lb/>Solche Uebungen, wie ich sie dargestellt habe, <lb/>brauchen
+                                viel Zeit. Man darf nicht rennen. Um <lb/>die dafür nötige Zeit zu
+                                gewinnen, darf man auf <lb/>der anderen Seite <hi rendition="#i">den
+                                    breiten enzyklopädischen</hi>
+                                <lb/><hi rendition="#i">Unterricht nicht aufgeben. Der Schüler soll
+                                    doch</hi>
+                                <lb/><hi rendition="#i">den grossen Rahmen der Kenntnisse haben,
+                                    sonst</hi>
+                                <lb/><hi rendition="#i">wird er nicht orientiert über die Welt. Aber
+                                    der</hi>
+                                <lb/><hi rendition="#i">Lehrer muss diesen groben Rahmen sehr verein
+                                    </hi><lb break="no"/><hi rendition="#i">fachen</hi>. Man muss
+                                schon ein erfahrener Lehrer <lb/>sein, um fähig zu sein, sein Feld
+                                sinngemäss zu <lb/>vereinfachen. Als ich Latein unterrichtete, ging
+                                <lb/>es mir so: Je länger ich das Fach unterrichtete, <lb/>desto
+                                weniger Regeln gab es, weil die Regeln syn<lb break="no"/>thetischer
+                                und synthetischer wurden. Die grossen <lb/>entscheidenden Linien
+                                sollen gegeben werden, <lb/>und nur die. Besonders eintreten soll
+                                man dabei <lb/>nur auf den ausgewählten oder einzelnen Punkt.
+                                <lb/>Also: Nicht die Zeit mit Halballgemeinheiten ver<lb break="no"
+                                />bringen, sondern einerseits eine ganz scharfe <lb/><hi
+                                    rendition="#i">Verkürzung der grossen Kategorien des
+                                    Systems</hi>
+                                <lb/>vornehmen, sei es in Geographie, Geschichte oder <lb/>anderswo,
+                                und anderseits <hi rendition="#i">langsame, nahrhafte</hi>, <lb/><hi
+                                    rendition="#i">kräftefördernde Uebungen</hi>. Und was dazwischen
+                                <lb/>liegt: weg damit! Ich weiss nicht, ob Sie mit mir
+                                <lb/>einverstanden sind. Aber es ist das Ergebnis von <lb/>Jahren
+                                und Jahren der Erfahrung, und ich bin <lb/>fest überzeugt, dass das
+                                der richtige Weg ist. <lb/>Wenn man mit Schülern einen kurzen Text
+                                zwei <lb/>Stunden lang erklärt in einer Literaturstunde <lb/>und auf
+                                der andern Seite ein Jahrhundert in <lb/>einer halben Stunde
+                                zusammenfasst, hat man <lb/>damit etwas Wesentliches getan. Der
+                                Schüler hat <lb/>den nötigen Rahmen, aber er hat auch zwei Stun<lb
+                                    break="no"/>den lang ertastet, was ein Text ist. Er weiss auch,
+                                <lb/>dass es einen Ozean von Texten gibt, die er nicht <lb/>gelesen
+                                hat, und dann bleibt ihm das Bedürfnis <lb/>nach weiterem Lesen und
+                                Verstehen sein Leben <lb/>lang. Er kann es später befriedigen und
+                                wird <lb/>dann nie diesen ekelhaften Ausdruck gebrau<lb break="no"
+                                />chen, dass er "mit dem Studium fertig ist". </p></item>
+                        <item><p>
+                                <lb/>3. <hi rendition="#i">Stätten der Bildung – Heilstätten der
+                                    Seele</hi>
+                            </p>
+                            <p>
+                                <lb/>Auch zur Führung der Jugendlichen möchte ich <lb/>noch etwas
+                                sagen. Heute gibt es die furchtbare <lb/>Vereinsamung der jungen
+                                Leute in der Gesell<lb break="no"/>schaft. Es ist vielleicht weniger
+                                so in Bern, aber <lb/>es ist so in vielen Teilen der Welt. Entweder
+                                <lb/>haben die Kinder keine Familie mehr, oder wenn <lb/>sie eine
+                                Familie haben, dann ist diese so be<lb break="no"/>schäftigt, dass
+                                sie ihren Platz darin gar nicht <lb/>mehr finden. Die Einsamkeit
+                                meiner Studenten <lb/>finde ich oft zutiefst erschreckend. Die
+                                    Jugend<lb break="no"/>lichen sind ausserdem kulturell oft
+                                unterernährt <lb/>von den früheren Kinderjahren her. Das Feh<lb
+                                    break="no"/>lende muss nachgeholt werden, und es handelt
+                                <lb/>sich nicht um Kleinigkeiten, sondern um ein <lb/>schwieriges
+                                und bedeutendes Unternehmen. <hi rendition="#i">Man</hi>
+                                <lb/><hi rendition="#i">müsste überall kleine Foyers einrichten, die
+                                    von</hi>
+                                <lb/><hi rendition="#i">"Animateurs" geleitet werden</hi>. Die
+                                Animateurs <lb/>sollen nicht Lehrer sein, sondern Menschen mit
+                                <lb/>einer anderen Ausbildung, die wir vorläufig noch <lb/>kaum
+                                kennen, Menschen, die zur Verfügung <lb/>stehen für die Kinder und
+                                die jungen Leute. Sie <lb/>greifen nicht dauernd ein, sondern nur,
+                                wenn <lb/>man sie braucht; sie sind einfach da in diesen
+                                <lb/>Foyers. <hi rendition="#i">Und solche Foyers sollten
+                                    schliesslich für</hi>
+                                <lb/><hi rendition="#i">alle Lebensalter existieren.</hi>
+                                Tatsächlich sind sie <lb/>unentbehrlich, wenn wir vermeiden wollen,
+                                dass <lb/>inskünftig mehr und mehr die Psychiater ein<lb break="no"
+                                />greifen müssen. </p>
+                            <p>
+                                <lb/>Wir leben in einer Zeit des Uebergangs. Dieser <lb/>Uebergang
+                                ist schwer, und ohne die erwähnten <lb/>Einstellungen und Massnahmen
+                                werden wir keine <lb/>wahre Demokratisierung haben, jene echte
+                                    Demo<lb break="no"/>kratisierung nämlich, die wirklich im
+                                Dienste des <lb/>freien einzelnen Menschen steht. </p></item>
+                    </list>
+                </div>
+                <div n="2" xml:id="d890-12">
+                    <head>
+                        <title type="main" xml:id="t890-12">Résumé</title>
+                    </head>
+                    <p>
+                        <lb/><hi rendition="#i">Lors de la "Pestalozzifeier" organisée cette
+                            année</hi>
+                        <lb/><hi rendition="#i">par la section Berne-Ville de la SEB, la
+                            Genevoise</hi>
+                        <lb/><hi rendition="#i">Jeanne Hersch, professeur de philosophie, s’est
+                            in</hi><lb break="no"/><hi rendition="#i">terrogée sur un problème que
+                            les slogans ont plus</hi>
+                        <lb/><hi rendition="#i">souvent masqué qu’éclairci: la démocratisation
+                            du</hi>
+                        <lb/><hi rendition="#i">système scolaire. (Ce texte est la
+                            transcription,</hi>
+                        <lb/><hi rendition="#i">d’après un enregistrement sur bande magnétique,</hi>
+                        <lb/><hi rendition="#i">de son exposé librement tenu.)</hi>
+                    </p>
+                    <p>
+                        <lb/>Partant des expériences de l’enfance et du temps <lb/><hi
+                            rendition="#i">d’études, elle définit la "formation" comme un droit</hi>
+                        <lb/><hi rendition="#i">fondamental de l’être humain appelé à atteindre
+                            sa</hi>
+                        <lb/><hi rendition="#i">majorité, comme une possibilité (à la fois
+                            matérielle</hi>
+                        <lb/><hi rendition="#i">et spirituelle) d’accéder à la conscience de soi
+                            et</hi>
+                        <lb/><hi rendition="#i">de s’engager librement en faveur de valeurs
+                            culturel</hi><lb break="no"/><hi rendition="#i">les. La démocratisation
+                            des études doit supprimer</hi>
+                        <lb/><hi rendition="#i">l’inégalité des chances, dans la mesure où elle
+                            se</hi>
+                        <lb/><hi rendition="#i">fonde sur des avantages de milieu et de moyens</hi>
+                        <lb/><hi rendition="#i">financiers. Les aptitudes, elles, sont et
+                            demeurent</hi>
+                        <lb/><hi rendition="#i">différentes; mais l’école doit les encourager et
+                            les</hi>
+                        <lb/><hi rendition="#i">développer, mieux qu’elle ne l’a fait jusqu’ici,
+                            dans</hi>
+                        <lb/><hi rendition="#i">leurs structures diversifiées. L’"égalité des
+                            chances"</hi>
+                        <lb/><hi rendition="#i">suppose que l’on reconnaisse des prestations
+                            effec</hi><lb break="no"/><hi rendition="#i">tives, la capacité
+                            intellectuelle, le niveau du tra</hi><lb break="no"/><hi rendition="#i">vail; mais cela signifie aussi que, dans
+                            un système</hi>
+                        <lb/><hi rendition="#i">scolaire démocratisé (jusqu’au degré
+                            universitaire),</hi>
+                        <lb/><hi rendition="#i">il en résultera une sélection équitable, parce
+                            que</hi>
+                        <lb/><hi rendition="#i">forte et impitoyable, de ceux-là seuls qui sont
+                            vrai</hi><lb break="no"/><hi rendition="#i">ment doués.</hi>
+                    </p>
+                    <p>
+                        <lb/><hi rendition="#i">Pour terminer, Mme Hersch formule quelques
+                            ré</hi><lb break="no"/><hi rendition="#i">flexions sur les buts que doit
+                            se fixer l’enseigne</hi><lb break="no"/><hi rendition="#i">ment: éveiller le plaisir de penser, de
+                            trouver la vé</hi><lb break="no"/><hi rendition="#i">rité; réduire de
+                            façon exemplaire l’abondance des</hi>
+                        <lb/><hi rendition="#i">matières et consacrer le temps ainsi gagné à
+                            des</hi>
+                        <lb/><hi rendition="#i">exercices qui développent et fortifient les
+                            facultés. Il</hi>
+                        <lb/><hi rendition="#i">devient de plus en plus nécessaire d’agir
+                            contre</hi>
+                        <lb/><hi rendition="#i">l’isolement des hommes et les différences de
+                            for</hi><lb break="no"/><hi rendition="#i">mation qui le conditionnent.
+                            J. Hersch voit une aide</hi>
+                        <lb/><hi rendition="#i">possible dans des "foyers", sortes de centres
+                            cul</hi><lb break="no"/><hi rendition="#i">turels qui, dirigés par des
+                            "animateurs", pourraient</hi>
+                        <lb/><hi rendition="#i">servir aux rencontres humaines et à
+                            l’enrichisse</hi><lb break="no"/><hi rendition="#i">ment intellectuel et
+                            spirituel, en se tenant à dispo</hi><lb break="no"/><hi rendition="#i">sition, pour les former et les stimuler,
+                            de tous ceux</hi>
+                        <lb/><hi rendition="#i">qui ont dû se passer de certaines possibilités
+                            d’étu</hi><lb break="no"/><hi rendition="#i">des dans leur enfance ou
+                            leur jeunesse.</hi>
+                        <lb/><hi rendition="#i">J./Bo.</hi>
+                    </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

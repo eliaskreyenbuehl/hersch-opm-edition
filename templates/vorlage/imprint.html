@@ -1,0 +1,38 @@
+<template>
+    ---json
+    {
+        "templating": {
+            "extends": "templates/layouts/hersch-base.html"
+        },
+        "features": {
+            "toolbar": {
+            "enabled": false
+        }
+        },
+        "styles": [
+            "transform/teipublisher.css","hersch.css"
+        ],
+        "script": {
+            "custom": [
+                "resources/scripts/language.js"
+            ]
+        }
+    }
+    ---
+    [% template styles %]
+    [% endtemplate %]
+    [% template breadcrumbs %]
+        <li>
+            <a href="[[ $context-path ]]/home.html">Home</a>
+        </li>
+        <li class="variable-length">
+            <pb-i18n key="landing.imprint">imprint</pb-i18n>
+        </li>
+    [% endtemplate %]
+    <main class="about">
+        <div class="center">
+     [[ landing:section($context, 'imprint', $imprint?content, 'landing.odd') ]]
+         
+     </div>
+</main>
+</template>

@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">Der Mensch ist nicht planbar</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">790</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “Der Mensch ist nicht planbar”. Schulnot im
+                    Wohlstandsstaat, Zürich: Buchclub Ex Libris, 1967, pp. 59–75.</idno>
+                <idno type="ALMA-MMSID">99117851355605508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117851355605508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_book" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">Der Mensch ist nicht
+                                planbar</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Häsler, Alfred A.</editor>
+                            <editor>Jaeckle, Erwin</editor>
+                            <editor>Jaeckle, Erwin</editor>
+                            <editor>Tschudi, Hans-Peter</editor>
+                            <title level="m">Schulnot im Wohlstandsstaat : Gespräche</title>
+                            <textLang mainLang="deu">Deutsch</textLang>
+                            <imprint>
+                                <pubPlace>Zürich</pubPlace>
+                                <publisher>Buchclub Exlibris</publisher>
+                                <date when="1967">1967</date>
+                                <biblScope unit="page">59-75</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#interview"/>
+                <catRef scheme="hersch_keywords" target="#schule"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+
+    <text>
+
+
+        <body>
+            <div type="interview" n="1" xml:id="d790-1">
+                <pb facs="#facs_1" n="[59]"/>
+                <head>
+                    <title type="main" xml:id="t790-1">Der Mensch ist nicht planbar</title>
+                </head>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Schulziel im Wohlstandsstaat heißt unser Gesprächsthema. <lb/> Der
+                            Wohlstandsstaat gibt einerseits mehr Mittel für die <lb/> Schule;
+                            anderseits aber bringt er wohl auch gewisse Gefähr<lb break="no"/>
+                            dungen mit sich – auch für die Schule, indem das Streben nach <lb/>
+                            Spezialisierung und materiellen Gewinn allzusehr ins Zentrum <lb/>
+                            unseres Daseins gerückt scheint. In diesem Zusammenhang be<lb break="no"
+                            /> schäftigt mich die Frage nach dem geistigen Standort, nach der <lb/>
+                            Funktion der Schule in der Gegenwart.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Zunächst einmal: Die Schule hat im Wohlstandsstaat <lb/>mehr Mittel zur
+                        Verfügung. Das stimmt: mehr Mittel <lb/>als früher. Aber im Verhältnis zum
+                        tatsächlich vorhan<lb break="no"/>denen Wohlstand finde ich, daß die Schule
+                        wenig Mittel <lb/>zur Verfügung hat. </p>
+                    <pb facs="#facs_2" n="60"/>
+                    <p>
+                        <lb/>Es gibt jetzt praktische, grundlegende Schwierigkeiten, <lb/>die größer
+                        geworden sind als früher: Wir haben mehr <lb/>Kinder in den Schulen, Kinder
+                        mit neuen Schwierigkei<lb break="no"/>ten; die Schule muß mehr Aufgaben der
+                        Familien über<lb break="no"/>nehmen, die diese nicht mehr erfüllt oder
+                        erfüllen kann <lb/>undsoweiter. Dabei gibt es rund um uns eine sehr reiche
+                        <lb/>Welt, die mehr und mehr auf die Kinder einwirkt und <lb/>sie zerstreut,
+                        während die Schule im Vergleich zu die<lb break="no"/>sem allgemeinen
+                        Wohlstand nicht zu reich, sondern zu <lb/>wenig reich ist, um in dieser Welt
+                        standzuhalten. Es ist <lb/>unglaublich wenig, was wir in die Erziehung
+                            investie<lb break="no"/>ren im Vergleich mit dem, was wir könnten. Es
+                        ist er<lb break="no"/>staunlich, wie wenig wir uns in der Schweiz darüber
+                        <lb/>Rechenschaft geben, was man in den Staaten rings um <lb/>uns in dieser
+                        Hinsicht tut. </p>
+                    <p>
+                        <lb/>Dann die Frage der Spezialisierung, der Vorbereitung <lb/>von Menschen
+                        für die Arbeitsplätze, die die Industrie <lb/>offen hält. Da erscheint mir
+                        besonders gefährlich, daß <lb/>die Wirtschaft auf die Bereitschaft und – ich
+                        möchte <lb/>beinahe sagen: die Komplizität – der Studenten, der <lb/>jungen
+                        Menschen überhaupt zählen kann. Die Wirt<lb break="no"/>schaft will so
+                        schnell als möglich ausgebildete Spezia<lb break="no"/>listen und die
+                        jungen Leute wollen so schnell als mög<lb break="no"/>lich einen Posten
+                        haben, um Geld zu verdienen, um <lb/>gleich Erwachsene zu sein. Also
+                        verzichten sie freiwillig <lb/>auf eine tiefere Bildung zugunsten ihres
+                        materiellen <lb/>Fortkommens. Ich höre zum Beispiel oft von Studen<lb
+                            break="no"/>ten – und vielleicht sagen es auch die Eltern –: "Wir ler<lb break="no"/>nen zuviel, das uns nachher im Beruf gar nichts nützt.
+                        <lb/>Wir werden zu wenig auf den Beruf vorbereitet." Sie <lb/>wollen also
+                        genau das, was die Wirtschaft auch will, <lb/>beide sind gleicher Meinung.
+                        Nun, dieses schöne Ein<lb break="no"/>verständnis müßte man im Grunde
+                        stören, weil es eine <lb/>Gefahr ist. </p>
+                    <pb facs="#facs_2" n="61"/>
+                    <p>
+                        <lb/>Aber da gibt es noch einen andern Punkt in dieser Frage <lb/>der
+                        Spezialisierung. Und hier ist mir etwas nicht ganz <lb/>geheuer in Ihrer
+                        Fragestellung. Man stellt sich oft vor, <lb/>daß es darum gehe, eine
+                        breitere Ausbildung zu geben <lb/>und zu verhindern, daß die Kinder zu
+                        schnell etwas <lb/>ganz Spezielles lernen. Aber ich glaube, heute stellt
+                        sich <lb/>die Frage nicht ganz so. Die Alternative zur breiten <lb/>Bildung
+                        ist nicht das Enge, sondern die Alternative <lb/>heißt: das oberflächlich
+                        Enge oder das tiefe Enge. Ich <lb/>würde also nicht gegen die
+                        Spezialisierung eintreten für <lb/>eine "culture générale", wie man es bei
+                        uns genannt hat. <lb/>Das muß man auch haben. Aber wichtig ist, im beson<lb
+                            break="no"/>deren Gebiet tief genug einzudringen, so daß die Breite
+                        <lb/>sich sozusagen in der Tiefe öffnet. </p>
+                    <p>
+                        <lb/>Die Menschen wissen jetzt eigentlich viel zu viel über <lb/>zu vieles –
+                        und sie verstehen es doch nicht. Daher, glau<lb break="no"/>be ich, laufen
+                        sie eine ganz besondere Gefahr im Geisti<lb break="no"/>gen heute – und das
+                        hat Folgen im Politischen undso<lb break="no"/>weiter: Es ist die Gefahr
+                        eines neuen Aberglaubens, des <lb/>Aberglaubens der Wissenschaft. Was die
+                        Leute dann <lb/>wissenschaftlich nennen und was sie als wissenschaftlich
+                        <lb/>annehmen, ist schlimmer als frühere Magie. Sie haben <lb/>gar keine
+                        Kriterien mehr. </p>
+                    <p>
+                        <lb/>Ich glaube, man müßte jetzt als allgemeines Prinzip der <lb/>Erziehung
+                        in der Schule folgendes anerkennen und ver<lb break="no"/>wirklichen: Die
+                        Menschen brauchen einen ganz weiten <lb/>Rahmen in viel mehr Gebieten als
+                        vorher, damit, um es so <lb/>zu sagen, Schubladen und Schränke
+                        bereitgestellt werden, <lb/>in welchen die Dinge, die zur Bildung gehören,
+                        nachher <lb/>ihren Platz finden. Neben diesen vielen, einigermaßen
+                        <lb/>leeren Schubladen aber müssen die Kinder kleine, kon<lb break="no"
+                        />krete Ausschnitte ganz genau und ganz tief erarbeiten. <lb/>Also: ganz
+                        weit und ganz eng. Aber nicht in der Mitte. <lb/>Meistens hält man sich mehr
+                        oder weniger in der Mitte, <pb facs="#facs_3" n="62"/>
+                        <lb/>streitet um ein bißchen mehr oder ein bißchen weniger. <lb/>Das ist
+                        nicht das Wichtige. Ein Beispiel: Ich habe ein<lb break="no"/>mal im
+                        Sekundarunterricht der Ecole Internationale für <lb/>Abiturienten Geschichte
+                        der Philosophie gelehrt, zwei<lb break="no"/>mal vierzig Minuten pro Woche.
+                        Das ist nichts, um die <lb/>Philosophie vom 7. Jahrhundert vor Christus bis
+                        heute <lb/>darzustellen. Ich habe es gemacht, indem ich sehr ver<lb
+                            break="no"/>einfachte, dabei aber kleine Textstücke ganz genau be <lb
+                            break="no"/>arbeitete, damit die Kinder eine Erfahrung hatten. Denn
+                        <lb/>sehen Sie, das Schlimmste sind Leute, die zwar Wissen, <lb/>aber keine
+                        Erfahrung besitzen, denn dann wissen sie in <lb/>Wirklichkeit nicht, was ihr
+                        Wissen bedeutet, sie haben <lb/>keine Ahnung davon. Wenn man aber einen
+                        kleinen <lb/>Teil sehr gründlich bearbeitet, dann erkennt man, was
+                        <lb/>Wissen bedeutet. Deswegen sind die großen Gelehrten <lb/>nicht
+                        abergläubisch, während jene, die ich Halb‐ und <lb/>Viertelgelehrte nenne,
+                        so abergläubisch sind und totali<lb break="no"/>sieren usw., was die echten
+                        Wissenschafter nicht tun. </p>
+                    <p>
+                        <lb/>Das müssen die Kinder lernen: Das Menschliche der <lb/>Geschichte der
+                        Wissenschaft und die richtige Tragweite, <lb/>dessen, was man heute weiß.
+                        Dann werden sie nicht be<lb break="no"/>trogen. Wir müssen eine scharfe
+                        Trennung ziehen zwi<lb break="no"/>schen dem allgemeinen Rahmen und dem
+                        ganz Konkre<lb break="no"/>ten. Das ist methodisch. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Das gilt auch für die Volksschule? Ich gehe davon aus, daß die
+                            <lb/> Zeit der Volksschule eine sehr entscheidende Zeit im Leben <lb/>
+                            des Menschen ist, daß man also in dieser Zeit dem jungen Men<lb
+                                break="no"/> schen ein Fundament gibt, damit er nachher das Ganze
+                            ... </hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>...ich würde nicht sagen ein Fundament, denn das ist <lb/>leer. Ein
+                        Rahmen ... </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> ...so daß er, wenn er die Schule verläßt, in jedem Gebiet diesen
+                            <lb/> weiten Rahmen besitzt...</hi>
+                    </p>
+                </sp>
+                <pb facs="#facs_3" n="63"/>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Damit er die nötige Ehrfurcht bekommt. Noch ein Bei<lb break="no"
+                        />spiel: Die Geschichte der Malerei – sie sollte in den Un<lb break="no"
+                        />terricht einbezogen werden, aber sie sollte nicht in Ein<lb break="no"
+                        />zelheiten zerlegt werden. Die Kinder sollen die großen <lb/>Etappen
+                        kennen. Jedoch finde ich es viel wichtiger, daß <lb/>man sie alle selber
+                        malen und zeichnen und ihre Malerei<lb break="no"/>en und Zeichnungen
+                        miteinander vergleichen und klas<lb break="no"/>sifizieren, gewissermaßen
+                        in der Geschichte der Kunst <lb/>einordnen läßt. Dann haben sie eine ganz
+                        konkrete, le<lb break="no"/>bendige Erfahrung. Das ist viel wichtiger als
+                        das viele <lb/>Wissen, viele Namen usw. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Sie haben ein Ideal gezeichnet. Wie aber sieht die Praxis
+                            aus?</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ich glaube, es ist nicht sehr weit her mit der Praxis in <lb/>dieser
+                        Hinsicht. Man streitet meistens über Programme, <lb/>ob man dieses oder
+                        jenes noch dazu geben soll oder <lb/>nicht, während das in meinen Augen gar
+                        nicht das Wich<lb break="no"/>tigste ist. Das Programm kann sehr weit sein,
+                        wenn es <lb/>sehr vereinfacht ist, aber eben unter der Bedingung, <lb/>daß
+                        man hier und dort etwas ganz genau erarbeitet. Es <lb/>gibt einzelne Lehrer,
+                        die es tun. Aber in der Diskussion <lb/>über die Schule ist dieser
+                        Standpunkt, soweit ich es <lb/>überblicke, kaum zu vernehmen. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Sie haben mit Recht gesagt, daß der Wohlstandsstaat zwar das <lb/>
+                            Geld für die Schule hätte, es aber noch zu wenig zur Verfü<lb break="no"
+                            /> gung stellt. Wenn er nun heute kommen würde und bereit wäre, <lb/>
+                            viel mehr auszugeben, wie würden Sie es investieren, was für ein <lb/>
+                            Ziel würden Sie stellen?</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Sie meinen das Ziel, nicht die Organisation? </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Das grundsätzliche Ziel.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Das Grundsätzliche ist folgendes: Die Erziehung ist <lb/>kein Mittel,
+                        sie ist Zweck. Der Wohlstand ist da, damit <pb facs="#facs_4" n="64"/>
+                        <lb/>man mehr und mehr tun kann für die Erziehung und <lb/>Bildung. Aber
+                        nicht schulmeisterlich, nicht indem man <lb/>die Menschen zu Modellen formt.
+                        Die Wirtschaft – wo<lb break="no"/>zu ist sie da? Damit <hi rendition="#i"
+                            >Menschen</hi> da sind. Heute ist es oft <lb/>umgekehrt: Man meint, der
+                        Mensch sei da, damit die <lb/>Wirtschaft funktioniere. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Das heißt, auch die Schule ist nicht in erster Linie für
+                            die <lb/> Wirtschaft da ...</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>... sondern im Gegenteil, die Wirtschaft ist für die Schu<lb break="no"
+                        />le da und die Schule für den Menschen. Und hier stellt <lb/>sich auch die
+                        Frage der Erwachsenenbildung, die immer <lb/>wichtiger wird. Die Welt
+                        verändert sich so schnell. Wir <lb/>alle müssen uns weiterbilden, damit wir
+                        mitkommen <lb/>und wissen, wo wir stehen. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:</persName><hi
+                            rendition="#i">
+                            <lb/> So wichtig und notwendig die Erwachsenenbildung ist, so wich<lb
+                                break="no"/> tig und notwendig ist es, daß wir in der Schule, die
+                            der Mensch <lb/> im Alter von sieben bis fünfzehn oder achtzehn Jahren
+                            besucht, <lb/>das Richtige zu seiner Entfaltung tun.</hi>
+                    </speaker>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ganz einverstanden. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Sie sagen: Die Welt verändert sich ungeheuer rasch
+                            ...</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Alles verändert sich. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Auch bei uns in der Schweiz...</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Nicht genug, aber es kommt. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:</persName><hi
+                            rendition="#i">
+                            <lb/> Äußerlich mindestens hat sich schon sehr viel verändert. Vor <lb/>
+                            zwanzig, dreißig Jahren waren die Binnenwanderung, die Re<lb break="no"
+                            /> gionalplanung, die Gastarbeiter, der Straßenbau noch kaum <lb/>
+                            Probleme. Heute sind sie es. Wie kann die Schule sie zur <lb/> Kenntnis
+                            nehmen? Versucht sie es? Will sie es? Mir scheint, <lb/> sie tut es noch
+                            zu wenig.</hi>
+                    </speaker>
+                </sp>
+                <pb facs="#facs_4" n="65"/>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ich glaube, das liegt in großem Maße am Aberglauben <lb/>unserer
+                        Neutralität. Wir sind nicht nur außenpolitisch <lb/>neutral, sondern auch
+                        die Schule muß neutral sein. Das <lb/>heißt: man darf in der Schule über
+                        nichts reden, das <lb/>kontroverserweckend ist. Da aber heutzutage sozusa<lb
+                            break="no"/>gen alle aktuellen Fragen kontroverserweckend sind,
+                        <lb/>kann man keine aktuellen Fragen behandeln. Man ist zu <lb/>ängstlich,
+                        um es zu tun. Es gibt eine tiefe Ängstlichkeit <lb/>in der Schweiz, eine
+                        ängstliche Vorsicht. Dadurch <lb/>kommt eine Sterilität in die Schule. Ich
+                        bin ganz dafür <lb/>daß die Schule neutral sein soll. Aber der Lehrer muß
+                        <lb/>doch die Gegenwart in die Schule eindringen lassen. <lb/>Neutralität in
+                        der Schule heißt meiner Meinung nach, <lb/>die Verschiedenheit der Meinungen
+                        erscheinen, die Fra<lb break="no"/>gen zu stellen und nicht die Kinder in
+                        ihrem traditionel<lb break="no"/>len Denkkreis schlummern zu lassen. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName><hi
+                            rendition="#i">
+                            <lb/> Man hat Angst, jemanden vor den Kopf zu stoßen, an Tabus <lb/> zu
+                            rühren, Schwierigkeiten zu bekommen mit Eltern, Schul<lb break="no"/>
+                            behörden, vielleicht auch etwas Falsches zu sagen und damit die <lb/>
+                            eigene Autorität zu erschüttern ... </hi></speaker>
+                </sp>
+
+
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Und wie. Wie aber will man den Schülern den Sinn für <lb/>das Suchen
+                        des Wahren geben, wenn man selbst nie <lb/>wagt, etwas Falsches zu sagen?
+                        Wenn man mit sich <lb/>selbst so sehr beschäftigt ist, daß man nie wagt,
+                        sich <lb/>auch einmal zu blamieren? Das ist einfach sinnwidrig <lb/>für die
+                        Schule selbst. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName><hi
+                            rendition="#i">
+                            <lb/> Nun stimmt diese ängstliche Vorsicht doch aber eigentlich gar
+                            <lb/> nicht mit den formulierten Schulzielen überein, ja ist ihnen so<lb
+                                break="no"/> gar entgegengesetzt. In den meisten Schulgesetzen
+                            nämlich heißt <lb/> es – und die Schulleute bestätigen es –, daß die
+                            Schule das Kind <lb/> zu einem urteilsfähigen, denkenden,
+                            verantwortungsbewußten <lb/> Menschen bilden und erziehen soll.</hi>
+                    </speaker>
+                </sp>
+                <pb facs="#facs_5" n="66"/>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ja, aber die Leute verstehen darunter sehr oft, und be<lb break="no"
+                        />sonders in unserem Lande, den Kindern gute, ethische <lb/>Prinzipien zu
+                        vermitteln, mit deren Hilfe sie stets jeder <lb/>Situation gewachsen sein
+                        würden. Wenn sie diese Prin<lb break="no"/>zipien befolgen, werden sie
+                        anständige Bürger sein, und <lb/>infolgedessen wird alles funktionieren.
+                        Aber das genügt <lb/>nicht. Daher kommt der für uns oft so charakteristische
+                        <lb/>moralisierende und pharisäische Zug. Viele Schweizer <lb/>glauben: Ach,
+                        wenn so gute, anständige Leute wie wir <lb/>die Welt regieren würden, dann
+                        würde alles glatt gehen. <lb/>Sie sehen nicht, daß es faktische Probleme
+                        gibt, die sehr <lb/>schwer zu lösen sind, wo etwa zwei Forderungen gleich<lb
+                            break="no"/>zeitig sehr wichtig sind und einander doch widerspre <lb
+                            break="no"/>chen. Was tut man da? Die wirkliche Schwierigkeit
+                        <lb/>wahrnehmen. Und dann wird man perplex. Aber manch<lb break="no"/>mal
+                        muß man eben perplex werden. Wir müssen weni<lb break="no"/>ger ethische
+                        Prinzipien dozieren, als den Sinn für die <lb/>Vielfältigkeit des Lebens und
+                        der Menschen, der Ab<lb break="no"/>sichten, der Glaubensarten, der
+                        Auffassungen wecken. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Das ist auch eine der Fragen, die mich beschäftigt, die ethische
+                            <lb/> Bildung.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ja, Sie haben sie in Ihrem Brief angedeutet, wo Sie fra<lb break="no"
+                        />gen, ob wir die ethische Bildung nicht vernachlässigten. <lb/>Ich weiß
+                        nicht genau, was das bedeuten soll. Vielleicht <lb/>ist es richtig,
+                        vielleicht ist es falsch. Ich glaube, es wäre <lb/>ganz falsch, wenn man die
+                        Forderung nach einem ein<lb break="no"/>stimmigen ethischen Unterricht
+                        stellen würde. Man <lb/>muß den Mut haben, die Vielfältigkeit der
+                            Erscheinun<lb break="no"/>gen als Faktum anzunehmen. Darüber müssen wir
+                        uns <lb/>Gedanken machen. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Wenn ich die Frage einer Vertiefung der ethischen Grundlagen <lb/>
+                            aufwerfe, so meine ich nicht eine Theorie der Ethik in der Schu– </hi>
+                        <pb facs="#facs_5" n="67"/>
+                        <hi rendition="#i">
+                            <lb/> le, die haben wir schon in den Fächern biblische Geschichte und
+                            <lb/> Sittenlehre, im Religionsunterricht usw., sondern ich meine die
+                            <lb/> Hinführung des Kindes zu verantwortlichem Verhalten dem <lb/>
+                            Nächsten gegenüber. Ich bin auf dem Dorf aufgewachsen. <lb/> Wenn dort
+                            jemand krank war, wußte man das und tat etwas...</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ja, und heute kann man sterben und man findet einen <lb/>nach zwei
+                        Wochen im Bett. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Es geht um das ethische Handeln.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Dann bin ich ganz einverstanden. Noch mehr: Hier <lb/>stimmt die Ethik
+                        mit bestimmten neuen, beobachtenden <lb/>Methoden im Unterricht überein;
+                        denn man lernt ein <lb/>bißchen das Milieu ringsum zu sehen, fragt sich: Wie
+                        ist <lb/>dies und jenes eigentlich? Wie leben die Menschen? Was <lb/>tun
+                        sie? Das machen moderne Schulen. Sie führen soge<lb break="no"/>nannte
+                        Enquêtes, Untersuchungen, durch, nicht wie man <lb/>es mit Insekten macht,
+                        sondern mit lebendigen Menschen. <lb/>Nehmen wir die Fremdarbeiter bei uns.
+                        Das könnte eine <lb/>Gelegenheit sein, diese Verantwortung für den Nächsten
+                        <lb/>zu entwickeln. Aber sie wird kaum wahrgenommen. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Gewisse Leute haben den Antisemitismus durch den Antiitalia<lb
+                                break="no"/> nismus ersetzt. Es wäre besser, wir würden, statt nur
+                            die Ge<lb break="no"/> fahren der Überfremdung, auch ihre Chancen
+                            sehen.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Man plant sehr teure Austausche von Kindern und Er<lb break="no"
+                        />wachsenen, um einander kennenzulernen. Aber wenn <lb/>sich das auf
+                        natürliche Weise ergibt, will man nicht zu<lb break="no"/>sammenkommen.
+                        Natürlich bringt dieses Zusammen<lb break="no"/>leben Probleme. Aber erst
+                        wenn wir auf dem Friedhof <lb/>liegen, werden wir keine Probleme mehr haben.
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Das alles würde unter anderem bedeuten: kleinere
+                            Schulklassen.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Und das hängt mit dem Geld zusammen. Kleinere Klas<lb break="no"/>sen
+                        heißt mehr Lehrer, mehr Schulzimmer usw. </p>
+                </sp>
+                <pb facs="#facs_6" n="68"/>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Es würde auch bedeuten: Vermehrte Aufmerksamkeit für die <lb/>
+                            Lehrer, vertieftere Ausbildung, Weiterbildung ...</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Und das braucht wieder Geld. Und es braucht auch Zeit, <lb/>was
+                        schwieriger ist. Wissen Sie, daß man mir aus Man<lb break="no"/>gel an
+                        Lehrern meine Studenten nach einem, zwei Se<lb break="no"/>mestern
+                        wegnimmt? Das ist keine Lösung. Da müßte <lb/>man etwas anderes finden. Es
+                        gibt Lernmaschinen, wo <lb/>die Kinder fast spielend üben und lernen. Es
+                        gibt auch <lb/>neue Lehrmethoden. Der Mathematikunterricht zum <lb/>Beispiel
+                        wird vollkommen erneuert. Aber ob die jungen <lb/>Lehrer genügend
+                        ausgebildet werden, um dazu bereit <lb/>zu sein? Auch die Weiterbildung ist
+                        unentbehrlich. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Sie ist von Kanton zu Kanton verschieden. In wenigen ist sie <lb/>
+                            obligatorisch, in den meisten fakultativ.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Hier stellt sich die Frage des Föderalismus. Ich frage <lb/>mich, ob
+                        wir nicht eine schweizerische Institution ha<lb break="no"/>ben müßten, wo
+                        die Lehrer in gewissen Abständen <lb/>während einer gewissen Zeit sich
+                        treffen, auf schweizeri<lb break="no"/>scher Ebene, vielleicht auch mit
+                        ausländischen Kolle<lb break="no"/>gen, sich kennenlernen und sich neuen
+                        Erkenntnissen <lb/>und Erfahrungen öffnen. Alle, aus allen Kantonen im
+                        <lb/>Laufe der Zeit. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Der <orgName ref="GND-2021817-5">Schweizerische
+                                Lehrerverein</orgName> unternimmt solche Versu<lb break="no"/> che,
+                            und mit gutem Erfolg. – Wichtig scheint mir auch die <lb/> Stellung des
+                            Lehrers in unserer Gesellschaft. Ein Gymnasial<lb break="no"/> lehrer
+                            gilt mehr als ein Sekundarlehrer, ein Sekundarlehrer <lb/> mehr als ein
+                            Primarlehrer.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Dieses ganze hierarchische Denken ist in meinen Augen <lb/>einfach
+                        lächerlich. Ich meine: Die Arbeit im Kindergar<lb break="no"/>ten ist eine
+                        andere als jene an der Universität. Aber es <lb/>gibt Menschen, die mit
+                        kleinen Kindern genial sind, <pb facs="#facs_6" n="69"/>
+                        <lb/>viel genialer als eine Menge Universitätsprofessoren. <lb/>Nun, das
+                        hängt mit unserer Gesellschaft zusammen: <lb/>Derjenige, welcher mehr
+                        verdient, ist mehr wert. Wäre <lb/>das nicht so, dann sollten Lehrer und
+                        überhaupt Intel<lb break="no"/>lektuelle nicht beleidigt sein, daß ein
+                        Krämer mehr ver<lb break="no"/>dient als sie. Ich finde das eigentlich ganz
+                        normal, denn <lb/>der Krämer hat als Ziel seiner Arbeit dieses Geld, wäh<lb
+                            break="no"/>rend der Lehrer oder der Professor dieses Geld braucht
+                        <lb/>um zu leben, aber es ist nicht sein Ziel. Der Intellek<lb break="no"
+                        />tuelle will oft, wie man bei Ihnen sagt, den Fünfer und <lb/>das Weggli.
+                        Er arbeitet <hi rendition="#i">nicht</hi> für das Geld, aber er will es
+                        <lb/>doch haben. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Das ist ja wieder so ein Zwiespalt in unserer schweizerischen
+                            <lb/> Existenz: Wir berufen uns ständig auf <persName
+                                ref="GND-118592912">Pestalozzi</persName> und <persName
+                                ref="GND-118528114">Du<lb break="no"/>nant</persName> – die arm
+                            waren –, auf unsere ideellen Werte, während <lb/> unser praktisches
+                            Leben heute doch in einem sehr starken Maße <lb/> auf materiellen Gewinn
+                            ausgerichtet ist.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Am liebsten haben wir es, wenn <persName ref="GND-118592912"
+                            >Pestalozzi</persName>–Prinzipien <lb/>und Geldverdienen sich vereinigen
+                        lassen. Nun, ich <lb/>glaube, man muß genug Geld haben, um es vergessen
+                        <lb/>zu können. Wenn man zuviel hat, kann man es nicht <lb/>vergessen, und
+                        wenn man zu wenig hat, kann man es <lb/>auch nicht vergessen. Um das Geld
+                        heute vergessen zu <lb/>können, muß man ziemlich viel haben. Also: Die
+                            Leh<lb break="no"/>rer müssen gut bezahlt sein. Dann können andere ruhig
+                        <lb/>mehr verdienen. Aber es darf nicht sein, daß Lehrer in <lb/>der
+                        Hierarchie der Bürger gering geachtet werden, weil <lb/>andere mehr
+                        verdienen. Das ist schädlich für den Un<lb break="no"/>terricht. Denn die
+                        Kinder müssen den Lehrer achten, <lb/>und sie werden es nicht tun, wenn
+                        diese Achtung ihm <lb/>im Elternhaus und von der Umwelt versagt wird, weil
+                        <lb/>er weniger verdient als der Krämer. </p>
+                </sp>
+                <pb facs="#facs_7" n="70"/>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Wie aber können wir dieses verschobene Wertbewußtsein
+                            ändern?</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Das ist etwas sehr Schwieriges, denn es erfordert eine <lb/>Umkehr der
+                        innern Haltung. Und das kann man nicht <lb/>planen. Man muß versuchen, die
+                        Dinge in der guten <lb/>Richtung zu lenken. Ich habe keinen technischen Weg,
+                        <lb/>wie man dieses falsche Denken verändern kann. Aber <lb/>vielleicht wäre
+                        dies eine Möglichkeit: Mit der Geschich<lb break="no"/>te der Wissenschaften
+                        und der Künste am konkreten <lb/>Beispiel zeigen, wie viel Bedeutendes in
+                        der Armut ge<lb break="no"/>schehen ist, so daß die Ehrfurcht vor der Armut
+                        oder <lb/>doch dem Nicht‐reich‐Sein wieder wach wird. Für mich <lb/>ist das
+                        ein sehr wichtiger Punkt: Humanistische Wissen<lb break="no"/>schaft. Und
+                        das kann doch nichts anderes sein als die <lb/>erlebte Geschichte der
+                        Menschen, die die Wissenschaft <lb/>gemacht haben, zu zeigen an einem Leben,
+                        zwei Leben, <lb/>einer Entdeckung, zwei Entdeckungen, mit wie wenig
+                        <lb/>Mitteln, unter welchen Umständen, mit welchem Ein<lb break="no"/>satz,
+                        welcher Leidenschaft der Wissenschaft gelebt wurde. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName><hi
+                            rendition="#i">
+                            <lb/> Im Augenblick macht es den Anschein, daß sich noch allzu <lb/>
+                            viele in der entgegengesetzten Richtung bewegen. Man hat <lb/> manchmal
+                            den Eindruck, daß wir auf dem besten Wege seien, <lb/> die Basis unseres
+                            Lebens selbst anzugreifen und zu zerstören. <lb/> Ich denke nicht nur an
+                            die Bedrohung durch einen Nuklear<lb break="no"/> krieg. Ich denke an
+                            die weltweite Gefährdung der Gewässer, der <lb/> Luft, des Bodens. Ich
+                            frage mich, ob wir noch genug Zeit haben, <lb/> zu dieser Einsicht zu
+                            kommen, die die Voraussetzung der in<lb break="no"/> neren Umwandlung
+                            wäre, von der Sie sprachen. Manchmal <lb/> scheint mir, es müßte wie ein
+                            Alarmruf durch die Welt geben, <lb/> um uns aus dem Schlaf, aus der
+                            Trägheit aufzurütteln.</hi>
+                    </speaker>
+                </sp>
+
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Besinnung ist nötig. Aber Alarmrufe sind immer zwei<lb break="no"
+                        />deutig und voll von Unechtheit. Man spricht heute so <lb/>viel von Angst,
+                        von Bedrohung usw. – und in Wirklich‐ <pb facs="#facs_7" n="71"/>
+                        <lb/>keit leben die Menschen – wenigstens in der Schweiz<lb break="no"/>ganz
+                        ruhig und gemütlich. Die Ängstlichkeit, von der <lb/>wir eben sprachen, ist
+                        ja etwas ganz anderes. Ich bin ein<lb break="no"/>verstanden, man muß die
+                        Leute wecken. Aber nicht so, <lb/>daß man sagt, jetzt müssen wir alles
+                        planen, für alles die <lb/>wissenschaftliche Lösung finden, jetzt müssen wir
+                            psy<lb break="no"/>chologisch‐wissenschaftlich lernen, wie man die
+                        Kinder <lb/>erziehen soll usw. Man muß Sinn haben für das, was <lb/>sich
+                        nicht planen läßt, sonst kommt die Katastrophe <lb/>nämlich durch das Planen
+                        selbst. </p>
+                    <p>
+                        <lb/>Also ganz konkret: Die Fragen der Gewässerver<lb break="no"
+                        />schmutzung, der Luftverunreinigung, des Lärms usw., <lb/>ich glaube, die
+                        werden gelöst, denn das sind technische <lb/>Fragen. Es gibt die Frage der
+                        Überbevölkerung der <lb/>Erde, die wird wahrscheinlich auch gelöst. Die
+                            Atom<lb break="no"/>bombe: Wir sollen nicht vergessen, daß man zu andern
+                        <lb/>Zeiten viel größere Ängste gehabt hat: die Angst vor <lb/>der Cholera
+                        zum Beispiel, die plötzlich ausbrach und <lb/>neun Zehntel der Bevölkerung
+                        unter schrecklichen <lb/>Schmerzen wegraffte. Wir haben unsere Probleme. Sie
+                        <lb/>sind radikal. Aber wie können wir zur Besinnung kom<lb break="no"/>men?
+                        Mir scheint, das kann nur indirekt geschehen, <lb/>durch dieses konkrete
+                        Erziehen, durch ein konkretes <lb/>Erwecken und nicht durch das Sprechen
+                        darüber. </p>
+                </sp>
+
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Ich denke jetzt an <persName ref="GND-118592912"
+                                >Pestalozzi</persName>. Er hat zu seiner Zeit eine große <lb/>
+                            Denkarbeit geleistet, die, so glaube ich, auch heute noch gültig <lb/>
+                            ist in bezug auf die Erziehung des Menschen. Um <persName
+                                ref="GND-118592912">Pestalozzi</persName>
+                            <lb/> herum waren eine ganze Reihe bedeutender Menschen, die seine <lb/>
+                            Ideen aufgenommen, gelehrt, praktiziert und auch propagiert <lb/> haben.
+                            Man hat über diese Ideen also gesprochen. Heute scheint <lb/> mir, wir
+                            leben, was die Schule anbetrifft – auch aus andern Ge<lb break="no"/>
+                            bieten – ein wenig von der Hand in den Mund. Gewiß kann man <lb/> nicht
+                            alles planen, aber wir müßten die Dinge überdenken, eben</hi>
+                        <pb facs="#facs_8" n="72"/>
+                        <hi rendition="#i">
+                            <lb/> auch im Gespräch, wir müßten doch zu einer Konzeption unserer
+                            <lb/> heutigen Schule kommen.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/><persName ref="GND-118592912">Pestalozzi</persName> lebte noch in einer
+                        einigermaßen überein<lb break="no"/>stimmenden Welt. Die
+                        Meinungsverschiedenheiten, der <lb/>Meinungskampf hatten damals nicht die
+                        Wucht und die <lb/>Tiefe, die sie jetzt haben. Es gibt doch jetzt unter den
+                        <lb/>Menschen kaum Worte, die eindeutig sind; sie haben <lb/>den einen Sinn
+                        in dieser Ideologie und einen anderen in <lb/>jener Ideologie. Deswegen kann
+                        man so etwas, was <persName ref="GND-118592912">Pe<lb break="no"
+                            />stalozzi</persName> damals konnte, jetzt nicht tun. Der Einzelne muß
+                        <lb/>die Kraft haben, sich selbst den Problemen zu stellen. <lb/>Das ist die
+                        Schwierigkeit: Wenn man in einer einiger<lb break="no"/>maßen bedrohten Welt
+                        lebt, dann besteht die Tendenz, <lb/>gleich wieder Einstimmigkeit zu finden,
+                        während die <lb/>Gefahren – davon bin ich tief überzeugt – nur durch den
+                        <lb/>Einzelnen bestanden werden können. Wir haben nicht <lb/>ganz den Mut,
+                        das zu bejahen. Sicher, die Gefahr ist da; <lb/>denn ob der Einzelne es
+                        kann, ob er diese moderne <lb/>Freiheit auf seinen Schultern zu tragen
+                        vermag oder <lb/>nicht, das wissen wir nicht. Es ist eine Glaubensfrage.
+                        <lb/>Man muß es riskieren. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Aber man kann ihm helfen.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Man kann nicht nur, man <hi rendition="#i">muß</hi> ihm helfen; denn er
+                        kommt <lb/>nicht allein zu seiner Freiheit. Ich sagte: Die Schule ist
+                        <lb/>nicht Mittel zum Zweck. Aber wenn sie Mittel ist, dann <lb/>ist sie es
+                        zu diesem Zweck, diese Freiheit zu bestehen. Das <lb/>klingt vielleicht
+                        enttäuschend. Man möchte einen Plan <lb/>haben, ein Programm. Man kann
+                        teilweise planen, man <lb/>kann manches programmieren – aber das Letzte
+                        nicht. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Es scheint mir jetzt weniger wichtig, fertige Antworten oder <lb/>
+                            Rezepte zu geben, als überhaupt die Fragen zu klären, zu se<lb
+                                break="no"/> hen, bewußt zu machen. Ich glaube, es ist schon einiges
+                            getan,</hi>
+                        <pb facs="#facs_8" n="73"/>
+                        <hi rendition="#i">
+                            <lb/> wenn wir uns wieder einmal ganz gründlich die Frage stellen: <lb/>
+                            Warum schicke ich mein Kind in die Schule? Was macht die <lb/> Schule
+                            mit den Kindern? Was will sie erreichen?</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ich glaube, wir müssen verschiedene Alternativen über<lb break="no"
+                        />winden. Die Alternative Humanismus <hi rendition="#i">oder</hi>
+                        Wissenschaft; <lb/>sie ist falsch. Dann die Alternative Berufsbildung <hi
+                            rendition="#i">oder</hi>
+                        <lb/>Erziehung. Meiner Meinung nach kann die Erziehung <lb/>sehr gut durch
+                        die Berufsbildung geschehen, wenn die <lb/>Berufsbildung <hi rendition="#i"
+                            >human</hi> verstanden wird. Aber das ver<lb break="no"/>langt vom
+                        Lehrer wirklich eine sehr differenzierte Art <lb/>zu lehren, also zu
+                        verstehen, daß jeder Beruf seine Ge<lb break="no"/>schichte hat und dadurch
+                        zu der ganzen Kultur gehört. <lb/>Da muß sich einiges ändern. Und man muß
+                        vor allem <lb/>bereit sein, einverstanden sein, daß der junge Mensch an<lb
+                            break="no"/>ders wird, als ich bin. Das muß man wirklich, wirklich
+                        <lb/>annehmen und dem jungen Menschen auch die Mittel in <lb/>die Hand
+                        geben, daß er es kann, wenn er es will... </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> ... die Mittel, die ihn fähig machen, die Freiheit zu tragen,
+                            <lb/> von der sie sprachen. </hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Und man muß genug Vertrauen haben, in sich selbst, in <lb/>die Eltern,
+                        in die Umwelt – und hoffen, daß dabei keine <lb/>Katastrophe herauskommt.
+                        Aber eine Bildung ohne Ge<lb break="no"/>fahr gibt es nicht. Dann ist sie
+                        nur Malerei: Man bemalt <lb/>den Menschen äußerlich, die Fassade, statt ihn
+                        innerlich <lb/>zur Freiheit fähig zu machen. </p>
+                    <p>
+                        <lb/>Ich könnte mir zum Beispiel folgendes denken: Kom<lb break="no"
+                        />petente Leute, Physiker, Politiker, Philosophen, Künst<lb break="no"/>ler
+                        usw. gehen in die Schulen und beantworten Fragen <lb/>der Schüler. Dann
+                        werden die Kinder weniger aber<lb break="no"/>gläubisch in bezug auf die
+                        Wissenschaft. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Meinen Sie nicht, daß man auch die Erkenntnisse der Psycho<lb
+                                break="no"/> logie in der Schule vermehrt verwerten müßte?</hi>
+                    </p>
+                </sp>
+
+                <pb facs="#facs_9" n="74"/>
+
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ich würde sagen, ja, aber wiederum: ohne Aberglau<lb break="no"/>ben.
+                        Es ist ein Aberglaube, von der Psychologie die Lö<lb break="no"/>sung aller
+                        Probleme zu erwarten. Ein wahrer Psycholo<lb break="no"/>ge denkt nicht so.
+                        Er weiß: Die Psychologie weiß etwas <lb/>vom Menschen, aber er soll nicht zu
+                        ihrem Objekt re<lb break="no"/>duziert werden. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <lb/>
+                        <hi rendition="#i">Den Philosophieunterricht befürworten Sie?</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ich finde, daß Philosophie Kindern im Alter von sieb<lb break="no"
+                        />zehn Jahren ausgezeichnet vermittelt werden kann. In <lb/>diesem Alter
+                        haben selbst diejenigen Sinn dafür, die ihn <lb/>später nicht mehr haben.
+                        Man tut das in Frankreich. Ich <lb/>habe dieses Programm lange gelehrt. Es
+                        kommt darauf <lb/>an, wie man es macht. In der Philosophie wird alles in
+                        <lb/>Frage gestellt. Und das brauchen wir heute: wir müssen <lb/>in Frage
+                        stellen. Aber da ist man wieder ängstlich. Man <lb/>denkt: Da kommen
+                        Marxisten, oder Katholiken, oder <lb/>Gott weiß was. Die Katholiken sind die
+                        einzigen, die <lb/>wirklich Philosophie treiben in der Schule, denn sie
+                            ha<lb break="no"/>ben eine feste Lehre. Die andern sind einfach erschrok<lb break="no"/>ken, tun meistens sehr wenig. Aber das ist kein Weg.
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Sie haben nun verschiedene Möglichkeiten genannt, was man tun
+                            <lb/> könnte und tun müßte, aber Sie sind gegen Pläne und Pro<lb
+                                break="no"/> gramme...</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Doch, natürlich muß man auch Pläne und Programme <lb/>überlegen. Die
+                        Tendenz aber ist meistens die, so zu un<lb break="no"/>terrichten, wie man
+                        selbst unterrichtet worden ist. Da<lb break="no"/>von sollten wir
+                        wegkommen. Wir können wecken, sti<lb break="no"/>mulieren, die Bedingungen
+                        schaffen, unter denen die <lb/>wahre Arbeit vom Lehrer zum Kind und
+                        umgekehrt <lb/>wirklich geschehen kann, wo das Kind anerkannt wird <lb/>als
+                        künftiger Mensch und als jetziger Mensch in seiner <lb/>Art. </p>
+                </sp>
+
+                <pb facs="#facs_9" n="75"/>
+
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Und sich wiederum bewußt werden, daß es neben intellektuellen
+                            <lb/> Fähigkeiten und erlernbaren Fertigkeiten auch den Charakter <lb/>
+                            zu entwickeln gilt, das Verantwortungsbewußtsein, die Hilfs<lb
+                                break="no"/> bereitschaft.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Man soll es nicht trennen. Das gehört zusammen. Das <lb/>eine wird
+                        durch das andere befruchtet. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> Die Vielfältigkeit unserer Gegenwart zu erkennen und anzu<lb
+                                break="no"/> erkennen und in die Schule zu tragen, dem kann – ich
+                            komme <lb/> noch einmal darauf zurück – eben doch auch das Gespräch, das
+                            <lb/> echte Gespräch verantwortlicher und kompetenter Persönlich<lb
+                                break="no"/> keiten dienen. Denken und sich über die Dinge klar
+                            werden, <lb/> heißt ja auch, sich mit den andern auseinandersetzen.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Ganz bestimmt. Ich glaube, das wird auch getan, viel<lb break="no"
+                        />leicht nicht genug. Vielleicht müßte man öfters für Leh<lb break="no"
+                        />rer ein Wochenende haben, zwei, drei Tage oder eine <lb/>Woche, für ihre
+                        berufliche Erneuerung auf allen Ge<lb break="no"/>bieten. </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-119502240">[Alfred A. Häsler:]</persName></speaker>
+                    <p>
+                        <hi rendition="#i">
+                            <lb/> In bezug auf die Schule: Gespräche nicht nur zwischen Lehrern,
+                            <lb/> sondern auch mit Leuten der Wissenschaft, der Wirtschaft, der
+                            <lb/> Kultur, der Politik, mit Eltern.</hi>
+                    </p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="GND-118815679">[Jeanne Hersch:]</persName></speaker>
+                    <p>
+                        <lb/>Einverstanden. Aber die Schwierigkeit, zu einem frucht<lb break="no"
+                        />baren Gespräch über Wissenschaft in der Pädagogik zu <lb/>kommen, liegt
+                        einerseits bei jenen, die nichts davon <lb/>wissen wollen und anderseits bei
+                        denen, die zu viel da<lb break="no"/>von reden. Beide stören das
+                        Eigentliche. Die ersten sind <lb/>taub und starr und stur, und die andern
+                        sind, wie ich <lb/>sagte, abergläubisch. Sie verlieren den Sinn für das
+                        <lb/>Menschliche, denn sie glauben an eine Technik auf die<lb break="no"
+                        />sem Gebiet. Das ist gerade so falsch. Es geht um den <lb/>Menschen, und
+                        der eben ist nicht planbar. Alles kommt <lb/>zuletzt auf den Lehrer an. </p>
+                </sp>
+            </div>
+        </body>
+    </text>
+</TEI>

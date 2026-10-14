@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../oxygen_framework/schema/zbz_hersch.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">Sur le sens de l'histoire</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">910</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “Sur le sens de l'histoire”. Science et
+                    conscience de la société, Vol. 1, 1971, pp. 91–100.</idno>
+                <idno type="ALMA-MMSID">99117851353505508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117851353505508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_book" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">Sur le sens de
+                                l'histoire</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Casanova, Jean-Claude</editor>
+                            <editor>Aron, Raymond</editor>
+                            <title level="m">Science et conscience de la société</title>
+                            <textLang mainLang="fra">Französisch</textLang>
+                            <imprint>
+                                <pubPlace>Paris</pubPlace>
+                                <publisher>Calmann-Lévy</publisher>
+                                <date when="1971">1971</date>
+                                <biblScope unit="volume">1</biblScope>
+                                <biblScope unit="page">91-100</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#article"/>
+                <catRef scheme="hersch_keywords" target="#geschichtsphilosophie"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb facs="0001_p001.jpg" n="[91]"/>
+            <div type="article" n="1" xml:id="d910-1">
+                <head>
+                    <title type="main">Sur le 'Sens de l'histoire'</title>
+                </head>
+                <p>
+                    <lb/>CE n'est pas sans appréhension que je reviens à ce slogan. <lb/>Mais
+                    comment n'y pas revenir? Plus j'y réfléchis et moins je <lb/>comprends le rôle
+                    qu'on lui fait jouer. </p>
+                <p>
+                    <lb/>Il y a évidemment l'ambiguïté du mot "sens": direction ou
+                    <lb/>signification. Les doctrinaires du sens de l'histoire ont souvent
+                    <lb/>remplacé le terme "sens" par celui de "vague": ils parlent de <lb/>" la
+                    vague de l'histoire ", qui porte les uns vers la réalité, aban<lb break="no"
+                    />donnant les autres à l'irréalité des limbes. Si le "sens" peut être
+                    <lb/>remplacé par une "vague ", c'est qu'il signifie direction. On repère
+                    <lb/>alors dans la succession des moments une orientation continue, <lb/>une
+                    suite, que l'enchaînement causal suffirait à déterminer. Mais <lb/>cette
+                    "orientation" ou cette "vague ", les doctrinaires ne se <lb/>contentent pas de
+                    la constater: ils la valorisent. Mieux, ils en <lb/>font la source et le critère
+                    de toute valeur. C'est donc qu'il s'agit <lb/>en même temps de l'autre sens du
+                    "sens": de signification et de <lb/>" raison d'être ". Avoir un sens, c'est
+                    alors le contraire de "n'avoir <lb/>aucun sens ", le contraire du "non‐sens ".
+                    La finalité intervient. </p>
+                <p>
+                    <lb/>Suffit‐il que l'histoire manifeste une orientation ou une direc<lb
+                        break="no"/>tion déterminée pour qu'elle ait du même coup une signification?
+                    <lb/>Inversement, est‐il impossible qu'une histoire dépourvue de toute
+                    <lb/>direction continue ait cependant une signification? </p>
+                <p>
+                    <lb/>Répondre à cette question semble facile aussi longtemps qu'on <lb/>se sert
+                    d'une temporalité à une seule dimension, symbolisée par <lb/>une droite.
+                    L'histoire se développant le long d'une simple droite <lb/>orientée du passé
+                    vers l'avenir, sa cohérence, si elle existe, implique <lb/>la continuité de ses
+                    moments successifs, donc une direction uni<lb break="no"/>voque, lisible dans
+                    leur ensemble. Cette direction continue, si elle <lb/>n'implique pas encore
+                    nécessairement un sens, au sens d'une signi<lb break="no"/>fication, semble
+                    pourtant en être au moins la condition. </p>
+                <pb facs="0002_p002.jpg" n="92"/>
+                <p>
+                    <lb/>Pour que la continuité devienne en même temps signification, <lb/>pour
+                    qu'elle prenne un sens, toujours dans une temporalité à une <lb/>seule
+                    dimension, on est obligé de faire intervenir une finalité, elle <lb/>aussi
+                    linéaire. C'est alors que les moments successifs de l'histoire <lb/>ne forment
+                    pas seulement une série cohérente, une direction conti<lb break="no"/>nue, mais
+                    un acheminement. Il faut que cette direction soit donnée <lb/>par un
+                    aboutissement virtuel, lui‐même situé sur cette même ligne <lb/>droite, et qui
+                    est raison d'être et source de valeur pour le processus <lb/>tout entier. (Nous
+                    laissons délibérément de côté, dans ce processus, <lb/>la nature du moteur:
+                    causalité pré‐orientée, cause finale, ou créa<lb break="no"/>tivité sans cesse
+                    renouvelée.) Telle est la perspective eschatologique <lb/>de l'histoire. </p>
+                <p>
+                    <lb/>Reste à examiner deux possibilités: ou bien l'aboutissement de
+                    <lb/>l'histoire n'est virtuel que provisoirement, et son actualisation dans
+                    <lb/>le futur est située sur un point déterminé de la ligne même du <lb/>temps
+                    le long de laquelle l'histoire s'est déroulée jusqu'ici; ou bien <lb/>il est
+                    virtuel essentiellement, se trouvant toujours, par rapport à <lb/>la ligne du
+                    temps, au‐delà du point futur le plus éloigné, et cela <lb/>à l'infini. </p>
+                <p>
+                    <lb/>Dans le premier cas, l'aboutissement est en principe prévi<lb break="no"
+                    />sible. Grâce à lui, la direction cohérente de l'histoire acquiert la
+                    <lb/>valeur d'une signification finale, par rapport à laquelle chacun <lb/>des
+                    moments se trouve avoir un sens. L'aboutissement se trouve <lb/>être <hi
+                        rendition="#i">la fin</hi> (dans les deux sens) de l'histoire et le
+                    fondement de <lb/>toutes les normes de sens. Mais ce sens, dès lors, règne de
+                    façon <lb/>si assurée sur cette histoire unidimensionnelle, que celle‐ci perd sa
+                    <lb/>réalité <hi rendition="#i">en tant qu'histoire</hi>. Son déroulement
+                    devient négligeable. Au <lb/>fond, elle est donnée tout entière d'un seul coup.
+                    A force de sens, <lb/>elle n'a plus de sens. Elle n'est plus qu'un immense fait,
+                    si complexe <lb/>qu'il puisse être. Elle s'effondre dans la "facticité ". C'est
+                    qu'il <lb/>n'y a plus de véritable temps. </p>
+                <p>
+                    <lb/>Dans le second cas, quelle est donc la réalité d'un aboutissement
+                    <lb/>situé sur la ligne même du temps, mais essentiellement virtuel?
+                    <lb/>Certes, en tant que phantasme il peut avoir une efficacité en <lb/>chacun
+                    des moments de l'histoire. Mais son caractère futur est <lb/>illusoire. Il
+                    s'agit en fait d'un phantasme variable et momentané. <lb/>Comment pourrait‐il
+                    assurer la cohérence de tous les moments <lb/>et leur donner un sens? La
+                    succession reste vaine, bien qu'obsédée <lb/>par une ébauche de sens. Cette
+                    ébauche ne suffit pas pour que la <lb/>succession soit histoire. </p>
+                <pb facs="0003_p003.jpg" n="93"/>
+                <space dim="vertical"/>
+                <p>
+                    <lb/>On me dira que j'enfonce des portes ouvertes. Chacun sait <lb/>aujourd'hui
+                    que l'histoire est inconcevable à l'aide des seules caté<lb break="no"/>gories
+                    de la logique classique ou des <hi rendition="#i">a priori</hi> kantiens.
+                    L'histoire <lb/>est <hi rendition="#i">dialectique</hi>, ou elle n'est pas. </p>
+                <p>
+                    <lb/>Voyons si la dialectique abolit le dilemme. </p>
+                <space dim="vertical"/>
+                <p>
+                    <lb/>Nous allons tenter de prendre le mot "dialectique" dans un <lb/>sens
+                    restreint, d'éviter les usages élargis que la mode pousse à en <lb/>faire, et
+                    qui permettent de le plier en tous sens et à n'importe <lb/>quelles fins. Son
+                    emploi n'est légitime, dès lors, que dans les cas <lb/>où il se passe quelque
+                    chose entre deux termes contradictoires ou <lb/>exclusifs l'un de l'autre, et
+                    pourtant polairement liés et indispen<lb break="no"/>sables l'un à l'autre.
+                    Ainsi, chez <persName ref="GND-118547739">Hegel</persName>, le devenir était
+                    dialec<lb break="no"/>tique parce qu'il impliquait à la fois et nécessairement
+                    l'être et <lb/>le néant. </p>
+                <p>
+                    <lb/>Appliquant le mot à l'histoire, nous pouvons dire, d'après ce <lb/>qui
+                    précède, que l'histoire est dialectique car elle implique à la <lb/>fois
+                    l'inachèvement et la fin, elle exige et exclut un terme final, <lb/>elle est
+                    aussi incompatible avec le non‐sens qu'avec l'instauration <lb/>temporelle du
+                    sens, elle se déploie entre les deux pôles indispen‐<lb break="no"/>sables du
+                    sens et de son refus. </p>
+                <p>
+                    <lb/>On montrerait d'ailleurs facilement que, d'une façon générale, <lb/>la
+                    dialectique est le signe même, et le seul adéquat, des contra<lb break="no"
+                    />dictions humaines. </p>
+                <space dim="vertical"/>
+                <p>
+                    <lb/>Seulement voilà: il se trouve que la dialectique, ici, ne s'accepte
+                    <lb/>pas elle‐même. Si les contraires, indispensables l'un à l'autre, ne <lb/>se
+                    laissent pas mutuellement en repos, la dialectique elle aussi, <lb/>loin de
+                    reposer en soi, cherche son contraire et s'effondre sans lui. </p>
+                <p>
+                    <lb/>Quand <persName ref="GND-118547739">Hegel</persName> nous dit que le
+                    devenir est une synthèse de l'être <lb/>et du non‐être, son affirmation n'a, du
+                    point de vue purement <lb/>logique, aucun sens puisqu'elle consiste en une
+                    violation délibérée <lb/>du principe de non‐contradiction. "Sheer nonsense ",
+                    ai‐je entendu <lb/>des logiciens anglo‐saxons déclarer, tranchant ainsi sans
+                    appel le <lb/>problème. Un tel énoncé est, en effet, non seulement impossible
+                        <pb facs="0004_p004.jpg" n="94"/>
+                    <lb/>à formaliser, mais il suffit de lui reconnaître un sens quelconque
+                    <lb/>pour contester par le fait même la formalisation tout entière et,
+                    <lb/>par‐delà cette formalisation, les conditions élémentaires de la pen<lb
+                        break="no"/>sée logique, c'est‐à‐dire, en toute rigueur, de la pensée tout
+                    court. <lb/>Ou disons plutôt: de la pensée <hi rendition="#i">pure</hi>, de la
+                    pensée qui n'est que <lb/>pensée. </p>
+                <p>
+                    <lb/>Signe de contradiction, la dialectique ne peut s'apaiser en syn<lb
+                        break="no"/>thèse le long de la ligne même où elle pose sa contradiction –
+                    <lb/>ou alors elle n'est qu'un tour de passe‐passe. Le terme de "deve<lb
+                        break="no"/>nir ", s'il a pu "réconcilier" les termes contradictoires d'
+                    "être" <lb/>et de "non‐être ", n'en a été capable qu'en engendrant une dimen<lb
+                        break="no"/>sion nouvelle, qui n'était plus celle où l'être s'oppose
+                    logiquement <lb/>au non‐être, mais celle où un sujet déploie son <hi
+                        rendition="#i">action</hi>.<hi rendition="#i"> Il n'est pas</hi>
+                    <lb/><hi rendition="#i">de dialectique concevable sans l'entrecroisement impur
+                        du théorique et du</hi>
+                    <lb/><hi rendition="#i">pratique</hi>, sans l'irruption, au sein même de la
+                    théorie, de la <hi rendition="#i">praxis</hi>
+                    <lb/>dont le mime permet d'ignorer les exclusives du pur <hi rendition="#i"
+                        >regard </hi>ration<lb break="no"/>nel. </p>
+                <p>
+                    <lb/>Or cette action, cette praxis, soumet le temps linéaire à l'in<lb
+                        break="no"/>fluence d'une structure nouvelle. La ligne, qu'elle soit
+                    eschatolo<lb break="no"/>giquement limitée ou qu'elle s'allonge sans fin dans
+                    le virtuel, ne <lb/>permet pas l'action, faute de fournir, comme nous l'avons
+                    montré <lb/>plus haut, les dimensions indispensables à un <hi rendition="#i"
+                        >sens</hi>. Le long d'une <lb/>ligne finie, l'action étouffe dans la
+                    facticité. Le long d'une ligne <lb/>toujours inachevée, elle se perd dans
+                    l'incohérence des instants. <lb/>L'action n'est action qu'à condition d'<hi
+                        rendition="#i">avoir un sens</hi>. La direction <lb/>ne suffit pas. Quelles
+                    sont donc les dimensions temporelles sans <lb/>lesquelles une action ne saurait
+                    avoir un sens? </p>
+                <p>
+                    <lb/>Il y faut, certes, la dimension linéaire du temps, que nous avons
+                    <lb/>considérée d'emblée. Mais celle‐ci, pour que l'action puisse avoir <lb/>un
+                    sens, c'est‐à‐dire être action, ne saurait se réduire à une succes<lb break="no"
+                    />sion, comme une ligne spatiale se réduit à une juxtaposition de <lb/>points.
+                    Les points de la ligne spatiale s'<hi rendition="#i">organisent</hi> autour de
+                    l'action <lb/>et par rapport à elle, si bien que la ligne devient,
+                    essentiellement, <lb/>par rapport à l'action, <hi rendition="#i">une virtualité
+                        de structures</hi>, multiples, innom<lb break="no"/>brables même, non
+                    exclusives les unes des autres, et pourtant <lb/>chaque fois, pour chaque
+                    action, uniques. L'action, en effet, crée <lb/>une sorte de nœud par rapport
+                    auquel ou dans lequel se diffé<lb break="no"/>rencient et s'unifient à la fois
+                    ses antécédents (conditions et moyens), <lb/>et ses effets (conséquences et
+                    buts), autour de son accomplissement <lb/>propre (décision et exécution). </p>
+                <p>
+                    <lb/>Cette sorte d'unité sans laquelle il n'est pas d'action n'est pour<lb
+                        break="no"/>tant encore qu'une condition préalable à la question du sens. Je
+                        <pb facs="0005_p005.jpg" n="95"/>
+                    <lb/>voudrais n'en retenir dès maintenant qu'un trait essentiel: il s'agit
+                    <lb/>bien d'une unité qui organise les moments du temps, et qui par <lb/>là
+                    figure ou préfigure une totalité en miniature, une micro‐totalité. <lb/>Toute
+                    action s'inscrit, certes, dans un tissu de données et dans <lb/>un contexte
+                    d'autres actions. Mais plus elle est <hi rendition="#i">action</hi>, et plus
+                    elle <lb/>tend à se rendre saisissable isolément, comme si elle avait créé,
+                    <lb/>d'une certaine manière, en un certain sens, une petite totalité de
+                    <lb/>temps, bien à elle et comme auto‐suffisante. </p>
+                <p>
+                    <lb/>Mais alors, son sens? Est‐il en elle ou hors d'elle? </p>
+                <p>
+                    <lb/>Nous disions tout à l'heure que la source du sens, conçue comme <lb/>située
+                    "à l'extrémité" future de la ligne temporelle, <hi rendition="#i"
+                        >s'abolissait</hi>
+                    <lb/><hi rendition="#i">dans la facticité</hi> si cette extrémité était conçue
+                    comme étant encore <lb/>temporelle, comme faisant encore partie de la ligne de
+                    la tempo<lb break="no"/>ralité. Nous disions aussi qu'elle <hi rendition="#i"
+                        >perdait toute réalité future</hi> si elle <lb/>était repoussée à l'infini,
+                    dans un futur toujours futur. Ou, plus <lb/>exactement, nous disions que ce
+                    futur toujours futur se ramène à <lb/>un imaginaire présent, accompagnant, de
+                    son efficacité <hi rendition="#i">actuelle</hi>, <lb/>chaque moment du temps. </p>
+                <p>
+                    <lb/>Or, à la question de savoir si le sens de l'action est en elle ou <lb/>hors
+                    d'elle, il faut répondre: en elle <hi rendition="#i">et</hi> hors d'elle. "En
+                    elle ", en <lb/>tant que l'action tend à constituer une "petite totalité" dans
+                    <lb/>laquelle les "buts" immédiats sont source de sens. Mais "hors <lb/>d'elle
+                    ", en tant que ces buts eux‐mêmes ne sont source de sens <lb/>que de façon
+                    dérivée, et que la valeur même qui leur permet d'être <lb/>des <hi
+                        rendition="#i">buts</hi> leur vient <hi rendition="#i">d'ailleurs</hi>. </p>
+                <p>
+                    <lb/>Où situer cet "ailleurs "? </p>
+                <p>
+                    <lb/>Ici se révèle le caractère essentiellement dialectique du sens. <lb/>Cet
+                    ailleurs semble d'abord se situer là où s'achève la ligne future, <lb/>à son
+                    extrémité, elle‐même temporelle. En effet, le sens de la <lb/>petite totalité
+                    constituée par l'action, la validité de ses buts immé<lb break="no"/>diats lui
+                    vient en dernier ressort de l'achèvement futur d'un dessein <lb/>total. On peut
+                    donc dire à juste titre que la totalité est une condi<lb break="no"/>tion de
+                    sens. Mais en même temps, nous l'avons vu, la totalité <lb/>est la mort du sens,
+                    qu'elle étouffe dans le donné de fait, fût‐il futur. <lb/>Quand tout <hi
+                        rendition="#i">est</hi>, fût‐ce virtuellement, l'être n'a plus de sens, il
+                        <hi rendition="#i">est</hi>
+                    <lb/>le sens, et cette coïncidence de l'être et du sens, qui ne cesse de
+                    <lb/>hanter l'esprit humain, reste en même temps radicalement impen<lb
+                        break="no"/>sable, abolissant la temporalité et l'histoire. Cette
+                    coïncidence <lb/>peut prendre la valeur d'un paradoxe religieux, chiffre du
+                    divin <lb/>ou de la transcendance, mais il n'a rien de dialectique, puisque,
+                    <lb/>entre les termes contraires, il ne peut rien se passer, faute de véri<lb
+                        break="no"/>table temps. </p>
+                <pb facs="0006_p006.jpg" n="96"/>
+                <p>
+                    <lb/>Une temporalité qui pourrait être donnée dans sa totalité se <lb/>nierait
+                    elle‐même, et aucune nuit recouvrant encore l'avenir ne <lb/>suffit à la sauver. </p>
+                <p>
+                    <lb/>Ainsi le sens exige à la fois temporalité et totalité, mais tempo<lb
+                        break="no"/>ralité et totalité s'excluent réciproquement. </p>
+                <p>
+                    <lb/>Il ne peut donc s'agir, en histoire, que d'une totalité régulative <lb/>et
+                    non constitutive, d'une totalité proposée à l'infini, et qui, en <lb/>tant
+                    qu'actuelle, compense et nie sa condition de phantasme par <lb/>son efficacité. </p>
+                <p>
+                    <lb/>Pourtant, est‐ce bien de l'efficacité d'un phantasme qu'il s'agit <lb/>ici? </p>
+                <p>
+                    <lb/>"L'ailleurs" comme source de sens est à la fois projeté à l'infini <lb/>du
+                    futur et efficace <hi rendition="#i">hic et nunc</hi>. Cet infini du futur est
+                    contemporain <lb/>de chaque instant présent. Il ne se situe donc pas, malgré sa
+                        figura<lb break="no"/>tion illusoire, sur la ligne du temps, mais dans une
+                    dimension <lb/><hi rendition="#i">autre</hi>, où s'accomplit la convergence
+                    impensable de ce qui passe <lb/>et de ce qui ne passe pas. C'est l'ailleurs du
+                        <hi rendition="#i">permanent</hi>. </p>
+                <p>
+                    <lb/>Ainsi, l'histoire en tant que pur devenir dialectique dans le <lb/>temps
+                    reste inintelligible, faute d'un sens de ce devenir. La condi<lb break="no"
+                    />tion d'intelligibilité de la dialectique historique est elle‐même dia<lb
+                        break="no"/>lectique. La dialectique historique, pour être intelligible,
+                    exige <lb/>une dialectique de la dialectique, c'est‐à‐dire un recours au per<lb
+                        break="no"/>manent. <persName ref="GND-118547739">Hegel</persName> l'avait
+                    bien vu, quand il adossait le temps à <lb/>l'éternité. </p>
+                <p>
+                    <lb/>Le fixisme dialectique est intenable parce qu'il est une contra<lb
+                        break="no"/>diction dans les termes, et une contradiction non dialectique,
+                    donc <lb/>sans vie et rigoureusement impensable. La dialectique de l'histoire
+                    <lb/>elle‐même impose le recours dialectique à son antithèse qui est le
+                    <lb/>permanent. Ici, la contradiction devient dialectique, car les deux
+                    <lb/>termes antithétiques s'impliquent réciproquement dans un pro<lb break="no"
+                    />cessus sans fin – dont l'infinité n'est pourtant pas la victoire du
+                    <lb/>devenir sur l'immobile, mais la perpétuelle et toujours imparfaite
+                    <lb/>relation de l'un à l'autre. Processus sans fin, temporel et intem<lb
+                        break="no"/>porel, successif et simultané, selon les dimensions qui s'y
+                    entre<lb break="no"/>croisent, et dont seul l'entrecroisement permet
+                    l'histoire. </p>
+                <p>
+                    <lb/>Le cœur de l'histoire, source vive de son sens, n'est pas et ne <lb/>peut
+                    pas être le dernier moment du temps; il est "maintenant ". <lb/>Mais ce
+                    maintenant ne vit que par son rapport (actif, non logique) <lb/>à
+                    l'après‐dernier moment du temps, auquel il donne, par ce rap<lb break="no"
+                    />port, une efficacité actuelle. Un sens s''inscrit le long de la ligne <lb/>du
+                    temps, indispensable, inachevé, toujours partiel. Et pourtant <lb/>il ne peut
+                    être un véritable sens qu'en impliquant une "totalité" <pb facs="0007_p007.jpg"
+                        n="97"/>
+                    <lb/>actuelle et présente d'un autre ordre, dont le phantasme temporel,
+                    <lb/>projeté à l'infini et inachevable, est à la fois l'illusion et le signe
+                    <lb/>nécessaire. "<quote source="orig_source">Ewiges Itzt </quote>", disait
+                        <persName ref="GND-118547739">Hegel</persName>. "Maintenant éternel."
+                    <lb/>Maintenant éternel, déguisé en futur toujours futur, et paradoxale<lb
+                        break="no"/>ment efficace, actualisé et "incarné" comme tel. </p>
+                <p>
+                    <lb/>Ce que <persName ref="GND-118547739">Hegel</persName> ne semble pas avoir
+                    vu – et ce qui oblige à res<lb break="no"/>taurer, au centre même de sa
+                    somptueuse philosophie, la limpide <lb/>ascèse kantienne – c'est justement ce
+                    mirage efficace, constitutif <lb/>du "présent éternel ". Éros était, selon
+                        <persName ref="GND-118594893">Platon</persName>, fils d'Abondance <lb/>et de
+                    Pénurie; mais dans l'éros hégélien, la part d' "abondance ", <lb/>virtuellement,
+                    élimine la part de "manque" ou de "privation ". <lb/>Cette dernière semble
+                    accidentelle, et son élimination paraît alors <lb/>simple "affaire de temps ".
+                    Or, le temps est essentiel à la réalité <lb/>de l'histoire, essentiel et non
+                    accidentel, avec tout l'inachèvement <lb/>qu'il comporte; et cela non seulement
+                    pour l'histoire abusivement <lb/>considérée "dans son ensemble ", mais pour la
+                    nature et le sens <lb/>de chacun de ses moments. C'est pourquoi l'<hi
+                        rendition="#i">idée</hi> kantienne est <lb/>ici plus adéquate que la <hi
+                        rendition="#i">synthèse </hi>hégélienne. Il y avait dans cette <lb/>dernière
+                    – paradoxalement, mais la descendance marxiste de <lb/><persName
+                        ref="GND-118547739">Hegel</persName> n'a fait que le confirmer – de quoi
+                    "déréaliser" l'histoire <lb/>en "déréalisant" son temps. Les marxistes ont cru
+                    souvent que <lb/>cette tendance antihistorique, chez <persName
+                        ref="GND-118547739">Hegel</persName>, provenait de la part <lb/>abusive
+                    qu'il faisait à l'éternité – "Ewiges Itzt ". Je crois qu'il <lb/>n'en est rien
+                    et que la cause en est inverse: la quasi‐disparition <lb/>de l'histoire est ici
+                    eschatologique, elle provient du fait que <persName ref="GND-118547739"
+                        >Hegel</persName>
+                    <lb/>a fini par sacrifier le "maintenant éternel" à l'achèvement tem<lb
+                        break="no"/>porel. </p>
+                <p>
+                    <lb/>C'est là une erreur qui ne pardonne pas. Elle consiste en effet <lb/>en une
+                    incarnation fixiste (non dialectique) de la dialectique. <lb/>Celle‐ci, érigée
+                    en totalité absolue, perd l'aiguillon, tourné contre <lb/>elle‐même, qui fait
+                    d'elle le chiffre par excellence des contradic<lb break="no"/>tions humaines.
+                    Engluée dans la totalité, elle perd à la fois le <lb/>recours à l'éternité et la
+                    réalité essentielle du temps. L'histoire <lb/>humaine, eschatologiquement
+                    couronnée, perd <hi rendition="#i">son sens</hi>, faute à <lb/>la fois
+                    d'inachèvement et d'éternité. </p>
+                <space dim="vertical"/>
+                <p>
+                    <lb/>Récapitulons. L'histoire, pour être l'histoire, doit avoir un sens
+                    <lb/>impliquant la visée d'une totalité. Elle doit se dérouler dans un
+                    <lb/>temps tel qu'un achèvement selon sa propre nature – un moment <lb/>temporel
+                    qui serait le dernier et ne s'écoulerait plus – l'abolirait <pb
+                        facs="0008_p008.jpg" n="98"/>
+                    <lb/>tout entier. La totalité visée par l'histoire ne peut donc être que
+                    <lb/>marquée en pointillé comme achevant le temps – une Idée. <lb/>Mais étant
+                    efficace comme source du sens en chaque moment <lb/>de l'histoire, elle est
+                    contemporaine de tous, elle est donc extra<lb break="no"/>temporelle au sens où
+                    le serait l'éternité. La dialectique, chiffre des <lb/>contradictions humaines,
+                    du temps et de l'histoire, appelle d'elle<lb break="no"/>même son dépassement:
+                    une dialectique de la dialectique, posant <lb/>la permanence sans laquelle il
+                    n'est pas de sens, donc: sans laquelle <lb/>il n'est ni dialectique ni histoire. </p>
+                <p>
+                    <lb/>L'histoire humaine prendra peut‐être fin un jour. La terre pour<lb
+                        break="no"/>rait (les théories à ce sujet diffèrent encore, je crois)
+                    devenir inha<lb break="no"/>bitable par excès de froid ou par excès de chaleur.
+                    Cette fin serait <lb/>alors physiquement nécessaire, mais historiquement
+                    accidentelle. <lb/>Elle n'aurait aucun rapport avec la nature de l'histoire,
+                    avec la <lb/>structure interne de ses moments, et avec son sens. Elle n'aurait
+                    rien <lb/>d'eschatologique. Elle n'entamerait en rien non plus la permanence
+                    <lb/>sous‐jacente du "maintenant éternel ". </p>
+                <space dim="vertical"/>
+                <p>
+                    <lb/>L'histoire, pour être, semble avoir besoin d'un paradis inacces<lb
+                        break="no"/>sible, mais efficace dans son mouvement quotidien. Je ne veux
+                    pas <lb/>dire qu'elle ait besoin d'un paradis, lequel se trouverait être à
+                    <lb/>jamais inaccessible; je veux dire qu'elle a besoin de cette inaccessi<lb
+                        break="no"/>bilité même. Grâce à celle‐ci, chacune des "petites totalités"
+                    <lb/>construites par l'action au fil de l'histoire n'est pas subordonnée à
+                    <lb/>l'écrasante totalité bouclée par son succès final. Elle est, au
+                    <lb/>contraire, à la fois, enchaînée au fil du temps par son progrès <lb/>vers
+                    le phantasme d'un achèvement futur, et isolée dans son uni<lb break="no"/>cité,
+                    directement rattachée à la source de sens transhistorique <lb/>dont le phantasme
+                    futur n'est que le déguisement nécessaire à la <lb/>visée temporelle. </p>
+                <p>
+                    <lb/>Nous pouvons maintenant tenter de répondre aux deux questions <lb/>que nous
+                    posions au début. Nous nous demandions si l'unité de <lb/>direction suffit pour
+                    que l'histoire ait un sens. Nous nous demandions <lb/>encore si l'absence de
+                    direction continue à travers l'histoire suffit <lb/>pour exclure toute
+                    possibilité de sens. La réponse ne sera pas tout à <lb/>fait simple. D'après ce
+                    qui précède, il est clair que la direction <lb/>continue, trace visible d'un
+                    processus cohérent, exclut le chaos ou <lb/>le hasard, mais n'implique pas
+                    nécessairement le sens. Il est clair <lb/>aussi que les "petites totalités"
+                    constituées par l'action peuvent, <lb/>même discontinues (c'est‐à‐dire vouées à
+                    l'échec et ne réussissant <pb facs="0009_p009.jpg" n="99"/>
+                    <lb/>pas à s'enchaîner selon une finalité propre), être chargées d'une
+                    <lb/>signification transhistorique. Ni la direction continue, ni la signi<lb
+                        break="no"/>fication discontinue de chaque "petite totalité" considérée
+                    comme <lb/>unique, ne constituent l'histoire. Celle‐ci exige la continuité de
+                    <lb/>sens – donc <hi rendition="#i">à la fois</hi> la continuité temporelle
+                    d'une finalité qui <lb/>réussit à s'incarner dans les faits <hi rendition="#i"
+                        >et</hi> le recours à la dialectique de la <lb/>dialectique, c'est‐à‐dire au
+                    permanent transhistorique, qui sauve <lb/>le sens compromis par son renvoi sans
+                    fin à l'infini. </p>
+                <p>
+                    <lb/>" Il faut, disait <persName ref="GND-118506803">Karl Barth</persName>, lire
+                    la Bible et le journal.""La Bible" <lb/>pourrait symboliser la source
+                    transcendante réelle de sens et de <lb/>valeur, qui, intemporelle, donne,
+                    indépendamment de toute conti<lb break="no"/>nuité et de toute réussite finale,
+                    son poids à chaque "petite totalité" <lb/>au niveau de l'action – ainsi que le
+                    phantasme efficace qui pro<lb break="no"/>jette cette source de sens dans le
+                    futur, sous la forme d'un achève<lb break="no"/>ment temporel de l'histoire.
+                    "Le journal ", c'est le lieu où s'élabore <lb/>l'intelligibilité de l'action, au
+                    fil du temps, entre l'histoire faite et <lb/>les données qu'elle dépose et
+                    impose d'une part, la décision et sa <lb/>structure finale de l'autre, petite
+                    totalisation précaire, mais réelle, <lb/>vite effilochée, au vent. </p>
+                <p>
+                    <lb/>Cette petite totalisation ne peut pas ne pas impliquer, en quelque
+                    <lb/>mesure si faible soit‐elle, le phantasme totalisateur de l'histoire
+                    <lb/>entière. Mais si cette totalisation qu'elle implique était, fût‐ce
+                    <lb/>virtuellement, réelle, elle perdrait elle‐même à la fois sens et réalité.
+                    <lb/>Telle est l'aporie de l'existence historique. La vraie fidélité, ici,
+                    <lb/>renvoie à la source transcendante – et celle‐ci renvoie, par‐delà
+                    <lb/>toute philosophie de l'histoire totale nécessairement négatrice d'elle‐
+                    <lb/>même, à l'honnête activité du <hi rendition="#i">journal</hi>. </p>
+                <space dim="vertical"/>
+                <p>
+                    <lb/>Nombreux sont sans doute les amis de <persName ref="GND-118504371">Raymond
+                        Aron</persName> qui <lb/>regrettent que sa passion vigilante pour les
+                    problèmes actuels l'em<lb break="no"/>pêche d'écrire les grands livres qu'il
+                    projette depuis longtemps. <lb/>Ils ont sûrement raison, mais ils ont peut‐être
+                    tort aussi. Il me paraît <lb/>si naturel – peut‐être si <hi rendition="#i"
+                        >nécessaire </hi>– que <persName ref="GND-118504371">Raymond Aron</persName>
+                        accom<lb break="no"/>plisse son service de la vérité sur le présent le plus
+                    immédiat – <lb/>donc: dans le journal. Le présent le plus immédiat ne perd son
+                    <lb/>importance littéralement cruciale que du point de vue de Sirius, <lb/>ou du
+                    point de vue de l'achèvement futur. C'est qu'alors le phan<lb break="no"/>tasme
+                    contradictoire du "sens total" tarit la source transcendante <lb/>du "sens
+                    actuel ". <persName ref="GND-118504371">Raymond Aron</persName> connaît les
+                    phantasmes et ne <lb/>les prend pas pour des réalités. </p>
+                <pb facs="0010_p010.jpg" n="100"/>
+                <p>
+                    <lb/>Fidèle à la condition historique et à ses exigences, vivant la
+                    <lb/>dialectique de la dialectique historique, il retrouve dans le présent
+                    <lb/>l'exigence absolue du sens, et il lui obéit par l'analyse la plus rigou<lb
+                        break="no"/>reuse du donné et du possible de <hi rendition="#i">ce
+                    </hi>présent. L'analyse la plus rigou<lb break="no"/>reuse – donc la plus
+                    fouillée, la plus diversifiée, la plus compé<lb break="no"/>tente, de tous les
+                    rapports, économiques, sociaux, politiques, culturels, <lb/>dont l'intrication
+                    constitue la matière de l'action. </p>
+                <p>
+                    <lb/>Mais comme il s'agit d'une analyse historique <hi rendition="#i"
+                        >actuelle</hi>, le souci <lb/>même de <hi rendition="#i">vérité</hi>
+                    historique actuelle transforme nécessairement l'im<lb break="no"/>partialité en
+                    prise de position, et donc en action. La vérité actuelle, <lb/>inlassablement
+                    cherchée et publiquement défendue, est une redou<lb break="no"/>table
+                    intervention dans le cours des choses. Ce qui vaut à <persName
+                        ref="GND-118504371">Raymond <lb/>Aron</persName> des ennemis. Et des amis.
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

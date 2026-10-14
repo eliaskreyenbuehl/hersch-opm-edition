@@ -1,0 +1,235 @@
+{
+  "_hinweis": "Labels aus resources/i18n/app/{de,fr,en}.json der Hersch-App. Die Definitionen (hersch_taxonomy.xml) sind nicht im App-Paket enthalten. Einträge mit _entwurf: true kommen in den Daten vor, haben aber kein Label in der App.",
+  "hersch_worktype": {
+    "text": {
+      "de": "Text",
+      "fr": "Texte",
+      "en": "Text"
+    },
+    "auftritt": {
+      "de": "Auftritt",
+      "fr": "Représentation",
+      "en": "Appearance"
+    }
+  },
+  "hersch_genre": {
+    "book": {
+      "de": "Buch",
+      "fr": "Livre",
+      "en": "Book"
+    },
+    "speech": {
+      "de": "Vortrag",
+      "fr": "Conférence",
+      "en": "Lecture"
+    },
+    "article": {
+      "de": "Artikel",
+      "fr": "Article",
+      "en": "Article"
+    },
+    "entry": {
+      "de": "Lexikoneintrag",
+      "fr": "Entrée de dictionnaire",
+      "en": "Glossary entry"
+    },
+    "review": {
+      "de": "Rezension",
+      "fr": "Recension",
+      "en": "Review"
+    },
+    "conversation": {
+      "de": "Gesprächsrunde",
+      "fr": "Table ronde",
+      "en": "Discussion"
+    },
+    "interview": {
+      "de": "Interview",
+      "fr": "Interview",
+      "en": "Interview"
+    },
+    "tv": {
+      "de": "TV",
+      "fr": "TV",
+      "en": "TV"
+    },
+    "radio": {
+      "de": "Radio",
+      "fr": "Radio",
+      "en": "Radio"
+    }
+  },
+  "hersch_keywords": {
+    "philosophie": {
+      "de": "Philosophie",
+      "fr": "Philosophie",
+      "en": "Philosophy"
+    },
+    "metaphilosophie": {
+      "de": "Metaphilosophie",
+      "fr": "Métaphilosophie",
+      "en": "Metaphilosophy"
+    },
+    "existenzphilosophie": {
+      "de": "Existenzphilosophie",
+      "fr": "Philosophie de l’existence",
+      "en": "Existential philosophy"
+    },
+    "karl-jaspers": {
+      "de": "Karl Jaspers",
+      "fr": "Karl Jaspers",
+      "en": "Karl Jaspers"
+    },
+    "philosophie-der-freiheit": {
+      "de": "Philosophie der Freiheit",
+      "fr": "Philosophie de la liberté",
+      "en": "Philosophy of freedom"
+    },
+    "philosophie-der-zeit": {
+      "de": "Philosophie der Zeit",
+      "fr": "Philosophie du temps",
+      "en": "Philosophy of time"
+    },
+    "religionsphilosophie": {
+      "de": "Religionsphilosophie",
+      "fr": "Philosophie de la religion",
+      "en": "Philosophy of religion"
+    },
+    "politische-und-sozialphilosophie": {
+      "de": "Politische und Sozialphilosophie",
+      "fr": "Philosophie politique et sociale",
+      "en": "Political and social philosophy"
+    },
+    "geschichtsphilosophie": {
+      "de": "Geschichtsphilosophie",
+      "fr": "Philosophie de l’histoire",
+      "en": "Philosophy of history"
+    },
+    "geschichte-der-philosophie": {
+      "de": "Geschichte der Philosophie",
+      "fr": "Histoire de la philosophie",
+      "en": "History of philosophy"
+    },
+    "philosophie-der-wissenschaften-und-der-technik": {
+      "de": "Philosophie der Wissenschaften und der Technik",
+      "fr": "Philosophie des sciences et de la technologie",
+      "en": "Philosophy of science and technology"
+    },
+    "kuenste": {
+      "de": "Künste",
+      "fr": "Arts",
+      "en": "Art"
+    },
+    "literatur": {
+      "de": "Literatur",
+      "fr": "Littérature",
+      "en": "Literature"
+    },
+    "musik": {
+      "de": "Musik",
+      "fr": "Musique",
+      "en": "Music"
+    },
+    "malerei": {
+      "de": "Malerei",
+      "fr": "Peinture",
+      "en": "Painting"
+    },
+    "erziehung": {
+      "de": "Erziehung",
+      "fr": "Éducation",
+      "en": "Education"
+    },
+    "bildung": {
+      "de": "Bildung",
+      "fr": "Formation",
+      "en": "Training"
+    },
+    "schule": {
+      "de": "Schule",
+      "fr": "École",
+      "en": "School"
+    },
+    "unterricht": {
+      "de": "Unterricht",
+      "fr": "Enseignement",
+      "en": "Teaching"
+    },
+    "politik": {
+      "de": "Politik",
+      "fr": "Politique",
+      "en": "Politics"
+    },
+    "politik-und-sozialwissenschaftliches": {
+      "de": "Politik- und Sozialwissenschaftliches",
+      "fr": "Politique et sciences sociales",
+      "en": "Political science/social science"
+    },
+    "sozialismus-und-kommunismus": {
+      "de": "Sozialismus und Kommunismus",
+      "fr": "Socialisme et communisme",
+      "en": "Socialism and communism"
+    },
+    "europa-und-die-schweiz": {
+      "de": "Europa und die Schweiz",
+      "fr": "Europe et la Suisse",
+      "en": "Europe and Switzerland"
+    },
+    "verteidigung-des-menschen": {
+      "de": "Verteidigung des Menschen",
+      "fr": "Défense de l’être humain",
+      "en": "Defence of humanity"
+    },
+    "menschenrechte": {
+      "de": "Menschenrechte",
+      "fr": "Droits de l’homme",
+      "en": "Human rights"
+    },
+    "mensch-und-freiheit": {
+      "de": "Mensch und Freiheit",
+      "fr": "L’humanité et la liberté",
+      "en": "Humanity and freedom"
+    },
+    "frau-und-frauenrechte": {
+      "de": "Frau und Frauenrechte",
+      "fr": "Femmes et droits des femmes",
+      "en": "Woman and women’s rights"
+    },
+    "mensch-und-sicherheit-armee-und-frieden": {
+      "de": "Mensch und Sicherheit, Armee und Frieden",
+      "fr": "Humanité et sécurité, armée et paix",
+      "en": "Humanity and security, army and peace"
+    },
+    "mensch-wissenschaft-und-technik": {
+      "de": "Mensch, Wissenschaft und Technik",
+      "fr": "Humanité, science et technologie",
+      "en": "Humanity, science and technology"
+    },
+    "mensch-und-medizin": {
+      "de": "Mensch und Medizin",
+      "fr": "Humanité et médecine",
+      "en": "Humanity and medicine"
+    },
+    "mensch-in-arbeitswelt-und-wirtschaft": {
+      "de": "Mensch in Arbeitswelt und Wirtschaft",
+      "fr": "Humanité dans le monde du travail et l’économie",
+      "en": "Humanity in the corporate world and the economy"
+    },
+    "judentum-und-religion": {
+      "de": "Judentum und Religion",
+      "fr": "Judaïsme et religion",
+      "en": "Judaism and religion"
+    },
+    "gespraeche-ueber-leben-und-werk": {
+      "de": "Gespräche über Leben und Werk",
+      "fr": "Entretiens sur la vie et l’œuvre",
+      "en": "Conversations about life and work"
+    },
+    "bildende-kuenste": {
+      "de": null,
+      "fr": null,
+      "en": null,
+      "_entwurf": true
+    }
+  }
+}

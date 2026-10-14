@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../oxygen_framework/schema/zbz_hersch.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="hersch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="item" subtype="main">En regardant l’Eve d’Autun</title>
+                <title type="series" subtype="main">Edition Jeanne Hersch</title>
+                <title type="series" subtype="subtitle">Mehrjahresprojekt der Zentralbibliothek
+                    Zürich, Laufzeit 2025–2026</title>
+                <author ref="118815679">Hersch, Jeanne</author>
+                <editor ref="GND-142295434" xml:id="ed_krey">Kreyenbühl, Elias</editor>
+                <editor ref="GND-142091308" xml:id="ed_reil">Reiling, Jesko</editor>
+                <editor ref="GND-1257790226" xml:id="ed_roms">Rom, Sharon</editor>
+                <editor ref="GND-1042459924" xml:id="ed_kohl">Kohler, Daniela</editor>
+                <funder ref="GND-1012546-2">Zentralbibliothek Zürich</funder>
+                <funder ref="GND-1398963372">Jeanne Hersch Gesellschaft</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition>Edition Jeanne Hersch</edition>
+                <respStmt>
+                    <resp>Projektleitung</resp>
+                    <persName ref="GND-142091308">PD Dr. Jesko Reiling</persName>
+                    <persName ref="GND-142295434">Dr. Elias Kreyenbühl</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technische Verantwortung</resp>
+                    <persName ref="GND-1406931217">M.A. Anouschka Mamie</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Rohtextkorrektur</resp>
+                    <orgName>Vorstand der Jeanne Hersch Gesellschaft</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="DTACorpusPublisher">
+                    <orgName ref="GND-1012546-2" role="hostingInstitution">Zentralbibliothek
+                        Zürich</orgName>
+                    <orgName role="project">Edition Jeanne Hersch</orgName>
+                    <email>zb@zb.uzh.ch</email>
+                    <address>
+                        <addrLine>Zähringerplatz 6, 8001 Zürich</addrLine>
+                        <country>Schweiz</country>
+                    </address>
+                </publisher>
+                <pubPlace>Zürich</pubPlace>
+                <date type="publication">2026-09-24</date>
+                <availability xml:id="avail_main">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>Creative Commons Attribution-ShareAlike 4.0 International license</p>
+                    </licence>
+                </availability>
+                <idno type="hersc:projectID">830</idno>
+                <idno type="DOI">DOI_COMING</idno>
+                <idno type="MLA-9">Hersch, Jeanne. “En regardant l’Eve d’Autun (sculptée par
+                    Gislebertus entre 1125 et 1135)”. Le temps dans la pensée de l'Homme, 1968, pp.
+                    32–35.</idno>
+                <idno type="ALMA-MMSID">99117983617005508</idno>
+                <idno type="URI" subtype="swisscovery"
+                    >https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&amp;docid=alma99117983617005508</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct xml:id="bibl_analytic_book" type="analytic">
+                        <analytic>
+                            <author>Hersch, Jeanne</author>
+                            <title level="a" type="item" subtype="main">En regardant l’Eve d’Autun
+                                (sculptée par Gislebertus entre 1125 et 1135)</title>
+                        </analytic>
+                        <monogr>
+                            <editor>Reust, Fritz Gunnar</editor>
+                            <title level="m">Le temps dans la pensée de l'homme</title>
+                            <textLang mainLang="fra">Französisch</textLang>
+                            <imprint>
+                                <pubPlace>Le Locle</pubPlace>
+                                <publisher>Les Fabriques d’assortiments réunies</publisher>
+                                <date when="1968">1968</date>
+                                <biblScope unit="page">32-35</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Die Edition erstellt TEI-P5-konforme Volltexte auf Basis von Digitalisaten. Der
+                    Rohtext wird mittels OCR erzeugt und anschließend manuell nachkorrigiert.</p>
+                <p>Die Texte werden von der Zentralbibliothek Zürich digitalisiert, der Volltext
+                    wird maschinell extrahiert und manuell nachkorrigiert; bibliografische Metadaten
+                    werden in ALMA (MARC21) katalogisiert.</p>
+            </projectDesc>
+            <appInfo>
+                <application ident="Transkribus" version="1.0">
+                    <label>Transkribus</label>
+                    <p>OCR-Modell: OCR Print M1.</p>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef scheme="hersch_worktype" target="#text"/>
+                <catRef scheme="hersch_genre" target="#article"/>
+                <catRef scheme="hersch_keywords" target="#bildende-kuenste"/>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+
+            <div type="article" n="1" xml:id="d830-1">
+
+                <pb facs="#facs_1" n="3.32"/>
+
+                <head>
+                    <title type="main" xml:id="t830-1"> En regardant l’Eve d’Autun (sculptee par
+                        Gislebertus entre 1125 et 1135). </title>
+                </head>
+
+                <p>
+                    <lb/>Eve surgit. </p>
+                <p>
+                    <lb/>Qu’est-ce que cela veut dire? Qu’elle <lb/>n’était pas là, et soudain la
+                    voici. <lb/>Mais était-elle ailleurs? A-t-elle soudain <lb/>passé d’un lieu
+                    autre, que nous ne voyons <lb/>pas, dans celui-ci, que nous voyons? <lb/>Non. On
+                    voit bien qu’elle surgit de nulle <lb/>part. Elle était <hi rendition="#i">nulle
+                        part</hi>. Elle était ce <lb/>qu’on peut être quand on <hi rendition="#i"
+                        >est</hi> nulle part. <lb/>On le voit bien: elle vient de surgir du
+                    <lb/>bord inférieur du bas-relief, de cette <lb/>bande de pierre horizontale qui
+                    pour le <lb/>bas-relief n’est qu’un support indispen<lb break="no"/>sable, mais
+                    nul. </p>
+                <p>
+                    <lb/>Sur ce support, elle ne pèse pas, bien <lb/>qu’elle y reste prise par un
+                    coude et par <lb/>les deux genoux. C’est qu’elle n’a pas <lb/>fini de surgir.
+                    Quand je dis "elle surgit", <lb/>j’ai l’air d’employer un faux présent,
+                    <lb/>pour raconter une histoire passée. Or ce <lb/>surgissement ne se laisse pas
+                    dire, car il <lb/>est au présent absolu. </p>
+                <p>
+                    <lb/>L’Eve d’Autun se soulève à peine, sur le <lb/>coude et sur les genoux. Elle
+                    n’a pas eu <lb/>le temps encore de se mettre debout, <lb/>comme le sont toutes
+                    les autres Eves, <lb/>coupables et chassées. Tout son corps <lb/>surgissant
+                    garde la raideur de son éter<lb break="no"/>nité originelle. Les jambes surtout,
+                    <lb/>pliées, ne sont qu’un rigide angle de <lb/>pierre. Le torse, droit, n’a pas
+                    de taille. <lb/>Pourtant voici qu’elle émerge de cette <lb/>raideur sacrée. Le
+                    charme s’éveille et <lb/>croît, au fur et à mesure qu’on remonte <lb/>le long de
+                    son corps, que les seins, les bras <lb/>se dévêtent de leur éternité, que le
+                        vi<lb break="no"/>sage, déjà vulnérable, se met à désirer et <lb/>à
+                    craindre. </p>
+                <p>
+                    <lb/>Les autres Eves sont coupables d’abord, <lb/>puis chassées. Elle, la voici
+                    chassée par <lb/>sa faute même. Elle naît d’un seul coup <lb/>à la faute, à
+                    l’exil, à l’existence. Ebauche <lb/>totale d’un geste. Nageuse entre deux
+                    <lb/>eaux d’éternité et de temps. Nageuse à <lb/>peine surgie et qui déjà
+                    glisse, qui a déjà <pb facs="#facs_1" n="3.33"/>
+                    <figure xml:id="fig1">
+                        <graphic url="resources/images/edition/fig1.jpg"/>
+                    </figure>
+                    <pb facs="#facs_2" n="3.34"/>
+                    <lb/>son geste – sa faute – derrière soi. Et <lb/>comme voudrait la retenir
+                    cette mer <lb/>végétale, vivace, verticale, tordue, parmi <lb/>laquelle elle
+                    glisse et dont déjà elle est <lb/>bannie. </p>
+                <p>
+                    <lb/>Car ce présent absolu, c’est la fin du <lb/>présent éternel. </p>
+                <p>
+                    <lb/>Eve cueille la pomme. La pomme tient <lb/>encore à l’arbre, les doigts
+                    d’Eve vont se <lb/>refermer sur elle. Eve ne regarde pas la <lb/>pomme. Elle la
+                    cueille de la main gauche, <lb/>le bras tendu derrière elle, dans le sens
+                    <lb/>inverse à celui de son regard. Elle ne <lb/>veut rien savoir de cette
+                    pomme, ni de <lb/>son bras tendu vers elle, ni de sa main <lb/>qui la cueille.
+                    Pourtant, elle a ouvert des <lb/>yeux qui voient. Elle vient de les ouvrir,
+                    <lb/>en même temps qu’elle a tendu ce bras <lb/>gauche aveugle, cette main qui
+                    saisit la <lb/>pomme, on dirait à tâtons. Elle est tout <lb/>entière ce geste
+                    qu’elle ignore, qu’elle <lb/>fuit, qu’elle abolit et qui la fait être. <lb/>Elle
+                    ouvre les yeux <hi rendition="#i">pour ne pas le voir</hi>. </p>
+                <p>
+                    <lb/>Ce n’est pas qu’elle soit distraite ou dor<lb break="no"/>mante. Quelle
+                    vigilance dans ce regard <lb/>qui ignore le geste et ne regarde rien, <lb/>dans
+                    cette paupière inférieure creusée <lb/>par l’angoisse <hi rendition="#i">du
+                        premier moment</hi>. Ce <lb/>moment inouï, sans aucun précédent,
+                    <lb/>qu’aucune fable d’avance n’a pu appri<lb break="no"/>voiser, Eve le vit
+                    dans sa nouveauté <lb/>rigoureuse. Le visage entier écoute. <lb/>Lèvres serrées,
+                    yeux trop larges, joues <lb/>durcies, le visage, absent à lui-même <lb/>à force
+                    d’attention, écoute. Eve écoute <lb/>quoi? </p>
+                <p>
+                    <lb/>Elle écoute la naissance d’une écoute. <lb/>Alors que sa main gauche s’en
+                    va loin <lb/>d’elle cueillir à son insu – elle veut <lb/>l’ignorer – le fruit
+                    défendu, sa main <lb/>droite, au-dessus de ce coude encore pris <lb/>dans la
+                    glaise éternelle, vient effleurer sa <lb/>propre joue pour la première fois.
+                    D’une <lb/>main Eve cueille la pomme, de l’autre <lb/>elle se touche elle-même.
+                    Geste étrange: <lb/>surprise, effroi, pitié d’Eve qui se dé<lb break="no"
+                    />couvre avant d’avoir dit "moi". Comme <lb/>après un rêve, une infinie absence,
+                    cette <lb/>main droite qui la touche sent qu’elle <lb/>touche. Cette joue
+                    touchée se sent tou<lb break="no"/>chée. Eve se sait. Elle écoute et sait
+                    <lb/>qu’elle écoute. </p>
+                <p>
+                    <lb/>Ecoute-t-elle au-dehors? Ecoute-t-elle <lb/>au-dedans? La main qui touche
+                    sa joue, <lb/>la tête entière s’inscrivent au creux d’une <lb/>forte tige
+                    tordue. On dirait qu’elle s’y <lb/>appuie, qu’elle écoute dans cette tige,
+                    <lb/>avec son oreille cachée, son propre com<lb break="no"/>mencement. Dans un
+                    instant, la pomme <lb/>cueillie lui sera racontée. Dans un ins<lb break="no"
+                    />tant, le geste de cueillir sera au passé. Et <lb/>aussitôt les conséquences,
+                    le désir, la <lb/>menace, la peur. </p>
+                <p>
+                    <lb/>Cette tige, est-ce le serpent? Où est le <lb/>serpent? Non, ce n’est pas
+                    cette tige, on <lb/>croirait plutôt le reconnaître tout à fait <lb/>à l’arrière,
+                    une queue qui se dresse et se <lb/>tord près des chevilles coupées d’Eve, et
+                    <lb/>qui monte en s’affinant jusqu’à la <lb/>branche de pommier qui tend sa
+                    pomme <lb/>vers Eve, jusqu’à ce bras végétal qui, <lb/>par la pomme, rejoint le
+                    bras tendu, <lb/>exprès inconscient, d’Eve, ce bras <lb/>végétal qui, par la
+                    pomme, continue le <lb/>bras d’Eve - avant d’en être, la pomme <lb/>une fois
+                    cueillie, séparé. </p>
+                <p>
+                    <lb/>Mais est-ce bien la queue du serpent qui <lb/>s’affine ainsi, ou bien une
+                    tige encore? <lb/>Les tiges serpentent, le serpent s’orne de <lb/>feuilles
+                    immortelles, on croit le repérer <lb/>partout, et puis ce n’est pas lui, et
+                        pour<lb break="no"/>tant la scène est tout animée et étreinte <lb/>de ses
+                    nœuds. Peut-être est-ce en elle<lb break="no"/>même qu’Eve l’écoute? Peut-être
+                    n’en <lb/>voit-on qu’un bout d’anneau dans <lb/>l’ombre, en bas, sous le sein,
+                    repoussé <lb/>vers le fond obscur par le relief éclatant <lb/>de ce coude, de ce
+                    sein, de cet arbre cen<lb break="no"/>tral, vivace, hiératiquement tordu, qui
+                    <lb/>coupe en deux la nageuse fugitive de <lb/>l’éternité et hisse, comme un
+                    arbre de <lb/>Jessé, jusque tout en haut, jusqu’au-delà <lb/>du bord, ses
+                    feuilles-fruits résumant les <lb/>saisons dans l’axe unique de son présent.
+                    <lb/>Le corps d’Eve, qu’il coupe en deux, <lb/>passe derrière lui. Le bras
+                    d’Eve, qui <lb/>cueille la pomme, passe devant lui. Pri<lb break="no"/>sonnière,
+                    la nageuse, de cette puissance <lb/>verticale qui la scinde, comme elle scinde
+                    <lb/>la scène entière, et à jamais le temps. <lb/>Scission éternelle de
+                    l’éternité dans l’acte <lb/>d’Eve. A cause de cet arbre qui la coupe, <lb/>la
+                    cache, la cloue, la féconde, jamais Eve <lb/>prisonnière ne cessera de cueillir
+                    cette <lb/>pomme. Jamais elle ne s’arrachera à cet <lb/>instant où elle
+                    s’arrache à l’éternité in<lb break="no"/>nocente des plantes. Jamais le temps
+                    <lb/>qu’elle engendre ne cessera de naître de <lb/>ce vertical instant qui le
+                    déchire en <lb/>avenir et en passé. </p>
+
+                <space dim="vertical"/>
+                <p>
+                    <lb/>Nageuse prisonnière de l’éternel, sens-tu <lb/>le courant? Toi qui déjà
+                    désires, qui déjà <lb/>regrettes, sens-tu le courant? T’en<lb break="no"
+                    />traîne-t-il vers ce futur à peine né, déjà <lb/>multiple, sur lequel tu ouvres
+                    ces yeux de <lb/>crainte et d’attente, et vers lequel, <lb/>oubliant la pomme,
+                    déjà tu vas, avec <lb/>l’élan de ce corps raide en train de de<lb break="no"
+                    />venir un corps de femme? Ou nages-tu <lb/>à contre-courant, contre un temps
+                    qui <lb/>s’en va, fuyant derrière toi, entraînant <lb/>loin de toi vers le passé
+                    pour l’y en<lb break="no"/>sevelir dans l’oubli ou la légende cette <lb/>pomme,
+                    et ta main qui la cueille, cette <lb/>histoire désormais immuable, mais em<lb
+                        break="no"/>portée au loin parmi les contes, à la <lb/>merci de
+                    l’incrédulité? </p>
+                <p>
+                    <lb/>Tu viens des algues éternelles dont le bas <lb/>de ton corps est encore
+                    prisonnier, mais <lb/>ton buste, ta tête déjà s’en dégagent. <lb/>Eve
+                    désobéissante, créée pour cette dés<lb break="no"/>obéissance qui devait fendre
+                    l’éternité et <lb/>en faire saigner ce flot de sève ambigu <lb/>grâce auquel
+                    tout a commencé d’un seul <lb/>coup: la conscience et le temps, et le nom
+                    <lb/>du commencement, le choix de vivre et <lb/>le savoir de la mort. Et même:
+                    la possi- <pb facs="#facs_2_r_5_tl_1" n="3.35"/>
+                    <figure xml:id="fig2">
+                        <graphic url="resources/images/edition/fig2.jpg"/>
+                    </figure>
+                    <lb/>bilité d’obéir. Désobéissance instrumen<lb break="no"/>tale, geste d’Eve
+                    par lequel Dieu accom<lb break="no"/>plit sa deuxième Création en livrant la
+                    <lb/>première à quelqu’un – à toi d’abord, <lb/>ô Eve – qui l’aimera autrement
+                    que lui: <lb/>sous la menace de la mort. </p>
+                <p>
+                    <lb/>Nageuse nostalgique qui, dès ton premier <lb/>éloignement, rêve de revenir
+                    à ton point <lb/>de départ et d’échapper au temps que <lb/>ton geste initial
+                    dispersa et noua pour <lb/>toujours. Eve clouée par l’arbre éternel, <lb/>Eve
+                    tendue vers son écoute, Eve dont <lb/>toutes les lignes s’enchaînent et se re<lb
+                        break="no"/>prennent et se ramènent l’une à l’autre <lb/>sans fin et sans se
+                    répéter jamais comme <lb/>les dimensions mêmes du temps, Eve <lb/>emmêlée
+                    dégagée, centrée fuyante, at<lb break="no"/>tentive absente dans l’enlacement vi<lb break="no"/>goureux des tiges. </p>
+                <p>
+                    <lb/>Sans elle, rien n’aurait jamais commen<lb break="no"/>cé. Nul ne serait
+                    mort, n’aurait vécu, <lb/>n’aurait choisi ni aimé. Sans elle, jamais <lb/>la
+                    verticale éternité ne serait devenu <lb/>l’événement présent qui départage le
+                    <lb/>poids du passé et les possibles futurs. </p>
+                <p>
+                    <lb/>...sans elle, sans ce geste terrible de dés<lb break="no"/>obéissance
+                    douce, accompli par sa main <lb/>seule, loin derrière le regard, tandis
+                    <lb/>qu’une première caresse déjà se mêle à <lb/>l’angoisse de l’exil, la
+                    caresse de cette <lb/>chevelure qui tendrement enserre de <lb/>tout près dans
+                    son ogive la tête dressée, <lb/>se creuse sur la nuque, épouse le cou, s’en
+                    <lb/>va ondoyer au-dessous de l’épaule, et <lb/>remonte en une longue mèche
+                    souple sur <lb/>le bras, rejoignant l’ambiguïté des tiges <lb/>et du serpent. </p>
+
+            </div>
+
+        </body>
+
+        <back>
+
+            <div type="reprint" xml:id="d830-2">
+                <head>
+                    <title type="main">Nachdruck</title>
+                </head>
+                <p> Hersch, Jeanne, et al. Textes. Le feu de nuict, 1985, S. 23-32. <ref
+                        target="https://uzb.swisscovery.slsp.ch/permalink/41SLSP_UZB/1d8t6qj/alma990030585800205508"
+                        >Link auf Swisscovery. </ref> Die Veröffentlichung erschien unter dem Titel:
+                    "Eve ou la Naissance éternelle du temps." </p>
+
+            </div>
+
+
+        </back>
+
+    </text>
+</TEI>

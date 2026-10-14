@@ -1,0 +1,57 @@
+<template>
+    ---json
+    {
+        "templating": {
+            "extends": "templates/layouts/hersch-content.html"
+        },
+        "features": {
+            "toolbar": {
+                "enabled": false
+            },
+            "timeline": {
+                "enabled": false
+            },
+            "upload": {
+                "enabled": false
+            }
+        },
+        "styles": [
+            "transform/teipublisher.css",
+            "resources/css/registers-theme.css"
+        ],
+        "theme": {
+            "layout": {
+                "after-width": "min(30vw, 356px)"
+            },
+            "footer": {
+                "mobile": {
+                    "enabled": false
+                }
+            }
+        }
+    }
+    ---
+     [% template breadcrumbs %]
+        <li>
+            <a href="[[$context-path]]/home.html">Home</a>
+        </li>
+        <li>
+        <pb-i18n key="menu.register">Register</pb-i18n>
+    </li>
+        <li>
+        <a href="[[$context-path]]/people">
+            <pb-i18n key="menu.people">People</pb-i18n>
+        </a>
+    </li>
+         <li>[[ $entity-data?root/head((tei:persName[@type = ('reg', 'main', 'full')], tei:persName))/string() ]]</li>
+    [% endtemplate %]
+    <aside>
+        <a href="[[$context-path]]/people">
+            <img alt="left arrow" src="[[$context-path]]/resources/images/arrow-left.svg"/> Index</a>
+    </aside>
+    <div class="center">
+        <section class="person">
+        [[ page:transform($entity-data?root, map {"language": page:resolve-language($context), "mode": "register-details" , "webcomponents": true()}) ]]
+    </section>
+    </div>
+</template>
