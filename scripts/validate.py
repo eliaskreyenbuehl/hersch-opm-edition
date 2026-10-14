@@ -109,6 +109,9 @@ def check_file(path: Path, rng, taxonomy: dict):
             entry = taxonomy.get(s, {}).get(t) if taxonomy else {}
             if entry is None:
                 info["probleme"].append(f"Kategorie «{t}» ({s}) ist in taxonomy.json nicht definiert")
+            elif entry.get("_alias"):
+                info["hinweise"].append(
+                    f"Kategorie «{t}» ({s}) wird als {', '.join(entry['_alias'])} angezeigt (Alias)")
             elif entry.get("_entwurf"):
                 info["hinweise"].append(f"Kategorie «{t}» ({s}) hat in der Hersch-App kein Label (Entwurf)")
     other = {cr.get("scheme") for cr in tree.xpath(f"{h}//tei:catRef", namespaces=NS)} - set(SCHEMES)

@@ -36,7 +36,7 @@ Erzeugt von `scripts/validate.py` am 2026-10-14. Die Dateien in `data/` wurden n
 
 ### 760.xml
 
-- Hinweis: Kategorie «bildende-kuenste» (hersch_keywords) hat in der Hersch-App kein Label (Entwurf)
+- Hinweis: Kategorie «bildende-kuenste» (hersch_keywords) wird als kuenste, malerei angezeigt (Alias)
 - Hinweis: GND-Refs uneinheitlich: 56× mit «GND-», 1× ohne (z. B. 118815679)
 
 ### 770.xml
@@ -49,7 +49,7 @@ Erzeugt von `scripts/validate.py` am 2026-10-14. Die Dateien in `data/` wurden n
 
 ### 830.xml
 
-- Hinweis: Kategorie «bildende-kuenste» (hersch_keywords) hat in der Hersch-App kein Label (Entwurf)
+- Hinweis: Kategorie «bildende-kuenste» (hersch_keywords) wird als kuenste, malerei angezeigt (Alias)
 - Hinweis: GND-Refs uneinheitlich: 10× mit «GND-», 1× ohne (z. B. 118815679)
 
 ### 870.xml

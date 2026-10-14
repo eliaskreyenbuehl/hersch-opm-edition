@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Labels aus resources/i18n/app/{de,fr,en}.json der Hersch-App. Die Definitionen (hersch_taxonomy.xml) sind nicht im App-Paket enthalten. Einträge mit _entwurf: true kommen in den Daten vor, haben aber kein Label in der App.",
+  "_hinweis": "Labels aus resources/i18n/app/{de,fr,en}.json der Hersch-App. Die Definitionen (hersch_taxonomy.xml) sind nicht im App-Paket enthalten. _alias: Schlüssel aus den Daten, der auf der Website als die genannten Kategorien angezeigt und gefiltert wird (Entscheid Elias, 2026-10-14). _entwurf: true = Label fehlt.",
   "hersch_worktype": {
     "text": {
       "de": "Text",
@@ -226,10 +226,10 @@
       "en": "Conversations about life and work"
     },
     "bildende-kuenste": {
-      "de": null,
-      "fr": null,
-      "en": null,
-      "_entwurf": true
+      "_alias": [
+        "kuenste",
+        "malerei"
+      ]
     }
   }
 }
