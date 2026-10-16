@@ -13,17 +13,20 @@ Pro Phase ausfüllen (Claude trägt am Ende der Sitzung einen Entwurf ein, Elias
 | 4 Werkliste | 2026-10-16 | ca. 2 | 1 Sitzung, ca. 4 Prompts | Live-Startseite und -Werkliste angesehen und vermessen; `extract_metadata.py` (works.json, Aliase, GND normalisiert); Werkliste mit kombinierbaren Filtern, Zahlen pro Option, Zustand in der Adresse, ohne JavaScript vollständige Liste; Startseite, Jeanne Hersch, Projekt, Impressum; `check_links.py`; Handy-Prüfung im 375-px-Rahmen | Texte für Einführung, Biografie, Projekt und Impressum fehlen im App-Paket (`auxiliary/content-webpages/`) → Platzhalter; Browser zeigte zuerst altes CSS aus dem Cache; lxml kennt nur XPath 1.0 | Aufbau der Startseite (ohne Aphorismen/Themen), Werkliste als eigene Seite, Kacheln, Wortlaut Prototyp-Hinweis, Lieferung der Seitentexte |
 | 5 Register | – | – | – | übersprungen (Entscheid 2026-10-16), Platzhalterseite | | |
 | 6 Suche & Sprachen | – | – | – | übersprungen (Entscheid 2026-10-16), Platzhalterseite | | |
-| 7 Veröffentlichen | | | | | | |
-| **Total** | | | | | | |
+| 7 Veröffentlichen | 2026-10-16 | ca. 0,75 | gleiche Sitzung wie Phase 4, ca. 4 Prompts | Workflow mit fest verankerten Action-Versionen, 404-Seite für Unterordner, README/LICENSE, Test unter Unterpfad, Repo angelegt, Pages aktiviert, erster Lauf grün (Build 22 s, Deploy 10 s), Prüfung der öffentlichen Site (20 Seiten, 91 Dateien) | fehlende Abbildung `fig28.jpg` hätte den Link-Check blockiert → als Datenhinweis eingestuft | Freigabe zur Veröffentlichung, Lizenzfrage der kommerziellen Schrift im öffentlichen Repo; Verzicht auf Barrierefreiheitsprüfung |
+| **Total** | 14.–16.10.2026 | ca. 8 | 4 Sitzungen, ca. 30 Prompts | ohne Phase 5 und 6 | | |
 
 ## Vergleich
 
 | | Hersch (TEI Publisher 10, Jinntec) | Pilot (OPM, Claude Code) |
 |---|---|---|
-| Zeit Frontend | | |
-| Externe Kosten | | |
+| Zeit Frontend | (Elias ergänzt) | ca. 8 Std. bis zur öffentlichen Vorabversion (ohne Register, Suche, Mehrsprachigkeit) |
+| Externe Kosten | (Elias ergänzt) | keine für Hosting; Claude-Code-Abo |
 | Hosting | eXist-Server | GitHub Pages (statisch) |
-| Wer kann es warten? | | |
+| Wer kann es warten? | (Elias ergänzt) | wer TEI kennt und Python-Befehle nach Anleitung ausführt; Texte in `content/`, Gestaltung in `tokens.css` |
 
 ## Fazit (5–10 Sätze, am Ende)
 
+*Entwurf von Claude, von Elias zu prüfen und zu ergänzen:*
+
+In rund acht Stunden über drei Tage ist aus 12 TEI-Dateien und den Bausteinen der bestehenden Hersch-App eine öffentlich erreichbare, statische Edition entstanden: Startseite, filterbare Werkliste und Leseansichten im Design der offiziellen Edition, ohne Datenbank und ohne Server. Die Hersch-ODD liess sich mit wenigen Anpassungen in OPM weiterverwenden; die Texte sind in Stichproben textgleich mit der Live-Edition. Claude Code hat Programmierung, Gestaltung nach Messung der Live-Seite, Prüfung im Browser und Veröffentlichung weitgehend selbständig erledigt. Menschliches Urteil war bei editorischen und gestalterischen Fragen nötig (Aufbau der Startseite, Zitierweise, Umgang mit Datenfehlern), bei Rechtsfragen (Schriftlizenz, Bildrechte, Impressum) und bei der Freigabe zur Veröffentlichung. Gehakt hat es vor allem an fehlenden Quellen (Inhaltsdateien der Seiten, Schema, eine Abbildung) und an Eigenheiten der Windows-Umgebung. Personenregister, Volltextsuche und Mehrsprachigkeit sind vorbereitet, aber zurückgestellt; sie wären die nächsten Schritte, um die Vorabversion zu einer vollständigen Edition auszubauen.
