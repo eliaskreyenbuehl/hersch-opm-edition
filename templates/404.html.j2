@@ -1,0 +1,47 @@
+{#
+  Fehlerseite _site/404.html (scripts/render_pages.py). GitHub Pages zeigt sie für
+  jede unbekannte Adresse, auch tief in Unterordnern. Relative Links würden dort
+  brechen; deshalb setzt das Skript zuerst <base> auf den Anfang der Site:
+  auf <konto>.github.io/<repo>/ ist das «/<repo>/», sonst «/».
+-#}
+{% extends "base.html.j2" %}
+
+{% block title %}Seite nicht gefunden – Edition Jeanne Hersch{% endblock %}
+
+{% block styles %}
+  <script>
+    (function () {
+      var first = location.pathname.split('/')[1];
+      var base = /\.github\.io$/.test(location.hostname) && first ? '/' + first + '/' : '/';
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
+  <link rel="stylesheet" href="{{ assets }}/tokens.css">
+  <link rel="stylesheet" href="{{ assets }}/layout.css">
+  <link rel="stylesheet" href="{{ assets }}/pages.css">
+{% endblock %}
+
+{% block body_class %}page-content page-imprint{% endblock %}
+
+{% block breadcrumbs %}
+      <li aria-current="page">Seite nicht gefunden</li>
+{% endblock %}
+
+{% block content %}
+  <main class="content-page">
+    <article class="center">
+      <h1>Seite nicht gefunden</h1>
+      <p>Diese Seite gibt es in der Edition nicht (mehr). Vielleicht hilft der Weg über die Startseite oder die Werkliste.</p>
+      <nav class="intro__nav" aria-label="Weiter">
+        <a href="{{ root }}index.html" class="nav-btn">
+          <span class="nav-btn__circle" aria-hidden="true"><img src="{{ assets }}/img/arrow-right.svg" alt=""></span>
+          <span data-i18n="menu.home">Startseite</span>
+        </a>
+        <a href="{{ root }}works.html" class="nav-btn">
+          <span class="nav-btn__circle" aria-hidden="true"><img src="{{ assets }}/img/arrow-right.svg" alt=""></span>
+          <span data-i18n="menu.works">Werkliste</span>
+        </a>
+      </nav>
+    </article>
+  </main>
+{% endblock %}

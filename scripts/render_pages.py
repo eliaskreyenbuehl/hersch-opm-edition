@@ -152,6 +152,7 @@ def main() -> int:
             'featured': featured,
             'content': {'intro': content('intro')},
         }),
+        '404.html': ('404.html.j2', {}),
         'works.html': ('works.html.j2', {
             'works': works,
             'facets': build_facets(works, taxonomy, label),

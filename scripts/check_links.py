@@ -5,8 +5,9 @@ Prüft in allen HTML- und CSS-Dateien:
   - keine absoluten Pfade («/edition/…»), die unter github.io/<repo>/ brechen
   - keine Skripte, Stylesheets oder Schriften von fremden Servern (Datenschutz)
 Externe Links in <a href> (z. B. swisscovery, Creative Commons) sind erlaubt
-und werden nicht abgerufen. Seiten aus späteren Phasen (people.html,
-search.html) werden als «noch offen» gemeldet, nicht als Fehler.
+und werden nicht abgerufen. Fehlende Abbildungen unter assets/img/edition/ sind
+Datenprobleme (siehe docs/datenbericht.md) und werden als Hinweis gemeldet, nicht
+als Fehler; sie werden in Oxygen bzw. durch Nachlieferung der Scans behoben.
 """
 
 from __future__ import annotations
@@ -19,7 +20,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / '_site'
-LATER = {'people.html': 'Phase 5', 'search.html': 'Phase 6'}
+LATER: dict[str, str] = {}  # Seite → Phase, falls eine Seite noch fehlen darf
 CSS_URL = re.compile(r'url\(\s*[\'"]?([^\'")]+)[\'"]?\s*\)')
 
 
@@ -51,7 +52,9 @@ def check(page: Path, tag: str, value: str, errors: list, later: set):
         target = target / 'index.html'
     if not target.exists():
         name = Path(parts.path).name
-        if name in LATER:
+        if '/img/edition/' in parts.path:
+            later.add(f'Abbildung {name} fehlt ({where}, siehe datenbericht.md)')
+        elif name in LATER:
             later.add(f'{name} ({LATER[name]})')
         else:
             errors.append(f'{where}: tot {value}')
@@ -75,7 +78,7 @@ def main() -> int:
 
     print(f'{len(pages)} HTML- und {len(styles)} CSS-Dateien geprüft')
     for item in sorted(later):
-        print(f'  noch offen: {item}')
+        print(f'  Hinweis: {item}')
     for err in errors:
         print(f'  FEHLER {err}')
     print('Keine toten Links.' if not errors else f'{len(errors)} Fehler')

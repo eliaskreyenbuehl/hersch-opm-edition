@@ -5,11 +5,15 @@
   3. opm chunk            Leseansichten → _site/edition/<datei>.xml/001.html
   4. XML-Quellen          data/*.xml → _site/edition/xml/ (Download «TEI XML»)
   5. render_pages.py      Startseite, Werkliste, Jeanne Hersch, Projekt, Impressum
-Register (Phase 5) und Suchindex (Phase 6) folgen.
+Register (Phase 5) und Suchindex (Phase 6) sind vorerst zurückgestellt.
+
+--offline: keine Netzabfragen (für GitHub Actions). Zurzeit fragt der Build
+ohnehin nichts ab; der Schalter ist für das Register (lobid) vorgesehen.
 """
 
 from __future__ import annotations
 
+import argparse
 import os
 import shutil
 import subprocess
@@ -55,6 +59,10 @@ def remove_fragment_files() -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description='Baut die ganze Site nach _site/.')
+    parser.add_argument('--offline', action='store_true', help='keine Netzabfragen (CI)')
+    parser.parse_args()
+
     # _site/ wird immer vollständig neu erzeugt, keine Reste früherer Läufe
     if SITE.exists():
         shutil.rmtree(SITE)
