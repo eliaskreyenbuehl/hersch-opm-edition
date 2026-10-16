@@ -449,6 +449,13 @@ main.works {
 .page-imprint { background-color: var(--color-bg-about); }
 .page-project { background-color: var(--color-bg-project); }
 
+/* Kurze Seiten: Fuss bleibt am unteren Rand */
+.page-content { min-height: 100vh; display: flex; flex-direction: column; }
+.page-content > main { flex: 1 0 auto; width: 100%; }
+.page-content > .site-header,
+.page-content > nav.breadcrumb,
+.page-content > .site-footer { width: 100%; }
+
 main.content-page {
     max-width: var(--max-w);
     margin: 0 auto;

@@ -1,11 +1,11 @@
-"""Jinja-Seiten rendern: Startseite, Werkliste, Jeanne Hersch, Projekt, Impressum.
+"""Jinja-Seiten rendern: Startseite, Werkliste, Jeanne Hersch, Projekt, Impressum, Datenschutz.
 
 Aufruf:  uv run python scripts/render_pages.py
 (build.py ruft das Skript nach extract_metadata.py und opm chunk auf.)
 
 Liest _site/data/works.json, assets/i18n/taxonomy.json und die Textbausteine in
 content/. Schreibt nach _site/ (index.html, works.html, about.html, project.html,
-imprint.html). Die gemeinsamen Assets legt `opm chunk` unter _site/edition/assets/ ab.
+imprint.html, privacy.html). Die gemeinsamen Assets legt `opm chunk` unter _site/edition/assets/ ab.
 """
 
 from __future__ import annotations
@@ -167,6 +167,7 @@ def main() -> int:
         ('project', 'Projekt', ['Projekt', 'Projektbeschreibung'], project_nav,
          content('project') + '\n' + project_from_tei(), 'project'),
         ('imprint', 'Impressum', ['Impressum'], [], content('imprint'), 'imprint'),
+        ('privacy', 'Datenschutz', ['Datenschutz'], [], content('privacy'), 'imprint'),
     ]:
         pages[f'{name}.html'] = ('content.html.j2', {'page': {
             'name': name, 'title': title, 'crumbs': crumbs, 'nav': nav, 'html': body, 'theme': theme}})
