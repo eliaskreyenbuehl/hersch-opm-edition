@@ -168,6 +168,9 @@ def main() -> int:
          content('project') + '\n' + project_from_tei(), 'project'),
         ('imprint', 'Impressum', ['Impressum'], [], content('imprint'), 'imprint'),
         ('privacy', 'Datenschutz', ['Datenschutz'], [], content('privacy'), 'imprint'),
+        # Platzhalter, bis Phase 5 (Register) und Phase 6 (Suche) sie ersetzen
+        ('people', 'Personen', ['Personen'], [], content('people'), 'works'),
+        ('search', 'Suche', ['Suche'], [], content('search'), 'works'),
     ]:
         pages[f'{name}.html'] = ('content.html.j2', {'page': {
             'name': name, 'title': title, 'crumbs': crumbs, 'nav': nav, 'html': body, 'theme': theme}})
