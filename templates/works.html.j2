@@ -1,0 +1,113 @@
+{#
+  Werkliste _site/works.html (scripts/render_pages.py), wie /browse der Live-Edition:
+  links Filter (Werktyp, Publikationsform, Sprache, Themen, Zeitraum), rechts die Liste.
+
+  Die vollständige Liste steht als HTML auf der Seite. assets/js/works-filter.js
+  lädt data/works.json, filtert, zählt und schreibt den Zustand in die URL.
+  Die Filter erscheinen erst, wenn works.json geladen ist (Klasse filters-ready).
+
+  Variablen: root, assets, works, facets, label(), lang_label()
+-#}
+{% extends "base.html.j2" %}
+
+{% block title %}Werke – Edition Jeanne Hersch{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{{ assets }}/tokens.css">
+  <link rel="stylesheet" href="{{ assets }}/layout.css">
+  <link rel="stylesheet" href="{{ assets }}/pages.css">
+{% endblock %}
+
+{% block body_class %}page-works{% endblock %}
+
+{% block breadcrumbs %}
+      <li aria-current="page" data-i18n="menu.works">Werke</li>
+{% endblock %}
+
+{% block content %}
+  <main class="works">
+    <aside class="facets-aside" aria-label="Filter">
+      {# Handy: Leiste «Filter» klappt die Filter auf (Kontrollkästchen + CSS) #}
+      <input type="checkbox" id="facets-toggle" class="facets-toggle-input">
+      <label for="facets-toggle" class="facets-toggle">
+        <span class="facets-toggle__label"><span data-i18n="browse.filter">Filter</span> <span class="results-count" data-count>{{ works | length }}</span></span>
+        <img src="{{ assets }}/img/caret-down.svg" alt="">
+      </label>
+
+      <div class="facet-badges" data-badges hidden>
+        <button type="button" class="facet-badge facet-badge-reset" data-reset data-i18n="browse.reset-all">Alle zurücksetzen</button>
+      </div>
+
+      <form class="facets" data-facets>
+        {% for facet in facets %}
+        <details class="facet" open>
+          <summary class="facet-heading">{{ facet.label }}</summary>
+          <ul class="facet-list">
+            {% for opt in facet.options %}
+            <li>
+              <input class="facet-box" type="checkbox" id="f-{{ facet.name }}-{{ opt.key }}" name="{{ facet.name }}" value="{{ opt.key }}">
+              {% if opt.icon %}<img src="{{ assets }}/img/{{ opt.icon }}" alt="" aria-hidden="true">{% endif %}
+              <label for="f-{{ facet.name }}-{{ opt.key }}"{% if opt.missing %} data-missing-label{% endif %}>{{ opt.label }} <sup class="freq" data-freq>{{ opt.count }}</sup></label>
+            </li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endfor %}
+
+        <details class="facet facet-dates" open>
+          <summary class="facet-heading" data-i18n="facets.date">Zeitraum</summary>
+          <div class="range" data-range data-min="{{ years.min }}" data-max="{{ years.max }}">
+            <div class="range__track">
+              <input type="range" name="from" min="{{ years.min }}" max="{{ years.max }}" value="{{ years.min }}" aria-label="Von Jahr">
+              <input type="range" name="to" min="{{ years.min }}" max="{{ years.max }}" value="{{ years.max }}" aria-label="Bis Jahr">
+            </div>
+            <div class="range__fields">
+              <label><span data-i18n="facets.from">Von</span> <input type="number" data-for="from" min="{{ years.min }}" max="{{ years.max }}" value="{{ years.min }}"></label>
+              <label><span data-i18n="facets.to">Bis</span> <input type="number" data-for="to" min="{{ years.min }}" max="{{ years.max }}" value="{{ years.max }}"></label>
+            </div>
+          </div>
+        </details>
+      </form>
+    </aside>
+
+    <section class="document-list" aria-labelledby="list-heading">
+      <div class="document-list__header">
+        <h1 class="counter" id="list-heading"><span data-count>{{ works | length }}</span> <span data-i18n="browse.works">Werke</span></h1>
+        <label class="sorting">
+          <span data-i18n="browse.sort">Sortiere nach</span> :
+          <select data-sort name="sort">
+            <option value="year" data-i18n="browse.sort-year-asc">Jahr (älteste zuerst)</option>
+            <option value="year-desc" data-i18n="browse.sort-year-desc">Jahr (neueste zuerst)</option>
+            <option value="title" data-i18n="browse.sort-title">Titel (A–Z)</option>
+          </select>
+        </label>
+      </div>
+
+      <ul class="documents" data-list>
+        {% for w in works %}
+        <li class="document" data-id="{{ w.id }}">
+          <a class="document__link" href="{{ root }}{{ w.href }}">
+            <span class="document__text">
+              <span class="document__title" lang="{{ w.lang_code }}">{{ w.title }}</span>
+              {% if w.subtitle %}<span class="document__subtitle" lang="{{ w.lang_code }}">{{ w.subtitle }}</span>{% endif %}
+              <span class="document__meta">
+                {{- label('hersch_genre', w.genre) }}
+                {%- if w.container and w.container != w.title %} in <cite>{{ w.container }}</cite>{% endif %}
+                {%- if w.lang %} · {{ lang_label(w.lang) }}{% endif -%}
+              </span>
+            </span>
+            <img class="document__icon" src="{{ assets }}/img/{{ genre_icon(w.genre) }}" alt="{{ label('hersch_genre', w.genre) }}" title="{{ label('hersch_genre', w.genre) }}">
+            <span class="document__year">{{ w.year }}</span>
+            <span class="nav-btn__circle document__arrow" aria-hidden="true"><img src="{{ assets }}/img/arrow-right.svg" alt=""></span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="no-results" data-empty hidden data-i18n="search.no-results">Keine Werke für diese Auswahl.</p>
+    </section>
+  </main>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ assets }}/js/works-filter.js" data-works="{{ root }}data/works.json" defer></script>
+{% endblock %}

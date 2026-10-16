@@ -1,0 +1,117 @@
+{#
+  Startseite _site/index.html (scripts/render_pages.py).
+  Aufbau nach templates/vorlage/hersch-home-base.html (Kopf, Einstieg mit Porträt,
+  Fuss). Statt Aphorismen und Themen: Abschnitt «Texte in der Edition» mit
+  Kennzahlen und ausgewählten Texten (Entscheid Elias, 2026-10-16).
+
+  Variablen: root, assets, stats, featured, label(), lang_label(), content
+-#}
+{% extends "base.html.j2" %}
+
+{% block title %}Edition Jeanne Hersch{% endblock %}
+
+{% block styles %}
+  <link rel="preload" href="{{ assets }}/img/portrait.jpg" as="image">
+  <link rel="stylesheet" href="{{ assets }}/tokens.css">
+  <link rel="stylesheet" href="{{ assets }}/layout.css">
+  <link rel="stylesheet" href="{{ assets }}/pages.css">
+{% endblock %}
+
+{% block body_id %}home{% endblock %}
+{% block body_class %}page-home{% endblock %}
+
+{% block header_logo %}
+      <img src="{{ assets }}/img/logo-square-transparent.svg" alt="Edition Jeanne Hersch" class="logo-square">
+      <img src="{{ assets }}/img/logo-wide-transparent.svg" alt="" class="logo-wide" aria-hidden="true">
+{% endblock %}
+
+{% block breadcrumb_nav %}{% endblock %}
+
+{% block content %}
+  <main id="top">
+    <section class="section-intro" aria-label="Einführung">
+      <div class="intro__image">
+        <img src="{{ assets }}/img/portrait.jpg" alt="Jeanne Hersch, Schweizer Philosophin" width="1398" height="1609">
+      </div>
+
+      <div class="intro__content">
+        <div class="intro__content-inner">
+          {{ content.intro | safe }}
+
+          <nav class="intro__nav" aria-label="Themennavigation">
+            <a href="{{ root }}works.html" class="nav-btn">
+              <span class="nav-btn__circle" aria-hidden="true"><img src="{{ assets }}/img/arrow-right.svg" alt=""></span>
+              <span data-i18n="landing.werk">Werk</span>
+            </a>
+            <a href="{{ root }}about.html" class="nav-btn">
+              <span class="nav-btn__circle" aria-hidden="true"><img src="{{ assets }}/img/arrow-right.svg" alt=""></span>
+              Jeanne Hersch
+            </a>
+            <a href="{{ root }}project.html" class="nav-btn">
+              <span class="nav-btn__circle" aria-hidden="true"><img src="{{ assets }}/img/arrow-right.svg" alt=""></span>
+              <span data-i18n="menu.project">Projekt</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-works" aria-labelledby="works-heading">
+      <div class="section-header">
+        <h2 class="section-header__label" id="works-heading" data-i18n="landing.texts">Texte in der Edition</h2>
+        <a href="{{ root }}works.html" class="section-header__link">
+          <span data-i18n="landing.link-work">Zum Werk</span>
+          <img src="{{ assets }}/img/arrow-right.svg" alt="">
+        </a>
+      </div>
+
+      <div class="section-inner">
+        <dl class="stats">
+          <div class="stats__item">
+            <dt data-i18n="landing.stat-works">Texte</dt>
+            <dd>{{ stats.count }}</dd>
+          </div>
+          <div class="stats__item">
+            <dt data-i18n="landing.stat-years">Zeitspanne</dt>
+            <dd>{{ stats.year_min }}–{{ stats.year_max }}</dd>
+          </div>
+          <div class="stats__item">
+            <dt data-i18n="landing.stat-languages">Sprachen</dt>
+            <dd>{{ stats.langs | map('lang_label') | join(', ') }}</dd>
+          </div>
+        </dl>
+
+        <ul class="work-tiles" role="list">
+          {% for w in featured %}
+          <li>
+            <a class="work-tile" href="{{ root }}{{ w.href }}">
+              <span class="work-tile__meta">{{ w.year }} · {{ label('hersch_genre', w.genre) }}</span>
+              <span class="work-tile__title" lang="{{ w.lang_code }}">{{ w.title }}</span>
+              {% if w.container and w.container != w.title %}<span class="work-tile__source"><cite>{{ w.container }}</cite></span>{% endif %}
+              <span class="nav-btn__circle work-tile__arrow" aria-hidden="true"><img src="{{ assets }}/img/arrow-right.svg" alt=""></span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    // Wie hersch-home-base.html: nach 300 px Scrollen breites statt quadratisches Logo
+    (function () {
+      var header = document.querySelector('.site-header');
+      var ticking = false;
+      function update() {
+        header.classList.toggle('is-scrolled', window.scrollY >= 300);
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { requestAnimationFrame(update); ticking = true; }
+      }, { passive: true });
+      update();
+    })();
+  </script>
+{% endblock %}

@@ -1,36 +1,17 @@
 {#
-  Übersicht _site/edition/index.html, geschrieben von `opm chunk` bei einem
-  Ordnerlauf. Vorläufig: einfache Liste; die richtige Werkliste kommt in Phase 4.
+  _site/edition/index.html, geschrieben von `opm chunk` bei einem Ordnerlauf.
+  Die Werkliste ist seit Phase 4 eine eigene Seite (works.html, scripts/render_pages.py);
+  diese Seite leitet nur dorthin weiter.
 -#}
-{% extends "base.html.j2" %}
-{% set root = '../' %}
-
-{% block title %}Werk – Edition Jeanne Hersch{% endblock %}
-
-{% block styles %}
-  {% for href in asset_styles %}
-  <link rel="stylesheet" href="{{ href }}">
-  {% endfor %}
-{% endblock %}
-
-{% block body_class %}page-index{% endblock %}
-
-{% block breadcrumbs %}
-      <li aria-current="page" data-i18n="menu.work">Werk</li>
-{% endblock %}
-
-{% block content %}
-  <main class="simple">
-    <div class="center">
-      <h1>{{ title }}</h1>
-      <ul class="doc-list">
-        {% for doc in documents | sort(attribute='fragments.quelle_jahr') %}
-        <li>
-          <a href="{{ doc.href }}">{{ (doc.fragments.titel or doc.label) | e }}</a>
-          <span class="doc-list__year">{{ doc.fragments.quelle_jahr | e }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </main>
-{% endblock %}
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }} – Edition Jeanne Hersch</title>
+  <meta http-equiv="refresh" content="0; url=../works.html">
+  <link rel="canonical" href="../works.html">
+</head>
+<body>
+  <p><a href="../works.html">Zur Werkliste</a></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{#
+  Textseiten: about.html (Jeanne Hersch), project.html (Projekt), imprint.html.
+  Aufbau nach templates/vorlage/about-hersch.html, project.html und imprint.html:
+  links Unternavigation, rechts der Text. Der Text kommt als HTML-Fragment aus
+  content/<seite>.html (scripts/render_pages.py).
+
+  Variablen: root, assets, page (name, title, crumbs, nav, html, theme)
+-#}
+{% extends "base.html.j2" %}
+
+{% block title %}{{ page.title }} – Edition Jeanne Hersch{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{{ assets }}/tokens.css">
+  <link rel="stylesheet" href="{{ assets }}/layout.css">
+  <link rel="stylesheet" href="{{ assets }}/pages.css">
+{% endblock %}
+
+{% block body_class %}page-content page-{{ page.theme }}{% endblock %}
+
+{% block breadcrumbs %}
+      {% for crumb in page.crumbs %}
+      <li{% if loop.last %} aria-current="page"{% endif %}>{{ crumb }}</li>
+      {% endfor %}
+{% endblock %}
+
+{% block content %}
+  <main class="content-page">
+    {% if page.nav %}
+    <aside class="content-nav" aria-label="{{ page.crumbs[0] }}">
+      <ul>
+        {% for item in page.nav %}
+        <li><a href="{{ root }}{{ item.href }}"{% if item.href == page.name ~ '.html' %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+    {% endif %}
+    <article class="center">
+      {{ page.html | safe }}
+    </article>
+  </main>
+{% endblock %}

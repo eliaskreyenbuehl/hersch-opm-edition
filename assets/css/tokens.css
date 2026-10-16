@@ -25,6 +25,16 @@
     --color-bg-footer:       #F1DF96;
     --color-bg-input:        rgba(255, 255, 255, 0.50);
     --color-bg-figure:       rgba(0, 0, 0, 0.04);
+    --color-bg-intro:        #EEEAE8;          /* Startseite, Textspalte */
+    --color-bg-section:      #E6E8EF;          /* Startseite, Abschnitt «Texte»; Werkliste */
+    --color-bg-works:        #D9DCE4;          /* Werkliste: Seite und Filter */
+    --color-bg-about:        #FFF4EA;          /* Seite «Jeanne Hersch» */
+    --color-bg-project:      #E1E5DA;          /* Seite «Projekt» */
+    --color-bg-control:      rgba(0, 0, 0, 0.05); /* Sortierfeld */
+    --color-text-meta:       rgb(55, 60, 68);  /* Jahr in der Werkliste */
+    --color-text-facet:      rgba(0, 0, 0, 0.45); /* nicht gewählte Filter */
+    --color-bg-notice:       #000000;          /* Prototyp-Band */
+    --color-text-notice:     #F1DF96;
 
     /* --- Schriftfamilien --- */
     --font-sans:  'ES Rebond Grotesque', system-ui, sans-serif;
@@ -41,6 +51,12 @@
     --fs-footnote:    0.9em;
     --fs-footer:      clamp(16px, 1.35vw, 22px);
     --fs-footer-legal: clamp(16px, 1.2vw, 18px);
+    --fs-display:     clamp(26px, 2.5vw, 36px);   /* Startseite: Titel, Kennzahlen */
+    --fs-nav-big:     clamp(17px, 1.8vw, 26px);   /* Startseite: Pfeil-Links, Kacheln */
+    --fs-intro:       clamp(16px, 1.4vw, 22px);   /* Startseite: Einführung */
+    --fs-section-label: clamp(16px, 1.05vw, 20px);
+    --fs-list-title:  22px;                       /* Werkliste: Titel */
+    --fs-facet-count: 0.6875rem;
 
     /* --- Schriftstärken --- */
     --fw-regular: 400;
@@ -73,5 +89,9 @@
     --icon-s:       2rem;
     --menu-w:       33.75rem;
     --rule-w:       2px;
+    --notice-h:     2rem;     /* Prototyp-Band */
+    --logo-square-h: clamp(90px, 10vw, 145px);
+    --facets-w:     25rem;    /* Werkliste: Filterspalte */
+    --nav-circle:   40px;     /* runde Pfeil-Knöpfe */
     --breakpoint-note: 768px;  /* nur Dokumentation: Media Queries können keine Variablen lesen */
 }

@@ -1,10 +1,11 @@
 """Baut die ganze Site nach _site/.  Aufruf:  uv run python scripts/build.py
 
-Phase 3 (erste Version):
-  1. validate.py        Wohlgeformtheit, Pflichtfelder, Abbildungen → docs/datenbericht.md
-  2. opm chunk          Leseansichten → _site/edition/<datei>.xml/001.html
-  3. XML-Quellen        data/*.xml → _site/edition/xml/ (Download «TEI XML»)
-Weitere Schritte (works.json, Register, Jinja-Seiten, Suchindex) folgen in späteren Phasen.
+  1. validate.py          Wohlgeformtheit, Pflichtfelder, Abbildungen → docs/datenbericht.md
+  2. extract_metadata.py  Metadaten aller Werke → _site/data/works.json
+  3. opm chunk            Leseansichten → _site/edition/<datei>.xml/001.html
+  4. XML-Quellen          data/*.xml → _site/edition/xml/ (Download «TEI XML»)
+  5. render_pages.py      Startseite, Werkliste, Jeanne Hersch, Projekt, Impressum
+Register (Phase 5) und Suchindex (Phase 6) folgen.
 """
 
 from __future__ import annotations
@@ -58,17 +59,20 @@ def main() -> int:
     if SITE.exists():
         shutil.rmtree(SITE)
 
-    step('1/3 TEI-Dateien prüfen')
+    step('1/5 TEI-Dateien prüfen')
     run(sys.executable, 'scripts/validate.py')
 
-    step('2/3 Leseansichten mit OPM')
+    step('2/5 Metadaten für die Werkliste')
+    run(sys.executable, 'scripts/extract_metadata.py')
+
+    step('3/5 Leseansichten mit OPM')
     # Konfiguration in opm.toml ([chunking]); --force leert _site/edition vorher.
     # Das opm-Programm liegt neben dem Python der uv-Umgebung (.venv/Scripts bzw. .venv/bin).
     opm = shutil.which('opm', path=str(Path(sys.executable).parent)) or 'opm'
     run(opm, 'chunk', 'data', '-o', EDITION.relative_to(ROOT).as_posix(), '--force')
     remove_fragment_files()
 
-    step('3/3 TEI-Quellen zum Herunterladen kopieren')
+    step('4/5 TEI-Quellen zum Herunterladen kopieren')
     xml_dir = EDITION / 'xml'
     xml_dir.mkdir(parents=True, exist_ok=True)
     sources = sorted(DATA.glob('*.xml'))
@@ -76,9 +80,12 @@ def main() -> int:
         shutil.copy2(src, xml_dir / src.name)
     print(f'{len(sources)} Dateien nach {xml_dir.relative_to(ROOT)}')
 
+    step('5/5 Seiten rendern')
+    run(sys.executable, 'scripts/render_pages.py')
+
     pages = sorted(EDITION.glob('*.xml/*.html'))
     print(f'\nFertig: {len(pages)} Leseseiten in {EDITION.relative_to(ROOT)}')
-    print('Ansehen: uv run opm serve -d _site   →   http://127.0.0.1:8080/edition/')
+    print('Ansehen: uv run opm serve -d _site   →   http://127.0.0.1:8080/')
     return 0
 
 

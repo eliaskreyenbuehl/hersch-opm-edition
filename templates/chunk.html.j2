@@ -13,7 +13,8 @@
 
 {% block styles %}
   {# Reihenfolge: tokens, layout, ODD-CSS, text (text.css ergänzt und übersteuert die ODD-CSS) #}
-  {% for href in asset_styles if not href.endswith('/text.css') %}
+  {# pages.css gehört zu den Jinja-Seiten (Start, Werkliste, Über), nicht zur Leseansicht #}
+  {% for href in asset_styles if not href.endswith('/text.css') and not href.endswith('/pages.css') %}
   <link rel="stylesheet" href="{{ href }}">
   {% endfor %}
   {% if odd_css_url %}

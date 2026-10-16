@@ -41,8 +41,10 @@ assets = [
     "assets/css/tokens.css",
     "assets/css/layout.css",
     "assets/css/text.css",
+    "assets/css/pages.css",
     "assets/fonts",
     "assets/img",
+    "assets/js",
 ]
 
 # Metadaten für die Seitenleiste, je Werk direkt aus dem teiHeader.
