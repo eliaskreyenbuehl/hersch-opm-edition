@@ -1,4 +1,4 @@
-# OPM-Konfiguration der Hersch-Edition (Phase 2: nur Transformation)
+# OPM-Konfiguration der Hersch-Edition
 
 [project]
 pythonpath = ["."]
@@ -6,9 +6,134 @@ pythonpath = ["."]
 [transform]
 odd = "odd/hersch-opm.odd"
 xpath_extensions = [
-    "opm.runtime.common_xpath_functions"
+    "opm.runtime.common_xpath_functions",
+    # tp:taxonomy_label() – Bezeichnungen aus assets/i18n/taxonomy.json
+    "extensions.hersch_functions",
 ]
 
 # Präfix, das teipublisher.odd für seine eXist-Einstellungen verwendet
 [transform.namespaces]
 global = "http://teipublisher.com/global"
+
+# Für das graphic-Modell in hersch-opm.odd: Abbildungen liegen in den gemeinsamen
+# Assets. {prefix} ist der relative Weg von der Leseseite zurück nach _site/edition/.
+[transform.parameters]
+image-base = "{prefix}assets/img/edition/"
+
+# ---------------------------------------------------------------------------
+# Leseansicht: `opm chunk data -o _site/edition --force` (über scripts/build.py)
+# Ausgabe: _site/edition/<datei>.xml/001.html, gemeinsame CSS/Assets unter
+# _site/edition/css/ und _site/edition/assets/.
+# ---------------------------------------------------------------------------
+[chunking]
+# Ein Chunk pro Werk. Die Texte sind 8–33 Druckseiten lang und haben keine
+# Kapitel-divs (alles steht in einem div n="1"); eine Teilung nach div brächte nichts.
+xpath = "//text"
+output_dir = "_site/edition"
+template = "templates/chunk.html.j2"
+index_template = "templates/edition-index.html.j2"
+index_title = "Werk"
+# Kein link_pattern: Bei einem Chunk pro Werk gibt es keine Verweise zwischen
+# Chunks; OPM schreibt dann relativ ({file}#{anchor}).
+
+# Reihenfolge = Kaskade. text.css nach der ODD-CSS (siehe chunk.html.j2).
+assets = [
+    "assets/css/tokens.css",
+    "assets/css/layout.css",
+    "assets/css/text.css",
+    "assets/fonts",
+    "assets/img",
+]
+
+# Metadaten für die Seitenleiste, je Werk direkt aus dem teiHeader.
+# Die Ausdrücke liefern reinen Text (kein HTML); das Template maskiert ihn.
+[[chunking.fragments]]
+name = "titel"
+scope = "global"
+xpath = "normalize-space(//teiHeader//titleStmt/title[@type = 'item'][1])"
+
+[[chunking.fragments]]
+name = "autor"
+scope = "global"
+xpath = "normalize-space(//teiHeader//titleStmt/author[1])"
+
+[[chunking.fragments]]
+name = "datum"
+scope = "global"
+xpath = "let $d := //teiHeader//publicationStmt/date[@type = 'publication'] return if ($d castable as xs:date) then format-date(xs:date($d), '[D1].[M1].[Y0001]') else string($d)"
+
+[[chunking.fragments]]
+name = "doi"
+scope = "global"
+xpath = "normalize-space(//teiHeader//publicationStmt/idno[@type = 'DOI'])"
+
+[[chunking.fragments]]
+name = "mla"
+scope = "global"
+xpath = "normalize-space(//teiHeader//publicationStmt/idno[@type = 'MLA-9'])"
+
+[[chunking.fragments]]
+name = "swisscovery"
+scope = "global"
+xpath = "let $u := normalize-space(//teiHeader//publicationStmt/idno[@type = 'URI'][@subtype = 'swisscovery']), $m := normalize-space(//teiHeader//publicationStmt/idno[@type = 'ALMA-MMSID']) return if ($u) then $u else if ($m) then 'https://uzb.swisscovery.ch/discovery/fulldisplay?vid=41SLSP_UZB:UZB&docid=alma' || $m else ''"
+
+[[chunking.fragments]]
+name = "sprache"
+scope = "global"
+xpath = "normalize-space((//teiHeader//sourceDesc//textLang)[1])"
+
+[[chunking.fragments]]
+name = "gattung"
+scope = "global"
+xpath = "let $k := substring-after(head(tokenize(//teiHeader//catRef[@scheme = 'hersch_genre']/@target, '\\s+')), '#') return if ($k) then tp:taxonomy_label('hersch_genre', $k, 'de') else ''"
+
+[[chunking.fragments]]
+name = "lizenz"
+scope = "global"
+xpath = "string(//teiHeader//availability/licence/@target)"
+
+# Erschienen in: Teile von monogr; das Template setzt sie zusammen.
+[[chunking.fragments]]
+name = "quelle_titel"
+scope = "global"
+xpath = "if (//teiHeader//sourceDesc//biblStruct/analytic) then normalize-space((//teiHeader//sourceDesc//monogr/title)[1]) else ''"
+
+[[chunking.fragments]]
+name = "quelle_art"
+scope = "global"
+xpath = "string((//teiHeader//sourceDesc//monogr/title)[1]/@level)"
+
+[[chunking.fragments]]
+name = "quelle_hg"
+scope = "global"
+xpath = "string-join(distinct-values(//teiHeader//sourceDesc//monogr/editor/normalize-space()), '; ')"
+
+[[chunking.fragments]]
+name = "quelle_ort"
+scope = "global"
+xpath = "normalize-space((//teiHeader//sourceDesc//imprint/pubPlace)[1])"
+
+[[chunking.fragments]]
+name = "quelle_verlag"
+scope = "global"
+xpath = "normalize-space((//teiHeader//sourceDesc//imprint/publisher)[1])"
+
+[[chunking.fragments]]
+name = "quelle_jahr"
+scope = "global"
+xpath = "normalize-space((//teiHeader//sourceDesc//imprint/date)[1])"
+
+[[chunking.fragments]]
+name = "quelle_jg"
+scope = "global"
+xpath = "normalize-space((//teiHeader//sourceDesc//biblScope[@unit = ('volume', 'vol')])[1])"
+
+[[chunking.fragments]]
+name = "quelle_heft"
+scope = "global"
+xpath = "normalize-space((//teiHeader//sourceDesc//biblScope[@unit = 'issue'])[1])"
+
+[[chunking.fragments]]
+name = "quelle_seiten"
+scope = "global"
+xpath = "translate(normalize-space((//teiHeader//sourceDesc//biblScope[@unit = ('page', 'pp')])[1]), '-', '–')"

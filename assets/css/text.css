@@ -1,0 +1,148 @@
+/* ==========================================================================
+   text.css – Lesetext der Leseansicht
+
+   Ergänzt die ODD-CSS (_site/edition/css/hersch-opm.css aus tp.css und den
+   rendition-Angaben der ODD) und wird nach ihr geladen. Hier steht nur, was
+   die Live-Edition zusätzlich über Jinks/pb-view setzt, plus die Teile, die
+   in OPM anders entstehen (Gattungs-Icon, leeres front).
+   Verwendet nur Variablen aus tokens.css.
+   ========================================================================== */
+
+.center .tei-body {
+    font-family: var(--font-serif);
+    font-size: var(--fs-reading);
+    line-height: var(--lh-reading);
+    color: var(--color-text);
+}
+
+/* --- Titelzeile: bleibt beim Scrollen oben stehen (sticky aus tp.css) --- */
+.center .fixed {
+    background: var(--color-bg-titlebar);
+    padding-top: 0;
+    padding-bottom: var(--space-m);
+}
+
+.center .fixed > h1 {
+    font-family: var(--font-sans);
+    font-size: var(--fs-title);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-title);
+    color: var(--color-text);
+    /* tp.css kürzt auf eine Zeile mit «…»; live bricht der Titel um */
+    white-space: normal;
+    overflow: visible;
+}
+
+/* Gattungs-Icon und Jahr. Das ODD liefert nur data-genre (keine Bildpfade im ODD),
+   das Icon kommt hier dazu; Zuordnung wie ext:type-icon() der Hersch-App. */
+.icon-year {
+    font-family: var(--font-sans);
+    font-size: var(--fs-ui);
+    align-items: center;
+}
+.icon-year::before {
+    content: "";
+    width: var(--icon-s);
+    height: var(--icon-s);
+    background: center / contain no-repeat;
+}
+.icon-year:not([data-genre])::before,
+.icon-year[data-genre=""]::before { display: none; }
+.icon-year[data-genre="book"]::before { background-image: url('img/ico-book.svg'); }
+.icon-year[data-genre="speech"]::before,
+.icon-year[data-genre="article"]::before,
+.icon-year[data-genre="entry"]::before,
+.icon-year[data-genre="review"]::before,
+.icon-year[data-genre="conversation"]::before,
+.icon-year[data-genre="interview"]::before { background-image: url('img/ico-doc.svg'); }
+.icon-year[data-genre="tv"]::before { background-image: url('img/ico-video.svg'); }
+.icon-year[data-genre="radio"]::before { background-image: url('img/ico-audio.svg'); }
+
+/* --- Absätze und Zwischentitel --- */
+.center .tei-p {
+    margin: 0 0 var(--space-s);
+    color: var(--color-text-reading);
+}
+
+.center .scrollable h1,
+.center .scrollable h2,
+.center .scrollable h3,
+.center .back h1 {
+    font-family: var(--font-sans);
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-title);
+    margin: 0 0 var(--space-s);
+}
+.center .scrollable h3 { font-size: var(--fs-heading-sub); }
+
+/* leeres <front/> erzeugt ein leeres div.front */
+.center .front:empty { display: none; }
+
+/* --- Seitenzahlen am Rand: float rechts aus der ODD (tei-pb1), Farbe hier --- */
+.center .pb {
+    color: var(--color-pagenumber);
+    font-family: var(--font-serif);
+    line-height: var(--lh-reading);
+}
+
+/* --- Personen, Organisationen, Werke: gepunktet unterstrichen wie live --- */
+.center .person,
+.center .org,
+.center .work {
+    text-decoration: underline dotted;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 1px;
+}
+/* verschachtelte bibl (1540): nur einmal unterstreichen */
+.center .work .work { text-decoration: none; }
+
+/* --- Leerraum (space dim="vertical") --- */
+.center .space-vertical { height: 1em; }
+
+/* --- Abbildungen --- */
+.center .tei-figure {
+    display: block;
+    width: auto;
+    margin: var(--space-m) 0;
+}
+.center .tei-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto var(--space-xs);
+    background: var(--color-bg-figure);
+}
+.center .tei-figure .tei-p {
+    font-size: var(--fs-footnote);
+    color: var(--color-text-muted);
+}
+
+/* --- Fussnoten (note → footnote-Behaviour, 730) --- */
+.center a.note {
+    font-size: 0.7em;
+    vertical-align: super;
+    line-height: 0;
+    text-decoration: none;
+    padding: 0 0.1em;
+}
+.center dl.footnote {
+    display: flex;
+    gap: var(--space-xs);
+    font-size: var(--fs-footnote);
+    color: var(--color-text-reading);
+    margin-top: var(--space-s);
+}
+.center dl.footnote:first-of-type {
+    border-top: 1px solid var(--color-rule-light);
+    padding-top: var(--space-s);
+    margin-top: var(--space-l);
+}
+.center dl.footnote dt { flex-shrink: 0; }
+
+/* --- Nachdruck (back/div type="reprint") --- */
+.center .back {
+    font-size: var(--fs-footnote);
+    margin-top: var(--space-l);
+}
+.center .back h1 { margin-top: 0; }

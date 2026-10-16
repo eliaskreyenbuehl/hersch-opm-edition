@@ -1,6 +1,6 @@
 # Datenbericht
 
-Erzeugt von `scripts/validate.py` am 2026-10-14. Die Dateien in `data/` wurden nur gelesen. Korrekturen macht das Team in Oxygen.
+Erzeugt von `scripts/validate.py` am 2026-10-16. Die Dateien in `data/` wurden nur gelesen. Korrekturen macht das Team in Oxygen.
 
 - Dateien: 12
 - Wohlgeformt: 12 von 12
@@ -12,7 +12,7 @@ Erzeugt von `scripts/validate.py` am 2026-10-14. Die Dateien in `data/` wurden n
 |---|---|---|---|---|---|---|---|---|---|
 | 90.xml | 90 | Monique Saint-Hélier | 1944 | fra | text | article | literatur | – | 0 |
 | 730.xml | 730 | Die Frau heute – Gerede und ernste Verantwortung | 1966 | deu | text | speech | frau-und-frauenrechte | – | 1 |
-| 760.xml | 760 | Chagall à travers quelques toiles | 1967 | fra | text | article | bildende-kuenste | – | 0 |
+| 760.xml | 760 | Chagall à travers quelques toiles | 1967 | fra | text | article | bildende-kuenste | – | 1 |
 | 770.xml | 770 | La Suisse et l’Europe | 1967 | fra | text | article | europa-und-die-schweiz | – | 0 |
 | 790.xml | 790 | Der Mensch ist nicht planbar | 1967 | deu | text | interview | schule | – | 0 |
 | 830.xml | 830 | En regardant l’Eve d’Autun | 1968 | fra | text | article | bildende-kuenste | – | 0 |
@@ -36,7 +36,9 @@ Erzeugt von `scripts/validate.py` am 2026-10-14. Die Dateien in `data/` wurden n
 
 ### 760.xml
 
+- **Problem:** Abbildung «fig28.jpg» fehlt in assets/img/edition/
 - Hinweis: Kategorie «bildende-kuenste» (hersch_keywords) wird als kuenste, malerei angezeigt (Alias)
+- Hinweis: graphic/@url «resources/images/edition/fig26.jpg/» endet mit «/» (wird beim Bauen ignoriert)
 - Hinweis: GND-Refs uneinheitlich: 56× mit «GND-», 1× ohne (z. B. 118815679)
 
 ### 770.xml

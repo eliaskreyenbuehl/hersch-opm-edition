@@ -94,6 +94,25 @@
                     </model>
                 </elementSpec>
 
+                <!-- (6) text: teipublisher.odd gibt <body> aus. In der Leseseite steht der Text
+                     aber innerhalb von <article>; ein zweites <body> wäre ungültiges HTML. -->
+                <elementSpec ident="text" mode="change">
+                    <model behaviour="block"/>
+                </elementSpec>
+
+                <!-- (7) Abbildungen: @url zeigt auf resources/images/edition/ der eXist-App.
+                     Mit dem Parameter image-base (opm.toml, relativ zur Seite) wird nur der
+                     Dateiname übernommen; ein Schrägstrich am Ende (760: fig26.jpg/) wird entfernt. -->
+                <elementSpec ident="graphic" mode="change">
+                    <model behaviour="graphic">
+                        <param name="url" value="let $u := replace(@url, '/+$', '') return if ($parameters?image-base) then $parameters?image-base || tokenize($u, '/')[last()] else $u"/>
+                        <param name="width" value="@width"/>
+                        <param name="height" value="@height"/>
+                        <param name="scale" value="@scale"/>
+                        <param name="title" value="desc"/>
+                    </model>
+                </elementSpec>
+
             </schemaSpec>
         </body>
     </text>

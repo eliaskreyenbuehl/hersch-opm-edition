@@ -3,6 +3,7 @@
 - Wohlgeformtheit (lxml), optional RelaxNG-Validierung gegen schema/zbz_hersch.rng
 - Pflichtfelder im teiHeader
 - Element- und Attributstatistik für <text>
+- Abbildungen: gibt es zu jedem graphic/@url eine Datei in assets/img/edition/?
 
 Exit-Code 1 nur, wenn eine Datei nicht wohlgeformt ist.
 Die TEI-Dateien werden nur gelesen, nie verändert.
@@ -23,6 +24,7 @@ DATA = ROOT / "data"
 SCHEMA = ROOT / "schema" / "zbz_hersch.rng"
 REPORT = ROOT / "docs" / "datenbericht.md"
 TAXONOMY = ROOT / "assets" / "i18n" / "taxonomy.json"
+IMAGES = ROOT / "assets" / "img" / "edition"
 
 NS = {"tei": "http://www.tei-c.org/ns/1.0"}
 TEI = "{http://www.tei-c.org/ns/1.0}"
@@ -118,6 +120,14 @@ def check_file(path: Path, rng, taxonomy: dict):
     for s in sorted(o for o in other if o):
         info["hinweise"].append(f"unbekanntes catRef-Schema «{s}»")
     info["kategorien"] = cats
+
+    # Abbildungen: die Webfassungen liegen in assets/img/edition/ (nur Dateiname zählt)
+    for g in tree.xpath("//tei:text//tei:graphic/@url", namespaces=NS):
+        name = g.rstrip("/").rsplit("/", 1)[-1]
+        if g.endswith("/"):
+            info["hinweise"].append(f"graphic/@url «{g}» endet mit «/» (wird beim Bauen ignoriert)")
+        if not (IMAGES / name).is_file():
+            info["probleme"].append(f"Abbildung «{name}» fehlt in assets/img/edition/")
 
     # GND-Schreibweisen (Hinweis, keine Korrektur)
     refs = [e.get("ref") for e in tree.iter() if isinstance(e.tag, str) and e.get("ref")]

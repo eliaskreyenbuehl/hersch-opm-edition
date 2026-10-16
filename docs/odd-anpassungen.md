@@ -13,6 +13,8 @@ Wichtig: In OPM ersetzt ein `elementSpec mode="change"` **alle** Modelle des Ele
 | `orgName` | wie `persName` | `<span class="org" data-gnd="…">` | wie oben |
 | `bibl` | wie `persName`, dazu `ext:citation()`, `ext:mentions()` | `<span class="work" data-gnd="…">`; verschachtelte `bibl` (1540) ergeben verschachtelte Spans | wie oben |
 | `space` | keine Regel in hersch.odd/teipublisher.odd | `space[@dim='vertical']` → leerer Block `.space-vertical`, sonst Leerzeichen | live ohne sichtbare Wirkung, Text identisch |
+| `text` (Phase 3) | `teipublisher.odd` gibt `<body>` aus; in der Leseseite steht der Text in `<article>`, ein zweites `<body>` ist ungültiges HTML | `behaviour="block"` → `<div class="tei-text …">` | Darstellung unverändert |
+| `graphic` (Phase 3) | `@url` zeigt auf `resources/images/edition/` der eXist-App; 760 hat einmal `fig26.jpg/` mit Schrägstrich | Schrägstrich am Ende entfernen; mit Parameter `image-base` (opm.toml: `{prefix}assets/img/edition/`) nur den Dateinamen übernehmen | Bilder wie live, als verkleinerte Webfassungen |
 
 ## Bewusst unverändert übernommen (geprüft)
 
@@ -53,7 +55,7 @@ Ein visueller Vergleich mit Screenshots war nicht möglich (die Live-Seite reagi
 
 ## Offene Punkte für spätere Phasen
 
-- **Abbildungen:** `graphic/@url` verweist auf `resources/images/edition/fig*.jpg`. Die Bilder fehlen im Projekt; Elias liefert sie nach. Phase 3 muss den Pfad relativ auflösen.
-- **Gattungs-Icons:** `ico-doc.svg`, `ico-book.svg`, `ico-video.svg`, `ico-audio.svg` aus der App nach `assets/img/` kopieren (Phase 3).
+- ~~Abbildungen~~ und ~~Gattungs-Icons~~: in Phase 3 erledigt (siehe Tabelle oben und `docs/leseansicht.md`). `fig28.jpg` fehlt weiterhin (siehe `datenbericht.md`).
+- **900.xml ohne Titelzeile:** `head type="lemma"` hat kein `title[@type='main']`, deshalb bleibt `h1` leer, und die Seitenzahl 402 (vor dem `head`) fällt weg. Live ist es genau gleich; Hinweis für die Redaktion.
 - **Unsichtbares Zeichen:** In 880.xml steht vor der Seitenzahl `1110` ein BOM-Zeichen (U+FEFF). Live und OPM zeigen es gleich (unsichtbar); Hinweis für die Redaktion.
-- `div.front` wird auch bei leerem `<front/>` erzeugt; in Phase 3 per CSS (`.front:empty`) ausblenden.
+- `div.front` wird auch bei leerem `<front/>` erzeugt; seit Phase 3 per CSS (`.front:empty`) ausgeblendet.

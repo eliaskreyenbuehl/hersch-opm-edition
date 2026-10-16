@@ -88,7 +88,7 @@ hersch-opm-edition/
 
 ```bash
 uv run python scripts/build.py          # alles bauen
-uv run opm serve -d _site               # lokal ansehen (http://127.0.0.1:8000)
+uv run opm serve -d _site               # lokal ansehen (http://127.0.0.1:8080)
 uv run opm transform data/1540.xml --preview   # einzelnen Text testen
 uv run python scripts/check_links.py    # tote Links finden
 ```

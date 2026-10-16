@@ -1,0 +1,148 @@
+{#
+  Leseansicht eines Werks, gerendert von `opm chunk` (eine Seite pro Chunk).
+  Seite liegt unter _site/edition/<datei>.xml/001.html, also zwei Ebenen unter der Site.
+  Die Metadaten der Seitenleiste kommen als reiner Text aus [[chunking.fragments]]
+  (opm.toml) und werden hier mit |e maskiert.
+-#}
+{% extends "base.html.j2" %}
+{% set root = '../../' %}
+{% set f = fragments %}
+{% set doc_file = document or '' %}
+
+{% block title %}{{ f.titel | e }} – Edition Jeanne Hersch{% endblock %}
+
+{% block styles %}
+  {# Reihenfolge: tokens, layout, ODD-CSS, text (text.css ergänzt und übersteuert die ODD-CSS) #}
+  {% for href in asset_styles if not href.endswith('/text.css') %}
+  <link rel="stylesheet" href="{{ href }}">
+  {% endfor %}
+  {% if odd_css_url %}
+  <link rel="stylesheet" href="{{ odd_css_url }}">
+  {% elif odd_css %}
+  <style>{{ odd_css }}</style>
+  {% endif %}
+  {% for href in asset_styles if href.endswith('/text.css') %}
+  <link rel="stylesheet" href="{{ href }}">
+  {% endfor %}
+{% endblock %}
+
+{% block body_class %}page-edition{% endblock %}
+
+{% block breadcrumbs %}
+      <li><a href="{{ root }}works.html" data-i18n="menu.work">Werk</a></li>
+      <li aria-current="page">{{ f.titel | e }}</li>
+{% endblock %}
+
+{% block content %}
+  <main class="reading">
+    <aside class="edition-aside" aria-label="Zum Text">
+      {# Handy: Leiste «•••» klappt die Abschnitte auf (Kontrollkästchen + CSS, kein JavaScript) #}
+      <input type="checkbox" id="aside-toggle" class="aside-toggle">
+      <label for="aside-toggle" class="aside-toggle__bar" title="Angaben zum Text">
+        <img src="{{ assets }}/img/ico-dots.svg" alt="Angaben zum Text">
+      </label>
+      <div class="aside-panel">
+
+      <details>
+        <summary data-i18n="document.download">Export / Download</summary>
+        <ul class="downloads">
+          <li>
+            <a href="../xml/{{ doc_file }}" download>
+              <img src="{{ assets }}/img/tei.svg" alt="" aria-hidden="true">
+              <span>TEI XML</span>
+            </a>
+          </li>
+        </ul>
+      </details>
+
+      <details open>
+        <summary data-i18n="document.citation">Empfohlene Zitierweise</summary>
+        {# wie ext:retrieve-reference() der Hersch-App; Zugriffsdatum setzt das Skript unten #}
+        <p class="citation">
+          {{- f.autor | e }}<span data-i18n="edition.part02">. «</span>{{ f.titel | e }}<span data-i18n="edition.part04">». </span>{{ f.datum | e -}}
+          {%- if f.doi and f.doi != 'DOI_COMING' -%}
+          <span data-i18n="edition.part06">. Edition Jeanne Hersch, herausgegeben von der Zentralbibliothek Zürich, 2026, </span><a href="{{ f.doi | e }}">{{ f.doi | e }}</a>
+          {%- else -%}
+          <span>. Edition Jeanne Hersch, herausgegeben von der Zentralbibliothek Zürich, 2026</span>
+          {%- endif -%}
+          <span data-i18n="edition.part08"> [Zugriff am </span><time class="access-date"></time><span data-i18n="edition.part10">]</span>.
+        </p>
+      </details>
+
+      <details>
+        <summary data-i18n="document.orig_pub">Originalpublikation</summary>
+        <dl class="meta">
+          {% if f.mla %}
+          <dt>Zitat (MLA)</dt>
+          <dd>{{ f.mla | e }}</dd>
+          {% endif %}
+
+          {% set seiten = ('S. ' ~ f.quelle_seiten) if f.quelle_seiten else '' %}
+          {% if f.quelle_titel %}
+          {% set band = (('Jg. ' if f.quelle_art == 'j' else 'Bd. ') ~ f.quelle_jg) if f.quelle_jg else '' %}
+          {% set heft = ('Heft ' ~ f.quelle_heft) if f.quelle_heft else '' %}
+          {% set ort_verlag = [f.quelle_ort, f.quelle_verlag] | select | join(': ') %}
+          <dt>Erschienen in</dt>
+          <dd>
+            <cite>{{ f.quelle_titel | e }}</cite>
+            {%- if f.quelle_hg and f.quelle_art != 'j' %}, hg. von {{ f.quelle_hg | e }}{% endif -%}
+            {%- for teil in [band, heft, ort_verlag, f.quelle_jahr, seiten] if teil %}, {{ teil | e }}{% endfor -%}
+          </dd>
+          {% else %}
+          <dt>Erschienen</dt>
+          <dd>{{ [[f.quelle_ort, f.quelle_verlag] | select | join(': '), f.quelle_jahr, seiten] | select | join(', ') | e }}</dd>
+          {% endif %}
+
+          {% if f.sprache %}
+          <dt>Sprache</dt>
+          <dd>{{ f.sprache | e }}</dd>
+          {% endif %}
+          {% if f.gattung %}
+          <dt>Gattung</dt>
+          <dd>{{ f.gattung | e }}</dd>
+          {% endif %}
+          {% if f.swisscovery %}
+          <dt data-i18n="document.swisscovery">Swisscovery Link</dt>
+          <dd><a href="{{ f.swisscovery | e }}">Eintrag in swisscovery</a></dd>
+          {% endif %}
+          {% if f.doi and f.doi != 'DOI_COMING' %}
+          <dt data-i18n="document.doi">DOI</dt>
+          <dd><a href="{{ f.doi | e }}">{{ f.doi | e }}</a></dd>
+          {% endif %}
+        </dl>
+      </details>
+
+      <details>
+        <summary data-i18n="document.license">Lizenz</summary>
+        <p class="license">
+          <a href="{{ (f.lizenz or 'https://creativecommons.org/licenses/by-sa/4.0/') | e }}" rel="license">Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-SA 4.0)</a>
+        </p>
+      </details>
+      </div>
+    </aside>
+
+    <article class="center">
+      {{ content_html | safe }}
+
+      {% if chunk and (chunk.prev or chunk.next) %}
+      <nav class="chunk-nav" aria-label="Teile dieses Textes">
+        {% if chunk.prev %}<a class="chunk-nav__prev" href="{{ chunk.prev }}.html" rel="prev"><img src="{{ assets }}/img/arrow-left.svg" alt=""> <span data-i18n="document.prev">Zurück</span></a>{% endif %}
+        {% if chunk.next %}<a class="chunk-nav__next" href="{{ chunk.next }}.html" rel="next"><span data-i18n="document.next">Weiter</span> <img src="{{ assets }}/img/arrow-right.svg" alt=""></a>{% endif %}
+      </nav>
+      {% endif %}
+    </article>
+  </main>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    // Zugriffsdatum im Zitiervorschlag: heutiges Datum im Format 15.10.2026
+    (function () {
+      var d = new Date();
+      document.querySelectorAll('.access-date').forEach(function (el) {
+        el.dateTime = d.toISOString().slice(0, 10);
+        el.textContent = d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear();
+      });
+    })();
+  </script>
+{% endblock %}

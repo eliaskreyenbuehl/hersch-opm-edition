@@ -37,7 +37,7 @@ Hinweise: `landing-page.css` verweist auf `../images/typewriter1.jpg` und `typew
 | `assets/fonts/eb-garamond-*.woff2` (4) | `APP/resources/fonts/` | SIL OFL 1.1, `LICENSE-garamond` liegt bei |
 | `assets/fonts/inter-v19-*.woff2` (6) | `APP/resources/fonts/` | SIL OFL 1.1, `LICENSE-inter` (aus https://github.com/rsms/inter, `LICENSE.txt`, geholt am 2026-10-14) |
 | `assets/fonts/JunicodeVF-*.woff2` (2) | `APP/resources/fonts/` | SIL OFL 1.1, `LICENSE-junicode` (aus https://github.com/psb1558/Junicode-font, `OFL.txt`, geholt am 2026-10-14) |
-| `assets/fonts/font.css` | `APP/resources/fonts/font.css` | `@font-face` für alle Schriften inkl. ES Rebond Grotesque, wird in Phase 3 übernommen |
+| `assets/css/vorlage/font.css` (bis Phase 2 `assets/fonts/font.css`) | `APP/resources/fonts/font.css` | `@font-face` für alle Schriften; in Phase 3 nach `vorlage/` verschoben. Verwendet wird `assets/fonts/fonts.css` (nur ES Rebond Grotesque und EB Garamond, wie auf der Leseseite live) |
 | `assets/fonts/ESRebondGrotesque-*.woff2` (4) | `APP/resources/fonts/` | kommerzielle Lizenz der ZB; Elias hat am 2026-10-14 bestätigt, dass sie für github.io gilt. Keine Lizenzdatei in der App. |
 
 ## UI-Texte und Taxonomie
@@ -59,6 +59,8 @@ Die eigentlichen Taxonomie-Definitionen (`hersch_taxonomy.xml` mit `category`/`c
 | `assets/img/logo-zb-bw.svg` | `APP/resources/images/` | Fusszeile |
 | `assets/img/portrait.jpg` | `APP/resources/images/` | Startseite (`hersch-home-base.html`); Bildrechte liegen bei der ZB (bestätigt von Elias, 2026-10-14) |
 | `assets/img/arrow-*.svg`, `but-menu-*.svg`, `ico-glass.svg`, `eye-*.svg`, `cc-icons.svg` | `APP/resources/images/` | Menü, Navigation, Lizenzhinweis |
+| `assets/img/ico-doc.svg`, `ico-book.svg`, `ico-audio.svg`, `ico-video.svg`, `tei.svg`, `caret-down.svg`, `ico-dots.svg` | `APP/resources/images/` (von Elias nach `assets/images/` geliefert, 2026-10-15) | Gattungs-Icon in der Titelzeile, Download, Pfeil der Seitenleiste, Handy-Leiste «•••» |
+| `assets/img/edition/fig*.jpg` (41) | Scans von Elias in `assets/images/edition/` (2026-10-15), verkleinert mit `scripts/prepare_images.py` | Abbildungen in 760 und 830 |
 
 ## Templates (nur Referenz, TEI-Publisher-Syntax)
 

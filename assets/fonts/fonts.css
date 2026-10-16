@@ -1,0 +1,60 @@
+/* Lokale Schriften der Edition (keine externen Server).
+   ES Rebond Grotesque: kommerzielle Lizenz der ZB, für github.io bestätigt (2026-10-14).
+   EB Garamond: SIL OFL 1.1, siehe LICENSE-garamond. */
+
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('ESRebondGrotesque-Medium.woff2') format('woff2');
+    font-weight: 400 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('ESRebondGrotesque-Medium-Italic.woff2') format('woff2');
+    font-weight: 400 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('ESRebondGrotesque-Bold.woff2') format('woff2');
+    font-weight: 600 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ES Rebond Grotesque';
+    src: url('ESRebondGrotesque-Bold-Italic.woff2') format('woff2');
+    font-weight: 600 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('eb-garamond-400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('eb-garamond-400italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('eb-garamond-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('eb-garamond-700italic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}

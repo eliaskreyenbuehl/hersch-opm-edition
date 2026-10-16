@@ -1,0 +1,77 @@
+/* ==========================================================================
+   tokens.css – Gestaltungswerte der Edition Jeanne Hersch (nur Variablen)
+
+   Ein neues Design (z. B. Agentur) ersetzt diese Datei und die Templates;
+   layout.css und text.css verwenden ausschliesslich diese Variablen.
+
+   Herkunft: assets/css/vorlage/hersch.css (Design Tokens), theme.json und
+   Messung an edition-jeanne-hersch.org/edition/1540.xml (2026-10-15).
+   ========================================================================== */
+:root {
+    /* --- Farben --- */
+    --color-text:            #000000;
+    --color-text-reading:    #2D2B26;          /* Lesetext */
+    --color-text-muted:      #616161;          /* Seitenleiste */
+    --color-text-faint:      rgba(0, 0, 0, 0.50); /* Brotkrumen */
+    --color-pagenumber:      #808080;
+    --color-rule:            #000000;          /* schwarze Trennlinien */
+    --color-rule-light:      rgba(0, 0, 0, 0.15);
+    --color-bg-page:         #E6E9F0;          /* --light-blue */
+    --color-bg-reading:      rgba(255, 255, 255, 0.50);
+    --color-bg-titlebar:     #F3F4F8;          /* .fixed in tp.css */
+    --color-bg-menu:         #F2E096;
+    --color-bg-bar:          #D9DCE5;          /* Handy: Kopf und Leiste «•••» */
+    --shadow-bar:            0 0 15px 0 rgba(0, 0, 0, 0.25);
+    --color-bg-footer:       #F1DF96;
+    --color-bg-input:        rgba(255, 255, 255, 0.50);
+    --color-bg-figure:       rgba(0, 0, 0, 0.04);
+
+    /* --- Schriftfamilien --- */
+    --font-sans:  'ES Rebond Grotesque', system-ui, sans-serif;
+    --font-serif: 'EB Garamond', Georgia, serif;
+
+    /* --- Schriftgrössen --- */
+    --fs-reading:     clamp(17px, 1rem + 0.281vw, 21px);  /* Lesetext */
+    --fs-title:       clamp(24px, 1.1rem + 0.9756vw, 32px); /* h1 Werktitel */
+    --fs-heading:     clamp(18px, 0.6rem + 0.9756vw, 22px); /* Zwischentitel h2 */
+    --fs-heading-sub: clamp(16px, 0.5rem + 0.878vw, 20px);  /* Zwischentitel h3 */
+    --fs-ui:          16px;                                 /* Menü, Seitenleiste */
+    --fs-ui-small:    14px;                                 /* Sprachwahl */
+    --fs-breadcrumb:  0.9rem;
+    --fs-footnote:    0.9em;
+    --fs-footer:      clamp(16px, 1.35vw, 22px);
+    --fs-footer-legal: clamp(16px, 1.2vw, 18px);
+
+    /* --- Schriftstärken --- */
+    --fw-regular: 400;
+    --fw-medium:  500;
+    --fw-bold:    700;
+
+    /* --- Zeilenhöhen --- */
+    --lh-reading: 1.35;
+    --lh-ui:      1.35;
+    --lh-title:   1.25;
+
+    /* --- Abstände --- */
+    --space-xs:   0.5rem;
+    --space-s:    1rem;
+    --space-m:    1.5rem;
+    --space-l:    2rem;
+    --space-xl:   3rem;
+    --section-px: clamp(16px, 3vw, 40px);   /* seitlicher Seitenrand */
+    --section-py: clamp(16px, 2vw, 24px);
+    --reading-px: 2rem;                      /* Innenabstand Lesespalte */
+    --reading-py: 1.5rem;
+    --column-gap: 2rem;
+
+    /* --- Breiten und Höhen --- */
+    --max-w:        1920px;
+    --header-h:     80px;
+    --logo-w:       clamp(200px, 173px + 7vw, 300px);  /* gemessen: 262 px bei 1280 px */
+    --aside-inset:  10px;     /* Seitenleiste etwas schmaler als ihre Spalte */
+    --breadcrumb-h: 52px;
+    --icon-s:       2rem;
+    --menu-w:       33.75rem;
+    --rule-w:       2px;
+    --breakpoint-note: 768px;  /* nur Dokumentation: Media Queries können keine Variablen lesen */
+}
